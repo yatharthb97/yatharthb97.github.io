@@ -1,0 +1,195 @@
+baseURL: yatharthb97.github.io
+title: Yatharth Bhasin
+paginate: 5
+theme: "hugo-PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: false
+
+params:
+
+  custom_css : ["css/_styles.css"]
+
+  # Default Recommended ↓
+
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: ExampleSite
+  description: "ExampleSite description"
+  keywords: [Blog, Portfolio, PaperMod, Yatharth,Bhasin]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+  linkFullImages: true
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Yatharth Bhasin"
+    icon: "/images/header_button.gif"
+    iconHeight: 30
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Yatharth Bhasin
+    subtitle: "Exploring hazzy recurrences in nature at the interface of Physics,Computation,and Biology. Soon starting my PhD journey."
+                                
+    imageUrl: "/images/profile_test.gif"
+    imageWidth: 250
+    imageHeight: 250
+    linkFullImages: true
+    imageTitle: <can't load img>
+    buttons:
+      - name: About Me
+        url: /aboutme/
+      - name: Posts
+        url: blog
+      - name: Tags
+        url: tags
+      - name : Projects
+        url: projects
+      - name : Resume/CV
+        url: https://drive.google.com/file/d/1cLnYdSqaa06c6bvJEOIJW98i1m4qylOh/view?usp=sharing
+      - name : xx
+        url : 
+        url : \sfs\
+
+    images: ["/images/profile_test.gif", "/images/profile_test.gif"]
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi! I am Yatharth. \U0001F44B"
+    Content: "Exploring hazzy recurrences in nature at the interface of Physics, Computation, and Biology. Soon starting my PhD journey."
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/yatharthb97"
+    - name: twitter
+      url: "https://twitter.com/yatharth1997"
+    - name: instagram
+      url: "https://www.instagram.com/anar_chy_problem/"
+    - name : linkedin
+      url : https://www.linkedin.com/in/yatharth1997/
+    - name: email
+      url: "mailto:yatharth1997+ws@gmail.com"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+    responsiveImages: false # Reduce generation time and size of the site, you can disable this feature
+    linkFullImages: true
+
+  editPost:
+    URL: "https://github.com/yatharthb97/yatharthb97/tree/gh-pages/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content", "tags", "author", "date", "description"]
+
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: projects
+      name: projects
+      url: /projects/
+      weight: 70
+    - identifier: places
+      name: places
+      url: /places/
+      weight: 80
+    - identifier : Search
+      name : search
+      url: search/
+    - identifier: gallery
+      name: gallery
+      url: /gallery/
+    - identifier: blog-timeline
+      name : blog-timeline
+      url: /archives/
+
+    - identifier: blog
+      name: blog
+      url: /blog/
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+
+# Search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for necessary
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
