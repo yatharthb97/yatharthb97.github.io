@@ -1,5 +1,5 @@
 ---
-title: "Images"
+title: "Project-X"
 date: 2020-09-15T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
@@ -36,10 +36,6 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-# Hello
+# Placeholder Project Essay
 
-
-{{ partial "image-gallery" (dict "context" . "gallery_dir" "img") }}
-
-
-{{ instagram CdQwF0gpLF5 }}
+wafsd

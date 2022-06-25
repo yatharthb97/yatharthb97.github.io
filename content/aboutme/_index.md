@@ -58,17 +58,7 @@ Lisbon, Portugal
 📃 Resume/CV : [read here](https://drive.google.com/file/d/1cLnYdSqaa06c6bvJEOIJW98i1m4qylOh/view?usp=sharing). \
 🖼️ Design Portfolio : [see here](https://drive.google.com/file/d/1a0pQmmWagRprBTpElnuLLAm9PI0GC458/view?usp=sharing).
 
-<span hidden> Diagrams </span>
-```goat
-      .               .                .               .--- 1          .-- 1     / 1
-     / \              |                |           .---+            .-+         +
-    /   \         .---+---.         .--+--.        |   '--- 2      |   '-- 2   / \ 2
-   +     +        |       |        |       |    ---+            ---+          +
-  / \   / \     .-+-.   .-+-.     .+.     .+.      |   .--- 3      |   .-- 3   \ / 3
- /   \ /   \    |   |   |   |    |   |   |   |     '---+            '-+         +
- 1   2 3   4    1   2   3   4    1   2   3   4         '--- 4          '-- 4     \ 4
 
-```
 
 
 <p>&nbsp;</p>
