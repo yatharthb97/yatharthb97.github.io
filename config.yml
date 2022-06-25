@@ -16,7 +16,7 @@ minify:
 
 params:
 
-  custom_css : ["css/_styles.css"]
+  custom_css : ["css/_styles.css", "/css/timeline.css"]
 
   # Default Recommended ↓
 
@@ -49,7 +49,7 @@ params:
   linkFullImages: true
   assets:
     # disableHLJS: true # to disable highlight.js
-    disableFingerprinting: true
+    disableFingerprinting: false
     favicon: "/images/website_tile.svg"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
