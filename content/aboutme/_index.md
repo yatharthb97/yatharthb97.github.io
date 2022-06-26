@@ -12,7 +12,7 @@
 <table style="border-collapse: collapse; width: 100%;" border="0">
 <tbody>
 <tr>
-<td style="width: 50%;"><img src="/images/profile_pic_fullres.png" alt="Me!" height="300"/></td>
+<td style="width: 50%;"><img src="../images/YatharthBhasin.png" alt="Me!" height="300"/></td>
 <td style="width: 50%;">
 <h1>Yatharth Bhasin</h1>
 <b>M.Sc. Physics</b><br>
@@ -27,6 +27,9 @@ Lisbon, Portugal
 </table>
 </html>
 
+|             |                                                  |
+| ----------- | :---------                                       |
+| ![](/images/profile_pic_small.png#center)     | <h1>Yatharth Bhasin</h1><br><b>M.Sc. Physics</b><br> Computational Biological Physicist<p><br></p>Ph.D. student in waiting<br>Instituto Gulbenkian de Ciência <b>(IGC)</b><br>Lisbon, Portugal   |    
 
 
 <span hidden> Brief Paragraph Introduction </span>
