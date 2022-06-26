@@ -84,7 +84,7 @@ TIFR Centre for Interdisciplnary Sciences (TIFR-TCIS) Hyderabad<br>
     </div>
     <div class="card">
       <div class="info">
-        <h3 class="title">P.hD. ← 2022 to now</h3>
+        <h3 class="title">P.hD. ← 2022 to Now</h3>
         <p><h4>Institute:</h4> IGC, Lisbon<br>
         Awaiting Visa/Joining Pending</p>
       </div>

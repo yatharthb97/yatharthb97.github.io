@@ -7,3 +7,5 @@
 ╚═════╝   ╚══════╝   ╚═════╝    ╚═════╝                                 
 ```
 ---
+
+**Publications** are [here](/publications/).
