@@ -16,4 +16,15 @@
      | o | o | o | o | o | o | o | o | o | o | o | o | o | o | o | o |
      +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
 ```
----
+<div style="text-align: center;">
+  TEST IMAGES PRESENT<br>  Ⓒ Yatharth Bhasin, unless explicitly stated. Scroll down for credits.
+</div>
+
+<span hidden> Images </span>
+{{< gallery dir="/images/img/" />}} {{< load-photoswipe >}}
+{{< figure link="/images/cube_red.png" width=500px caption="Hello!">}}
+{{< gallery dir="/images/img/" />}} {{< load-photoswipe >}}
+
+
+### Credits
+
