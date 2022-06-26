@@ -81,8 +81,12 @@ params:
         url: projects
       - name : Resume 🎓
         url: https://drive.google.com/file/d/1cLnYdSqaa06c6bvJEOIJW98i1m4qylOh/view?usp=sharing
-      - name : Code 💻
+      - name : Code 👨‍💻
         url: https://github.com/yatharthb97
+      - name : Tags 🏷️
+        url: /tags/
+      - name : Categories 📂
+        url : /categories/
 
 
   # home-info mode
@@ -137,40 +141,35 @@ params:
 
 menu:
   main:
+
     - identifier: projects
       name: projects
       url: /projects/
-      weight: 1
+      weight: 2
       
     - identifier: blog
       name: blog
       url: /blog/
-      weight : 2
+      weight : 3
 
     - identifier: archive
       name : archive
       url: /archives/
-      weight : 3
+      weight : 4
+
+    - identifier: publications
+      name : publications
+      url : /publications/
+      weight : 5
     
     - identifier: categories
       name: categories
       url: /categories/
-      weight : 4
+      weight : 6
     
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight : 5
-
-    
-    - identifier : Search
+    - identifier : search
       name : search
       url: search/
-      weight : 6
-
-    - identifier: places
-      name: places<rm>
-      url: /places/
       weight : 7
     
     - identifier: gallery
@@ -178,8 +177,6 @@ menu:
       url: /gallery/
       weight : 8
     
-
-   
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true

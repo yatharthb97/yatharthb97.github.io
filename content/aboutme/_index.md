@@ -43,7 +43,7 @@ TIFR Centre for Interdisciplnary Sciences (TIFR-TCIS) Hyderabad<br>
 <span hidden> Links </span>
 📃 Resume/CV : [read here](https://drive.google.com/file/d/1cLnYdSqaa06c6bvJEOIJW98i1m4qylOh/view?usp=sharing). \
 🖼️ Design Portfolio : [see here](https://drive.google.com/file/d/1a0pQmmWagRprBTpElnuLLAm9PI0GC458/view?usp=sharing).\
-💻 Code Portfolio : [see here](https://github.com/yatharthb97).
+👨‍💻 Code Portfolio : [see here](https://github.com/yatharthb97).
 
 <p>&nbsp;</p>
 
