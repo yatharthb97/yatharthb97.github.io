@@ -8,12 +8,12 @@
                                                  *    
                                                  |                      +----------*
                     *                            |                     /     *      \
-                    |     +--o          o-----+  |  +-----o-----------+     /        \
-                 o-+'    |'                    \ | /                   \   /          *
-          *         |    o          *---.       \|/                     \ /
-           \ o      *    |               +-------*---------*         +---*
-            \|       \   |      +-----*--'      /|\         \       /    |
-             |        \ /      |               / | |         *-----*     |           *
+                    |     +--o          o-----+  |  +-----o-----------+     / \      \
+                 o-+'    |'                    \ | /                   \   /   |      *-------o
+          *         |    o          *---.       \|/                     \ /    o       \
+           \ o      *    |               +-------*---------*         +---*              \____
+            \|       \   |      +-----*--'      /|\         \       /    |                   |
+             |        \ /      |               / | |         *-----*     |           *       o
          o---*---------+-------o   *-----*----+  * |         |           |          /
              |        /|\           \              *         |           +---------o---*
              |       | | |           \            / \        |                      \
@@ -22,8 +22,8 @@
 ```
 ![](https://media.giphy.com/media/Epy1SqYt1nHvq/giphy.gif#center)   
 
-## What's better than building things?
-**Stronger Together!** I am always looking for collaborators and friends to work on things. Collaboration is a great way of amplifying the learning process.
+## Stronger Together !
+I am always looking for collaborators and friends to work on things. Collaboration is a great way of amplifying the learning process.
 
 * I am avidly interested in developing open-source code for scientific applications.
 * I like building new frameworks or rebuilding stuff with a new design pattern.
