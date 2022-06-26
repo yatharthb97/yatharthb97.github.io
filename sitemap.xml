@@ -2,43 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yatharthb97.github.io/blog/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-    <priority>0</priority>
-  </url><url>
-    <loc>https://yatharthb97.github.io/projects/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-    <priority>0</priority>
-  </url><url>
-    <loc>https://yatharthb97.github.io/blog/test/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/tags/first/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/projects/test/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/tags/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>https://yatharthb97.github.io/aboutme/</loc>
     <priority>0</priority>
   </url><url>
     <loc>https://yatharthb97.github.io/archives/</loc>
+  </url><url>
+    <loc>https://yatharthb97.github.io/blog/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://yatharthb97.github.io/projects/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://yatharthb97.github.io/publications/</loc>
     <priority>0</priority>
   </url><url>
     <loc>https://yatharthb97.github.io/categories/</loc>
   </url><url>
-    <loc>https://yatharthb97.github.io/blog/diagrams/</loc>
-  </url><url>
-    <loc>https://yatharthb97.github.io/aboutme/external/</loc>
-  </url><url>
     <loc>https://yatharthb97.github.io/search/</loc>
+  </url><url>
+    <loc>https://yatharthb97.github.io/tags/</loc>
+  </url><url>
+    <loc>https://yatharthb97.github.io/</loc>
   </url>
 </urlset>
