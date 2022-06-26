@@ -65,7 +65,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Yatharth Bhasin
-    subtitle: "[WEBSITE DRAFT]\n\nExploring hazzy recurrences in nature at the interface of Physics,Computation,and Biology. Soon starting my PhD journey."
+    subtitle: "Exploring hazzy recurrences in nature at the interface of Physics, Computation,and Biology. Soon starting my PhD journey."
                                 
     imageUrl: "/images/profile_test.gif"
     imageWidth: 250
@@ -82,7 +82,7 @@ params:
       - name : Projects 🔭
         url: projects
       - name : Resume 🎓
-        url: https://drive.google.com/file/d/1cLnYdSqaa06c6bvJEOIJW98i1m4qylOh/view?usp=sharing
+        url: https://drive.google.com/file/d/1XtsUeojuXNe-d_a9AhDXsk7MJZiTlsvz/view?usp=sharing
       - name : Code 👨‍💻
         url: https://github.com/yatharthb97
       - name : Archive ⌛
