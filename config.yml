@@ -75,6 +75,8 @@ params:
     buttons:
       - name: About Me 👋
         url: /aboutme/
+      - name: Collaborate! ☭
+        url: /collaborate/
       - name: Posts 📝
         url: blog
       - name : Projects 🔭
