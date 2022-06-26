@@ -192,7 +192,17 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for necessary
+
+
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+
+imaging:
+  anchor: Smart
+  bgColor: '#ffffff'
+  hint: photo
+  quality: 100
+  resampleFilter: Box

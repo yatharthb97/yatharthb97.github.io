@@ -12,24 +12,21 @@
  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
 ```
 <table style="border-collapse: collapse; width: 100%;" border="0">
-<tbody>
-<tr>
-<td style="width: 50%;">
+<tbody><tr>
+  <td style="width: 50%;">
+    {{< figure src="/images/YatharthBhasin.png" width=200px >}}
+  </td>
 
-
-{{< figure src="/images/YatharthBhasin.png" height=350px >}}
-</td>
-
-
-<td style="width: 50%;">
-<h1>Yatharth Bhasin</h1>
-<b>M.Sc. Physics</b><br>
-Computational Biological Physicist
-<p><br></p>
-Ph.D. student in waiting<br>
-Instituto Gulbenkian de Ciência <b>(IGC)</b><br>
-Lisbon, Portugal
-</td></tr></tbody></table>  
+  <td style="width: 50%;">
+    <h1>Yatharth Bhasin</h1>
+    <b>M.Sc. Physics</b><br>
+    Computational Biological Physicist
+    <p><br></p>
+    Ph.D. student in waiting<br>
+    Instituto Gulbenkian de Ciência <b>(IGC)</b><br>
+    Lisbon, Portugal
+  </td>
+</tr></tbody></table>  
 
 
 <span hidden> Brief Paragraph Introduction </span>
