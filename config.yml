@@ -128,7 +128,7 @@ params:
     linkFullImages: true
 
   editPost:
-    URL: "https://github.com/yatharthb97/yatharthb97/tree/gh-pages/content"
+    URL: "https://github.com/yatharthb97/yatharthb97/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
