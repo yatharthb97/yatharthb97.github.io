@@ -1,3 +1,8 @@
+---
+title: website
+searchHidden: false
+---
+
 # Personal Website → Yatharth Bhasin
 Visit → https://yatharthb97.github.io
 
