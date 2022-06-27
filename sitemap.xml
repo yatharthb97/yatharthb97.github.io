@@ -3,7 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yatharthb97.github.io/aboutme/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>https://yatharthb97.github.io/archives/</loc>
   </url><url>
@@ -21,6 +20,8 @@
   </url><url>
     <loc>https://yatharthb97.github.io/publications/</loc>
     <priority>0</priority>
+  </url><url>
+    <loc>https://yatharthb97.github.io/tags/about-me/</loc>
   </url><url>
     <loc>https://yatharthb97.github.io/categories/</loc>
   </url><url>
