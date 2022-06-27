@@ -4,19 +4,18 @@
   padding: 0 4px;
 }
 
-/* Create four equal columnxs that sits next to each other */
 .columnx {
   flex: 100%;
   max-width: 50%;
-  padding: 0 25px;
+  padding: 0 20px;
   vertical-align: middle;
   justify-content: center;
 }
 
 .columnx text {
   flex: 100%;
-  max-width: 50%;
-  padding: 0 25px;
+  max-width: 100%;
+  padding: 0 20px;
   vertical-align: middle;
   justify-content: center;
 }
