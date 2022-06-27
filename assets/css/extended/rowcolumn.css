@@ -1,13 +1,13 @@
 .rowx {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 px;
 }
 
 .columnx {
   flex: 100%;
   max-width: 50%;
-  padding: 0 10px;
+  padding: 0 0px;
   vertical-align: middle;
   justify-content: center;
 }
@@ -22,6 +22,8 @@
 
 .columnx img {
   margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
   vertical-align: middle;
   width: 100%;
   justify-content: center;
