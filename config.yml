@@ -137,6 +137,7 @@ params:
   fuseOpts:
     isCaseSensitive: false
     #useExtendedSearch: true
+    includeScore: true
     shouldSort: true
     location: 0
     distance: 1000
