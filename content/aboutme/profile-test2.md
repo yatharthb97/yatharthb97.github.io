@@ -3,7 +3,7 @@
 
 <div class="rowx">
   <div class="columnx">
-    {{< figure src="/images/YatharthBhasin.png" width=200px >}}
+    {{< figure src="/images/YatharthBhasin.png" width=250px >}}
   </div>
   <div class="columnx">
     <h1>Yatharth Bhasin</h1>

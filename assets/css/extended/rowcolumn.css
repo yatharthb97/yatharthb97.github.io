@@ -6,15 +6,27 @@
 
 /* Create four equal columnxs that sits next to each other */
 .columnx {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  flex: 100%;
+  max-width: 50%;
+  padding: 0 25px;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.columnx text {
+  flex: 100%;
+  max-width: 50%;
+  padding: 0 25px;
+  vertical-align: middle;
+  justify-content: center;
 }
 
 .columnx img {
-  margin-top: 8px;
+  margin-top: 0px;
   vertical-align: middle;
   width: 100%;
+  justify-content: center;
+
 }
 
 /* Responsive layout - makes a two columnx-layout instead of four columnxs */
