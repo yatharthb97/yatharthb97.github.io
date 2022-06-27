@@ -1,4 +1,7 @@
 
+---
+tags: ["About Me"]
+--- 
 ```goat
  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
                                                                             
@@ -26,16 +29,14 @@
     Lisbon, Portugal
   </div>
 </div> 
-
+<br>
 
 <span hidden> Brief Paragraph Introduction </span>
-👋 Hi, I’m Yatharth! \
+
+👋 Hi, I’m **Yatharth!**\
+Welcome to my website! Here I post about things I do and like.\
 👀 I’m interested in Computational Biological Physics & Biophysics \
-⚒ I'm working as a Junior Research Fellow \
-🔬 @ Tata Institute of Fundamental Research \
-TIFR Centre for Interdisciplnary Sciences (TIFR-TCIS) Hyderabad<br>
-🌱 I’m currently learning Living Systems Modelling \
-💞️ I’m looking to collaborate on all things unknown, hardware, and software projects. \
+💞️ I’m looking to collaborate on all things unknown. \
 📫 You can write to me : yatharth1997+ws (at) gmail.com
 
 
@@ -56,38 +57,38 @@ TIFR Centre for Interdisciplnary Sciences (TIFR-TCIS) Hyderabad<br>
 ███████╗ ██████╔╝ ╚██████╔╝ ╚██████╗ ██║  ██║    ██║    ██║ ╚██████╔╝ ██║ ╚████║
 ╚══════╝ ╚═════╝   ╚═════╝   ╚═════╝ ╚═╝  ╚═╝    ╚═╝    ╚═╝  ╚═════╝  ╚═╝  ╚═══╝
 ```
-<html>
 <centre>
 <div class="timeline">
   <div class="outer">
     <div class="card">
       <div class="info">
-        <h3 class="title">2015 to 2018 → B.Sc. Physics</h3>
-        <p><h4>University:</h4>Birla Institute of Technology, Mesra<br>(BIT-Mesra)
+        <h3 class="title">2015 to 2018<br>B.Sc. Physics</h3>
+        <p><b>University:</b>Birla Institute of Technology, Mesra<br>(BIT-Mesra)<br><br>
+           <b>Subjects:</b> Physics, Math, Computer Science
         </p>
       </div>
     </div>
     <div class="card">
       <div class="info">
-        <h3 class="title">M.Sc. Physics ← 2018 to 2020</h3>
-        <p><h4>University:</h4>
-          Indian Institute of Technology Indore<br> (IITI) </p>
+        <h3 class="title">2018 to 2020<br>M.Sc. Physics</h3>
+        <p><b>University:</b>
+          Indian Institute of Technology Indore<br> (IITI)<br><br>
+          <b>Thesis: </b>Coarse Grain Simulation of Bio-molecular Patchy Spherocylinders</p>
       </div>
     </div>
     <div class="card">
       <div class="info">
-        <h3 class="title">2021 to 2022 → J.R.F<br>(Junior Research Fellowship)</h3>
-        <p><h4>Institute:</h4> Tata Institute of Fundamental Research, Hyderabad<br>
-        TIFR Centre of Interdisciplinary Sciences<br>Kancahn Garai Biophysics Lab</p>
+        <h3 class="title">2021 to 2022<br>Junior Research Fellowship</h3>
+        <p><b>Institute:</b> Tata Institute of Fundamental Research, Hyderabad<br>
+        TIFR Centre of Interdisciplinary Sciences (TIFR-Hyd)<br><em>Kancahn Garai Biophysics Lab</em>
+      </p>
       </div>
     </div>
     <div class="card">
       <div class="info">
-        <h3 class="title">P.hD. ← 2022 to Now</h3>
-        <p><h4>Institute:</h4> IGC, Lisbon<br>
+        <h3 class="title">Doctor of Philosophy (Ph.D.)<br>2022 to Now</h3>
+        <p><b>Institute:</b> IGC, Lisbon<br>
         Awaiting Visa/Joining Pending</p>
       </div>
     </div>
-</div>
-</centre>
-</html>
+</div></centre>
