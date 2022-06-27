@@ -1,4 +1,6 @@
 baseURL: "https://yatharthb97.github.io"
+#baseURL: http://localhost:1313/
+
 title: Yatharth Bhasin
 paginate: 5
 theme: "hugo-PaperMod"
@@ -134,6 +136,7 @@ params:
   # https://fusejs.io/api/options.html
   fuseOpts:
     isCaseSensitive: false
+    #useExtendedSearch: true
     shouldSort: true
     location: 0
     distance: 1000
