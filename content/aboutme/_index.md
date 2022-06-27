@@ -17,7 +17,7 @@ summary: "about me"
 <br>
 <div class="rowx">
   <div class="columnx">
-    {{< figure src="/images/YatharthBhasin.png" width=250px >}}
+    {{< figure align=center src="/images/YatharthBhasin.png" width=250px >}}
   </div>
   <div class="columnx">
     <h1>Yatharth Bhasin</h1>
