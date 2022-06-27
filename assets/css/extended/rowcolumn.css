@@ -7,7 +7,7 @@
 .columnx {
   flex: 100%;
   max-width: 50%;
-  padding: 0 20px;
+  padding: 0 0px;
   vertical-align: middle;
   justify-content: center;
 }
