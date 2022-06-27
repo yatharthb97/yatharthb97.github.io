@@ -11,19 +11,18 @@
  
  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
 ```
-<table style="border-collapse: collapse; width: 100%;" border="0">
+<table style="border-collapse: collapse; width: 100%;" border="0", height="350px">
 <tbody><tr>
   <td style="width: 50%;">
     {{< figure src="/images/YatharthBhasin.png" width=200px >}}
   </td>
-
   <td style="width: 50%;">
     <h1>Yatharth Bhasin</h1>
-    <b>M.Sc. Physics</b><br>
+    <b>M.Sc. Physics (IIT-Indore)</b><br>
     Computational Biological Physicist
     <p><br></p>
-    Ph.D. student in waiting<br>
-    Instituto Gulbenkian de Ciência <b>(IGC)</b><br>
+    Ph.D. student in waiting.<br>
+    Instituto Gulbenkian de Ciência <b>(IGC) </b><br>
     Lisbon, Portugal
   </td>
 </tr></tbody></table>  
