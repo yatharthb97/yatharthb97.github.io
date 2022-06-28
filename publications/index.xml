@@ -8,6 +8,25 @@
       <url>https://yatharthb97.github.io/website_tile.svg</url>
       <link>https://yatharthb97.github.io/website_tile.svg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://yatharthb97.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 28 Jun 2022 17:44:04 +0530</lastBuildDate><atom:link href="https://yatharthb97.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BeetleBox</title>
+      <link>https://yatharthb97.github.io/publications/beetlebox/</link>
+      <pubDate>Tue, 28 Jun 2022 17:44:04 +0530</pubDate>
+      
+      <guid>https://yatharthb97.github.io/publications/beetlebox/</guid>
+      <description>Blog maintained by the Socratic Quizmasters.</description>
+    </item>
+    
+    <item>
+      <title>Science Through Visuals TIFRH</title>
+      <link>https://yatharthb97.github.io/publications/sciencethroughvisuals_tifrh/</link>
+      <pubDate>Tue, 28 Jun 2022 17:10:31 +0530</pubDate>
+      
+      <guid>https://yatharthb97.github.io/publications/sciencethroughvisuals_tifrh/</guid>
+      <description>Science through Visuals - popular science writing.</description>
+    </item>
+    
   </channel>
 </rss>
