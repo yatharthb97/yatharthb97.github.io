@@ -20,11 +20,13 @@
   TEST IMAGES PRESENT<br>  Ⓒ Yatharth Bhasin, unless explicitly stated. Scroll down for credits.
 </div>
 
+## Hello!
 <span hidden> Images </span>
-{{< gallery dir="/images/img/" />}} {{< load-photoswipe >}}
-{{< figure link="/images/cube_red.png" width=500px caption="Hello!">}}
-{{< gallery dir="/images/img/" />}} {{< load-photoswipe >}}
+{{< gallery dir="/images/gallery/index/" />}} {{< load-photoswipe >}}
+<span hidden>{{< figure link="/images/cube_red.png" width=500px caption="Hello!">}} </span>
+
 
 
 ### Credits
 
+No credits as of now.
