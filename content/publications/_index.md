@@ -18,10 +18,11 @@
 
 ### 1. M.Sc. Thesis
 
-Yatharth Bhasin, “Coarse Grain Simulation of Bio-Molecular Patchy Spherocylinders” (Indore, Indian Institute of Technology Indore, 2020), IITI Institutional Digital Repository (IDR@IIT Indore). \
+Yatharth Bhasin, **“Coarse Grain Simulation of Bio-Molecular Patchy Spherocylinders”** (Indore, Indian Institute of Technology Indore, 2020), IITI Institutional Digital Repository (IDR@IIT Indore). \
 [IDR@IIT Access](http://dspace.iiti.ac.in:8080/jspui/handle/123456789/2556) \
 [Alt Link](https://www.dropbox.com/s/e2ense80omagtje/Thesis_1803151024_Yatharth_FinalCopy.pdf?dl=0)
 
+<p>&nbsp;</p>
+
 ### Other Publications
 
-<p>&nbsp;</p>
