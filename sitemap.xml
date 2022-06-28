@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yatharthb97.github.io/projects/</loc>
+    <lastmod>2022-06-28T18:15:16+05:30</lastmod>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://yatharthb97.github.io/tags/projects/</loc>
+    <lastmod>2022-06-28T18:15:16+05:30</lastmod>
+  </url><url>
+    <loc>https://yatharthb97.github.io/projects/python-time-literals/</loc>
+    <lastmod>2022-06-28T18:15:16+05:30</lastmod>
+  </url><url>
+    <loc>https://yatharthb97.github.io/tags/</loc>
+    <lastmod>2022-06-28T18:15:16+05:30</lastmod>
+  </url><url>
+    <loc>https://yatharthb97.github.io/</loc>
+    <lastmod>2022-06-28T18:15:16+05:30</lastmod>
+  </url><url>
     <loc>https://yatharthb97.github.io/publications/</loc>
     <lastmod>2022-06-28T17:44:04+05:30</lastmod>
     <priority>0</priority>
@@ -13,12 +29,6 @@
     <lastmod>2022-06-28T17:44:04+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/tags/publications/</loc>
-    <lastmod>2022-06-28T17:44:04+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/tags/</loc>
-    <lastmod>2022-06-28T17:44:04+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/</loc>
     <lastmod>2022-06-28T17:44:04+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/categories/</loc>
@@ -67,10 +77,6 @@
     <loc>https://yatharthb97.github.io/tags/vmd/</loc>
     <lastmod>2022-06-28T15:55:14+05:30</lastmod>
   </url><url>
-    <loc>https://yatharthb97.github.io/projects/</loc>
-    <lastmod>2022-06-28T13:56:04+05:30</lastmod>
-    <priority>0</priority>
-  </url><url>
     <loc>https://yatharthb97.github.io/tags/kanchan-garai/</loc>
     <lastmod>2022-06-28T13:56:04+05:30</lastmod>
   </url><url>
@@ -78,9 +84,6 @@
     <lastmod>2022-06-28T13:56:04+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/tags/kglab/</loc>
-    <lastmod>2022-06-28T13:56:04+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/tags/projects/</loc>
     <lastmod>2022-06-28T13:56:04+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/categories/projects/</loc>
