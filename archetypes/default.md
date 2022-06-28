@@ -9,6 +9,7 @@ searchHidden: false
 # weight: 1
 aliases: []
 tags: ["blog"]
+categories: []
 author: "Yatharth Bhasin"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -24,7 +25,7 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
-UseHugoToc: true
+UseHugoToc: false
 
 cover:
     image: "<image path/url>" # image path/url

@@ -10,6 +10,7 @@ searchHidden: false
 aliases: []
 tags: ["projects"]
 author: "Yatharth Bhasin"
+categories: []
 # author: ["Me", "You"] # multiple authors
 
 showToc: true
@@ -25,7 +26,7 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
-UseHugoToc: true
+UseHugoToc: false
 
 cover:
     image: "<image path/url>" # image path/url

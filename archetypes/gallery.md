@@ -2,15 +2,15 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-description: "Blog Post"
+description: "Gallery with images."
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
 # weight: 1
 aliases: []
-tags: ["blog"]
+tags: ["gallery", "photos", "images"]
+categories: ["photos", "gallery"]
 author: "Yatharth Bhasin"
-categories: []
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
@@ -39,3 +39,16 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+
+<div style="text-align: center;">
+  Ⓒ Yatharth Bhasin, unless explicitly stated. Scroll down for credits.
+</div>
+
+<span hidden> Images </span>
+{{< gallery dir="/images/gallery/" />}} {{< load-photoswipe >}}
+
+
+
+### Credits
+
+No credits.

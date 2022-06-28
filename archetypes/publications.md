@@ -2,16 +2,17 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-description: "Blog Post"
+description: "Publication by Yatharth Bhasin."
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
 # weight: 1
 aliases: []
-tags: ["blog"]
+tags: ["publications"]
 author: "Yatharth Bhasin"
 categories: []
 # author: ["Me", "You"] # multiple authors
+
 showToc: true
 TocOpen: false
 hidemeta: false
