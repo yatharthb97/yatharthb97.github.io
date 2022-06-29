@@ -6,7 +6,7 @@ description: ""
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
-# weight: 1
+weight: 1
 aliases: []
 tags: ["blog"]
 author: "Yatharth Bhasin"

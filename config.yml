@@ -82,7 +82,7 @@ params:
       - name: Blog 📝
         url: blog
       - name : Projects 🔭
-        url: projects
+        url: /projects/
       - name : Resume 🎓
         url: https://drive.google.com/file/d/1XtsUeojuXNe-d_a9AhDXsk7MJZiTlsvz/view?usp=sharing
       - name : Code 👨‍💻
@@ -164,7 +164,7 @@ menu:
     
     - identifier : search
       name : search
-      url: search/
+      url: /search/
       weight : 4
     
     - identifier: gallery
