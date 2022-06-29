@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yatharthb97.github.io/blog/welcome/</loc>
+    <lastmod>2022-06-29T16:37:38+05:30</lastmod>
+  </url><url>
     <loc>https://yatharthb97.github.io/blog/</loc>
     <lastmod>2022-06-29T16:37:38+05:30</lastmod>
     <priority>0</priority>
@@ -10,9 +13,6 @@
     <lastmod>2022-06-29T16:37:38+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/tags/</loc>
-    <lastmod>2022-06-29T16:37:38+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/blog/welcome/</loc>
     <lastmod>2022-06-29T16:37:38+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/</loc>
