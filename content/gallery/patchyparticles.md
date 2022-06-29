@@ -42,7 +42,7 @@ editPost:
 ---
 
 <div style="text-align: center;">
-  Ⓒ Yatharth Bhasin, unless explicitly stated. Scroll down for credits.
+<b>Ⓒ Yatharth Bhasin</b> unless explicitly stated. Scroll down for credits.
 </div>
 
 <span hidden> Images </span>

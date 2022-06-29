@@ -92,3 +92,9 @@ Welcome to my website! Here I post about things I do and like.\
       </div>
     </div>
 </div></centre>
+
+> It is only ideas gained from walking that have any worth.
+> - Nietzsche
+
+
+

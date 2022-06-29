@@ -40,8 +40,8 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
+  UseHugoToc: false
+  disableSpecial1stPost: true
   disableScrollToTop: false
   comments: true
   hidemeta: false
@@ -208,5 +208,5 @@ imaging:
   anchor: Smart
   bgColor: '#ffffff'
   hint: photo
-  quality: 100
+  quality:    
   resampleFilter: Box

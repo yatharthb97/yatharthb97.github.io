@@ -17,13 +17,14 @@
      +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
 ```
 <div style="text-align: center;">
-  TEST IMAGES PRESENT<br>  Ⓒ Yatharth Bhasin, unless explicitly stated. Scroll down for credits.
+<b>Ⓒ Yatharth Bhasin</b> unless explicitly stated. Scroll down for credits.
 </div>
 
 ## Hello!
 <span hidden> Images </span>
 {{< gallery dir="/images/gallery/index/" />}} {{< load-photoswipe >}}
 <span hidden>{{< figure link="/images/cube_red.png" width=500px caption="Hello!">}} </span>
+
 
 
 
