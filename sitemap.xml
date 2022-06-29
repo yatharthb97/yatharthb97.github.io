@@ -94,8 +94,6 @@
   </url><url>
     <loc>https://yatharthb97.github.io/aboutme/</loc>
   </url><url>
-    <loc>https://yatharthb97.github.io/archives/</loc>
-  </url><url>
     <loc>https://yatharthb97.github.io/blog/</loc>
     <priority>0</priority>
   </url><url>
@@ -103,6 +101,8 @@
     <priority>0</priority>
   </url><url>
     <loc>https://yatharthb97.github.io/tags/about-me/</loc>
+  </url><url>
+    <loc>https://yatharthb97.github.io/archives/</loc>
   </url><url>
     <loc>https://yatharthb97.github.io/search/</loc>
   </url><url>
