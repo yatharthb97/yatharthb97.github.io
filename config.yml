@@ -79,7 +79,7 @@ params:
         url: /aboutme/
       - name: Collaborate! ☭
         url: /collaborate/
-      - name: Posts 📝
+      - name: Blog 📝
         url: blog
       - name : Projects 🔭
         url: projects
