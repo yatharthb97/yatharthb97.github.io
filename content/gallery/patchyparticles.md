@@ -47,9 +47,3 @@ editPost:
 
 <span hidden> Images </span>
 {{< gallery dir="/images/gallery/spherosim/" />}} {{< load-photoswipe >}}
-
-
-
-### Credits
-
-No credits.

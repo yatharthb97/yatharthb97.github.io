@@ -25,9 +25,3 @@
 {{< gallery dir="/images/gallery/index/" />}} {{< load-photoswipe >}}
 <span hidden>{{< figure link="/images/cube_red.png" width=500px caption="Hello!">}} </span>
 
-
-
-
-### Credits
-
-No credits as of now.
