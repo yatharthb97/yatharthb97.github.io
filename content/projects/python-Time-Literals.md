@@ -43,7 +43,9 @@ editPost:
 
 
 
-Safe and accurate parsing of time literals (values + units) is both common and crucial requirement. While `C++` has a mechanism through `STL chrono`, such a functionality is absent in python (as per my information).
+Safe and accurate parsinggit status of time literals (values + units) is both common and crucial requirement. While `C++` has a mechanism through `STL chrono`, such a functionality is absent in python (as per my information).
+
+Library: [GitHub Gist](https://gist.github.com/yatharthb97/8798b23a1611a90b056e2026bbed63a8).
 
 ### What is a time-literal?
 
