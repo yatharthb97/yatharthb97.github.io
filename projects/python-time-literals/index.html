@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Python Time Literals | Yatharth Bhasin</title>
-<meta name="keywords" content="projects">
-<meta name="description" content="python Coding project - Time Literal parsing.">
+<meta name="keywords" content="projects, python, library, gists">
+<meta name="description" content="A python library that can be used to parse time literals.">
 <meta name="author" content="Yatharth Bhasin">
 <link rel="canonical" href="https://yatharthb97.github.io/projects/python-time-literals/">
 <meta name="google-site-verification" content="XYZabc">
@@ -72,7 +72,7 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script><meta property="og:title" content="Python Time Literals" />
-<meta property="og:description" content="python Coding project - Time Literal parsing." />
+<meta property="og:description" content="A python library that can be used to parse time literals." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yatharthb97.github.io/projects/python-time-literals/" />
 <meta property="og:image" content="https://yatharthb97.github.io/%3Cimage%20path/url%3E" /><meta property="article:section" content="projects" />
@@ -82,7 +82,7 @@ if (!doNotTrack) {
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://yatharthb97.github.io/%3Cimage%20path/url%3E" />
 <meta name="twitter:title" content="Python Time Literals"/>
-<meta name="twitter:description" content="python Coding project - Time Literal parsing."/>
+<meta name="twitter:description" content="A python library that can be used to parse time literals."/>
 
 
 <script type="application/ld+json">
@@ -111,12 +111,12 @@ if (!doNotTrack) {
   "@type": "BlogPosting",
   "headline": "Python Time Literals",
   "name": "Python Time Literals",
-  "description": "python Coding project - Time Literal parsing.",
+  "description": "A python library that can be used to parse time literals.",
   "keywords": [
-    "projects"
+    "projects", "python", "library", "gists"
   ],
-  "articleBody": "Safe and accurate parsing of time literals (values + units) is both commonplace and crutial. While C++ has a mechanism through STL chrono, such a functionality is absent in python (as per my information). Here is my attempt to solve the issue.\n",
-  "wordCount" : "42",
+  "articleBody": "Safe and accurate parsing of time literals (values + units) is both common and crucial requirement. While C++ has a mechanism through STL chrono, such a functionality is absent in python (as per my information).\nWhat is a time-literal? Just to be clear, time literal here means anything of this form : 5ns, 4min, 15.5ms. It is a numeric value (float) followed by alphabetic constants that indicate special treatment of the alpha-numeric string constant. It is similar to the use of b while declaring bytes or using x while defining a hexadecimal integer:\nbinary = 0b10000 hexadecimal = 0x12f Since python does not natively support time-literals, it can be implemented by using python strings. Here is my attempt to do the same, and while we are at it, implement some additional features as well.\nHere is a rundown of the library: A value_pair is an entity of the following form: [float, TmLiteral]. The container should be a list. The first is the absolute numeric value and the second quantity is the units, which is represented by the TmLiteral object. value_pair is fundamental to this library, since strings are parsed into value pairs. All inter-conversions also apply to value pairs. For performing such operations, the literal must first be converted into a value_pair by using the TmParser object. To verify if the given entity is a valid value-pair:\nfrom tmliteral import * IsValuePair([4.2, FindTmL(\"seconds\")]) #-\u003e returns True IsValuePair([4.2, \"seconds\"]) #-\u003e returns False Print all available pre-defined literals:\nimport tmliteral.time_table for tml in tmliteral.time_table: print(tml.abbr, ' : ', tml) Output:\nxxx : invalid time value s : second Ys : yottasecond Zs : zettasecond Es : exasecond Ps : petasecond Ts : terasecond Gs : gigasecond Ms : megasecond ks : kilosecond hs : hectosecond das : decasecond ds : decisecond cs : centisecond ms : millisecond us : microsecond ns : nanosecond ps : picosecond fs : femtosecond as : attosecond zs : zeptosecond ys : yoctosecond min : minute h : hour d : day week : week year : calender year leapyear : calender leap year gregyear : gregorian calendar year julianyear : julian astronomical year Create a user defined literal or find a pre-defined literal:\n# Simulation unit which is equivalent to microseconds. sim_time = TmL(\"sim\", -6, simulation unit) # TmL(abbr, exp, name, mul_factor=1.0) # Get a pre-defined time unit ms = FindTmL(\"ms\") also_ms = FindTmL(\"millisecond\") Parsing time literals from strings can be done by creating a parser object:\nparser = TmParser() parser.add_literal(sim_time) tm1 = parser.parse(\"4.2fs\") # Out→ [4.2, \u003c TmLiteral : femtosecond \u003e] tm2 = parser[\"4.2fs\"] # Same tm_sim = parser[\"5 sim\"] # Out→ [5.0, \u003c TmLiteral : simulation time \u003e] Conversions between units (casting) can be handled by creating a cast object:\nns_cast = TmCast.Find(\"ns\") # Make a nano-second cast time = parser[\"5 ms\"] ns_time = ns_cast.cast(time) # Returns 5000 ns_time2 = ns_cast[tm2] # Equivalent to `cast` member function. Using the TmAutoScale object, appropriate units can be selected automatically. The option tmparser in the initializer can be used to pass a custom TmParser object. The auto-scale object inherits the literal order of the parser object in the “default” mode. If this option is not specified, the auto-scaler constructs a new generic TmParser object.\nThis module is extremely useful with timing of processes and converts arbitrary time values in seconds (or nanoseconds) to more “human readable” units. The object can be constructed in a variety of mode:\n“default” : Does not modify the preference of literals which is inherited from a parser object. prefer_clock_units\" : Prefers clock units over SI. clock units are [“second”, “minute”, “hour”, “day”, “week”, “calender year”] “prefer_SI_units” : Prefers SI units over clock units. “clock” : Only uses clock units “SI” : Only uses SI units “extended_process_timing” : Uses [“nanoseconds”, “microseconds”, “milliseconds”] + clock units. This is useful for timing of processes which requires “human-comprehensible units” on a power scale. tauto = TmAutoScale(mode=\"prefer_clock_units\") tauto.scale(parser[\"4e5 picoseconds\"], set_scale=100) #-\u003e[399.99999999999994, \u003c TmLiteral : nanosecond \u003e] tauto2 = TmAutoScale(mode=\"prefer_clock_units\") tauto2[\"5e7 seconds\"] #-\u003e [1.5854895991882294, \u003c TmLiteral : calender year \u003e] tauto2[\"5e4 seconds\"] #-\u003e[0.5787037037037037, \u003c TmLiteral : day \u003e] To print a value_pair properly the function TmFormat can be used:\ntime1 = parser[\"5 ms\"] time2 = parser[\"1 ns\"] print(TmFormat(time1, format=\"full\")) #-\u003e 5.0 milliseconds print(TmFormat(time1, format=\"abbr\")) #-\u003e 5.0 ms print(TmFormat(time2, format=\"full\")) #-\u003e 1.0 nanosecond print(TmFormat(time2, format=\"abbr\")) #-\u003e 1.0 ns Now my favorite feature: the Expression Parser can perform arithmetic operations on time values that have any arbitrary units. Operations that are currently supported : {+, - , *, /, %}.\nexp = TmExpParser() print(exp.parse(\"10ms + 5ns + 10ms\")) #-\u003e [0.020000005, \u003c TmLiteral : second \u003e] I did not have a use-case in mind for this feature. But I am sure that somebody else can. Just did this for fun.\nI hope you find this library useful! Below is a view of the library:\n",
+  "wordCount" : "803",
   "inLanguage": "en",
   "image":"https://yatharthb97.github.io/%3Cimage%20path/url%3E","datePublished": "2022-06-28T18:15:16+05:30",
   "dateModified": "2022-06-28T18:15:16+05:30",
@@ -221,18 +221,159 @@ if (!doNotTrack) {
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://yatharthb97.github.io">Home</a>&nbsp;»&nbsp;<a href="https://yatharthb97.github.io/projects/"></a></div>
     <h1 class="post-title">
-      Python Time Literals<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+      Python Time Literals
     </h1>
     <div class="post-description">
-      python Coding project - Time Literal parsing.
+      A python library that can be used to parse time literals.
     </div>
-    <div class="post-meta"><span title='2022-06-28 18:15:16 +0530 +0530'>June 28, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;42 words&nbsp;·&nbsp;Yatharth Bhasin&nbsp;|&nbsp;<a href="https://github.com/yatharthb97/yatharthb97.github.io/tree/main/content//projects/python-Time-Literals.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta"><span title='2022-06-28 18:15:16 +0530 +0530'>June 28, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;803 words&nbsp;·&nbsp;Yatharth Bhasin&nbsp;|&nbsp;<a href="https://github.com/yatharthb97/yatharthb97.github.io/tree/main/content//projects/python-Time-Literals.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
 
-  <div class="post-content"><p>Safe and accurate parsing of time literals (values + units) is both commonplace and crutial. While <code>C++</code> has a mechanism through <code>STL chrono</code>, such a functionality is absent in python (as per my information). Here is my attempt to solve the issue.</p>
-<h2 id="heading"><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h2>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#what-is-a-time-literal" aria-label="What is a time-literal?">What is a time-literal?</a></li>
+                <li>
+                    <a href="#here-is-a-rundown-of-the-library" aria-label="Here is a rundown of the library:">Here is a rundown of the library:</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>Safe and accurate parsing of time literals (values + units) is both common and crucial requirement. While <code>C++</code> has a mechanism through <code>STL chrono</code>, such a functionality is absent in python (as per my information).</p>
+<h3 id="what-is-a-time-literal">What is a time-literal?<a hidden class="anchor" aria-hidden="true" href="#what-is-a-time-literal">#</a></h3>
+<p>Just to be clear,  time literal here means anything of this form : <code>5ns</code>,  <code>4min</code>,  <code>15.5ms</code>. It is a numeric value (<code>float</code>) followed by alphabetic constants that indicate special treatment of the alpha-numeric string constant. It is similar to the use of <code>b</code> while declaring bytes or using <code>x</code> while defining a hexadecimal integer:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">binary</span> <span class="o">=</span> <span class="mb">0b10000</span>
+</span></span><span class="line"><span class="cl"><span class="n">hexadecimal</span> <span class="o">=</span> <span class="mh">0x12f</span> 
+</span></span></code></pre></div><p>Since python does not natively support time-literals, it can be implemented by using python strings.  Here is my attempt to do the same, and while we are at it, implement some additional features as well.</p>
+<h3 id="here-is-a-rundown-of-the-library">Here is a rundown of the library:<a hidden class="anchor" aria-hidden="true" href="#here-is-a-rundown-of-the-library">#</a></h3>
+<ol start="0">
+<li>
+<p>A <code>value_pair</code> is an entity of the following form: [<code>float</code>, <code>TmLiteral</code>]. The container should be a list. The first is the absolute numeric value and the second quantity is the units, which is represented by the <code>TmLiteral</code> object. <code>value_pair</code> is fundamental to this library, since strings are parsed into value pairs. All inter-conversions also apply to value pairs. For performing such operations, the literal must first be converted into a <code>value_pair</code> by using the <code>TmParser</code> object. To verify if the given entity is a valid value-pair:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tmliteral</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="n">IsValuePair</span><span class="p">([</span><span class="mf">4.2</span><span class="p">,</span> <span class="n">FindTmL</span><span class="p">(</span><span class="s2">&#34;seconds&#34;</span><span class="p">)])</span> <span class="c1">#-&gt; returns True</span>
+</span></span><span class="line"><span class="cl"><span class="n">IsValuePair</span><span class="p">([</span><span class="mf">4.2</span><span class="p">,</span> <span class="s2">&#34;seconds&#34;</span><span class="p">])</span> <span class="c1">#-&gt; returns False</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Print all available pre-defined literals:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tmliteral.time_table</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">tml</span> <span class="ow">in</span> <span class="n">tmliteral</span><span class="o">.</span><span class="n">time_table</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">tml</span><span class="o">.</span><span class="n">abbr</span><span class="p">,</span> <span class="s1">&#39; : &#39;</span><span class="p">,</span> <span class="n">tml</span><span class="p">)</span>
+</span></span></code></pre></div><p>Output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">xxx  </span><span class="p">:</span><span class="w">  </span><span class="l">invalid time value</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">s  </span><span class="p">:</span><span class="w">  </span><span class="l">second</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Ys  </span><span class="p">:</span><span class="w">  </span><span class="l">yottasecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Zs  </span><span class="p">:</span><span class="w">  </span><span class="l">zettasecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Es  </span><span class="p">:</span><span class="w">  </span><span class="l">exasecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Ps  </span><span class="p">:</span><span class="w">  </span><span class="l">petasecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Ts  </span><span class="p">:</span><span class="w">  </span><span class="l">terasecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Gs  </span><span class="p">:</span><span class="w">  </span><span class="l">gigasecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Ms  </span><span class="p">:</span><span class="w">  </span><span class="l">megasecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">ks  </span><span class="p">:</span><span class="w">  </span><span class="l">kilosecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">hs  </span><span class="p">:</span><span class="w">  </span><span class="l">hectosecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">das  </span><span class="p">:</span><span class="w">  </span><span class="l">decasecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">ds  </span><span class="p">:</span><span class="w">  </span><span class="l">decisecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">cs  </span><span class="p">:</span><span class="w">  </span><span class="l">centisecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">ms  </span><span class="p">:</span><span class="w">  </span><span class="l">millisecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">us  </span><span class="p">:</span><span class="w">  </span><span class="l">microsecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">ns  </span><span class="p">:</span><span class="w">  </span><span class="l">nanosecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">ps  </span><span class="p">:</span><span class="w">  </span><span class="l">picosecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">fs  </span><span class="p">:</span><span class="w">  </span><span class="l">femtosecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">as  </span><span class="p">:</span><span class="w">  </span><span class="l">attosecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">zs  </span><span class="p">:</span><span class="w">  </span><span class="l">zeptosecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">ys  </span><span class="p">:</span><span class="w">  </span><span class="l">yoctosecond</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">min  </span><span class="p">:</span><span class="w">  </span><span class="l">minute</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">h  </span><span class="p">:</span><span class="w">  </span><span class="l">hour</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">d  </span><span class="p">:</span><span class="w">  </span><span class="l">day</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">week  </span><span class="p">:</span><span class="w">  </span><span class="l">week</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">year  </span><span class="p">:</span><span class="w">  </span><span class="l">calender year</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">leapyear  </span><span class="p">:</span><span class="w">  </span><span class="l">calender leap year</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">gregyear  </span><span class="p">:</span><span class="w">  </span><span class="l">gregorian calendar year</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">julianyear  </span><span class="p">:</span><span class="w">  </span><span class="l">julian astronomical year</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
+<br>
+<ol start="2">
+<li>
+<p>Create a user defined literal or find a pre-defined literal:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Simulation unit which is equivalent to microseconds.</span>
+</span></span><span class="line"><span class="cl"><span class="n">sim_time</span> <span class="o">=</span> <span class="n">TmL</span><span class="p">(</span><span class="s2">&#34;sim&#34;</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="n">simulation</span> <span class="n">unit</span><span class="p">)</span>  <span class="c1"># TmL(abbr, exp, name, mul_factor=1.0)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Get a pre-defined time unit</span>
+</span></span><span class="line"><span class="cl"><span class="n">ms</span> <span class="o">=</span> <span class="n">FindTmL</span><span class="p">(</span><span class="s2">&#34;ms&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">also_ms</span> <span class="o">=</span> <span class="n">FindTmL</span><span class="p">(</span><span class="s2">&#34;millisecond&#34;</span><span class="p">)</span>
+</span></span></code></pre></div></li>
+</ol>
+<br>
+<ol start="3">
+<li>
+<p>Parsing time literals from strings can be done by creating a parser object:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">parser</span> <span class="o">=</span> <span class="n">TmParser</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="o">.</span><span class="n">add_literal</span><span class="p">(</span><span class="n">sim_time</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tm1</span> <span class="o">=</span>  <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&#34;4.2fs&#34;</span><span class="p">)</span> <span class="c1"># Out→ [4.2, &lt; TmLiteral : femtosecond &gt;]</span>
+</span></span><span class="line"><span class="cl"><span class="n">tm2</span> <span class="o">=</span> <span class="n">parser</span><span class="p">[</span><span class="s2">&#34;4.2fs&#34;</span><span class="p">]</span>        <span class="c1"># Same</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">tm_sim</span> <span class="o">=</span> <span class="n">parser</span><span class="p">[</span><span class="s2">&#34;5 sim&#34;</span><span class="p">]</span>     <span class="c1"># Out→ [5.0, &lt; TmLiteral : simulation time &gt;]</span>
+</span></span></code></pre></div></li>
+</ol>
+<br>
+<ol start="4">
+<li>
+<p>Conversions between units (casting) can be handled by creating a cast object:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ns_cast</span> <span class="o">=</span> <span class="n">TmCast</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&#34;ns&#34;</span><span class="p">)</span>  <span class="c1"># Make a nano-second cast</span>
+</span></span><span class="line"><span class="cl"><span class="n">time</span> <span class="o">=</span> <span class="n">parser</span><span class="p">[</span><span class="s2">&#34;5 ms&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">ns_time</span> <span class="o">=</span> <span class="n">ns_cast</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="c1"># Returns 5000</span>
+</span></span><span class="line"><span class="cl"><span class="n">ns_time2</span> <span class="o">=</span> <span class="n">ns_cast</span><span class="p">[</span><span class="n">tm2</span><span class="p">]</span>      <span class="c1"># Equivalent to `cast` member function.</span>
+</span></span></code></pre></div></li>
+</ol>
+<br>
+<ol start="5">
+<li>
+<p>Using the <code>TmAutoScale</code> object, appropriate units can be selected automatically. The option <code>tmparser</code> in the initializer can be used to pass a custom <code>TmParser</code> object. The auto-scale object inherits the literal order of the parser object in the &ldquo;default&rdquo; <code>mode</code>. If this option is not specified, the auto-scaler constructs a new generic <code>TmParser</code> object.</p>
+<p>This module is extremely useful with timing of processes and converts arbitrary time values in seconds (or nanoseconds) to more &ldquo;human readable&rdquo; units. The object can be constructed in a variety of <code>mode</code>:</p>
+<ol>
+<li>&ldquo;<em>default</em>&rdquo; : Does not modify the preference of literals which is inherited from a parser object.</li>
+<li><em>prefer_clock_units</em>&quot; : Prefers clock units over SI. clock units are [&ldquo;second&rdquo;, &ldquo;minute&rdquo;, &ldquo;hour&rdquo;, &ldquo;day&rdquo;, &ldquo;week&rdquo;, &ldquo;calender year&rdquo;]</li>
+<li>&ldquo;<em>prefer_SI_units</em>&rdquo; : Prefers SI units over clock units.</li>
+<li>&ldquo;<em>clock</em>&rdquo; : Only uses clock units</li>
+<li>&ldquo;<em>SI</em>&rdquo; : Only uses SI units</li>
+<li>&ldquo;<em>extended_process_timing</em>&rdquo; : Uses [&ldquo;nanoseconds&rdquo;, &ldquo;microseconds&rdquo;, &ldquo;milliseconds&rdquo;] + clock units. This is useful for timing of processes which requires  <strong>&ldquo;human-comprehensible units&rdquo;</strong> on a power scale.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tauto</span> <span class="o">=</span> <span class="n">TmAutoScale</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&#34;prefer_clock_units&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tauto</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">parser</span><span class="p">[</span><span class="s2">&#34;4e5 picoseconds&#34;</span><span class="p">],</span> <span class="n">set_scale</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="c1">#-&gt;[399.99999999999994, &lt; TmLiteral : nanosecond &gt;]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">tauto2</span> <span class="o">=</span> <span class="n">TmAutoScale</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&#34;prefer_clock_units&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tauto2</span><span class="p">[</span><span class="s2">&#34;5e7 seconds&#34;</span><span class="p">]</span> <span class="c1">#-&gt; [1.5854895991882294, &lt; TmLiteral : calender year &gt;]</span>
+</span></span><span class="line"><span class="cl"><span class="n">tauto2</span><span class="p">[</span><span class="s2">&#34;5e4 seconds&#34;</span><span class="p">]</span> <span class="c1">#-&gt;[0.5787037037037037, &lt; TmLiteral : day &gt;]</span>
+</span></span></code></pre></div></li>
+<li>
+<p>To print a <code>value_pair</code> properly the function <code>TmFormat</code> can be used:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">time1</span> <span class="o">=</span> <span class="n">parser</span><span class="p">[</span><span class="s2">&#34;5 ms&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">time2</span> <span class="o">=</span> <span class="n">parser</span><span class="p">[</span><span class="s2">&#34;1 ns&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">TmFormat</span><span class="p">(</span><span class="n">time1</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&#34;full&#34;</span><span class="p">))</span> <span class="c1">#-&gt; 5.0 milliseconds</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">TmFormat</span><span class="p">(</span><span class="n">time1</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&#34;abbr&#34;</span><span class="p">))</span> <span class="c1">#-&gt; 5.0 ms</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">TmFormat</span><span class="p">(</span><span class="n">time2</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&#34;full&#34;</span><span class="p">))</span> <span class="c1">#-&gt; 1.0 nanosecond</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">TmFormat</span><span class="p">(</span><span class="n">time2</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&#34;abbr&#34;</span><span class="p">))</span> <span class="c1">#-&gt; 1.0 ns</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Now my favorite feature: the <strong>Expression Parser</strong> can perform arithmetic operations on time values that have any arbitrary units. Operations that are currently supported : {+,   -  ,   *,   /,   %}.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">exp</span> <span class="o">=</span> <span class="n">TmExpParser</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">exp</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&#34;10ms + 5ns + 10ms&#34;</span><span class="p">))</span>  <span class="c1">#-&gt; [0.020000005, &lt; TmLiteral : second &gt;]</span>
+</span></span></code></pre></div></li>
+</ol>
+<p>I did not have a use-case in mind for this feature. But I am sure that somebody else can. Just did this for fun.</p>
+<hr>
+<p>I hope you find this library useful! Below is a view of the library:</p>
+<script type="application/javascript" src="https://gist.github.com/yatharthb97/8798b23a1611a90b056e2026bbed63a8.js"></script>
+
 
 
   </div>
@@ -240,6 +381,9 @@ if (!doNotTrack) {
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://yatharthb97.github.io/tags/projects/">projects</a></li>
+      <li><a href="https://yatharthb97.github.io/tags/python/">python</a></li>
+      <li><a href="https://yatharthb97.github.io/tags/library/">library</a></li>
+      <li><a href="https://yatharthb97.github.io/tags/gists/">gists</a></li>
     </ul>
 <nav class="paginav">
   <a class="next" href="https://yatharthb97.github.io/projects/kglab/">
