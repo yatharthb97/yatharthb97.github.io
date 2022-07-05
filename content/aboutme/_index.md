@@ -3,7 +3,7 @@ tags: ["About Me"]
 summary: "about me"
 --- 
 ```goat
- *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
+ *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  
                                                                             
   █████╗  ██████╗   ██████╗  ██╗   ██╗ ████████╗    ███╗   ███╗ ███████╗
  ██╔══██╗ ██╔══██╗ ██╔═══██╗ ██║   ██║ ╚══██╔══╝    ████╗ ████║ ██╔════╝
@@ -12,7 +12,7 @@ summary: "about me"
  ██║  ██║ ██████╔╝ ╚██████╔╝ ╚██████╔╝    ██║       ██║ ╚═╝ ██║ ███████╗
  ╚═╝  ╚═╝ ╚═════╝   ╚═════╝   ╚═════╝     ╚═╝       ╚═╝     ╚═╝ ╚══════╝
  
- *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
+ *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  
 ```
 <br>
 <div class="rowx">
@@ -48,6 +48,36 @@ Welcome to my website! Here I post about things I do and like.\
 <p>&nbsp;</p>
 
 
+
+
+<br>
+<div class="rowx">
+  <div class="columnx" align="left">
+    <h2 style="color: #6563D6;">Research Interests</h2>
+    <p>• Self-assembly in Biological Matter<br> 
+      • Active Matter<br>
+      • Monte-Carlo / Molecular Dynamics Simulaton<br>
+  </div>
+  <div class="columnx" align="right">
+    <h2 style="color: #6563D6;">Tools</h2>
+    <b>M.Sc. Physics (IIT-Indore)</b><br>
+    Computational Biological Physicist
+    <p><br></p>
+    Ph.D. student in waiting.<br>
+    Instituto Gulbenkian de Ciência <b>(IGC) </b><br>
+    Lisbon, Portugal
+  </div>
+</div> 
+<br>
+
+
+
+
+
+
+
+
+
 ``` goat
 
 ███████╗ ██████╗  ██╗   ██╗  ██████╗  █████╗  ████████╗ ██╗  ██████╗  ███╗   ██╗
@@ -63,23 +93,27 @@ Welcome to my website! Here I post about things I do and like.\
     <div class="card">
       <div class="info">
         <h3 class="title">2015 to 2018<br>B.Sc. Physics</h3>
-        <p><b>University: </b>Birla Institute of Technology, Mesra<br>(BIT-Mesra)<br><br>
-           <b>Subjects:</b> Physics, Math, Computer Science
+        <p><b>🏛️ University: </b>Birla Institute of Technology, Mesra  <em> (BIT-Mesra)</em><br>
+        <b>📍  Location:</b>  Ranchi, Jharkhand, India<br></p>
+        <p>
+           <b>📖 Subjects:</b> Physics, Math, Computer Science
         </p>
       </div>
     </div>
     <div class="card">
       <div class="info">
         <h3 class="title">2018 to 2020<br>M.Sc. Physics</h3>
-        <p><b>University:</b>
-          Indian Institute of Technology Indore<br> (IITI)<br><br>
-          <b>Thesis: </b>Coarse Grain Simulation of Bio-molecular Patchy Spherocylinders</p>
+        <p><b>🏛️ University: </b>
+          Indian Institute of Technology Indore <em> (IITI)</em><br>
+          <b>📍 Location:</b>  Indore, Madhya Pradesh, India<br></p>
+          <p><b>📖 Thesis: </b>Coarse Grain Simulation of Bio-molecular Patchy Spherocylinders</p>
       </div>
     </div>
     <div class="card">
       <div class="info">
         <h3 class="title">2021 to 2022<br>Junior Research Fellowship</h3>
-        <p><b>Institute:</b> Tata Institute of Fundamental Research, Hyderabad<br>
+        <p><b>🏛️ Institute:</b> Tata Institute of Fundamental Research, Hyderabad<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         TIFR Centre of Interdisciplinary Sciences (TIFR-Hyd)<br><em>Kancahn Garai Biophysics Lab</em>
       </p>
       </div>

@@ -26,7 +26,7 @@
   content: "";
   position: absolute;
   width: 50%;
-  border: solid orangered;
+  border: solid #6563D6;
 }
 
 /* Setting the border of top, bottom, left */
@@ -79,7 +79,7 @@
 
 /* Title of the card */
 .title {
-  color: orangered;
+  color: #6563D6;
   position: relative;
 }
 
@@ -91,7 +91,7 @@
   height: 10px;
   background: white;
   border-radius: 999px;
-  border: 3px solid orangered;
+  border: 3px solid #6563D6;
 }
 
 /* text right if the card is even  */
