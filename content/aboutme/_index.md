@@ -3,7 +3,7 @@ tags: ["About Me"]
 summary: "about me"
 --- 
 ```goat
- *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  
+ *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
                                                                             
   █████╗  ██████╗   ██████╗  ██╗   ██╗ ████████╗    ███╗   ███╗ ███████╗
  ██╔══██╗ ██╔══██╗ ██╔═══██╗ ██║   ██║ ╚══██╔══╝    ████╗ ████║ ██╔════╝
@@ -12,7 +12,7 @@ summary: "about me"
  ██║  ██║ ██████╔╝ ╚██████╔╝ ╚██████╔╝    ██║       ██║ ╚═╝ ██║ ███████╗
  ╚═╝  ╚═╝ ╚═════╝   ╚═════╝   ╚═════╝     ╚═╝       ╚═╝     ╚═╝ ╚══════╝
  
- *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  *  ○  
+ *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
 ```
 <br>
 <div class="rowx">
@@ -39,6 +39,8 @@ Welcome to my website! Here I post about things I do and like.\
 💞️ I’m looking to collaborate on all things unknown. \
 📫 You can write to me : yatharth1997+ws (at) gmail.com
 
+🏠 **Home Location** : Gujarat, India \
+📍 **Current Location** : India
 
 <span hidden> Links </span>
 📃 Resume/CV : [read here](https://drive.google.com/file/d/1XtsUeojuXNe-d_a9AhDXsk7MJZiTlsvz/view?usp=sharing). \
@@ -92,43 +94,71 @@ Welcome to my website! Here I post about things I do and like.\
   <div class="outer">
     <div class="card">
       <div class="info">
-        <h3 class="title">2015 to 2018<br>B.Sc. Physics</h3>
-        <p><b>🏛️ University: </b>Birla Institute of Technology, Mesra  <em> (BIT-Mesra)</em><br>
-        <b>📍  Location:</b>  Ranchi, Jharkhand, India<br></p>
+        <h3 class="title">
+          B.Sc. Physics<br>
+          <small>2015  <small><small style="color: #42418a;">to</small></small>  2018</small>
+        </h3>
         <p>
-           <b>📖 Subjects:</b> Physics, Math, Computer Science
+          <b>🏛️ University</b><br>
+          Birla Institute of Technology, Mesra  <em> (BIT-Mesra)</em>
+        <p>
+          <b>📍  Location</b><br>  Ranchi, Jharkhand, India<br>
+        </p>
+        <p>
+           <b>📖 Subjects</b><br> Physics, Math, Computer Science
         </p>
       </div>
     </div>
     <div class="card">
       <div class="info">
-        <h3 class="title">2018 to 2020<br>M.Sc. Physics</h3>
-        <p><b>🏛️ University: </b>
+        <h3 class="title">M.Sc. Physics<br>
+                          <small>2018 <small><small style="color: #42418a;">to</small></small> 2020</small>
+        </h3>
+        <p><b>🏛️ University</b><br>
           Indian Institute of Technology Indore <em> (IITI)</em><br>
-          <b>📍 Location:</b>  Indore, Madhya Pradesh, India<br></p>
-          <p><b>📖 Thesis: </b>Coarse Grain Simulation of Bio-molecular Patchy Spherocylinders</p>
+        </p>
+        <p>
+          <b>📍 Location</b><br>
+          Indore, Madhya Pradesh, India<br>
+        </p>
+        <p>
+          <b>📖 Thesis</b><br>
+          <em>"Coarse Grain Simulation of Bio-molecular Patchy Spherocylinders"</em>
+        </p>
       </div>
     </div>
     <div class="card">
       <div class="info">
-        <h3 class="title">2021 to 2022<br>Junior Research Fellowship</h3>
-        <p><b>🏛️ Institute:</b> Tata Institute of Fundamental Research, Hyderabad<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        TIFR Centre of Interdisciplinary Sciences (TIFR-Hyd)<br><em>Kancahn Garai Biophysics Lab</em>
-      </p>
+        <h3 class="title">
+          Junior Research Fellowship<br>
+          <small>March 2021 <small><small style="color: #42418a;">to</small></small> March 2022</small>
+        </h3>
+        <p><b>🏛️ Institute</b><br>
+              Tata Institute of Fundamental Research, Hyderabad<br>
+              TIFR Centre of Interdisciplinary Sciences (TIFR-Hyd)<br><em>Kancahn Garai Biophysics Lab</em>
+        </p>
+        <p>
+          <b>📍 Location</b><br>Hyderabad, Telangana, India<br>
+        </p>
+        <p>
+          <b>📖 Work</b><br>
+          <em>Find out about my work: <a href="/projects/kglab/">here.</a></em>
+        </p>
       </div>
     </div>
     <div class="card">
       <div class="info">
-        <h3 class="title">Doctor of Philosophy (Ph.D.)<br>2022 to Now</h3>
-        <p><b>Institute:</b> IGC, Lisbon<br>
-        Awaiting Visa/Joining Pending</p>
+        <h3 class="title">Doctor of Philosophy (Ph.D.)<br><small>2022 <small><small style="color: #42418a;">to</small></small> now</small></h3>
+        <p><b>🏛️ Institute</b><br>
+              IGC Portugal<br>
+              Living Physics Lab
+        </p>
+         <p><b>📍 Location</b><br>  Lisbon, Portugal<br></p>
       </div>
     </div>
 </div></centre>
 
-> It is only ideas gained from walking that have any worth.
-> - Nietzsche
+---
 
 
 
