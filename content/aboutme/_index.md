@@ -24,22 +24,23 @@ summary: "about me"
     <b>M.Sc. Physics (IIT-Indore)</b><br>
     Computational Biological Physicist
     <p><br></p>
-    Ph.D. student in waiting.<br>
+    Doctoral Candidate<br>
     Instituto Gulbenkian de Ciência <b>(IGC) </b><br>
     Lisbon, Portugal
+    <p>&nbsp;</p>
   </div>
 </div> 
 <br>
 
-<span hidden> Brief Paragraph Introduction </span>
-
-👋 Hi, I’m **Yatharth!**\
-Welcome to my website! Here I post about things I do and like.\
-👀 I’m interested in Computational Biological Physics & Biophysics \
-💞️ I’m looking to collaborate on all things unknown. \
+👋 I am a computational physicist interested in **Biological Physics & Biophysics**. \
+🧬 + 🔭 That means I look at Biology🧬 from the lens of a Physicist🔭. \
+🛠️ I am building an inter-disciplinary academic life. \
+👨‍💻 I do a lot of programming and I have a few published open-source libraries on GitHub. \
+🎛️ I am also interested in making micro-controller based instruments and hardware programming. \
+🤝 I’m looking to collaborate on all things unknown. \
 📫 You can write to me : yatharth1997+ws (at) gmail.com
 
-🏠 **Home Location** : Gujarat, India \
+🏠 **Home Location**     : Gujarat, India \
 📍 **Current Location** : India
 
 <span hidden> Links </span>
@@ -47,27 +48,29 @@ Welcome to my website! Here I post about things I do and like.\
 🖼️ Design Portfolio : [see here](https://drive.google.com/file/d/1a0pQmmWagRprBTpElnuLLAm9PI0GC458/view?usp=sharing).\
 👨‍💻 Code Portfolio : [see here](https://github.com/yatharthb97).
 
-<p>&nbsp;</p>
-
-
-
-
 <br>
 <div class="rowx">
-  <div class="columnx" align="left">
+  <div class="columnx">
     <h2 style="color: #6563D6;">Research Interests</h2>
-    <p>• Self-assembly in Biological Matter<br> 
-      • Active Matter<br>
-      • Monte-Carlo / Molecular Dynamics Simulaton<br>
+    <p>
+      • Biophysics and Biological Physics <br>
+      • Self-assembly of Biological Matter<br> 
+      • Active Matter <br>
+      • Coarse grain approaches to complex biological systems <br>
+      • MC, MD, discrete-event simulatons<br>
+      • Agent Based Modelling <br>
   </div>
-  <div class="columnx" align="right">
-    <h2 style="color: #6563D6;">Tools</h2>
-    <b>M.Sc. Physics (IIT-Indore)</b><br>
-    Computational Biological Physicist
-    <p><br></p>
-    Ph.D. student in waiting.<br>
-    Instituto Gulbenkian de Ciência <b>(IGC) </b><br>
-    Lisbon, Portugal
+  <div class="columnx">
+    <h2 style="color: #6563D6;">Tools & Machines</h2>
+    <p>
+      • Programming Languages<br>
+      &nbsp;&nbsp;&nbsp;→ <code>C++</code> <br>
+      &nbsp;&nbsp;&nbsp;→ <code>Embedded C++</code> <br>
+      &nbsp;&nbsp;&nbsp;→ <code>python 3</code><br>
+      • GIT (version control) <br>
+      • Arduino & Micropython <br>
+      • VMD - TCl
+    </p>
   </div>
 </div> 
 <br>
@@ -123,7 +126,7 @@ Welcome to my website! Here I post about things I do and like.\
         </p>
         <p>
           <b>📖 Thesis</b><br>
-          <em>"Coarse Grain Simulation of Bio-molecular Patchy Spherocylinders"</em>
+          <em>"Coarse Grain Simulation of Bio-molecular Patchy Spherocylinders."</em>
         </p>
       </div>
     </div>
@@ -131,7 +134,7 @@ Welcome to my website! Here I post about things I do and like.\
       <div class="info">
         <h3 class="title">
           Junior Research Fellowship<br>
-          <small>March 2021 <small><small style="color: #42418a;">to</small></small> March 2022</small>
+          <small>2021 <small><small style="color: #42418a;">to</small></small> 2022</small>
         </h3>
         <p><b>🏛️ Institute</b><br>
               Tata Institute of Fundamental Research, Hyderabad<br>
@@ -142,18 +145,26 @@ Welcome to my website! Here I post about things I do and like.\
         </p>
         <p>
           <b>📖 Work</b><br>
-          <em>Find out about my work: <a href="/projects/kglab/">here.</a></em>
+          <em>Find out about my project work: <a href="/projects/kglab/">here.</a></em>
         </p>
       </div>
     </div>
     <div class="card">
       <div class="info">
-        <h3 class="title">Doctor of Philosophy (Ph.D.)<br><small>2022 <small><small style="color: #42418a;">to</small></small> now</small></h3>
-        <p><b>🏛️ Institute</b><br>
-              IGC Portugal<br>
-              Living Physics Lab
+        <h3 class="title">
+          Doctor of Philosophy (Ph.D.)<br>
+          <small>2022 <small><small style="color: #42418a;">to</small></small> now</small>
+        </h3>
+        <p>
+          <b>🏛️ Institute</b><br>
+          IGC Portugal<br>
+          Living Physics Lab <br>
+          (not yet joined)
         </p>
-         <p><b>📍 Location</b><br>  Lisbon, Portugal<br></p>
+         <p>
+          <b>📍 Location</b><br>
+          Lisbon, Portugal<br>
+        </p>
       </div>
     </div>
 </div></centre>
