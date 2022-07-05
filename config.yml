@@ -1,4 +1,4 @@
-baseURL: "https://yatharthb97.github.io"
+baseURL: "https://yatharthb97.github.io/"
 #baseURL: http://localhost:1313/
 
 title: Yatharth Bhasin
@@ -17,6 +17,12 @@ minify:
   minifyOutput: false
 
 params:
+
+  mainSections:
+    - blog
+    - gallery
+    - projects
+    - publications
 
   custom_css : ["css/rel_image.css", "/css/timeline.css"]
 
