@@ -68,34 +68,6 @@
     <loc>https://yatharthb97.github.io/categories/twitter/</loc>
     <lastmod>2022-06-28T17:10:31+05:30</lastmod>
   </url><url>
-    <loc>https://yatharthb97.github.io/gallery/</loc>
-    <lastmod>2022-06-28T15:55:14+05:30</lastmod>
-    <priority>0</priority>
-  </url><url>
-    <loc>https://yatharthb97.github.io/tags/gallery/</loc>
-    <lastmod>2022-06-28T15:55:14+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/categories/gallery/</loc>
-    <lastmod>2022-06-28T15:55:14+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/tags/images/</loc>
-    <lastmod>2022-06-28T15:55:14+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/gallery/patchyparticles/</loc>
-    <lastmod>2022-06-28T15:55:14+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/tags/photos/</loc>
-    <lastmod>2022-06-28T15:55:14+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/categories/photos/</loc>
-    <lastmod>2022-06-28T15:55:14+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/tags/spherosim/</loc>
-    <lastmod>2022-06-28T15:55:14+05:30</lastmod>
-  </url><url>
-    <loc>https://yatharthb97.github.io/tags/vmd/</loc>
-    <lastmod>2022-06-28T15:55:14+05:30</lastmod>
-  </url><url>
     <loc>https://yatharthb97.github.io/tags/kanchan-garai/</loc>
     <lastmod>2022-06-28T13:56:04+05:30</lastmod>
   </url><url>
@@ -114,6 +86,9 @@
     <loc>https://yatharthb97.github.io/aboutme/</loc>
   </url><url>
     <loc>https://yatharthb97.github.io/collaborate/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://yatharthb97.github.io/gallery/</loc>
     <priority>0</priority>
   </url><url>
     <loc>https://yatharthb97.github.io/tags/about-me/</loc>
