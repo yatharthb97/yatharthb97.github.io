@@ -89,7 +89,7 @@ params:
         url: blog
       - name : Projects 🔭
         url: /projects/
-      - name : Resume 🎓
+      - name : "Resume 🎓"
         url: https://drive.google.com/file/d/1XtsUeojuXNe-d_a9AhDXsk7MJZiTlsvz/view?usp=sharing
       - name : Code 👨‍💻
         url: https://github.com/yatharthb97
