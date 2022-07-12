@@ -45,5 +45,4 @@ editPost:
     <b>Ⓒ Yatharth Bhasin</b> unless explicitly stated. Scroll down for credits.
 </div>
 
-## Hello!
 {{< gallery dir="/images/gallery/spherosim/" />}} {{< load-photoswipe >}}
