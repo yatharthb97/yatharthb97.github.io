@@ -12,5 +12,6 @@ title: "📝"
         \ / / \|/ \|/ \╚═════╝     ╚══════╝     ╚═════╝      ╚═════╝ / \|/ \|/ \ \ /
          +-+---+---+---+--------------------------------------------+---+---+---+-+
 ```
-**Publications** are [here](/publications/).
+* **Publications** are [here](/publications/).
+* Posts about my **Projects** are [here](/projects/).
 
