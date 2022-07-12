@@ -65,11 +65,12 @@ summary: "about me"
     <p>
       • Programming Languages<br>
       &nbsp;&nbsp;&nbsp;→ <code>C++</code> <br>
-      &nbsp;&nbsp;&nbsp;→ <code>Embedded C++</code> <br>
+      &nbsp;&nbsp;&nbsp;→ <code>Embedded C++ & Micropython</code> <br>
       &nbsp;&nbsp;&nbsp;→ <code>python 3</code><br>
+      &nbsp;&nbsp;&nbsp;→ <code>HTML + CSS<br>&nbsp;&nbsp;&nbsp;&nbsp;(just enough to maintain
+                                          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this website).</code><br>
       • GIT (version control) <br>
       • Arduino & Micropython <br>
-      • VMD - TCl
     </p>
   </div>
 </div> 
