@@ -48,6 +48,15 @@ projects: where I post about my scientific and coding projects. publications: li
     </item>
     
     <item>
+      <title>Patchy Particles</title>
+      <link>https://yatharthb97.github.io/gallery/patchyparticles/</link>
+      <pubDate>Tue, 28 Jun 2022 15:55:14 +0530</pubDate>
+      
+      <guid>https://yatharthb97.github.io/gallery/patchyparticles/</guid>
+      <description>Images created with custom renderer written for VMD in C&#43;&#43;. Images created for MSc project.</description>
+    </item>
+    
+    <item>
       <title>KG Lab Project Work</title>
       <link>https://yatharthb97.github.io/projects/kglab/</link>
       <pubDate>Tue, 28 Jun 2022 13:56:04 +0530</pubDate>
