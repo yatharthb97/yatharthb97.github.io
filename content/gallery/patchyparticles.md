@@ -1,7 +1,7 @@
 ---
 title: "Patchy Particles"
 date: 2022-06-28T15:55:14+05:30
-draft: true
+draft: false
 description: "Images created with custom renderer written for VMD in C++. Images created for MSc project."
 ShowCanonicalLink: false
 canonicalURL: ""
@@ -42,8 +42,8 @@ editPost:
 ---
 
 <div style="text-align: center;">
-<b>Ⓒ Yatharth Bhasin</b> unless explicitly stated. Scroll down for credits.
+    <b>Ⓒ Yatharth Bhasin</b> unless explicitly stated. Scroll down for credits.
 </div>
 
-<span hidden> Images </span>
+## Hello!
 {{< gallery dir="/images/gallery/spherosim/" />}} {{< load-photoswipe >}}

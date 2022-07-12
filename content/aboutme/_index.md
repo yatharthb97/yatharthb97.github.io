@@ -51,7 +51,7 @@ summary: "about me"
 <br>
 <div class="rowx">
   <div class="columnx">
-    <h2 style="color: #6563D6;">Research Interests</h2>
+    <h2 style="color: #6563D6;"><b>Research Interests</b></h2>
     <p>
       • Biophysics and Biological Physics <br>
       • Self-assembly of Biological Matter<br> 
@@ -61,7 +61,7 @@ summary: "about me"
       • Agent Based Modelling <br>
   </div>
   <div class="columnx">
-    <h2 style="color: #6563D6;">Tools & Machines</h2>
+    <h2 style="color: #6563D6;"><b>Tools & Machines</b></h2>
     <p>
       • Programming Languages<br>
       &nbsp;&nbsp;&nbsp;→ <code>C++</code> <br>
