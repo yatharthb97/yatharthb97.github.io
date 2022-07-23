@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yatharthb97.github.io/blog/biophy/urialonc1/</loc>
+    <lastmod>2022-07-08T22:08:07+05:30</lastmod>
+  </url><url>
     <loc>https://yatharthb97.github.io/blog/welcome/</loc>
     <lastmod>2022-06-29T16:37:38+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/blog/</loc>
-    <lastmod>2022-06-29T16:37:38+05:30</lastmod>
+    <lastmod>2022-07-08T22:08:07+05:30</lastmod>
+  </url><url>
+    <loc>https://yatharthb97.github.io/blog/biophy/</loc>
+    <lastmod>2022-07-08T22:08:07+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/tags/blog/</loc>
-    <lastmod>2022-06-29T16:37:38+05:30</lastmod>
+    <lastmod>2022-07-08T22:08:07+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/tags/</loc>
-    <lastmod>2022-06-29T16:37:38+05:30</lastmod>
+    <lastmod>2022-07-08T22:08:07+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/</loc>
-    <lastmod>2022-06-29T16:37:38+05:30</lastmod>
+    <lastmod>2022-07-08T22:08:07+05:30</lastmod>
   </url><url>
     <loc>https://yatharthb97.github.io/projects/</loc>
     <lastmod>2022-06-28T18:15:16+05:30</lastmod>
@@ -114,8 +120,6 @@
     <loc>https://yatharthb97.github.io/tags/about-me/</loc>
   </url><url>
     <loc>https://yatharthb97.github.io/archives/</loc>
-  </url><url>
-    <loc>https://yatharthb97.github.io/blog/biophy/</loc>
   </url><url>
     <loc>https://yatharthb97.github.io/search/</loc>
   </url>
