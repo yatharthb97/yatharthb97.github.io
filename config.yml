@@ -17,7 +17,8 @@ minify:
   minifyOutput: false
 
 params:
-
+  math: True
+  
   mainSections:
     - blog
     - gallery
