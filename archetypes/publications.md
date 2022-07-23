@@ -6,6 +6,7 @@ description: "Publication by Yatharth Bhasin."
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
+math: false
 # weight: 1
 aliases: []
 tags: ["publications"]

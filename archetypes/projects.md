@@ -6,6 +6,7 @@ description: "Project description."
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
+math: false
 # weight: 1
 aliases: []
 tags: ["projects"]

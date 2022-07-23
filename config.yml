@@ -17,13 +17,13 @@ minify:
   minifyOutput: false
 
 params:
-  math: True
-  
+
   mainSections:
     - blog
     - gallery
     - projects
     - publications
+    - "Biology🧬 + Physics🔭"
 
   custom_css : ["css/rel_image.css", "/css/timeline.css"]
 

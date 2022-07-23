@@ -7,6 +7,7 @@ ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
 weight: 1
+math: false
 aliases: []
 tags: ["blog"]
 author: "Yatharth Bhasin"

@@ -1,12 +1,13 @@
 ---
-title: "Systems Biology Part - 1"
+title: "Transcription Networks - Basic Concepts"
 date: 2022-07-08T22:08:07+05:30
 draft: true
 description: "Notes from Uri Alon."
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
-# weight: 1
+math: true
+weight: 1
 aliases: []
 tags: ["blog"]
 author: "Yatharth Bhasin"
@@ -50,33 +51,31 @@ The cell continuously monitors its environment and calculates the amount of each
 * Transcription factors regulate their target genes to mobilize the appropriate protein response in each case.
 
 ```mermaid
-graph TD;
+flowchart LR
 	genes --transcribed--> mRNA --translated--> proteins;
-    proteins--<<modify>>-->environment;
-	environment --<what?>--> genes
+    proteins--modify-->environment;
+	environment --what?--> genes
 ```
-
 **E. coli**: has an internal representation of about 300 degrees of freedom. Hence, it has 300 transcription factors.
 
 ## Transcription Network Model
 
 * **Gene**: a stretch of DNA whose sequence encodes the information needed for production of a protein.
-
 * **Transcription**: Gene is copied into a disposable mRNA molecule by RNA polymerase (RNAp).
-
 * **Promoter**: The number of mRNA produced per unit time is controlled by a regulatory region of DNA that **precedes** the gene which is called promoter. It regulates the *chemical affinity* of the DNA to mRNA (opposite is a **Repressor**).
-
 * Transcription factors can act as both: **activators and repressors.**
 * Transcription factor proteins are themselves regulated by other transcription factors.
+
+
+
 ```mermaid
-graph LR;
+flowchart LR;
 	Gene-- copied by RNAp into --> mRNA .- transcription;
 	mRNA -- translated to --> Protein .- translation;
 ```
 
-|                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![](M:\code\yatharthb97.github.io\static\images\articles\systembio\dig1.png) | ![](M:\code\yatharthb97.github.io\static\images\articles\systembio\dig2.png) |
+| ![](/images/articles/systembio/dig1.png) | ![](/images/articles/systembio/dig2.png) |
+| ---------------------------------------- | ---------------------------------------- |
 
 #### Representation of Network Nodes & Edges
 
@@ -93,12 +92,12 @@ graph LR;
 
 * Separation of Timescales:
 
-  | Process                                                      | Timescale |
-  | ------------------------------------------------------------ | --------- |
-  | Input Signal changes Transcription Factor                    | ~msec     |
-  | Binding of active Transcription Factor to DNA equilibriation | ~sec      |
-  | Transcription and Translation of the target genes            | ~minutes  |
-  | Accumulation of the Protein Product                          | ~hours    |
+  | Process                                                     | Timescale |
+  | ----------------------------------------------------------- | --------- |
+  | Input Signal changes Transcription Factor                   | ~msec     |
+  | Binding of active Transcription Factor to DNA equilibration | ~sec      |
+  | Transcription and Translation of the target genes           | ~minutes  |
+  | Accumulation of the Protein Product                         | ~hours    |
 
 * Hence, when considering network dynamics of protein levels, the transcription factor activity levels can be considered to be in steady state.
 
@@ -110,15 +109,55 @@ graph LR;
 
 ## Input Functions
 
+* The strength of the effect of a transcription factor on a target gene is escribed by an **input function.**
 
+* **X** regulates **Y** : the number of molecules of protein Y produced per unit time is a function of the concentration of X in its active form $X^{*}$.
+
+* Rate of production $Y = f(X^*)$.
+
+* A useful function that realistically describes many gene input functions is called the **Hill function.**
+  $$
+  f(X^*) = \beta\frac{X^{*n}}{\Kappa^{n} + X^{*n}}
+  $$
+
+* **K** : activation coefficient, which has units of concentration. It defines the concentration of active X needed to significantly activate expression.
+
+* $X^* = K$ : half-maximal expression.
+
+* $K$ is mainly determined by the chemical affinity between $X$ and its binding site on the promoter.  
+
+* $\beta$ : maximal promoter activity. It is reached when $X^* \gg K$.
+
+* The **Hill Coefficient $n$** determines the steepness of the input function. For larger n, the function is more step-like.
+
+* Usually, input functions are moderately steep: n=1-4.
+
+* For a repressor, the hill function is a decreasing function.
+
+* Hence, each arrow in the network can be thought to carry at least three numbers: $\beta, K, n$. These numbers can be readily tuned during evolution.
+
+  * $K$ : Can be varied if the position of the binding site is changed.
+  * $\beta$ : can be tuned by the mutations in the RNAp binding site.
+
+* Laboratory evolution experiments show that when placed in a new environment, bacteria can accurately tune these numbers within several hundred generations to reach optimal expression levels. Thus, these numbers are under selection pressure and can heritably change over many generations if environments change.
+
+* Many genes have a nonzero minimal expression level, called the gene's **basal expression level.** It can be described by adding a $\beta_0$ term.
+
+* The essence of the input function is a transition between low and high values, with a characteristic threshold K.
+
+* We can hence approximate the input function with a **logic approximation**. It can be expressed as :  $f(X^*) = \beta\theta(X^{*} > K)$. It is equivalent to a Hill function with $n \rightarrow \infty$.
+
+* For a repressor: $f(X^*) = \beta\theta(X^{*} < K)$ .
+
+* Multi-dimensional input functions:
+
+  * $f(X^*, Y^*) = \beta\theta(X^* > K_x)\theta(Y^* > K_y)$  ~ $X$ AND $Y$
+  * $f(X^*, Y^*) = \beta\theta(X^* > K_x + Y^* > K_y)$  ~ $X$ OR $Y$
+  * SUM input function: $f(X^*, Y^*) = \beta_xX^* + \beta_yY^*$.
+  * More complex functions with many inputs...
 
 ## Dynamics & Response Time
 
 
 
-# Autoregulation - A Network Motif
-
-## Networks
-
-## Autoregulation
-
+---

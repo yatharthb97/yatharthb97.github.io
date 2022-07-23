@@ -6,7 +6,7 @@ description: "Blog Post"
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
-math: True
+math: true
 # weight: 1
 aliases: []
 tags: ["blog"]

@@ -11,6 +11,7 @@ aliases: []
 tags: ["projects", "python", "library", "gists"]
 author: "Yatharth Bhasin"
 categories: []
+math: false
 # author: ["Me", "You"] # multiple authors
 
 showToc: true

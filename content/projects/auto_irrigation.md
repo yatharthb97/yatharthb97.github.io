@@ -6,6 +6,7 @@ description: "A system to automatically irrigate home plants while you are away.
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
+math: false
 # weight: 1
 aliases: []
 tags: ["projects", "microcontroller", "Raspberry Pi Pico", "micropython"]
@@ -93,7 +94,7 @@ This button's input pin is connected to an `Interrupt`, so that an action can be
 
 
 
-##### Peripheral Connections	
+##### Peripheral Connections
 
 
 

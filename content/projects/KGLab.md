@@ -12,6 +12,7 @@ tags: ["projects", "kglab", "Kanchan Garai", "TIFR Hyderabad"]
 categories: ["Projects"]
 series: []
 author: "Yatharth Bhasin"
+math: false
 # author: ["Me", "You"] # multiple authors
 
 showToc: true

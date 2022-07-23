@@ -6,6 +6,7 @@ description: "Blog Post"
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
+math: false
 # weight: 1
 aliases: []
 tags: ["blog"]
@@ -57,7 +58,7 @@ editPost:
 
 
 
-### Non-equilibrium Phase 
+### Non-equilibrium Phase
 
 ![Non-equilibrium branching](https://www.researchgate.net/profile/Yasar-Demirel/publication/221984753/figure/fig1/AS:393945017274376@1470935219170/Thermodynamic-branch-48-showing-the-properties-of-physical-and-biological-systems-away.png)
 

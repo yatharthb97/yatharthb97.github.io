@@ -1,17 +1,17 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "UrialonC2"
+date: 2022-07-24T00:57:02+05:30
 draft: true
-description: "Gallery with images."
+description: "Blog Post"
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
 math: false
 # weight: 1
 aliases: []
-tags: ["gallery", "photos", "images"]
-categories: ["photos", "gallery"]
+tags: ["blog"]
 author: "Yatharth Bhasin"
+categories: []
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
@@ -41,15 +41,9 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-<div style="text-align: center;">
-  Ⓒ Yatharth Bhasin, unless explicitly stated. Scroll down for credits.
-</div>
+# Autoregulation - A Network Motif
 
-<span hidden> Images </span>
-{{< gallery dir="/images/gallery/" />}} {{< load-photoswipe >}}
+## Networks
 
+## Autoregulation
 
-
-### Credits
-
-No credits.
