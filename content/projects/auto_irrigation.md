@@ -91,15 +91,92 @@ For manual operation of the pump, a touch button is programmed. Whenever the use
 
 This button's input pin is connected to an `Interrupt`, so that an action can be triggered while the processor is set to sleep mode by the main time-matching program loop.
 
-==Include Diagrams.net flowchart==
+
+
+##### Peripheral Connections	
+
+
+
+```mermaid
+flowchart RL;
+	
+	subgraph "Relay Ch1";
+		Pump -.- Mains(("~<br>Mains"))
+	end
+	
+	subgraph "Relay Ch2";
+		Buzzer -.- Battery(("9V<br>Battery"))
+	end
+	
+	%% Control Module
+	subgraph "⚙️"
+		subgraph Relay
+			direction LR
+			SP(Start Pump) --> Pump
+			SB("StartBuzzer") --> Buzzer
+		end
+		Pico-MCU["Pico-MCU"] -."connects to".- Relay
+		style Pico-MCU fill:#6acf65,stroke:#333,stroke-width:4px, stroke-dasharray: 5 5
+	end
+	
+	%% Manual Pump Operation using Touch Switch
+	subgraph "Maunal Switching"
+		TS -. "connects to" .-> Pico-MCU
+		TS{"Touch<br>Switch"} --"true"--> SP
+		TS--false-->X((X))
+		Pico-MCU
+	end
+```
+
+##### Decision Flowchart
+
+```mermaid
+flowchart LR
+	subgraph "-"
+	direction LR
+		RTC[("DS1302<br>RTC")] --current_time--> check_time{"current time<br>==<br>watering time"}
+		check_time --true--> run_pump
+		run_pump["Run Pump(2 min)"] ---> S13("Sleep(13 min)")
+		check_time --false--> S15("sleep(15 min)")
+		S13 -. return .-> check_time
+		S15 -. return .-> check_time
+	end
+```
+
+
 
 ### Reading Time
 
 The problem of reading and maintaining time can be done soved by using a **Real Time Clock (RTC).** RTC is a hardware module that is capable of maintining wallclock time even during power outages. It accomplishes this by having its own power source -  usually a 3V button cell. The button cell that you usually see on your computer motherboard is there for the RTC!
 
-RPi Pico has an on-chip RTC that can be efficeively used. It is not a very precise clock but for our pplication, it is sufficient. The only challenging aspect here is to actually provide the RTC with its own backup power. For programming, we will use the `machine` Micropython module.
+There is an on-chip RTC on the RPi Pico. But, it is more like a `Lifetime timer`, because it does not accept external power and cannot be calibrated. See [here](https://forums.raspberrypi.com/viewtopic.php?t=325598). The on-chip RTC date time value is updated automatically when Pico is connected to PC for programming with `Micropython`.  This functionality is useful for setting the external RTC we will connect to the board -  the **DS1302**.
 
-The RTC date time value is updated automatically when Pico is connected to PC for programming with `Micropython`.
+In `C++`,  setting the RTC with the PC machine time is trivial:
+
+```c++
+# Libray in use: `RTC by Makuna`.
+RtcDateTime compiled_time;
+compiled_time = RtcDateTime(__DATE__, __TIME__);
+rtc_chip.SetDateTime(compiled_time);
+```
+
+The macros `__DATE__` and `__TIME__` provide the compilation time inside the program scope.
+
+Doing the same in `Micropython` (my approach):
+
+```python
+ds = ds1302.DS1302(Pin(18),Pin(17),Pin(16))
+
+if set_rtc:
+    # on-chip RTC returns ↓
+    # (0:year, 1:month, 2:mday, 3:hour, 4:minute, 5:second, 6:weekday, 7:yearday)
+    year, month, mday, hour, minute, second, weekday, yearday = time.localtime()
+    
+    # External DS1302 accepts the following arguements ↓ (SET the RTC)
+    ds.date_time([year, month, mday, weekday, hour, minute, second])
+```
+
+Changing the order of the arguments would return a jumbled time. The `ds1302 module` can be found [here](https://github.com/Guitarman9119/Raspberry-Pi-Pico-/blob/main/DS1302%20RTC/ds1302.py).
 
 ### Switching Components
 
