@@ -17,6 +17,7 @@ minify:
   minifyOutput: false
 
 params:
+  enableInlineShortcodes: true
 
   mainSections:
     - blog

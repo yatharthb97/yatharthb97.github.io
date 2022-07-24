@@ -128,7 +128,7 @@ flowchart LR;
 
 * $\beta$ : maximal promoter activity. It is reached when $X^* \gg K$.
 
-* The **Hill Coefficient $n$** determines the steepness of the input function. For larger n, the function is more step-like.
+* The **Hill Coefficient** $n$ determines the steepness of the input function. For larger n, the function is more step-like.
 
 * Usually, input functions are moderately steep: n=1-4.
 
@@ -143,16 +143,18 @@ flowchart LR;
 
 * Many genes have a nonzero minimal expression level, called the gene's **basal expression level.** It can be described by adding a $\beta_0$ term.
 
-* The essence of the input function is a transition between low and high values, with a characteristic threshold K.
+* The essence of the input functio n is a transition between low and high values, with a characteristic threshold $K$.
 
-* We can hence approximate the input function with a **logic approximation**. It can be expressed as :  $f(X^*) = \beta\theta(X^{*} > K)$. It is equivalent to a Hill function with $n \rightarrow \infty$.
+* We can hence approximate the input function with a **logic approximation**. It can be expressed as :  $f(X^*)=\beta\theta(X^* > K)$. 
 
-* For a repressor: $f(X^*) = \beta\theta(X^{*} < K)$ .
+* It is equivalent to a Hill function with $n \rightarrow \infty$.
+
+* For a repressor: $f(X^*) = \beta \theta(X^* < K)$ .
 
 * Multi-dimensional input functions:
 
-  * $f(X^*, Y^*) = \beta\theta(X^* > K_x)\theta(Y^* > K_y)$  ~ $X$ AND $Y$
-  * $f(X^*, Y^*) = \beta\theta(X^* > K_x + Y^* > K_y)$  ~ $X$ OR $Y$
+  * $$f(X^*, Y^*) = \beta\theta(X^* > K_x)\theta(Y^* > K_y)$$  ~ X AND Y
+  * $f(X^*, Y^*) = \beta\theta(X^* > K_x + Y^* > K_y)$  ~ X OR Y
   * SUM input function: $f(X^*, Y^*) = \beta_xX^* + \beta_yY^*$.
   * More complex functions with many inputs...
 
