@@ -145,18 +145,17 @@ flowchart LR;
 
 * The essence of the input functio n is a transition between low and high values, with a characteristic threshold $K$.
 
-* We can hence approximate the input function with a **logic approximation**. It can be expressed as :  $f(X^*)=\beta\theta(X^* > K)$. 
+* We can hence approximate the input function with a **logic approximation**. It can be expressed as :  $f(X^{  * }) = \beta\theta(X^{   * }> K)$.  It is equivalent to a Hill function with $n \rightarrow \infty$.
 
-* It is equivalent to a Hill function with $n \rightarrow \infty$.
-
-* For a repressor: $f(X^*) = \beta \theta(X^* < K)$ .
+* For a repressor: $f(X^{   * }) = \beta \theta(X^{   *  } < K)$ .
 
 * Multi-dimensional input functions:
 
-  * $$f(X^*, Y^*) = \beta\theta(X^* > K_x)\theta(Y^* > K_y)$$  ~ X AND Y
-  * $f(X^*, Y^*) = \beta\theta(X^* > K_x + Y^* > K_y)$  ~ X OR Y
-  * SUM input function: $f(X^*, Y^*) = \beta_xX^* + \beta_yY^*$.
+  * $f(X^{   * }, Y^{   * }) = \beta\theta(X^{   *  } > K_x)\theta(Y^{   *  }> K_y)$  ~ X AND Y
+  * $f(X^{    *  }, Y^{    *  }  ) = \beta\theta(X^{   *    } > K_x + Y^* > K_y)$  ~ X OR Y
+  * SUM input function: $f(X^{   *   }, Y^{   *   }) = \beta_xX^{   *    }+ \beta_yY^{   *   }$.
   * More complex functions with many inputs...
+  
 
 ## Dynamics & Response Time
 
