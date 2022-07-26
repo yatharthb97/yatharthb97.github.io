@@ -64,13 +64,21 @@ editPost:
 
 * The initial part of the curve which grows from the state of thermodynamic equilibrium is referred to as the **thermodynamic branch.**
 
+### Phase Transitions
+
+
+
+
+
+
+
 ### Pattern Formations
 
 * The case study of convection currents is particularly interesting. Far from equilibrium, convection currents can become ordered, leading to geometric patterns - **Spatial patterns**.
 * Some chemical mixtures exhibit ordered changing of colors. Laser is an array of light sources that emit at a particular fixed frequency (while being out of equilibrium). This is an example of **temporal patterning**.
 * Other complex cases may exhibit **spacio-temporal patterns** . A special kind of chemical reactions called *rotating chemical reactions* show this. See [Chemical Oscillator](https://en.wikipedia.org/wiki/Chemical_oscillator).
 
-{{< youtube LL3kVtc-4vY>}}
+​			{{< youtube LL3kVtc-4vY>}}
 
 * The solution of the equation of the system corresponding to the thermodynamic branch will have the same symmetry corresponding to the parent equation. But the solution selected after the bifurcation will usually have lesser symmetry.
 
@@ -96,6 +104,4 @@ Oparin's rules for a living system:
 * The ordering present in the new state can be analysed in terms of symmetry breaking. **[?]**
 
 * The origin of life (in the prebiotic soup) could be viewed as a non-equilibrium phase trnasition associated with complex chemical reactions amongst the constituent molecules in the soup, and leading to a super molecule which behaved as if it had life.
-
-### Schrödinger's What id Life?
 

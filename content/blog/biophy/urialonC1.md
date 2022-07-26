@@ -2,7 +2,7 @@
 title: "Transcription Networks - Basic Concepts"
 date: 2022-07-08T22:08:07+05:30
 draft: false
-description: "Notes from Uri Alon."
+description: "Notes from Uri Alon's Systems Biology Textbook."
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false

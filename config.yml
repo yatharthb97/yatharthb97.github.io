@@ -2,7 +2,7 @@ baseURL: "https://yatharthb97.github.io/"
 #baseURL: http://localhost:1313/
 
 title: Yatharth Bhasin
-paginate: 5
+paginate: 10
 theme: "hugo-PaperMod"
 
 enableRobotsTXT: true
@@ -183,7 +183,7 @@ menu:
     - identifier : about me
       name : about me
       url : /aboutme/
-      weight : 6
+      weight : 1
     
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
