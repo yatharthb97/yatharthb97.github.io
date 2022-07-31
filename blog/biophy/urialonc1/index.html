@@ -60,6 +60,11 @@
 
     </style>
 </noscript>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+
 
 
 
@@ -297,11 +302,12 @@ if (!doNotTrack) {
 <li>Transcription factors <strong>bind to DNA</strong> and regulate <code>read-rate</code> of genes.</li>
 <li>Transcription factors regulate their target genes to mobilize the appropriate protein response in each case.</li>
 </ul>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart LR
-	genes --transcribed--&gt; mRNA --translated--&gt; proteins;
-    proteins--modify--&gt;environment;
-	environment --what?--&gt; genes
-</code></pre><p><strong>E. coli</strong>: has an internal representation of about 300 degrees of freedom. Hence, it has 300 transcription factors.</p>
+<div class="mermaid">flowchart LR
+	genes --transcribed--> mRNA --translated--> proteins;
+    proteins--modify-->environment;
+	environment --what?--> genes
+</div>
+<p><strong>E. coli</strong>: has an internal representation of about 300 degrees of freedom. Hence, it has 300 transcription factors.</p>
 <h2 id="transcription-network-model">Transcription Network Model<a hidden class="anchor" aria-hidden="true" href="#transcription-network-model">#</a></h2>
 <ul>
 <li><strong>Gene</strong>: a stretch of DNA whose sequence encodes the information needed for production of a protein.</li>
@@ -310,10 +316,11 @@ if (!doNotTrack) {
 <li>Transcription factors can act as both: <strong>activators and repressors.</strong></li>
 <li>Transcription factor proteins are themselves regulated by other transcription factors.</li>
 </ul>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart LR;
-	Gene-- copied by RNAp into --&gt; mRNA .- transcription;
-	mRNA -- translated to --&gt; Protein .- translation;
-</code></pre><table>
+<div class="mermaid">flowchart LR;
+	Gene-- copied by RNAp into --> mRNA .- transcription;
+	mRNA -- translated to --> Protein .- translation;
+</div>
+<table>
 <thead>
 <tr>
 <th><img loading="lazy" src="/images/articles/systembio/dig1.png" alt=""  />
@@ -456,6 +463,13 @@ $$</p>
 
 
   </div>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  
 
   <footer class="post-footer">
     <ul class="post-tags">
