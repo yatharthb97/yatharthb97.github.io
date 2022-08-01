@@ -465,7 +465,7 @@ $$</p>
        let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
        let mermaidTheme = (isDark) ? 'dark' : 'forest';
        let mermaidConfig = {
-           theme: 'forest',
+           theme: mermaidTheme,
            logLevel: 'fatal',
            securityLevel: 'strict',
            startOnLoad: true,
