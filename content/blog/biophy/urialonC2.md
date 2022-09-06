@@ -27,6 +27,7 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
+plotly: true
 
 cover:
     image: "<image path/url>" # image path/url
@@ -42,6 +43,10 @@ editPost:
 ---
 
 # Autoregulation - A Network Motif
+
+# Test Diagram Plotly
+
+{{< plotly json="https://chart-studio.plotly.com/~Dreamshot/8248.json" height="400px" >}}
 
 ## Networks
 

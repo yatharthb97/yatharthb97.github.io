@@ -27,6 +27,7 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
+plotly: true
 
 cover:
     image: "<image path/url>" # image path/url
@@ -159,6 +160,38 @@ flowchart LR;
 
 ## Dynamics & Response Time
 
+$$
+X + S_x \rightarrow X^{*} \\
+X^* \rightarrow P_y + mRNA \rightarrow Protein_Y
+$$
 
+$S_x$ is the activation signal for $X$. $P_y$ is a promoter of gene $Y$.
+
+
+
+The concentration of a protein in a cell is *regulated* by two processes: degradation ($\alpha_{deg}$) and  dillution ($\alpha_dil{}$). The total removaal rate is hence: $\alpha = \alpha_{dil} + \alpha_{deg}$. This gives us the the following dynamic equation of the concentration of a protein Y: $dY/dt = \beta + \alpha Y$. Solving this equation yields the steady state concentration of the protein as: $Y_{st} = \beta / \alpha$.
+
+
+
+This is however a simplified model. The regulation of protein in reality happens at every step of the production. While the protein is contructed in cohesion with the mRNA, various micro-steps have their own regulatory mechanisms. 
+
+
+
+### Response Time
+
+The response time is a measure of speed of a dynamical process. It is the time needed to reach halfway $T_{1/2}$ between the inital and the final levels in a dynamical process. For an example, if we assume that the protein production of Y has come to a halt. Hence, $\beta = 0$. The dynamical equation then simplifies to:
+$$
+Y(t) = Y_{st}e^{- \alpha t}
+$$
+Solving the above equation yields:
+$$
+Y(t_{response}) = Y_{st} / 2 \newline
+T_{1/2} = log(2) / \alpha
+$$
+This leads us to the following realisations:
+
+* Removal rate $\alpha$ determines the response time.  Fast removal allowes for rapid changes in the concentration of the protein.
+* The production rate $\beta$ determines the steady state concentration, but not the respone time.
+* Proteins with big $\alpha$ also need large $\beta$ to sustain their steady state rates. This might seeem completely futile, but this tradeoff can be used for rapidy changing concentration of certain proteins.
 
 ---
