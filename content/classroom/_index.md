@@ -1,5 +1,5 @@
 ---
-title: "Class Notes "
+title: "Class Notes 📚"
 ---
 
 ```goat
