@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Class Notes  on Yatharth Bhasin</title>
+    <link>https://yatharthb97.github.io/classroom/</link>
+    <description>Recent content in Class Notes  on Yatharth Bhasin</description>
+    <image>
+      <url>https://yatharthb97.github.io/website_tile.svg</url>
+      <link>https://yatharthb97.github.io/website_tile.svg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://yatharthb97.github.io/classroom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://yatharthb97.github.io/classroom/an-introduction-to-the-luria-delbruck-experiment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yatharthb97.github.io/classroom/an-introduction-to-the-luria-delbruck-experiment/</guid>
+      <description>An Introduction to the Luria-Delbruck Experiment by Marco Fumasoni Introduction Salvatore Edoardo Luria from Turin, Italy &amp;amp; Max Ludwig Henning Delbruck from Berlin, Germany fled to the United States. Delbruck was a Physicist. Scientific background in the early 40s Genetic information is heritable. Due to DNA and DNA is genetic material. Evolution by inheritance of acquired characteristics natual selection by Darwin &amp;hellip; and modern synthesis The Problem: bacterial cultures rapidly develop resistance to viral infection H1: The virus directly induces resistance mutations.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yatharthb97.github.io/classroom/how-natural-selection-took-over-immunology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yatharthb97.github.io/classroom/how-natural-selection-took-over-immunology/</guid>
+      <description>How natural selection took over immunology by Jorge Carneiro ​
+Read: Clonal selection theory.
+If an organism is infected, it produces antibodies.
+The body has antibodies for even artificial synthestic novel foreign bodies when injected.
+Antigens + Antibody results in a precipitation reaction.
+Electrophorosis of Serum Globulin, Sanger Sequencing.
+Ultra-centrifugation of antibody precipitation to differentiate IGG and IGM.
+Criticisms of the Pauling approach where the Globulin changes conformation and wraps around the threat fails to explain the exponential growth observed in the concentration of antibodies over time.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yatharthb97.github.io/classroom/r-and-general-discussion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yatharthb97.github.io/classroom/r-and-general-discussion/</guid>
+      <description>Introduction 1 September 2022
+Poluploid: $m*n$ chromosomes. Some organisms have body parts that are polydiploid. In plants the $n$ also correlates with size of the species. Excercises on SQB. Learning R Plotting is done in some application/GUI called Quartz. Arrows can change direction semantically but systematically with attributes and pointers. Read about Mendel´s laws. &amp;ldquo;Penatrance&amp;rdquo;. </description>
+    </item>
+    
+  </channel>
+</rss>
