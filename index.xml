@@ -9,7 +9,7 @@
       <link>https://yatharthb97.github.io/website_tile.svg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 Jul 2022 22:08:07 +0530</lastBuildDate><atom:link href="https://yatharthb97.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Sep 2022 12:53:13 +0530</lastBuildDate><atom:link href="https://yatharthb97.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transcription Networks - Basic Concepts</title>
       <link>https://yatharthb97.github.io/blog/biophy/urialonc1/</link>
@@ -27,6 +27,15 @@
       <guid>https://yatharthb97.github.io/blog/welcome/</guid>
       <description>Welcome to my website! Here, I post about stuff I like and the things I do. I { read, code, think, analyse, and solve } in all permutations. This website cum blog is an attempt to include writing in this set. Below is a short overview of the website.
 projects: where I post about my scientific and coding projects. publications: lists all the articles I have written and published somewhere. blog: where I will post articles and notes on various themes.</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to the Luria-Delbruck Experiment</title>
+      <link>https://yatharthb97.github.io/classroom/an-introduction-to-the-luria-delbruck-experiment/</link>
+      <pubDate>Mon, 05 Sep 2022 12:53:13 +0530</pubDate>
+      
+      <guid>https://yatharthb97.github.io/classroom/an-introduction-to-the-luria-delbruck-experiment/</guid>
+      <description>Class notes relating to the Luria-Delbruck Experiments (Lectures and Experimentation).</description>
     </item>
     
     <item>
