@@ -1,7 +1,7 @@
 ---
 title: "An Introduction to the Luria-Delbruck Experiment"
 date: 2022-09-05T12:53:13+05:30
-draft: true
+draft: false
 description: "Class notes relating to the Luria-Delbruck Experiments (Lectures and Experimentation)."
 ShowCanonicalLink: false
 canonicalURL: ""
