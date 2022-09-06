@@ -31,10 +31,10 @@ projects: where I post about my scientific and coding projects. publications: li
     
     <item>
       <title>An Introduction to the Luria-Delbruck Experiment</title>
-      <link>https://yatharthb97.github.io/classroom/an-introduction-to-the-luria-delbruck-experiment/</link>
+      <link>https://yatharthb97.github.io/classnotes/an-introduction-to-the-luria-delbruck-experiment/</link>
       <pubDate>Mon, 05 Sep 2022 12:53:13 +0530</pubDate>
       
-      <guid>https://yatharthb97.github.io/classroom/an-introduction-to-the-luria-delbruck-experiment/</guid>
+      <guid>https://yatharthb97.github.io/classnotes/an-introduction-to-the-luria-delbruck-experiment/</guid>
       <description>Class notes relating to the Luria-Delbruck Experiments (Lectures and Experimentation).</description>
     </item>
     
@@ -85,10 +85,10 @@ projects: where I post about my scientific and coding projects. publications: li
     
     <item>
       <title></title>
-      <link>https://yatharthb97.github.io/classroom/how-natural-selection-took-over-immunology/</link>
+      <link>https://yatharthb97.github.io/classnotes/how-natural-selection-took-over-immunology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://yatharthb97.github.io/classroom/how-natural-selection-took-over-immunology/</guid>
+      <guid>https://yatharthb97.github.io/classnotes/how-natural-selection-took-over-immunology/</guid>
       <description>How natural selection took over immunology by Jorge Carneiro ​
 Read: Clonal selection theory.
 If an organism is infected, it produces antibodies.
@@ -101,10 +101,10 @@ Criticisms of the Pauling approach where the Globulin changes conformation and w
     
     <item>
       <title></title>
-      <link>https://yatharthb97.github.io/classroom/r-and-general-discussion/</link>
+      <link>https://yatharthb97.github.io/classnotes/r-and-general-discussion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://yatharthb97.github.io/classroom/r-and-general-discussion/</guid>
+      <guid>https://yatharthb97.github.io/classnotes/r-and-general-discussion/</guid>
       <description>Introduction 1 September 2022
 Poluploid: $m*n$ chromosomes. Some organisms have body parts that are polydiploid. In plants the $n$ also correlates with size of the species. Excercises on SQB. Learning R Plotting is done in some application/GUI called Quartz. Arrows can change direction semantically but systematically with attributes and pointers. Read about Mendel´s laws. &amp;ldquo;Penatrance&amp;rdquo;. </description>
     </item>
