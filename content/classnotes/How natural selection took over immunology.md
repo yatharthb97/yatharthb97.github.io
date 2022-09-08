@@ -1,5 +1,5 @@
 ---
-title: "HISTORY OF BIOLOGICAL CONCEPTS: lectures"
+title: "History of Biological Concepts: lectures"
 date: 2022-09-05T12:53:13+05:30
 draft: false
 description: "Class notes relating to the week 1 lectures (IBB)."
@@ -82,6 +82,10 @@ editPost:
 
 
 
+
+
+
+
 # Drosophilia and Beyond: Experimental Systems in Genetics
 
 <center> by Michael Dietrich </center>
@@ -119,13 +123,13 @@ editPost:
 
 + The variability of phenotypes and their mixtures can be explained by bringing time into picture. It is the **temporal dependece of certain genes**.
 
-## Goldsmith and the Production of Intersexes in Lymantira disper (Gypsy Moths)
-
-+ 
-
 ## Conclusions
 
 + The locus of univerality in Biology is the genetic code. Nothing else is universal in any way. Organisms evolve over time in complex ways to produce very distinct organismic systems.
+
+
+
+
 
 
 
@@ -162,7 +166,7 @@ editPost:
 
   ```mermaid
   flowchart LR
-  	Gene -."+".- Nutrients --> Proteins
+  	Gene -."and".- Nutrients --> Proteins
   	Proteins --Histogenesis --> Cells
   	Cells --Morphogenesis-->Organisms
   ```
@@ -170,6 +174,10 @@ editPost:
 + "Never trust a Biologist about their histories."
 
 + > Bacteria-Phage Radioactive tagging experiment that determines that DNA is being transfered a sthe genetic code.
+
+
+
+
 
 
 
@@ -198,10 +206,14 @@ editPost:
 
 + Species and Ring Species: different clusters of the birds look like a neighbouring cluster but clusters far away look very different. The clusters are loosely isolated geographically.
 
+  
+
   ```mermaid
   graph LR
   Geographic-Isolation-->Genetic-Isolation-->Reproductive-Isolation-->Speciation
   ```
+
+  
 
 + > > The Great Evolutionary Constriction was the ruling out of certain ideas about Evolutionary Synthesis but no concensus was obtained.
 
@@ -236,13 +248,44 @@ editPost:
 
 + > National Museum of Creationism in Connecticut - Sex, Drugs, and Rock and roll is the path to sin.
 
-# Reviving the Hopeful Monster: Richard Goldschmidt and Saltational Evolution
+
+
+
+
+# **Hopeful Monsters: EvoDevo and the Revival of Richard Goldschmidt’s Heresies**
 
 <center> by Michael Dietrich </center>
 
 + Richard Goldschmidt, German, was part of the Kieser Wilhelm Institute which is today's max Plank institutes. He then moves to Berkely.
+
 + Sturtevant discovered that if genes are close to each other (neighbours) they affect each other. It is called the Position Effect.
+
 + Goldschmidt's presents the Genetic Hierarchy which states that the genes can be grouped from single gene, to gene clusters, to whole chromosoms. The different cardinal groups can transporf and transform in an affine manner.
+
 + In his book, **The Material Basis of Evolution (1940)**, he introduces the concept of Gradual vs Saltation rates of evolution. Which morphs into Microevolution and Macroevolution.
+
 + There are **Systemaic mutations**, which are **Chromosal emphasi**s. And there are **Regulatory Mutations** which have a **Developmental emphasis**.
-+ Homeotic Mutant: 
+
++ > > > Homeotic Mutant: 
+
++ "What good is one hopeful monster?" : Seawall Wright tackles this problem. He proposes that the major mutations are eventually finetuned while they wait some time to be expressed.
+
++ Goldschmidt could never get published in the journal Genetics. Because he didi little experimentation and wild theorizing.
+
++ His work never took off in his life but got really popular in the 1980s becuas ehis work was resurrected by Steven Jay Gould.
+
++ Gould says "Punctuated Equilibrium is not a theory of macro mutation. It is not a Theo" #TODO
+
++ The Evo-Devo scientists understand **Hox genes**. The real break arrives with **The Ubx Revival**. They try an experiment where they modify a single gene which transforms a fly into a **thing** with many legs. 
+
++ > The Uses of Heresy: An Introduction to Richard Goldschmidt's The Material Basis of Evolution by Stephen Jay Gould: he produces a **usable history**.
+
++ 
+
+  
+
+  
+
+  
+
+  
