@@ -245,4 +245,4 @@ editPost:
 + Goldschmidt's presents the Genetic Hierarchy which states that the genes can be grouped from single gene, to gene clusters, to whole chromosoms. The different cardinal groups can transporf and transform in an affine manner.
 + In his book, **The Material Basis of Evolution (1940)**, he introduces the concept of Gradual vs Saltation rates of evolution. Which morphs into Microevolution and Macroevolution.
 + There are **Systemaic mutations**, which are **Chromosal emphasi**s. And there are **Regulatory Mutations** which have a **Developmental emphasis**.
-+ 
++ Homeotic Mutant: 
