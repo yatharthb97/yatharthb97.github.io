@@ -15,6 +15,7 @@ tags: ["classnotes"]
 author: "Yatharth Bhasin"
 categories: []
 author: ["Me", "You"] # multiple authors
+math:true
 
 showToc: true
 TocOpen: false
