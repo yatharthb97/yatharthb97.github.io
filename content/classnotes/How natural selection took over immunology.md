@@ -1,3 +1,51 @@
+---
+title: "HISTORY OF BIOLOGICAL CONCEPTS: lectures"
+date: 2022-09-05T12:53:13+05:30
+draft: false
+description: "Class notes relating to the week 1 lectures (IBB)."
+ShowCanonicalLink: false
+canonicalURL: ""
+searchHidden: false
+math: false
+
+weight: 1
+
+aliases: []
+tags: ["classnotes"]
+author: "Yatharth Bhasin"
+categories: []
+author: ["Me", "You"] # multiple authors
+
+showToc: true
+TocOpen: false
+hidemeta: false
+comments: true
+
+disableHLJS: false # to disable highlightjs
+disableShare: false
+hideSummary: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+UseHugoToc: false
+
+cover:
+    image: "<image path/url>" # image path/url
+    alt: "<alt text>" # alt text
+    caption: "<text>" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
+
+editPost:
+    URL: "https://github.com/yatharthb97/yatharthb97.github.io/tree/main/content/"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+---
+
+
+
 # How natural selection took over immunology
 
 <center> by Jorge Carneiro </center>
@@ -78,4 +126,123 @@
 ## Conclusions
 
 + The locus of univerality in Biology is the genetic code. Nothing else is universal in any way. Organisms evolve over time in complex ways to produce very distinct organismic systems.
+
+
+
+
+
+# Genes in Action: The history of Development and genetics
+
+<center> by Michael Dietrich </center>
+
++ Thomas Hunt Morgan was trained as an embryologist (a developmental biologist) but didnt adress problems from this field, ever!
++ Wilhelm Roux develops developmental mechanics and really likes experiments. "There are *particles* that determine the type of cell that develops."
++ **Where (and what) is the determinant of Development?**
++ Jacques Loeb advocates the Reductionist Approach. He also thinks that **Genes as Protein** and **Gene actions are enzyme Actions**.
++ Richard Goldschmidth (color blind Gypsy moth guy) was trained with the German Morphological tradition: which is highly descriptive biology.
++ Temporal Regulation: how much you produce something and **when you produce something** are both crucial factors.
++ Linking Genes and Development can be attributed to Viktor Hamburger and Walter Landauer who were German exiles.
++ The **dorsal fold** plays an important role during embryonic development (Spealman and Mar...) It acts as an organiser of the cell.
++ Dead cells in the dorsal fold (in the organiser) also work. Hence, it was induced that the organiser is actually a chemical signal released by the dorsal fold area.
++ Development is seen as a phenomena that operates around t a network of chemical inducers that are responsible for producing different kinds of tissues. "A cascade of inducers."
++ Non-competent cells are not ready to receive a signal. Hence, time becomes important. It is also noteworthy that early developmental biologists thought that genes were not responsible for these "particles" (inducers), are purely chemical in nature. The question of the first inducer is still open.
++ Embronic development starts with making **a normal table** of development for a particular system.
+
++ **Homeotic Mutant**: has a full body part where it was not supposed to be.
+
++ > Waddington´s Branching track Model for Aristapedia (which is a fly).
+
++ Waddington is able to map variable pheontypes using the branch track model.
+
++ > Waddington´s cannalization theory with different developmental channels. **Remember the dynamical attractors in ecology paper (PNAS).**
+
++ George Beadle, Ed Tatum : the birth of Biochemical Genetics. The use Neurospra (bread mould).
+
++ They come up with the one-gene one-enzyme model. This creates biomedical genetics. You can now say: "This gene is responsible for this broken metabolic process."
+
+  ```mermaid
+  flowchart LR
+  	Gene -."+".- Nutrients --> Proteins
+  	Proteins --Histogenesis --> Cells
+  	Cells --Morphogenesis-->Organisms
+  ```
+
++ "Never trust a Biologist about their histories."
+
++ > Bacteria-Phage Radioactive tagging experiment that determines that DNA is being transfered a sthe genetic code.
+
+
+
+# Better than Darwin: The Rise of the Evolutionary Synthesis
+
+<center> by Michael Dietrich </center>
+
++ Population Genetics: focus on population measure and its statistics. founded by J.B.S Haldane, Seawall Wright, and Fisher.
+
++ Hardy-Weinberg Principle
+  $$
+  p^2 + 2pq + q^2 = 1
+  $$
+
+  + $p^2$ is the frequency of AA
+  + $2pq$ is the frequency of Aa
+  + $q^2$ is the frequency of aa, A, a are alleales.
+
++ There are forces than increase variability and those that decrease variability.
+
++ Sampling can drastically change the genetic makeup of the population, for example, 1 single sperm is sampled from millions during reproduction.
+
++ A fitness landscape that can be topologically represented superimposes an infinite hypercube of the genotype network. All the organisms navigate this **changing** topological landscape.
+
++ > Peak Shift Problem
+
++ Species and Ring Species: different clusters of the birds look like a neighbouring cluster but clusters far away look very different. The clusters are loosely isolated geographically.
+
+  ```mermaid
+  graph LR
+  Geographic-Isolation-->Genetic-Isolation-->Reproductive-Isolation-->Speciation
+  ```
+
++ > > The Great Evolutionary Constriction was the ruling out of certain ideas about Evolutionary Synthesis but no concensus was obtained.
+
++ > Read about Homozygous or heterozygous.
+
++ The classical/Balance Controversy: which lead to global nuclear policy.
+
+  + Genetic Variation: a wild sample is more Homozygous or Heterozygous?
+  + The Action of Selection: Is natural selection most often purifying or balancing?
+  + Radiation
+  + Eugenics
+
++ >  Hybrid Vigour: 1 single sickle cell alleale gives resistance to malaria.
+
++ Bruce Wallace and King did experiments with D flies, where you expose low power chronic vs high power chronic radiation. The adaptive value (or number of offsprings) was 0.92, 0.95 and 1.04 respectively.
+
++ You can't reproduce this experiment as only the exposure can be reproduced not the random mutations.
+
++ Radiation exposure and population fitnes was very difficult to quantify.
+
++ Electrophorosis: seperation of molecules based on size and charge. Lewontin and Hubby (1966) used this method to seperate the genetic matter. This allowed for a quantitative measure of the variability in species.
+
++ The average individual in a population was heterozygous for 8% to 15%, the avaerage being 12%.
+
++  Electrophorosis becomes a trend. Because it was fast.
+
++ Neutal theory: most mutations are neutral and don't affect the organism's fitness.
+
++ Sequence revolution: a lot of variability in the clones.
+
++ Neutral Theory is the new Null Model. Assume neutrality unil disproven by a statistical test.
+
++ > National Museum of Creationism in Connecticut - Sex, Drugs, and Rock and roll is the path to sin.
+
+# Reviving the Hopeful Monster: Richard Goldschmidt and Saltational Evolution
+
+<center> by Michael Dietrich </center>
+
++ Richard Goldschmidt, German, was part of the Kieser Wilhelm Institute which is today's max Plank institutes. He then moves to Berkely.
++ Sturtevant discovered that if genes are close to each other (neighbours) they affect each other. It is called the Position Effect.
++ Goldschmidt's presents the Genetic Hierarchy which states that the genes can be grouped from single gene, to gene clusters, to whole chromosoms. The different cardinal groups can transporf and transform in an affine manner.
++ In his book, **The Material Basis of Evolution (1940)**, he introduces the concept of Gradual vs Saltation rates of evolution. Which morphs into Microevolution and Macroevolution.
++ There are **Systemaic mutations**, which are **Chromosal emphasi**s. And there are **Regulatory Mutations** which have a **Developmental emphasis**.
 + 
