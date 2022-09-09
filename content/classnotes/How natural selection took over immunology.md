@@ -15,7 +15,7 @@ tags: ["classnotes"]
 author: "Yatharth Bhasin"
 categories: []
 author: ["Me", "You"] # multiple authors
-math:true
+math: true
 
 showToc: true
 TocOpen: false
@@ -281,12 +281,58 @@ editPost:
 
 + > The Uses of Heresy: An Introduction to Richard Goldschmidt's The Material Basis of Evolution by Stephen Jay Gould: he produces a **usable history**.
 
-+ 
+  
+
+  # Reading Notes - Assignment
 
   
 
-  
+  ## Visual Summary of the findings from the Abstract
+
+  ```mermaid
+  flowchart LR
+  	Toll-Protein* --activates--> NF-KB
+  	NF-KB --expresses--> Inflamatory-Cytokines
+  	NF-KB --expresses--> Co-stimulatory-molecules
+  	subgraph Inflamatory-Cytokines
+  		IL-1
+  		IL-6
+  		IL-8
+  	end
+  	
+  	subgraph Co-stimulatory-molecules
+  		B7.1
+  	end
+  ```
+
+  ## Some Interesting Takeaways from the first reading
+
+  * “It thus appears that the immune-response system mediated by Toll represents an ancient host defence mechanism” (Medzhitov et al., 1997, p. 394)
+  * “Alignment of the sequences of the human and Drosophila Toll proteins shows that there is homology over the entire length of the protein chains” (Medzhitov et al., 1997, p. 394)
+  * “The hToll gene is expressed most strongly in spleen and PBL (Fig. 3); its expression in other tissues may be due to the presence of macrophages and dendritic cells, in which it could act as an early-warning system for infection.” (Medzhitov et al., 1997, p. 394) [in mice and human cell lines]
+  * “Alternatively, hToll may be widely expressed because hToll signals through the conserved NF-kB pathway (see below) and NFkB is a ubiquitous transcription factor.” (Medzhitov et al., 1997, p. 394)
+  * A homologous immune response system based on the Toll signalling domain is used in plants, insects and vertebrates. In mammals, Toll induces signals required for the activation of both an innate and an adaptive immune response.
 
   
+
+  ## Assumptions/Educated Guesses
+
+  * Toll Protein extends through the membrane of the cell and has a intra and an extra cellular domain.
+  
+  * mRNA for Toll proteins was only found in certain tissues in
+  
+    
+  
+    
+  
+  # How we know genes are made of DNA?** | Lars Jansen
+  
++ Data is not knowledge.
+
++ Indirect evidene often proves direct evedence.
+
++ Correlation (requires observation) is different than Causation (requires manipulation).
+
++ What is the physical nature of the gene?
 
   
