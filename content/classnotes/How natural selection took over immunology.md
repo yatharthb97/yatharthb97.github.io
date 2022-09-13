@@ -325,9 +325,11 @@ editPost:
   
     
   
-  # How we know genes are made of DNA?** | Lars Jansen
+  # How we know genes are made of DNA? | Lars Jansen
   
 + Data is not knowledge.
+
+  ##### ![Data to Wisdom](/Users/byatharth/code/yatharthb97.github.io/static/images/classnotes/the_model-thinker_scott_page_extract.png)
 
 + Indirect evidene often proves direct evedence.
 
@@ -335,4 +337,57 @@ editPost:
 
 + What is the physical nature of the gene?
 
-  
+  Erwin Schrodinger wrote **What is life?** where he described **The gene is an aperiodic crystal.** He was wrong but he put a physical description of the gene which was rather rare.
+
++ Where does the gene reside?
+
+  Walter Flemming discovers chromosomes. Then we have The chromosome theory of heredity by Theodor Boveri and Walter Sutton.
+
+  The white gene was on the X-chromosome on the Drosophila — it was the first genes to be mapped.
+
+  > The Fly Room (movie)
+
++ What are the genes made of?
+
+  The idea that information can be encoded only came after during the 19th century.
+
+  > Read about Frederick Griffith's discovery in 1928 : 
+
++ It is easy to prove something is there but practically impossible to prove something is not there.
+
++ The introduction of Phycisists in Biology
+
+  + Max Delbruck: Introduction of a reductionist and quantitative approach to biology
+  + The Hershey - Chase experiment brought the use of radioactive probing in Biology.
+  + As any hypothesis becomes more acceptable in the scientific community, the bar for the evidence required to prove it comes down lower.
+
++ The Meselson - Stahl experiment a.k.a the most beautiful experiment in biology.
+
+  + > Read the PNAS paper.
+
+  + Liquid Hold Recovery: Cells recover after damage if they are held vs if they are allowed to grow in plate or with light.
+
++ What do genes actually do?  Pleiotropic in action (i.e. Having multiple primary effects)
+
++ The **Adaptor Hypothesis** was proposed by Francis Crick to explain the flow of information from DNA to Proteins.
+
++ **Don't let inconcistencies destroy an emerging hypothesis.**
+
++ Transfer RNA was the adapter protein: Sometimes the control becomes the experiment.
+
++ 20 qmino acids and 4 bases. 
+
++ > Read: General Nature of the Genetic Code for Proteins — Nature declared this as the best paper of the 19th century.
+
++ > > > Understand what a "wild type" actually is.
+
++ "Frame Shift Mutation" : demonstrated the existence of a non-overlapping triple base genetic code.
+
++ The discovery of gene regulation: Most proteins that are incoded are regulators of other genes.
+
++ 
+
+# Type of Experiments
+
++ Sufficiency experiments (most Genetic experiments fall in this category)
++ Necessatity experiments
