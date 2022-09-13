@@ -1,6 +1,6 @@
 
 
-{{ if or .Params.mermaid .Site.Params.mermaid }}
+{{ if .Page.Store.Get "hasMermaid" }}
 <!-- MermaidJS support -->
 <script src="https://cdn.bootcdn.net/ajax/libs/mermaid/9.1.6/mermaid.min.js"></script>
 <script>
