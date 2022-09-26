@@ -43,7 +43,7 @@ editPost:
 
 # Principles of Protein Structures
 
-<center> by xxx </center>
+<center> by Casper Goverde </center>
 
 + Group research: Design of protein molecules for novel functional and behavioural activities. Also study proteins using variety of techniques like ML and computational design.
 
@@ -136,4 +136,22 @@ flowchart LR
 + Secondary structural elements are conected to form simple motifs. Given motifs, you can create many folds.
 + The interactions between the atoms in a protein control the folding of the protein into a well defined structure (native structure): **Thermodynamic hyposthesis of protein folding**. It was demonstrated by the famous Anfinsen Experiment which opened the folded structure of a protein and allowed it to relax in a controlled manner to recover the folded structure,
 + This information is encoded in their amino acid sequence.
+
+
+
+# Evolution and Protein Structure
+
+<center> by Casper Goverde </center>
+
++ > Reading Suggestion: The Molecules of Life (Chapter 5)
+
++ Protein structures are conserved during evolution while amino acids vary.
+
++ Motifs that are crutial for protein folding are conserved during evolution.
+
++ You can use protein globins to classify species at the molecular level.
+
++ Due to different selection pressures amd line seperation, protein sequences diverge between species.
+
+
 
