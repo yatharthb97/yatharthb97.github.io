@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>STATISTICS AND QUANTITATIVE BIOLOGY | IBB Lecture | Yatharth Bhasin</title>
+<title>Principles of protein structures | Yatharth Bhasin</title>
 <meta name="keywords" content="classnotes">
 <meta name="description" content="IBB Lecture class notes.">
 <meta name="author" content="Yatharth Bhasin">
-<link rel="canonical" href="https://yatharthb97.github.io/classnotes/week2/">
+<link rel="canonical" href="https://yatharthb97.github.io/classnotes/week4/">
 <meta name="google-site-verification" content="XYZabc">
 <meta name="yandex-verification" content="XYZabc">
 <meta name="msvalidate.01" content="XYZabc">
@@ -96,17 +96,17 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="STATISTICS AND QUANTITATIVE BIOLOGY | IBB Lecture" />
+</script><meta property="og:title" content="Principles of protein structures" />
 <meta property="og:description" content="IBB Lecture class notes." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://yatharthb97.github.io/classnotes/week2/" />
+<meta property="og:url" content="https://yatharthb97.github.io/classnotes/week4/" />
 <meta property="og:image" content="https://yatharthb97.github.io/%3Cimage%20path/url%3E" /><meta property="article:section" content="classnotes" />
-<meta property="article:published_time" content="2022-09-12T09:30:00&#43;05:30" />
-<meta property="article:modified_time" content="2022-09-12T09:30:00&#43;05:30" /><meta property="og:site_name" content="Yatharth Bhasin" />
+<meta property="article:published_time" content="2022-09-26T09:48:53&#43;01:00" />
+<meta property="article:modified_time" content="2022-09-26T09:48:53&#43;01:00" /><meta property="og:site_name" content="Yatharth Bhasin" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://yatharthb97.github.io/%3Cimage%20path/url%3E" />
-<meta name="twitter:title" content="STATISTICS AND QUANTITATIVE BIOLOGY | IBB Lecture"/>
+<meta name="twitter:title" content="Principles of protein structures"/>
 <meta name="twitter:description" content="IBB Lecture class notes."/>
 
 
@@ -124,8 +124,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "STATISTICS AND QUANTITATIVE BIOLOGY | IBB Lecture",
-      "item": "https://yatharthb97.github.io/classnotes/week2/"
+      "name": "Principles of protein structures",
+      "item": "https://yatharthb97.github.io/classnotes/week4/"
     }
   ]
 }
@@ -134,24 +134,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "STATISTICS AND QUANTITATIVE BIOLOGY | IBB Lecture",
-  "name": "STATISTICS AND QUANTITATIVE BIOLOGY | IBB Lecture",
+  "headline": "Principles of protein structures",
+  "name": "Principles of protein structures",
   "description": "IBB Lecture class notes.",
   "keywords": [
     "classnotes"
   ],
-  "articleBody": "Introduction Z distribution is a special normal distribution with mean 0 and deviations 1. Quantiles is splitting the distribution into different sizes based on probability mass. SEM (Standard Error of means) is the same as the variance of the sample. 95% of the normal distribution is within 2 $\\sigma$ (standard deviations) of the mean. 0.025 quanta: Median is the point of the 50% quantile. Lecture 2 $\\mu$ and $\\sigma$ are usually unknown. Thats why we use Greek letters. They are for the gods to know.\n$E(x)$ is the expected value, which is our measurement of the mean. For m samples: $$ E(x) = \\sum_{i=1}^{m} f_i X_i = \\sum \\frac{1}{m} X_i $$\nThe variance is defined as: $$ S^2 = E \\Big(\\sum_{i=1}^{m}(X_i - m)^2 \\Big) = \\sum \\frac{1}{n-1} \\Big( x_i - m \\Big)^2 $$\nIn R:\ndnorm : is the Probaility Density Function. pnorm : is the Cumulative Density Function. qnorm : is the Inverse CDF. Get $X$ from $p(X)$. For CLT, we need random independent and identical (iid) variables. But for large $n$ and finite variance for each of the variables, the identical criteria can be dropped.\nFor small sample sizes, we use the quantiles of the t-distribution instead of the z-distribution.\nLecture 3 Maximum Likelihood Estimation We consider the exponential distribution: $$ f(x, \\lambda) = \\lambda e^{- \\lambda x} $$\nMaximum Likelihood Estimation of the distribution is done to find the correct parameter. [Curve Fitting]\nHypothesis Testing A $\\chi^2$ distribution is defined as a sum of square of $k$ Normal Distributions $\\N(0, 1)$. $k$ is also the degrees of freedom, which is the only parameter that the distribution takes as input. $$ \\chi ^2 = \\sum_{i}^{k} Z_i^2 $$\nChi squared distribution\nEmperical Cumulative Distribution Graph\nDifference between one tail and two tail\nflowchart TD X((X)) --\u003e non-parametric X --\u003e parametric X --\u003e proportions non-parametric --\u003e Wilcox-Test non-parametric --\u003e Kraken-Wallas... parametric --\u003e ANOVA parametric --\u003e t-test Why is proportions a unique data type?\nFisher test can only be used for 2X2 table, whereas $\\chi^2$ test can be used for n-column tables.\nFisher -\u003e you get Hyper-geometric distribution\nIn R the functions are fisher.test and chisq.test.\nFisher Test: Odds ratio\n",
-  "wordCount" : "359",
+  "articleBody": " by xxx Group research: Design of protein molecules for novel functional and behavioural activities. Also study proteins using variety of techniques like ML and computational design. Moplecular Interactions in Biomolecules Non-covalent interactions modelled via Lennard-Jones, consists of van der Waals interactions, hydrogen bonds. Two neutral atoms in close proximity get polarised ! Van der waals radius is r1 + r2 and is the point where the repulsive interactions become dominent. Hydrogen bonds can be thought of as a dipole-dipole interaction but on a molecular scale. Iconic interactions are the strongest, however, water ions severly reduce electrostatic interaction. In vacuum its ~50 kJ/mol, whereas in water its ~6 kJ/mol. Moleculaes of Life Nucleic Acids Proteins : Made of Peptides Lipids : Fats Glycans: Sugars flowchart LR genetic-Material --\u003e Primary-Structure --\u003e Secondary-Structure --\u003e Function((Function)) --\u003e Tertiary-Structure --\u003e Quartarnary-Structure Proteins have an amino group, a carboxyl group, and 20 different kinds of R groups.\nThey are built out of 20 amino acids encoded in DNA.\nThe amino acids can be classified based on the type of Carboxyl group.\nPolar and non-polar amino acids. Polar amino acids can form hydrogen bonds with itself and other amino acids. They are also hydrophobic. Negatively and positively charged amino acids. Their sidechains are charged at pH=7. Synthesis of protein: condensation reaction where amino acid of one …TODO\nThe sequence of a protein is written from the N-terminus (one of the free $NH_3$) to the C-terminius (the one with $COO^-$).\nbackbobne + sidechain + actual witten structure + carboxyl extension.\nHydrophobicity of amino acids is an important feature.\nResidue: the central kernal of the proteins. Find out why a Residue is called a residue. TODO\nSome amino acids are special:\nCysteine can form disulphide bridges.\nflowchart LR Cysteine -.\"+\".- Cysteine2(Cysteine) --Oxidation--\u003e Cystine Cystine --Reduction--\u003e Cysteine2 Glycine doesn’t have a sidechain group.\nProline’s sidechain group is covalently bound to the nitrogen of the peptide bond.\nProtein Secondary Structures $\\alpha$-helix form to stabilize the hydrophobic core. It forms by making H-bonds between Hydrogen and oxygen.\n$\\beta$-sheets form hydrogen bonds with its whole backbone.\nUsually the alpha and beta sheets are sometimes misaligned and imperfect.\nAlpha-helix\nIn the alpha-helix, the carbonyl oxygen of residue “i” forms a hydrogen bond with the amide of the residue “i+4”. There are only right handed alpha-helixes, except for a handful of exceptions. Beta-sheets\nCan be wither parallel and antiparallel. They have roughly the same binding energy. In a beta-sheet, carbonyl oxygen and amides form hydrogen bonds between the strands, i.e between amino acids far away from each other in primary sequence. Proteins can be composed of one of the two secondary structures or be mixed.\nBeyond Secondary Structures The tertiary structure, which is the three-dimensional organisation of the secondary structure elements. It is also referred to as the protein fold. Quaternary structures refers to the association of different polypeptide chains (subunits) into a multinumeric complex. Protein domains are fundamental units of tertiary structue. it forms an independnt structural domin. They are often units of function. Domains have the same fold yet different amino acid sequences. Protein domains are very stable to mutations. ANd they have been selected via evolution for the very specific reason. The stability of the folded structure results primarily from the hydrophobic regions folding in together. Two proteins with different sequences can have the same sequence. ",
+  "wordCount" : "554",
   "inLanguage": "en",
-  "image":"https://yatharthb97.github.io/%3Cimage%20path/url%3E","datePublished": "2022-09-12T09:30:00+05:30",
-  "dateModified": "2022-09-12T09:30:00+05:30",
+  "image":"https://yatharthb97.github.io/%3Cimage%20path/url%3E","datePublished": "2022-09-26T09:48:53+01:00",
+  "dateModified": "2022-09-26T09:48:53+01:00",
   "author":{
     "@type": "Person",
     "name": "Yatharth Bhasin"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://yatharthb97.github.io/classnotes/week2/"
+    "@id": "https://yatharthb97.github.io/classnotes/week4/"
   },
   "publisher": {
     "@type": "Organization",
@@ -246,12 +246,12 @@ if (!doNotTrack) {
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://yatharthb97.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://yatharthb97.github.io/classnotes/">Class Notes 📚</a></div>
     <h1 class="post-title">
-      STATISTICS AND QUANTITATIVE BIOLOGY | IBB Lecture
+      Principles of protein structures
     </h1>
     <div class="post-description">
       IBB Lecture class notes.
     </div>
-    <div class="post-meta"><span title='2022-09-12 09:30:00 +0530 +0530'>September 12, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;359 words&nbsp;·&nbsp;Yatharth Bhasin&nbsp;|&nbsp;<a href="https://github.com/yatharthb97/yatharthb97.github.io/tree/main/content//classnotes/week2.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta"><span title='2022-09-26 09:48:53 +0100 +0100'>September 26, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;554 words&nbsp;·&nbsp;Yatharth Bhasin&nbsp;|&nbsp;<a href="https://github.com/yatharthb97/yatharthb97.github.io/tree/main/content//classnotes/week4.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> <div class="toc">
@@ -262,143 +262,129 @@ if (!doNotTrack) {
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#introduction" aria-label="Introduction">Introduction</a></li>
+                    <a href="#moplecular-interactions-in-biomolecules" aria-label="Moplecular Interactions in Biomolecules">Moplecular Interactions in Biomolecules</a></li>
                 <li>
-                    <a href="#lecture-2" aria-label="Lecture 2">Lecture 2</a></li>
+                    <a href="#moleculaes-of-life" aria-label="Moleculaes of Life">Moleculaes of Life</a></li>
                 <li>
-                    <a href="#lecture-3" aria-label="Lecture 3">Lecture 3</a><ul>
-                        
+                    <a href="#protein-secondary-structures" aria-label="Protein Secondary Structures">Protein Secondary Structures</a></li>
                 <li>
-                    <a href="#maximum-likelihood-estimation" aria-label="Maximum Likelihood Estimation">Maximum Likelihood Estimation</a></li>
-                <li>
-                    <a href="#hypothesis-testing" aria-label="Hypothesis Testing">Hypothesis Testing</a>
+                    <a href="#beyond-secondary-structures" aria-label="Beyond Secondary Structures">Beyond Secondary Structures</a>
                 </li>
-            </ul>
-            </li>
             </ul>
         </div>
     </details>
 </div>
 
-  <div class="post-content"><h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+  <div class="post-content"><center> by xxx </center>
 <ul>
-<li><strong>Z distribution</strong> is a special <strong>normal distribution</strong> with mean 0 and deviations 1.</li>
-<li><strong>Quantiles</strong> is splitting the distribution into different sizes based on probability mass.</li>
-<li><strong>SEM (Standard Error of means)</strong> is the same as the variance of the sample.</li>
-<li>95% of the normal distribution is within <strong>2 $\sigma$</strong> (standard deviations) of the mean.</li>
-<li>0.025 quanta:</li>
-<li>Median is the point of the 50% quantile.</li>
+<li>Group research: Design of protein molecules for novel functional and behavioural activities. Also study proteins using variety of techniques like ML and computational design.</li>
 </ul>
-<h2 id="lecture-2">Lecture 2<a hidden class="anchor" aria-hidden="true" href="#lecture-2">#</a></h2>
+<h2 id="moplecular-interactions-in-biomolecules">Moplecular Interactions in Biomolecules<a hidden class="anchor" aria-hidden="true" href="#moplecular-interactions-in-biomolecules">#</a></h2>
+<ul>
+<li>Non-covalent interactions modelled via Lennard-Jones, consists of <strong>van der Waals interactions, hydrogen bonds.</strong></li>
+<li><strong>Two neutral atoms in close proximity get polarised !</strong></li>
+<li>Van der waals radius is <strong>r1 + r2</strong> and is the point where the repulsive interactions become dominent.</li>
+<li>Hydrogen bonds can be thought of as a dipole-dipole interaction but on a molecular scale.</li>
+<li>Iconic interactions are the strongest, however, water ions severly reduce electrostatic interaction.</li>
+<li>In vacuum its ~50 kJ/mol, whereas in water its ~6 kJ/mol.</li>
+</ul>
+<h2 id="moleculaes-of-life">Moleculaes of Life<a hidden class="anchor" aria-hidden="true" href="#moleculaes-of-life">#</a></h2>
+<ol>
+<li>Nucleic Acids</li>
+<li>Proteins : Made of Peptides</li>
+<li>Lipids : Fats</li>
+<li>Glycans: Sugars</li>
+</ol>
+<div class="mermaid">flowchart LR
+	genetic-Material --> Primary-Structure --> Secondary-Structure --> Function((Function)) -->  Tertiary-Structure --> Quartarnary-Structure
+</div>
 <ul>
 <li>
-<p>$\mu$ and $\sigma$ are usually unknown. Thats why we use Greek letters. They are for the gods to know.</p>
+<p>Proteins have an amino group, a carboxyl group, and 20 different kinds of R groups.</p>
 </li>
 <li>
-<p>$E(x)$ is the expected value, which is our measurement of the <strong>mean</strong>. For m samples:
-$$
-E(x) = \sum_{i=1}^{m} f_i X_i = \sum \frac{1}{m} X_i
-$$</p>
-</li>
-<li></li>
-<li>
-<p>The variance is defined as:
-$$
-S^2 = E \Big(\sum_{i=1}^{m}(X_i - m)^2 \Big) = \sum \frac{1}{n-1} \Big( x_i - m \Big)^2
-$$</p>
+<p>They are built out of 20 amino acids encoded in DNA.</p>
 </li>
 <li>
-<p>In R:</p>
+<p>The amino acids can be classified based on the type of Carboxyl group.</p>
 <ul>
-<li><strong>dnorm</strong> : is the Probaility Density Function.</li>
-<li><strong>pnorm</strong> : is the Cumulative Density Function.</li>
-<li><strong>qnorm</strong> : is the Inverse CDF. Get $X$ from $p(X)$.</li>
+<li><strong>Polar and non-polar amino acids</strong>. Polar amino acids can form hydrogen bonds with itself and other amino acids. They are also hydrophobic.</li>
+<li><strong>Negatively and positively charged amino acids</strong>. Their sidechains are charged at pH=7.</li>
 </ul>
 </li>
 <li>
-<p>For CLT, we need random independent and identical (iid) variables. But for large $n$ and finite variance for each of the variables, the <strong>identical</strong> criteria can be dropped.</p>
+<p>Synthesis of protein: condensation reaction where amino acid of one &hellip;TODO</p>
 </li>
 <li>
-<p>For small sample sizes, we use the quantiles of the <strong>t-distribution</strong> instead of the <strong>z-distribution</strong>.</p>
+<p>The sequence of a protein is written from the N-terminus (one of the free $NH_3$)  to the C-terminius (the one with $COO^-$).</p>
 </li>
-</ul>
-<h2 id="lecture-3">Lecture 3<a hidden class="anchor" aria-hidden="true" href="#lecture-3">#</a></h2>
-<h3 id="maximum-likelihood-estimation">Maximum Likelihood Estimation<a hidden class="anchor" aria-hidden="true" href="#maximum-likelihood-estimation">#</a></h3>
+<li>
+<p>backbobne + sidechain + actual witten structure + carboxyl extension.</p>
+</li>
+<li>
+<p>Hydrophobicity of amino acids is an important feature.</p>
+</li>
+<li>
+<p>Residue: the central kernal of the proteins. <strong>Find out why a Residue is called a residue. TODO</strong></p>
+</li>
+<li>
+<p>Some amino acids are special:</p>
 <ul>
 <li>
-<p>We consider the exponential distribution:
-$$
-f(x, \lambda) = \lambda e^{- \lambda x}
-$$</p>
-</li>
-<li>
-<p>Maximum Likelihood Estimation of the distribution is done to find the correct parameter. [Curve Fitting]</p>
-</li>
-</ul>
-<h3 id="hypothesis-testing">Hypothesis Testing<a hidden class="anchor" aria-hidden="true" href="#hypothesis-testing">#</a></h3>
-<ul>
-<li>
-<p>A $\chi^2$ distribution is defined as a sum of square of $k$ Normal Distributions $\N(0, 1)$. $k$ is also the <strong>degrees of freedom</strong>, which is the only parameter that the distribution takes as input.
-$$
-\chi ^2 = \sum_{i}^{k} Z_i^2
-$$</p>
-</li>
-<li>
-<blockquote>
-<blockquote>
-<p>Chi squared distribution</p>
-</blockquote>
-</blockquote>
-</li>
-<li>
-<blockquote>
-<blockquote>
-<p>Emperical Cumulative Distribution Graph</p>
-</blockquote>
-</blockquote>
-</li>
-<li>
-<blockquote>
-<blockquote>
-<p>Difference between one tail and two tail</p>
-</blockquote>
-</blockquote>
-</li>
-<li>
-<div class="mermaid">flowchart TD
-	X((X)) --> non-parametric
-	X --> parametric
-	X --> proportions
-	non-parametric --> Wilcox-Test
-	non-parametric --> Kraken-Wallas...
-
-	parametric --> ANOVA
-	parametric --> t-test
+<p>Cysteine can form disulphide bridges.</p>
+<div class="mermaid">flowchart LR
+	Cysteine -."+".- Cysteine2(Cysteine) --Oxidation--> Cystine
+	Cystine --Reduction--> Cysteine2
 </div>
 </li>
 <li>
-<blockquote>
-<blockquote>
-<p>Why is <strong>proportions</strong> a unique data type?</p>
-</blockquote>
-</blockquote>
+<p>Glycine doesn&rsquo;t have a sidechain group.</p>
 </li>
 <li>
-<p>Fisher test can only be used for <strong>2X2 table</strong>, whereas $\chi^2$ test can be used for n-column tables.</p>
+<p>Proline&rsquo;s sidechain group is covalently bound to the nitrogen of the peptide bond.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="protein-secondary-structures">Protein Secondary Structures<a hidden class="anchor" aria-hidden="true" href="#protein-secondary-structures">#</a></h2>
+<ul>
+<li>
+<p>$\alpha$-helix form to stabilize the hydrophobic core. It forms by making H-bonds between Hydrogen and oxygen.</p>
 </li>
 <li>
-<blockquote>
-<blockquote>
-<p>Fisher -&gt; you get Hyper-geometric distribution</p>
-</blockquote>
-</blockquote>
+<p>$\beta$-sheets form hydrogen bonds with its whole backbone.</p>
 </li>
 <li>
-<p>In R the functions are <code>fisher.test</code> and <code>chisq.test</code>.</p>
+<p>Usually the alpha and beta sheets are sometimes misaligned and imperfect.</p>
 </li>
 <li>
-<p>Fisher Test: Odds ratio</p>
+<p><strong>Alpha-helix</strong></p>
+<ul>
+<li>In the alpha-helix, the carbonyl oxygen of residue &ldquo;i&rdquo; forms a hydrogen bond with the amide of the residue &ldquo;i+4&rdquo;.</li>
+<li>There are only right handed alpha-helixes, except for a handful of exceptions.</li>
+</ul>
 </li>
+<li>
+<p><strong>Beta-sheets</strong></p>
+<ul>
+<li>Can be wither parallel and antiparallel. They have roughly the same binding energy.</li>
+<li>In a beta-sheet, carbonyl oxygen and amides form hydrogen bonds between the strands, i.e between amino acids  far away from each other in primary sequence.</li>
+</ul>
+</li>
+<li>
+<p>Proteins can be composed of one of the two secondary structures or be mixed.</p>
+</li>
+</ul>
+<h2 id="beyond-secondary-structures">Beyond Secondary Structures<a hidden class="anchor" aria-hidden="true" href="#beyond-secondary-structures">#</a></h2>
+<ul>
+<li>The tertiary structure, which is the three-dimensional organisation of the secondary structure elements. It is also referred to as the <strong>protein fold</strong>.</li>
+<li>Quaternary structures refers to the association of different polypeptide chains (subunits) into a multinumeric complex.</li>
+<li>Protein domains are fundamental units of tertiary structue. it forms an independnt structural domin. They are often units of function.</li>
+<li>Domains have the same fold yet different amino acid sequences.</li>
+<li>Protein domains are very stable to mutations. ANd they have been selected via evolution for the very specific reason.</li>
+<li>The stability of the folded structure results primarily from the hydrophobic regions folding in together.</li>
+<li>Two proteins with different sequences can have the same sequence.</li>
+<li></li>
 </ul>
 
 
