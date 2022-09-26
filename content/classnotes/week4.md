@@ -1,5 +1,5 @@
 ---
-title: "Principles of protein structures"
+title: "Structural and Molecular Biology"
 date: 2022-09-26T09:48:53+01:00
 draft: false
 description: "IBB Lecture class notes."
@@ -41,6 +41,8 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
+# Principles of Protein Structures
+
 <center> by xxx </center>
 
 + Group research: Design of protein molecules for novel functional and behavioural activities. Also study proteins using variety of techniques like ML and computational design.
@@ -65,7 +67,7 @@ editPost:
 
 ```mermaid
 flowchart LR
-	genetic-Material --> Primary-Structure --> Secondary-Structure --> Function((Function)) -->  Tertiary-Structure --> Quartarnary-Structure
+	Genetic-Material --> Primary-Structure --> Secondary-Structure --> Function((Function)) -->  Tertiary-Structure --> Quartarnary-Structure
 ```
 
 + Proteins have an amino group, a carboxyl group, and 20 different kinds of R groups.
@@ -119,5 +121,19 @@ flowchart LR
 + Protein domains are very stable to mutations. ANd they have been selected via evolution for the very specific reason.
 + The stability of the folded structure results primarily from the hydrophobic regions folding in together.
 + Two proteins with different sequences can have the same sequence.
-+ 
+
+## Conformations and Folding
+
++ Protein conformational changes does not require breaking bonds.
++ The peptide bond has partial double bond character and therefore are sterically hindered.
++ Protein folding induces conformational changes in the backbone. The backbone torsion angles $\phi$ and $\psi$ determine that conformation of the protein chain.
++ The Ramachandran diagram define the restrictions on backbone conformation.
++ $\psi$ : TODO 
++ $\phi$ : TODO
++ L: Left handed helix
++ You see a lot of Glycines in loops as they are flexible because of the absence of any side chains.
++ Prolines are in Cis conformation so they ususally "kink" the alpha-helix. Not generally found anywhere else.
++ Secondary structural elements are conected to form simple motifs. Given motifs, you can create many folds.
++ The interactions between the atoms in a protein control the folding of the protein into a well defined structure (native structure): **Thermodynamic hyposthesis of protein folding**. It was demonstrated by the famous Anfinsen Experiment which opened the folded structure of a protein and allowed it to relax in a controlled manner to recover the folded structure,
++ This information is encoded in their amino acid sequence.
 
