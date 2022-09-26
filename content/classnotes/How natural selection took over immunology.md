@@ -8,13 +8,13 @@ canonicalURL: ""
 searchHidden: false
 math: false
 
-weight: 1
+#weight: 1
 
 aliases: []
 tags: ["classnotes"]
 author: "Yatharth Bhasin"
 categories: []
-author: ["Me", "You"] # multiple authors
+#author: ["Me", "You"] # multiple authors
 math: true
 
 showToc: true
