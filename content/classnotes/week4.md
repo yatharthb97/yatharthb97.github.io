@@ -137,6 +137,10 @@ flowchart LR
 + The interactions between the atoms in a protein control the folding of the protein into a well defined structure (native structure): **Thermodynamic hyposthesis of protein folding**. It was demonstrated by the famous Anfinsen Experiment which opened the folded structure of a protein and allowed it to relax in a controlled manner to recover the folded structure,
 + This information is encoded in their amino acid sequence.
 
+---
+
+
+
 
 
 # Evolution and Protein Structure
@@ -158,5 +162,23 @@ flowchart LR
 ## How to quantify differences in sequences?
 
 + Use a substitution matrix (BLOSUM). We use a matrix of probailities. Each entry in the matrix is called a substitution score ($S_{ij}$). The higher the score (positive), the more likely is the substition.
+
++ The BLOSUM substitution score is the logarithm of the likelihood that one aa in a protein is replaced by another during evolution.
+
 + $S_{ij}$ is related to the frequency of substititon over random chance.
-+  
+
++ > BLAST (Basic Local Alignmnet Search Tool) : Identify novel proteins, find functional relationships and sequence motifs and patterns.
+
++ TOP-7 is the first synthetic motif.
+
++ The most used measure is the **Root Mean Square Deviation (RMSD).**
+
++ Domains are "self contained units" that can be placed in different proteins.
+
+# PyMol Excercises
+
++ Superimposition is done by fitting the polypeptide backbone of your target protein on the reference protein. Best fit will have smallest Rms (root mean square) value.
+
++ > What is PSIPRED?
+
++ Protein crystals have a high solvent content, which you can also observe as large spaces between the proteins in the Electron density maps.
