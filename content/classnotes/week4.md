@@ -182,3 +182,66 @@ flowchart LR
 + > What is PSIPRED?
 
 + Protein crystals have a high solvent content, which you can also observe as large spaces between the proteins in the Electron density maps.
+
+
+
+# X-ray Crystallography
+
++ The further out spots the higher the resolution of the protein structure.
+
++ The dark ring ~3Å is caused by water molecules un the crystal.
+
++ ```mermaid
+  flowchart LR
+  	crystals --"x-rays"--> diffraction-pattern --> electron-density-maps-->atomic-structure
+  	atomic-structure --refinement-->diffraction-pattern
+  ```
+
++ Methods to check crystallization conditions for proteins: Hanging Drop- and Sitting Drop- Vapour Diffusion.
+
++ Typical concentration for X-ray diffraction: TODO
+
++ **High B-factor**: low confidence in position of atom, which also corresponds to low electron densities.
+
++ In 2020 the number of structures in PDB reached **171,916**.
+
+
+
+# Nuclear Magnetic Resonance (NMR)
+
++ Resonance Frequency in NMR:
+  $$
+  R_f = \frac{2 \mu_BB_o}{h}
+  $$
+
++ Resonance frequency depends on nature of the nucleus and its chemical environment.
+
++ Resonance frequency is directly proportional to the strength of the external applied magnetic field.
+
++ We commonly use $H^1$ and $C^{13}$ for labelling as they are NMR active.
+
++ Nuclear Overhauser Effect (NOE): Provides information on **spatial proximity of protons in protein.** Protons that are close by influence each others chemical shifts.
+
++ Crystallography si also applicable to very big proteins and complexes.
+
++ NMR: Dynamic ensemble of several energy-minimized structures, whereas, X-ray crystallography gives a static picture of protein.
+
++ NMR has a size limit: >25kDa is very difficult.
+
+
+
+# Cryo-EM
+
++ Cryo-EM prevents electron degradation of proteins.
+
++ Abbe's Relationship: $d_R = 1.22 \lambda /NA$. Working out this formula gives us a $d_R$ to be 1.4Å.
+
++ ```mermaid
+  flowchart LR
+  	biochemical-preperation --> cryo-em-sample-preparation --> Imaging --> data-collection
+  	dc(data-collection)-->image-processing-->reconstruction--> structural-analysis--> Model
+  ```
+
++ Generally Liquid Ethane is used.
+
++ 
