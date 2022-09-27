@@ -185,6 +185,18 @@ flowchart LR
 
 
 
+
+
+---
+
+Day 2
+
+---
+
+
+
+
+
 # X-ray Crystallography
 
 + The further out spots the higher the resolution of the protein structure.
@@ -236,12 +248,28 @@ flowchart LR
 
 + Abbe's Relationship: $d_R = 1.22 \lambda /NA$. Working out this formula gives us a $d_R$ to be 1.4Å.
 
-+ ```mermaid
+  ```mermaid
+  
   flowchart LR
-  	biochemical-preperation --> cryo-em-sample-preparation --> Imaging --> data-collection
+  	biochemical-preperation --> cryo-em-sample-preparation --> Imaging --> data-collection(data-collection)
   	dc(data-collection)-->image-processing-->reconstruction--> structural-analysis--> Model
   ```
 
 + Generally Liquid Ethane is used.
 
-+ 
++ 3D images are reconstructed from 2D segment images from all angles.
+
++ Cryo-EM can do very big protein structures. 
+
+
+
+
+# Bioinformatics and protein structure
+
++ `Uniprot` : Entries are manually annotated. This is the first stop to check an unknown protein. It contains references to other databases as well.
++ There are multiple `.pdb` files for a single protein corresponsiong to all the different experiments done with the protein. They might have different resolutions, and precision.
++ `PhosphoSite Plus` : provides comprehensive information and tools for the study of protein post-translational modifications (PTMs) including phosphorylation, acetylation, and more.
++ `STRING`: All about protein interations. It contains protein-protein interaction data.
++ `PDB`: The Protein Data Bank.
++ `Drugbank`:  Database of drugs.
++ `ChEMBL`: Drug database where searches can also be compound-centric using different formats.
