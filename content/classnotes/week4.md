@@ -273,3 +273,123 @@ Day 2
 + `PDB`: The Protein Data Bank.
 + `Drugbank`:  Database of drugs.
 + `ChEMBL`: Drug database where searches can also be compound-centric using different formats.
+
+
+
+# AlphaFold
+
+```mermaid
+flowchart LR
+	Sequence --> Structure --> Function
+```
+
+Each step involves shrinking of the total phase space of that particular function.
+
++ Critical Assessment of protein Structure Prediction (CASP) - competition held for prediction of Protein Structure. The FOM is GDT (Global Distance Test).
++ AlphaFold 1 was the first to combine Multiple Sequence Alignment (MSA) and Deep Neural Networks.
++ MSA finds similar sequence across different species, aligns, and then find "suitable mutations" or the set of all possible mutations (coevolution).
+  + If something mutates to a more positive base, the other base can mutate to something more negative, but not positive.
+  + We calculate distance matrix -> Correlation matrix.
++ A neural network can approximate any function, given that your neural network has arbitrary width and we have an infinite dataset.
++ AlphaFold also uses a Convolutional neural networks to recognise patterns.
++ Output is the distance matrix, and the distance matrix of the two dihedral angles $\phi$  and $\psi$.
++ The Input for AlphaFold-2 is the MSA.
+
+
+
+**AlphaFold-1:**
+
+```mermaid
+graph LR
+	1(Sequence and MSA features)-->2(Deep Neural Networks)-->3(Distance and Torosional distribution predictions)
+```
+
+**AlphaFold-2:**
+
+![Alphafold PipeLine (credits Casper)](/Users/byatharth/code/yatharthb97.github.io/static/images/classnotes/alphafold.jpeg)
+
+
+
++ Bad templates are inserted so AF won't copy template features.
+
++ AMBER relaxation optimizes the final structure.
+
++ "Self-distillation training" - Using your own predictions as a dataset.
+
++ > Human vs Other Species -> Prediction Score Comparision
+
++ **Is all AlphaFold code open source?** :  Everything is opensource.
+
++ Autocompletion is based on the Attention Matrix, whcih comes from a language model.
+
++ AF also does a bunch of other things: protein-protein interactions, docking, predicting binding sites, etc.
+
++ ColabFold is a better version of AlphaFold 2. It is a lot faster with improved MSA step. It also allows for complex predictions.
+
++ [AlphaFold 2 practice notebook](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb#scrollTo=ADDuaolKmjGW)
+
+
+
+---
+
+Day 3
+
+---
+
+
+
+# Binding
+
++ Spontaneous process at constant temperature and pressure always involves decrease in the Gibbs Free energy of the system ($dG < 0$).
+
++ It accounts for both enthalpic and entropic contributions of the system. 
+  $$
+  dG = dH - TdS
+  $$
+
+
+
++ Equilibrium Constants:
+
+$$
+\Delta G^0 = -RTlnK_{eq} \rightarrow K_{eq} = e^{- \frac {\Delta G^0}{RT}}
+$$
+
++ **Homo Sapiens**:  ~15, 000 proteins expresses. 135,000 pp-interactions.
++ Specificity is the ratio of binding affinities. They are theoreticlly not related. Innature, Higher affinity implies lower specificity.
++ Binding sites usually have a hydrophobic core and then on the rim, you have bases that have specificity.
++ Whwn fraction $f$ is half in a reaction, out dissociation constant $K_D$ equals the ligand concentration $L$.
++ Univeral binding isotherm is expressed in terms of $K_D$.
+
+## Drug Binding by Proteins
+
+1. Find a **Lead compound**. That bind to the receptor. They are usually not very specific and affinative.
+2. Iterate the lead compound to imrove specificity and affinity.
+
++ Competative inhibitors: $IC_{50}$ is the concentration of the inhibitor that reduces the binding of the protein by half maximal value.
++ $IC_{50}s$ are used rather than a single value because the activity of the drug may vary between the population just because of random mutations. 
++ Energetics of the Binding: There is entropic loss but enthalpic gain. $\Delta G = \Delta H - T \Delta S$
++ The affinity for a protein for a ligand is characterized by the dissociation constant, $K_D$.
++ The strength of binding interactions is often correlated with hydrophobicity.
++ MASIF: Surface-Based Protein-Protein Interaction Prediction
+  + All informtion required for predicting binding is present on the surface.
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Exercise Notes
+
++ >  “MaSIF receives a protein surface as an input and outputs a predicted score for the surface on the likelihood of being involved in a PPI.” 
+  >
+  > — Assignment sheet
+
++ MaSIF can be used for iteratively for negative designing i.e. to remove features from the protein structure. 
