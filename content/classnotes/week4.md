@@ -378,7 +378,41 @@ $$
 
 
 
+# Exploring the potential of deep learning in de novo protein design
 
++ Protein perform a variety of functions
+
+  + Signalling
+  + Immunity
+  + Structure
+  + Catalysis
+  + Transport
+
++ Other functions (adapted for use):
+
+  + Therapeutics
+  + Biosensors
+  + Enzymes
+  + Biomaterials
+
++ Proteins as domains:
+
+  ```mermaid
+  graph LR
+  	Sequence --> Structure --> Function
+  ```
+
+  As a protein enginner you reverse the graph in your approach.
+
++ Motif grafting: Take parts of proteins (motifs) and combine them at the sequence level.
+
++ Classic de novo protein design is limited by already known structures (the PDB database). The **top-down design method**
+
++ A better approach is the **de novo protein design**: It takes a Bottom-up functional protein design. It is much more computationally expensive and suffers from a very low success rate.
+
++ Added an MC Step to the protein iteration step for scoring random mutations.
+
++ > > > "Oracle models"
 
 
 
