@@ -416,10 +416,6 @@ $$
 
 
 
-
-
-
-
 # Exercise Notes
 
 + >  “MaSIF receives a protein surface as an input and outputs a predicted score for the surface on the likelihood of being involved in a PPI.” 
@@ -427,3 +423,34 @@ $$
   > — Assignment sheet
 
 + MaSIF can be used for iteratively for negative designing i.e. to remove features from the protein structure. 
+
+
+
+
+
+---
+
+Day 4
+
+---
+
+
+
+# DNA structure and replication
+
+<center> Marco Fumasoni</center>
+
++ The famous **Photo 51** which was an X-ray crystallographic image of the DNA double helix strand.
++ DNA replication proceeds only in one direction. It is because of the presence of phosphtes on the one side only, which is required for catalysis.
++ The replication movement creates a "replication fork", which leads to a **leading strand (continuous synthesis)** and **lagging strand (discontinuous sequence)**.  The fragments on the lagging strand are vcalled **Okazaki fragments**.
++ Replisome;
+  + Average human chromosome: 150 Mbp
+  + Average Eukaryotic replisome speed: ~50 nt/s
+  + It will take 400 hours for the replication to occur.
+  + Hence there are 100s of origins for replication on a chromosome.
++ How to identify DNA replication origins? (which are parts ) :
+  + Chop DNA, make some kind of loops with URA3. Only segments with Origins replicate and survive to grow into colonies.
++ Deep Sequencing: sequencing of DNA at different time points gives rise to a frequency distribution, where the modes give you the Origin points.
+  + This method can also give you the speed of the fork , etc.
++ With Cloning we can find all potential Origin sites, however, with Deep Sequencing, you find the Origins that are being actually used by the cell.
++ 
