@@ -453,4 +453,9 @@ Day 4
 + Deep Sequencing: sequencing of DNA at different time points gives rise to a frequency distribution, where the modes give you the Origin points.
   + This method can also give you the speed of the fork , etc.
 + With Cloning we can find all potential Origin sites, however, with Deep Sequencing, you find the Origins that are being actually used by the cell.
-+ 
++ End replication problem: Each time a cell divides, the chromosomes should be shortened. Finally the chromosomes should and be damaged.
++ The telomere: Its a end point sequence that protects linear DNA from degradation by replacing the shortened DNA bases.
++ Telomerase: the enzyme that does the replacement.
++ Some cancers can express Telomerase to bypass the cell division limit.
++ Telomers are repeated sequences. The T-loop hypothesis states that the end of the DNA strand loops back to itself to make a loop, so as to not signal as a broken DNA strand. The end-looping region is the Trlomer region.
++ Different organisms also use different mechanisms to deal with end poins of its genetic material.
