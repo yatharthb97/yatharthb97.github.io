@@ -488,7 +488,7 @@ Day 5
 
 + Kineticore: Protein complex TODO
 
-+ If there are problems with Kineticores, you get aneuploid. ~90% of solid human tumors and ~75% of hematopoietic cancers are aneuploid.
++ If there are problems with Kineticores, you get **aneuploid**. ~90% of solid human tumors and ~75% of hematopoietic cancers are aneuploid.
 
 + Key steps for a centromere:
 
@@ -520,4 +520,47 @@ Day 5
 + **Interphase**:  Period between the cell divisions. During this phase, the genetic material (DNA) is replicated by the cell.
 
 + In mammals, you can find chromosomes that like to localize in a certain region of the nucleus.
-+ 
+
+
+
+# How to build a mitotic chromosome?
+
+<center> Raquel Oliveria</center>
+
++ mitosis means "threads". The threads are the chromosomes.
+
++ Why cells need to build a mitotic chromosome?
+
+  + spatial compaction
+  + mechanical properties
+  + resolution of sister-chromatids
+  + switch off transcription
+
++ Interphase to mitosis compaction: 2X compaction.
+
++ Assembly of mitotic chromosomes is not fully known. There are several models:
+
+  + Hierarchical folding
+  + Scaffold/radial-loop
+  + Chromatin network
+  + Thin Layer stack
+
++ The localization of chromatin position explains how features far away in the genetic sequence regulate each other.
+
++ Positive supercoils are formed when the Replication Fork travels through the chromatin strands. To release these tension:
+
+  + Rotation of the replication fork itself.
+  + Nick the strand to release the tension and then re-attach.
+  + Topoisomerase II is required for decatenation and sister chromatin resolution
+
++ Transcription is turned off during Mitosis. Dogmas:
+
+  + Chromatin accessibility is limited.
+  + Global transcription suppression.
+
+  
+
+  
+
+---
+
