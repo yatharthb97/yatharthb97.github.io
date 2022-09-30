@@ -500,3 +500,23 @@ Day 5
 + The 171-bp alpha satellite is the fundamental unit of the centromere DNA. 
 
 + ~3% of the total human genome is chromomeric DNA. CENP-B is the only centromeric DNA-seq specific binding protein.
+
++ The centromeres exist in two domains: CENP-A and CENP-B.
+
++ Bigger centromere regions can lead to tangling of microtubles and chromatin during division.
+
++ **Histones:** 
+
+  ![Histone mechanism](https://www.genome.gov/sites/default/files/media/images/2022-05/Histone.jpg)
+
++ CENP-A and CENP-B arer particular histones that are specific to centromeres.
+
+# Where do Chromosomes go in interphase?
+
+<center> Marco Fumasoni</center>
+
+![Cell Cycles](https://cdn.kastatic.org/ka-perseus-images/6afac0fce62ec8a30c86f3e02c457224339bb697.png)
+
++ **Interphase**:  Period between the cell divisions.
+
++ 
