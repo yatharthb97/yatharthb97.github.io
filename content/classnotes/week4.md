@@ -306,7 +306,7 @@ graph LR
 
 **AlphaFold-2:**
 
-![Alphafold PipeLine (credits Casper)](/Users/byatharth/code/yatharthb97.github.io/static/images/classnotes/alphafold.jpeg)
+![Alphafold PipeLine (credits Casper)](/static/images/classnotes/alphafold.jpeg)
 
 
 
@@ -459,3 +459,44 @@ Day 4
 + Some cancers can express Telomerase to bypass the cell division limit.
 + Telomers are repeated sequences. The T-loop hypothesis states that the end of the DNA strand loops back to itself to make a loop, so as to not signal as a broken DNA strand. The end-looping region is the Trlomer region.
 + Different organisms also use different mechanisms to deal with end poins of its genetic material.
+
+
+
+---
+
+Day 5
+
+---
+
+
+
+# Centromeres: from epigenetic to genetic
+
+<center> Daniele Fachinetti </center>
+
++ Cell division has been studied for a long time because of its importance in lifes' processes.
+
++ Centrosomes and centromere are the two key factors for cell division.
+
++ **The centromere** is a protein/DNA structure which links chromosomes to spindle microtubules.
+
++ Centromeric architechtures are diverse:
+
+  + Regional centromeres
+  + Point centromeres
+  + Holocentromers
+
++ Kineticore: Protein complex TODO
+
++ If there are problems with Kineticores, you get aneuploid. ~90% of solid human tumors and ~75% of hematopoietic cancers are aneuploid.
+
++ Key steps for a centromere:
+
+  1. Centromere Position (decision on the location of the centromere, which is permanent)
+
+  2. Centromere function
+  3. Centromere integrity
+
++ The 171-bp alpha satellite is the fundamental unit of the centromere DNA. 
+
++ ~3% of the total human genome is chromomeric DNA. CENP-B is the only centromeric DNA-seq specific binding protein.
