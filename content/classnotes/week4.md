@@ -306,7 +306,7 @@ graph LR
 
 **AlphaFold-2:**
 
-![Alphafold PipeLine (credits Casper)](/static/images/classnotes/alphafold.jpeg)
+![Alphafold PipeLine (credits Casper)](/images/classnotes/alphafold.jpeg)
 
 
 
@@ -519,4 +519,5 @@ Day 5
 
 + **Interphase**:  Period between the cell divisions. During this phase, the genetic material (DNA) is replicated by the cell.
 
++ In mammals, you can find chromosomes that like to localize in a certain region of the nucleus.
 + 
