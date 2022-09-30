@@ -507,7 +507,7 @@ Day 5
 
 + **Histones:** 
 
-  ![Histone mechanism](https://www.genome.gov/sites/default/files/media/images/2022-05/Histone.jpg)
+  ![[Histone mechanism](https://www.genome.gov/sites/default/files/media/images/2022-05/Histone.jpg)](https://www.genome.gov/sites/default/files/media/images/2022-05/Histone.jpg)
 
 + CENP-A and CENP-B arer particular histones that are specific to centromeres.
 
@@ -515,8 +515,8 @@ Day 5
 
 <center> Marco Fumasoni</center>
 
-![Cell Cycles](https://cdn.kastatic.org/ka-perseus-images/6afac0fce62ec8a30c86f3e02c457224339bb697.png)
+![[Cell Cycles](https://cdn.kastatic.org/ka-perseus-images/6afac0fce62ec8a30c86f3e02c457224339bb697.png)](https://cdn.kastatic.org/ka-perseus-images/6afac0fce62ec8a30c86f3e02c457224339bb697.png)
 
-+ **Interphase**:  Period between the cell divisions.
++ **Interphase**:  Period between the cell divisions. During this phase, the genetic material (DNA) is replicated by the cell.
 
 + 
