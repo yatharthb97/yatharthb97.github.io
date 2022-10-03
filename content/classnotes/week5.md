@@ -29,7 +29,7 @@ ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 
 cover:
-    image: "https://ars.els-cdn.com/content/image/1-s2.0-S1044579X16300013-gr1.jpg"
+    image: "https://www.cell.com/cms/attachment/614804/4948179/gr1.jpg"
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
@@ -50,6 +50,10 @@ editPost:
 # Introduction to the Cell Cycle
 
 <center> Raquel Oliveira </center>
+
+
+
+
 
 + the DNA molecule: Long-term storage of information
   + reading
@@ -90,6 +94,10 @@ editPost:
 
 <center> Marco Fumasoni</center>
 
+
+
+
+
 + There are restrictions when we need cell replication inside the cell, in contrast to say a PCR:
 
   + Replication is done with only one cycle.
@@ -98,4 +106,5 @@ editPost:
 
     ![under Replication](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrc3916/MediaObjects/41568_2015_Article_BFnrc3916_Fig1_HTML.jpg)
 
++ In bacteria, the DNA replication is not very time controlled, hence the problem of over-replication does not hinder the development of the cell.
 + 
