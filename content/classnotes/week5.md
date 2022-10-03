@@ -107,4 +107,13 @@ editPost:
     ![under Replication](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrc3916/MediaObjects/41568_2015_Article_BFnrc3916_Fig1_HTML.jpg)
 
 + In bacteria, the DNA replication is not very time controlled, hence the problem of over-replication does not hinder the development of the cell.
-+ 
+
++ Origin  is liciened to "**ORC"** : Origin Recognition Complex, which recognises the Helicase.
+
++ **Helicase**: Enzyme that unpacks the genetic material. In this context, it opens up the double Helix.
+
++ What makes certain Origins slower? (Some origins can fire but they don't)
+
++ To prevent the activation of certain Origins, the cell can use checkpoints like the regulation of DDK. mec1 modification can express DDK and r+then control the oroduction of DDK.
+
+  
