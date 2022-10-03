@@ -117,3 +117,29 @@ editPost:
 + To prevent the activation of certain Origins, the cell can use checkpoints like the regulation of DDK. mec1 modification can express DDK and r+then control the oroduction of DDK.
 
   
+
+# Mitosis
+
+<center> Raquel Oliveira </center>
+
++ > Riddle: Two blind man go shopping for socks 
+  >
+  > There was a man who went to the mall and he bought 3 pairs of red socks and 3 pairs of white socks. Another man who already bought 3 pairs of red socks and 3 pairs of white socks came back to return his 3 pairs of red socks and 3 pairs of white socks. They are both blind. As they were walking they bumped into each other. All the socks scattered around the floor, but each pair remained held together by a rubber band. Nobody helped them pick it up except each other, but in 3 minutes they both put them back altogether. Each man ended up with the same colors of socks he started with: six red and six white. How is that possible if they are blind?
+
++ How do cells divide? 
+
++ [Kangaroo-Rat from Australia](https://en.wikipedia.org/wiki/Musky_rat-kangaroo) as our model organiosm, since it has only 12 to 13 chromosomes.
+
++ Insects (like the Drosophilia) divide for 13 generations in a single "Pangea cell". Hence, the division is extremenly synchronised.
+
+### Questions
+
++ The constraint of space. Can't we have a bigger nucleus? So that more space allows for less crowding bias.
+
++  How much force does the spindles apply when they are pulling apart the chromatins?
+
++ How do they [the spindles] know when its the right time to pull ?
+
++ How do Chromosomes find their way?
+
+  {{< youtube AoPRd4AZEAY >}}
