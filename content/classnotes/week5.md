@@ -142,4 +142,67 @@ editPost:
 
 + How do Chromosomes find their way?
 
+  
+
   {{< youtube AoPRd4AZEAY >}}
+
+  
+
+  Several models have been proposed. Mathematically, it was found that a random microtuble search of the space would not be enough. 
+
+  The number of mechanisms that promote effcient chromosome capture are about 6-7 in number and still increasding.
+
+### Answers
+
++ The correct position to grab the chromosome is done using mechanosensing. A tension-sensitive error correction mechanism is used.
+
+  ![Division Attachments](https://www.researchgate.net/profile/Carlos-Martinez-A/publication/44607069/figure/fig1/AS:195410644738048@1423600936245/Spindle-attachment-defects-a-In-amphitelic-attachment-the-sister-kinetochores-are.png)
+
++ Merotelic attachment is a problematic case and is responsible for most errors during copying.
+
++ Metaphase $\rightarrow$ Anaphase : Separase is activated by the APC. It is the primary regulatory mechanism.
+
++ The seperation mechanism relies on sensing all microtubles attachment to kinetochores.
+
++ ~700 pN force is applied by the spindle.
+
+
+
+# Cell Division in Developement
+
+<center>Eurico Morais-de-Sá</center>
+
++ Cell Polarity:  Eg: Neurons; Edourard Van Beneden and Carl Rabl.
+
++ ~75% of human diseases have analogues/homologues in Drosophila.
+
++ "They don't eat much, reproduce like mad, and never demand an ethics committee" - whyfiles.org
+
++  PAR-genes controls the cell polarity. The spatial clue is the **Sperm centrosome**.
+
++ Making polarized cells:
+
+  ```mermaid
+  flowchart TD
+  	Spatial-Cue--Symmetry-breaking-->2(Distribution of Polarity determinants)
+  	2 --> X
+  ```
+
++ Cell Polarity is observed in multiple cell contexts.
+
++ Why do we care about epithelial organisation? Epithelial barriers are essential for organism compartmentalization.
+
++ > >  "Apical-basal": "inside and outside" maybe
+
++ Epithelial cell devision in the basal part is spatially oriented. We see Planar spindle orientation that precedes planar cell division. 
+
++ Epithelial cell division:
+
+  + Asymmetric division: Different fates/ Tissue thickening
+  + Symmetric division: Identical fates/Tissue spreading
+
++ The Position of the centrosomes determine the positioning of the spindle orientation.
+
++ Hertwig "long-axis" rule states that cells prefer to divide perpendicular to the long axis of the mitotic spindle.
+
++ Polarity oscillations maintains tissue architecture.
