@@ -206,3 +206,81 @@ editPost:
 + Hertwig "long-axis" rule states that cells prefer to divide perpendicular to the long axis of the mitotic spindle.
 
 + Polarity oscillations maintains tissue architecture.
+
+
+
+
+
+---
+
+<center> Day 2 </center>
+
+---
+
+
+
+# Tublin Cytoskeleton/ Centrosomes (general principles)
+
+<center> Mónica Bettencourt Dias</center>
+
+
+
+
+
++ All functions of the cell kind of depend on the cytoskeleton.
++ Tublins: are the functional building blocks.
++ Filament polarity largely determines the complex structure of cells and its polaritty.
++ Microtubles direct vesicle trafficked by acting as tracks for motor proteins. Golgi and lysosomes move towards minus ends while secretory vescicles move towards at the plus end.
+
++ You have motor proteins moving across this polar track:
+
+  + Dyneins:  
+  + Kinesins:
+
++ Dybamic Instability is driven by GTP hydrolysis. GTP units like to be straight but the GDP units like to be curved.
+
++ Cellular factors regulate Dynamc Instability: Cyclines and Cdks also change the structure of the cytoskeleton dynamics. 
+
++ **Aggregation follows bulk polymerization dynamics.**
+
++ The cell controls where polymers from using nucleating factors.
+
++ Centrosomes contains $\gamma$-tublin which acts as nucleating sites for Tublin filamentation.
+
++ Henneguy-Lenhossek hypothesis: Centrosomes can form spindles as well as flagella. They also form cilia.
+
++ Most human cells have cellia, hence, problems with cillia results in a myriad of seemingly unconnected pathologies. Like Retinal degeneration, Kidney Cysts, Cognitive defects.
+
++ Cillia Assembly: The centrosomes goes to the membrane and starts assembling a microtuble structure called the **Cillium**.
+
++ Centrioles are not **necessary** for cell division. Cell divisions can happen without it. Many organism families have dropped it altogether.
+
++ A centrosome has two centrioles.
+
++ Chromosomes can also nucleate microtubles, hence, centrosoles are redundant for cell division.
+
++ Human/Mice Cells need Centrioles for cell division.
+
++ Kinesisns can also bind together to focus microtuble spindles.
+
++ More than one centrosome can cause a variety of cancers because they can interfere during cell division and cause aneuploidy.
+
++ Cells adapt to multiple centrosomes by clustering them, especially cancer cells.
+
++ > Senior IGC Fellow: Pedro
+
++ Bacteria have something similar to Actin and Tubilin.
+
++ Cancer Centrosomes & Cancer Mitosis
+
+  + Asymetric cell division
+
+  + Aneuploidy
+
+  + Increased/Decreased  signalling plateform
+
+  + Increased Microtuble directed polarization
+
+  + >  Altered Rho GTPhase activity andd Altered Focal adhesion turnover
+
+  
