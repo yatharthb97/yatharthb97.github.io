@@ -283,4 +283,178 @@ editPost:
 
   + >  Altered Rho GTPhase activity andd Altered Focal adhesion turnover
 
-  
+
+
+
+
+---
+
+<center> Day 3 </center>
+
+---
+
+
+
+# Membrane Protein Proteostasis
+
+<center>Colin Adrian</center>
+
+
+
++ 30% of proteins encoded are pushed into the Endoplasmic Reticulum, and are membrane or secretary proteins.
+
++ We have organelles to sepertate many different chemical processes : to compartmentalize them.
+
++ Fluid Mosaic Model:1972 to present
+
+  ![Fluid Mosaic Model](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cell_membrane_detailed_diagram_en.svg/1200px-Cell_membrane_detailed_diagram_en.svg.png)
+
++ Transmembrane domains are alpha helices that can be used to classify memebrane proteins 
+
++ > >  Polytopic membrane: TODO
+
++ Charged residues are used to emable polymerization or dimerisation.
+
++ ~50% of membrane is composed of **transmembrane proteins.**
+
++ Membrane proteins are often difficult to fold. And a few disease causing mutations can cause a variety of debilitating diseases.
+
++ The ER is responsible for the quality control of proteins. Folding is tighly linked to the oscialltions of proteins. Addition of sugars.
+
++ > > Ramanujan S. Hegde for Membrane Protein studies.
+
++  The signal sequence hypothesis: As the polypeptide emerges from the ribosome, it is sensed and inserted in the membrane as it folds.
+
++ Signal peptide or transmembrane domains are needed to recognize a transmembrane protein. Tail Anchored (TA) proteins have a very short C terminal and no signallling domain, hence co-translation is not possible.
+
++ Post-translation; TODO
+
+
+
+## Lipid Droplets: Intracellular stores of triglycerides & cholestryl esters
+
++ Organalles: They have their own specialised proteiome.
++ Features & contents of liquid droplets: Phospholipid Monolayer and TAGs and Sterol ethers in the inside.
++ Their function is to store energy in the form of Tri-glycerides.
+  + viral assembly plateforms
+  + inflammatory lipid biosynthesis
+  + TODO
++ ERAD: ER-associated degradation for misfolded proteins.
+
+
+
+
+
+# New Paradigms in Viruses
+
+<center> Maria João Amorim</center>
+
++ Viruses infects every organism. For example, Hepatitis B is prevelent among a lot of organismic families.
+
++ Most epidemics and pandemics have been caused by viruses.
+
++ Its very diffiult to have animal models where you can study viruses generally.
+
++ If they don't find a receptor, they are innocuous.
+
++ Host spillover events: virus finds a new host while jumping from its current "natural" host.
+
++ Viruses modify the Cell architecture/pathways/homeostasis.
+
++ Viral lifecycle:
+
+  ```mermaid
+  flowchart LR
+  	1(x) --> 2(x)
+    2 --> 3(x)
+    3 --> 4(x)
+  	
+  ```
+
++ **Influenza A virion**: a small virus: ~13kB
++ Correct grouping of the RNA segments is necessary for viral replication. For example in Influenza A, there are 8 RNA segments.
++ Viral inclusion: It is the seperation of viral components in the cytoplasm mediated by liquid-liquid phase seperation or !percolating! loose RNA-RNA interactions.
++ IAV inclusions have the properties of liquid:
+  + Fusion and division
+  + Internal rearrangement
+  + Fast diffusion
+  + Dissolve quickly (responds to stimuli)
+
+
+
+
+
+---
+
+<center> Day 4 </center>
+
+---
+
+
+
+
+
+# Liquid-Liquid Phase Seperation in Biology
+
+<center> Alex Borodavka </center>
+
+
+
++ Liquid-Liquid phase seperation: 
+
++ Brangwynne et alMembraneless organelles behave like liquid droplets.
+
++ Progress with Live Cell Imaging has been a priminent reason for the discovery in Liquid-Liquid Phase seperation.
+
++ First diffraction patterns were derived from viruses because of their symetrical structures. And they are easier to crystallize viruses.
+
++ Crystallization was used as a purification technique for viruses and protein for years.
+
++ There has been a lot of progress in Live Cell imaging without tags (Differential/Nomarski interference contrast microscopy - DIC; Holographic Interference Microscopy - HIM etc)
+
++ Ethanol is added during protein precepitation with salts to change the dielectric constant of the solvent.
+
++ Types of Interactions, for species $a, b$:
+
+  + Homotypic interaction energies: $E_{aa}, E_{bb}$
+  + Heterotypic interactions: $E_{ab}$
+
++ For L-L pahse separation:
+  $$
+  \chi = \frac{E_{heterotypic} - E_{homotypic}}{k_BT} >> 1
+  $$
+
++ Valency of interactions:
+
+  + Avidity: Multiple distinct pairwise interactions among binding sites and receptors
+  + Allovalency: Multiple epitopes along the same legands.
+
++ "Fuzzy interactions" : Multiple interchangable interaction sites.
+
++ At concentrations above $C_{critical}$, a protein will form droplets.
+
++ Limiting Factor for an infinite protein droplet radius:
+
+  + Conncentration outsiede the droplet ($C_{out}$)
+  + Temperature fluctuations
+
++ >  Zeta potential and the surface charge
+
++ Biomolecular Condensate is a mix of 'Scaffolds' and their 'Clients' RNAs can also act as 'Scaffolds'.
+
++ > > Ligand binding might be necessary for IDFs to go from a disordered state to an ordered transition.
+
++ Some residues are prevalent in proteins that undergo LLPS.
+
++ **Coacervates**:  TODO
+
++ Simple condensates like to exclude everything within them. So they generally have no aqueous pockets/capsules inside them.
+
+
+
+---
+
+
+
+
+
