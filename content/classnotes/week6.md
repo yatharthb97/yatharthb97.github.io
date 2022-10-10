@@ -1,5 +1,5 @@
 ---
-title: "CELLULAR AND DEVELOPMENTAL BIOLOGY"
+title: "Cellular and Developmental Biology"
 date: 2022-10-10T10:00:53+01:00
 draft: false
 description: "IBB Lecture class notes."
@@ -29,7 +29,7 @@ ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 
 cover:
-    image: "https://www.cell.com/cms/attachment/614804/4948179/gr1.jpg"
+    image: "<xtext>"
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
@@ -44,6 +44,8 @@ editPost:
 
 
 # General concepts in Developmental Biology and their historical context
+
+<center>Moisés Mallo</center>
 
 ### Assignment
 
@@ -84,4 +86,44 @@ editPost:
   ![Somatic cell nuclear transfer - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Cloning_diagram_english.svg/1200px-Cloning_diagram_english.svg.png)
 
 + Genes control embryonic development: This was illustrated using the "Hox Genes", where they modified a single gene, with whose modification, they were able to indice the development of many legs in Drosophila.
-+ 
++ **Zebra Fish is used as a model organism** because you can see the whole embryonic development process clearly under the microscope.
+
+## Morphogens
+
+A morphogen is a molecule that controls the formation of patterns during embryonic development through their non-unifrom distribution.
+
+![Turing Patterns](https://upload.wikimedia.org/wikipedia/commons/3/3d/Six_States_-_Turing_Patterns.jpg)
+
+![](https://i0.wp.com/sitn.hms.harvard.edu/wp-content/uploads/2012/07/morpho_fig4.png?resize=601%2C346)
+
++ Morphogenes were identified that control the patterns during embryonic development stages. 
+
+  ![](https://www.researchgate.net/publication/325733579/figure/fig1/AS:636905897091072@1528861607143/Lewis-Wolperts-French-Flag-Model.png)
+
+  
+
+## Induction
+
++ Two kinds of Induction
+  + Instructive: Tissue is told what to become.
+  + Permissive: Tissue knows what to become already, it wait for its trigger.
+
+
+
+## Generic Notes
+
++ Stem cells can divide forever in a culture.
+
++ Genetic Material Transfer
+
+  ![](https://www.researchgate.net/profile/Enca-Martin-Rendon/publication/23656791/figure/fig1/AS:340353220661262@1458157939988/Fig-1-Genetic-manipulation-of-stem-cells-A-Gene-transfer-techniques-Embryonic.png)
+
+![](https://www.nobelprize.org/uploads/2018/06/adv-fig-1_web.gif)
+
+
+
++ > > > Cas9 and Cas13
+
+  ----
+
+  
