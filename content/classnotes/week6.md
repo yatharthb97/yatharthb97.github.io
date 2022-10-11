@@ -126,4 +126,62 @@ A morphogen is a molecule that controls the formation of patterns during embryon
 
   ----
 
+
+
+# The emerging technologies and approaches applied to the study of development
+
+<center>Moisés Mallo</center>
+
+
+
++ How do you know what is going on inside cells or tissues? Identification of the activity of single genes/proteins and their combination:
+  + Globally: Northern blot, Western blot, RT-PCR
+  + Spatial resolution: In situ hybridization, immunochemistry 
+
++ Western Blot: Seperates proteins based on the size of their sequences. The protein is denatured and folded with sphericity using a chemical agent before placing it in the gel.
++ Massive Paralle Sequencing: 
++ Capturing dynamic processes of cellular lineages:
+  + RNA velocity
+    + Compares splices and non-spliced RNA sequences
+    + 
+  + Diffusion maps
+    + Searches for the nearest neighbor graphs in the transcriptomes of consecutive stages to create orderly sequences and branches
+    + Uses data from developmental series
+
+
+# Mechanisms of Morphogenesis Lab
+<center> Elias H Barriga </center>
+
+## Some Xenopus laevis discoveries and gossip
++ X. laevis and X. tropicalis: The development temperatures are different. For Tropicalis, it can be controlled quite well.
++ The origin of these frogs is in Africa. In the wild, they are very agressive and at many places they have become an invasive species.
++ [`Xenbase`](www.xenbase.org)  [`Xenopus`](www.xenopusresource.org) are websites that are databases for Xenopus.
++ How this started? : Luigi Galvani and the frog mustle experiment(s).
++ Electric fields drive neural crest migration ex vivo.
+
+### The Xenopus Pregnancy Test
+
++ Inject frogs with urine sample while them swim in a sterile buffer. The sampl was injected near the overies of the femaile Xenopus.
++ Only effective for detection if the pregnancy was about 3-5 weeks.
++ Release of frog eggs would indicate a pregnancy.
   
+  ## Down to Embroyos
+
++ The nucleus from the same species can be transplanted into an egg and it can develop to a tadpole and beyond.
++ 'Something' happens later when the cells get differentiated that makes the nucleus unable to be reprogrammed.
++ Later in 2012, John B. Gurdon and Shinya Yamanaka got the Nobel Prize for their work in understanding 'the something' - which today is called nuclear reprogramming.
++ Robert Briggs and Thomas J King did the very first nuclar transplantation in Xenopus.
+
+#### Spemann-Mongold organizer
++ 1924: they discovered the Spemann-Mongold organizer which is a portion of the embroyo that induces other cells to organize specifically.
+
+## The motor of morphogenesis
+
++ Fate maps: put fluorophores in a particular locations and track where they end up during morphogenesis.
+
+# Synchronising tissue morphogenesis
+
++ **Cell migration** involves active translocation of a cell or a group of cells from one position to another and it is essential in a wide range of physiological as well as pathological contexts.
++ >> Philotaxis TODO
++ Warber Effect: Hypoxy in the presence of sufficient oxygen due to excessive expenditure in active transport.
++ >> Reas about Lamella and substrate adhesion dependent movement. Espina JA, et al, 2021 FEBS
