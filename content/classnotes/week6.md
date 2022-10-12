@@ -162,14 +162,23 @@ A morphogen is a molecule that controls the formation of patterns during embryon
 ### The Xenopus Pregnancy Test
 
 + Inject frogs with urine sample while them swim in a sterile buffer. The sampl was injected near the overies of the femaile Xenopus.
+
 + Only effective for detection if the pregnancy was about 3-5 weeks.
+
 + Release of frog eggs would indicate a pregnancy.
+  
++ Lancelot Hogben established the first Xenopus colony at the London School of Economics in 1927.
+  
++ Exploited the fact that Xenopus females laid eggs in response to human chrionic gondatropin.
   
   ## Down to Embroyos
 
 + The nucleus from the same species can be transplanted into an egg and it can develop to a tadpole and beyond.
+
 + 'Something' happens later when the cells get differentiated that makes the nucleus unable to be reprogrammed.
+
 + Later in 2012, John B. Gurdon and Shinya Yamanaka got the Nobel Prize for their work in understanding 'the something' - which today is called nuclear reprogramming.
+
 + Robert Briggs and Thomas J King did the very first nuclar transplantation in Xenopus.
 
 #### Spemann-Mongold organizer
@@ -184,4 +193,76 @@ A morphogen is a molecule that controls the formation of patterns during embryon
 + **Cell migration** involves active translocation of a cell or a group of cells from one position to another and it is essential in a wide range of physiological as well as pathological contexts.
 + >> Philotaxis TODO
 + Warber Effect: Hypoxy in the presence of sufficient oxygen due to excessive expenditure in active transport.
-+ >> Reas about Lamella and substrate adhesion dependent movement. Espina JA, et al, 2021 FEBS
++ >> Read about Lamella and substrate adhesion dependent movement. Espina JA, et al, 2021 FEBS
++ Cells form blebbs to escape confinement.
++ Social cells:  
+	+ Bias induces the to swim in a particular direction.
+	+ They can cooperate and form specific structures. Within these structures they aquire specialised roles.
++ >> Read about Contact Inhibition of locomotion.
++ Epithelial cells can also migrate.
++ Durotaxis: Transport along a stress gradient.
+
+## Why 'The Neural Crest?' [for studying cell migration]
++ >> Read **Cell Movement Is Guided by the Rigidity of the Substrate**.
+
+
+
+
+
+---
+
+<center> Day 3</center>
+
+---
+
+
+
+# From animal caps to omics and mechanics of cell extrusion
+
+<center>Jakub Sedzinski</center>
+
+
+
++ Amphibians were used for pioneering cell migration studies.
++ Best way to cut the embroyo is from the eye lash of a new born baby.
++ Xenopus leaves: First described by the French naturalist Francois Marie Daudin in 1803. The name means: the clawed African frog.
++ Michail Fischbergy recognised that this [urine injection] allowed for frog embroyology to be run throughout the year.
+
+
+
+## Nuclear reprogramming experiment
+
++ Kill the OG nucleus with high intensity UV radiation. Add the required nucleus from the somatic cells of the to-be-cloned organism.
+
+
+
+## How to work with Xenopus?
+
++ Squeeze to release the eggs. Put the female for rest for 3 months.
++ Kill the male frog, and chop the testis. Make testis soup and mix it with the eggs. The Eggs are fertilized!
+
+
+
+# Cell turnover maintains tissue formation
+
+
+
++ Replacement of cells:
+  + Cell division
+  + Or stem cells migrate to the position and assume the role
++ The balance is described as follows; an imbalance causes Cancer:
+
+```mermaid
+flowchart TD
+	Tissue-homeostasis --> Removal-of-cells
+	Tissue-homeostasis --> Replacement-of-cells
+```
+
++ Multiciliary epithelium cells are model systems for studying a variety of mechanisms.
++ Apical emergence: How does a stem cell move to a specific position and assumes a specialized role?
+
+
+
++ > > Check how to calculate tension along on a non-uniform string.
+
++ 
