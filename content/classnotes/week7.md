@@ -169,8 +169,27 @@ flowchart TD
 	2A(A) -."-".->2B(B)
 	2B -."-".-> 2A
 	
-	3A(A) -."-".->3B(B)
-	3B -."-".-> 3A
+	3A(A) -."+".->3B(B)
+	3B -."+".-> 3A
 ```
 
++ Trap spaces: stable patterns/hypercubes, such that *hypercube h:*
+  $$
+  \forall\cross h, f(x) \in h
+  $$
+
 + 
+
++ Strongly Connected Components (SSC graph): Grouping a set of nodes into a high level node, when they form an orbit.
+
++ In the absence of kinetic knowledge, many alternative trajectories are possible.
+
++ Temporal Logic: Formalism for describing sequences of transitions between states in a reactive system
+
+  + CTL . Computational Tree Logic (branching-time)
+  + LTR - Linear Temporal Logic (linear-time)
+  + CTRL - Comutational Tree Regular Logic
+
++ > > Consortium for Logical Models and Tools
+
++ > > PhysiBoSS : Mechano-cell biology
