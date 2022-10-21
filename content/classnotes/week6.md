@@ -265,4 +265,94 @@ flowchart TD
 
 + > > Check how to calculate tension along on a non-uniform string.
 
+
+
+
+
+---
+
+<center>Day 5</center>
+
+---
+
+
+
+# How to make an organ: Questions of shape, growth and patterning: The example of the retina
+
+<center>Caren Norden</center>
+
+
+
++ They work on organ development in the context of the Retina. We study organogenesis in the developing zebrafish.
+
++ **Light Sheet Microscopy**: The FOV moves in a plane across the z-axis. The exposure is only limited to a thin slice of the sample.
+
++ **Spinning Disk Microscopy:** Many pinholes spin, while the smaple is exposed through these pinholes. TODO
+
++ Retenogenesis
+
+  ```mermaid
+  graph LR
+  	Shape-->Growth-->Patterning
+  	Shape-.->OCF(Optical Cup Formation)
+  	OCF-.->3RG(3 Different Epithelial Rearrangements)
+  	
+  
+  	Growth -.-> SSM(Some Steps Missing)
+  	Patterning -.-> Neuroepithelium(Neuroepithelium) -.-> ML(Migration and Lamination) -.-> 			Lamination(Lamination)
+  ```
+
++ The Optic Cup Formation shape is conserved over evolution even when neuronal composition is not.
+
++ **Extra Cellular Matrix:** It forms rails on which cells can move about.
+
++ Zebrafish is a good system to study optics is because the neural composition is closer to humans. Mice are nocturnal so that doesn't work.
+
++ Neural lamination is a widespread feature of brain development. Like the Hippocampus, Neocortex, and ofcourse the retina.
+
++ > > RGC needs to connect with particular PRs.
+
+
+
+
+
+---
+
+<center>Day 5</center>
+
+---
+
+
+
+# Mechanics of tissue renewal, or how to get a "new gut" every week
+
+<center>Denis Kmdija</center>
+
++ Classification of adult tissues:
+  + No renewel - no mitosis detected
+    + Sensory organs (retina, innear ear)
+  + Probably no renewal - infrequenct mitosis, leading to slow growth
+    + liver, kidney, endocrine and exocrine glands, connective tissues
+  + Rebewing tissues - abundant mitoses, exceeding the needs for adult growth
+    + Simple static epithelia: respiratiory epithelium
+    + TODO
+    + TODO
+    + TODO
++ Fastest-renewing tissues: 96% of the total turnover
+  + erythocytes
+  + neutrophilis
+  + intestinal epithelia
++ Renewel is not the same as regeneration after injury.
++ Turnover rate approx. 3-5 days (the time taken by the cell to be born and to die).
++ Small intestine: is the largest mucosal surface of the body and also the fastest-renewing epithelium in mammals (3-5 days).
++ The cells in the samll intestines form in the **crypt** and migrate over the **vilius** to the **extrusion** part, where they form mucas and eventually die.
++ The gut epithelium is a dynamic tissue barrier. You have different stresses:
+  + Chemicals - toxins
+  + Mechanical - pressure, stretch
+  + Biological - pathogens
++ **How is the balance achieved between division, migration, and extrusion ?**
++ The cell-division only takes place in the crypt, it cannot take place in the extrusion. Hence, small intestine cancers are extremey rare (there are many other reassons like a short lifecycle).
++ By running biophysical model we can simulate the density and velocity profiles. By comparing with the experimental data, it was found that **active migration** was a necessary component in the dynamics of these migrating cells.
++ Gut epithelium is under tension because the cell migration is pulling on the cell-cell junctions.
++ **Laser ablations are used to map junctional tensions.**
 + 
