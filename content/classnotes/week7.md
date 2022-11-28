@@ -162,12 +162,14 @@ editPost:
 + Stste transition graphs are not practical for most applications for addressing the complexity of current problems.
 + Necessary condition for instability (or multi stability) is the ocorrance of a positive feedback loop in the regulatory network. Motifs for bistability:
 
+
+
 ```mermaid
 flowchart TD
 	A --"+"--> A
 	
-	2A(A) -."-".->2B(B)
-	2B -."-".-> 2A
+	2A(A) -."—".->2B(B)
+	2B -."—".-> 2A
 	
 	3A(A) -."+".->3B(B)
 	3B -."+".-> 3A
@@ -193,3 +195,8 @@ flowchart TD
 + > > Consortium for Logical Models and Tools
 
 + > > PhysiBoSS : Mechano-cell biology
+
+
+
+# Concluding Lecture
+
