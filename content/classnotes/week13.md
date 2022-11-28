@@ -56,7 +56,7 @@ editPost:
   + Adult neurogenesis
   + Mozart effect — by making children listen to music, thier music skills can be improved.
 
-+ Nervous system [simple simplex] — unoptimized solution by mermaid:
++ Nervous system [simplex] — unoptimized solution by mermaid:
 
 ```mermaid
 flowchart LR
@@ -84,10 +84,10 @@ flowchart LR
 
 + Brain-science revolutions:
   + brain 1.0 : neurons and synapses
-  + brain 2.0: ... and associative memory
+  + brain 2.0: brains and associative memory
   + brain 3.0: biological minds
 
-## Brain 1.0
+## Brain 1.0 : Neurons and Synapses
 
 + Brain is required for adaptation. If the environmental changes outpace the changes in the genetic material that causes viable responses; pure genetic adaptation is no longer a vaible option.
 + *Physarum polycephalum* : Smart behaviour in slime mold. It can solve mazes by exploring its environment by extending a network of cytoplasmic matter and leaving chemical trails — essentially doing a non-backtracking random walk.
@@ -123,4 +123,65 @@ flowchart LR
   + Electrical system is faster but the chemical one is more precise and cn be moduled in a variety of ways.
   + Each step of the chemical signalling can be moduled in Chemical signalling.
 + Evolution of synapse: synapses likely originated from cell junctions in early metazoans.
+
+
+
+## The first brain: Enteric NS vs Central NS
+
++ All animals that have neurons have an EWS.
++ However, not all animals that have neurons have a CNS.
++ An ENS with similar features occurs in cnidaria [TODO] and bilateraa [TODO], but a CNS occurs only in bilateria (although not all).
+
+
+
+## Brain 2.0 : Brains and Associative Learning
+
++ The hypotheses behind the **Cambrian Explosion**:
+  + Because of low $O_2$ levels, the speed of movement was limited. 
+  + Introduction of predation-prey dynamics required higher cognitive abilities.
++ Learning & Memory
+  + Single Stimulus learning
+    + Habituation
+    + Sensitization
+  + Stimulus-Stimulus learning
+    + Pavslovian conditioning
+  + Response-Stimulus learning
+    + Operant conditioniong
+
+
+
+## Brains 3.0 : Biological Minds
+
++ Brains can create huge contingency tables for faster computation.
++ Brains for virtual reality simulators
+  + Simulate conseuences of actions without payiong costs
++ Mental time travel
+  + Contrafactual thinking
+
+
+
+
+
+# How to quantify behaviour?
+
+<center>Niccolò Bonnachi</center>
+
++ >  Missing: 1 hour of lecture
+
+  ---
+
++ FMRI: Can only quantify a binary activity parameter.
++ Behaviorial studies complement the lack of precision and dimesnionality in the current measurment techniques.
++ Dopamine neurons report an error in the prediction of reward.
++ Purposive behaviour
+  + Edward Chance Tolman — action in the context of outcome.
+  + Latent learning: Learning without the explicit context of learning
+
+
+
+## A slightly more complex navigation task
+
++ Rodents have 10X olefactory sensors in comparision to humans.
++ Liquid dilutions and air dilutions are equivalent in terms of animal behaviour olfaction.
 + 
+
