@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Week9 | Yatharth Bhasin</title>
+<meta name="keywords" content="classnotes">
+<meta name="description" content="IBB Lecture class notes.">
+<meta name="author" content="Yatharth Bhasin">
+<link rel="canonical" href="https://yatharthb97.github.io/classnotes/week9/">
+<meta name="google-site-verification" content="XYZabc">
+<meta name="yandex-verification" content="XYZabc">
+<meta name="msvalidate.01" content="XYZabc">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.969e008100311592035bfe287f78f5312356e1927b1b0aab5f3c62868852b71f.css" integrity="sha256-lp4AgQAxFZIDW/4of3j1MSNW4ZJ7GwqrXzxihohStx8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://yatharthb97.github.io/images/website_tile.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://yatharthb97.github.io/%3Clink%20/%20abs%20url%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="https://yatharthb97.github.io/%3Clink%20/%20abs%20url%3E">
+<link rel="apple-touch-icon" href="https://yatharthb97.github.io/%3Clink%20/%20abs%20url%3E">
+<link rel="mask-icon" href="https://yatharthb97.github.io/%3Clink%20/%20abs%20url%3E">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+          ],
+          
+          throwOnError : true
+        });
+    });
+</script>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-178533000-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script><meta property="og:title" content="Week9" />
+<meta property="og:description" content="IBB Lecture class notes." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yatharthb97.github.io/classnotes/week9/" />
+<meta property="og:image" content="https://yatharthb97.github.io/%3Cimage%20path/url%3E" /><meta property="article:section" content="classnotes" />
+<meta property="article:published_time" content="2022-10-31T14:02:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-10-31T14:02:00&#43;00:00" /><meta property="og:site_name" content="Yatharth Bhasin" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://yatharthb97.github.io/%3Cimage%20path/url%3E" />
+<meta name="twitter:title" content="Week9"/>
+<meta name="twitter:description" content="IBB Lecture class notes."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Class Notes 📚",
+      "item": "https://yatharthb97.github.io/classnotes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Week9",
+      "item": "https://yatharthb97.github.io/classnotes/week9/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Week9",
+  "name": "Week9",
+  "description": "IBB Lecture class notes.",
+  "keywords": [
+    "classnotes"
+  ],
+  "articleBody": "The role of selection in the genetics of populations Isabel Gordo Describe genetic structure of populations Make theories about the evolutionary forces acting on populations. Concerned mainly with understandiong vsriation within species Typically one focuses on the evolution of one or two loci at a time. Evolutionary Forces Mutations (mistakes are unavoidable) Natural selections (there is extensive variability in fitness within populations) Migration (populations are structured) Genetic Drift (every population is finite, and subject to stochastic events) Note: Evolution involves the interplay with all the forces.\nHardy-Weinberg equilibrium: first milestone in Population Genetics in sexual diploids. Mutation rate is around $10^{-9}$ per nucleotide site per generation. Effects of mutations Neutral (don’t affect fitness) Effectively neutral (-1 \u003c $N_s$ \u003c 1) Beneficial (causes adaptation) Deleterious (cause degeneration) Neutral Theory of Molecular Evolution Kimura’s neutral model: Assumes that most variation observed within and across species can be explained by an equilibrium between variation generating mechanisms — mutation — and a variation erosion mechanism — genetic drift.\nOne such test is pN/pS: the ratio of observed non-synonymous to synonymous polymorphism, compared to that expected if one assumes uniform mutation rates across the gene.\npN/pS should be 1 under neutral evolution.\nSelection as an evolutionary force — constant fitness.\nFrequency-dependent selection Here fitness depend on the frequencies of genotypes in the population. “A rare phenotype may be more popular in terms of sexual preference.” — negative frequency dependedent selection. There is also positive frequency based selection, which is the more obvious case. Probability of Fixation of Mutations under Selection Not every good allele is fixed and not every bad one is lost!\nTime of Fixation of a Benefitial Mutation: A mutation that confers a 1% benefit will take ~200 generations to reach a frequency close to fixation.\nThe decrease in populations , deleterious mutations can depart from their equilibrium frequency, be lost or go to fixation, all by stochastic drift.\nClonal interference: adaptations muttations arise faster tahn the time it takes for an individual mutation to get fixed.\nWhen can populations avoid clonal interference? By using sexual recombination.\nUsing Wright-Fisher model to understand the mechanisms of evolution Tiago Paixão Genetic Drift Mutation Selection Experimental evolution applied to cell biology Marco Fumasoni Cell Perturbations: Gene deletion Paralog (Express something which doesn’t bwlong there) Ortholog (Insert a foreign gene) Ancestral allele Partial loss of function (disturb a gene partially) The ‘Evolutionary repair’ approach — as a methodology to study evolution. DNA replication stress: specially visible in cancer cells, because they keep on dividing incessantly. Ageing in Cells Three hypothetical reasons: Harmful mutations Antagonistic Pleiotrophy Community Ecology Read: Modern Coexistance Theory (Chesson 2000)\nMetabolism scales predictibly with size (mass)\nEnergy fluxes: intake and expenditure\nSome concepts not discussed in the lecture:\nIntraspecific trait variation Priority effectss (species arrivaal) Metacommunities (interacting communities) Are all species equally important? Foundation Species.\nBiodiversity is important because it gives you functional redundancy.\nEcology and Evolution in communities Niche differences enables coexistence within different species.\nEvolution in a stable environment maximizes carrying capacity $K$. [theory]\nDensity-dependence, resource competition, mortality affect life history traits (size, age at reproduction, etc)\nBacteria are the most common model organisms for studying ecology.\nMalebra \u0026 Marshall 2019 Ecol [Danallelia micro-algae paper]\nWTF is the Metabolics theory?\nTODO Evolution of microbial Genomics Walden Kwong What do we measure?\nG + C content (the composition of these amino acids)\nGernome size\nStructural arrangements\nCoding \u0026 non-coding content\nGenome Size: Why are some bigger (or smaller) than others?\nMore genes == bigger genomes\nLinear relationship in most bacteria \u0026 archaea ~1 kB, but thus relationship falls apart in prokaryotes.\nIn bacterial genomes: Use it or lose it!\nHow do bacteria lose the genes?\nSelective advantage? or\nLower the $dN/dS$, stronger is the purifying selection. Conclusions from the study: Purifying selection (probably) doesn’t have a major impact on (bacterial) genome streamlining! No relationship between genome size and growth rate or cell size! Neutral Process ?\nNeutral process — strong deletion bias, and is well established for baceria as of now.\ngraph LR Deletion-Bias --\u003e Small-Genome Positive-Selection --\u003e Big-Genome Purifying-Selection --\u003e ?? Genetic Drift results in fixation of alleles inspite of the fluctuating frequencies fo alleles.\nGenome Erosion - reduction to the extreme, which often leads to coupling of the bacteria with a certain host.\nDisadvantages: Rapid evolution, extreme drift Fixation of deleterious mutations due to drift Irreversible loss of genes Muller’s Ratchet: is genetic erosion a one way street to genetic oblivion? Becuase in large and unrestricted populations — deleterious mutations are removed through recombination and these dewleterious mutations are less likely to get fixed by genetic drift. In small, clonal populations — no way to recombine and more likely to fix and repeat cycle. There are some mechanisms that are know, that help these bacterias avoid this trap: Compensatory mutations Just-enough recombination Strong purifying selection Symbiont replacement (doom for microbe, but not the host) C - value paradox\nPopulation size in eukaryotes: as in bacteria, effective population size (Ne) is postulated to strongly effect genome composition.\nEukaryotes have smaller populations than prokaryotes. General trend upheld but variation depending on taxonomic group. Whole Gene Duplication\nHorizontal Gene transfer: What. is it? How common?\nUpto 30% of thr genome of a bacteria may be acquired by HGT. Pan genome of HGT: a prokaryotic species have no single defined gene set. Euk. genomes have continued to evolve and gain complexity via endosymbiosis.\nConstructive Neutral Evolution: complex functions can evolve with neutral changes to the network.\nSeminars Horizontal gene transfer is common is prokaryotes (30% of genome can be acquired). ",
+  "wordCount" : "925",
+  "inLanguage": "en",
+  "image":"https://yatharthb97.github.io/%3Cimage%20path/url%3E","datePublished": "2022-10-31T14:02:00Z",
+  "dateModified": "2022-10-31T14:02:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Yatharth Bhasin"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://yatharthb97.github.io/classnotes/week9/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yatharth Bhasin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://yatharthb97.github.io/images/website_tile.svg"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://yatharthb97.github.io/" accesskey="h" title="Yatharth Bhasin (Alt + H)">
+                <img src="https://yatharthb97.github.io/images/header_button.gif" alt="logo" aria-label="logo"
+                    height="30">Yatharth Bhasin</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://yatharthb97.github.io/aboutme/" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://yatharthb97.github.io/projects/" title="projects">
+                    <span>projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://yatharthb97.github.io/blog/" title="blog">
+                    <span>blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://yatharthb97.github.io/publications/" title="publications">
+                    <span>publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://yatharthb97.github.io/search/" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://yatharthb97.github.io/gallery/" title="gallery">
+                    <span>gallery</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://yatharthb97.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://yatharthb97.github.io/classnotes/">Class Notes 📚</a></div>
+    <h1 class="post-title">
+      Week9
+    </h1>
+    <div class="post-description">
+      IBB Lecture class notes.
+    </div>
+    <div class="post-meta"><span title='2022-10-31 14:02:00 +0000 UTC'>October 31, 2022</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;925 words&nbsp;·&nbsp;Yatharth Bhasin&nbsp;|&nbsp;<a href="https://github.com/yatharthb97/yatharthb97.github.io/tree/main/content//classnotes/week9.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#the-role-of-selection-in-the-genetics-of-populations" aria-label="The role of selection in the genetics of populations">The role of selection in the genetics of populations</a><ul>
+                        
+                <li>
+                    <a href="#evolutionary-forces" aria-label="Evolutionary Forces">Evolutionary Forces</a></li>
+                <li>
+                    <a href="#effects-of-mutations" aria-label="Effects of mutations">Effects of mutations</a></li>
+                <li>
+                    <a href="#neutral-theory-of-molecular-evolution" aria-label="Neutral Theory of Molecular Evolution">Neutral Theory of Molecular Evolution</a></li>
+                <li>
+                    <a href="#frequency-dependent-selection" aria-label="Frequency-dependent selection">Frequency-dependent selection</a></li></ul>
+                </li>
+                <li>
+                    <a href="#probability-of-fixation-of-mutations-under-selection" aria-label="Probability of Fixation of Mutations under Selection">Probability of Fixation of Mutations under Selection</a></li>
+                <li>
+                    <a href="#using-wright-fisher-model-to-understand-the-mechanisms-of-evolution" aria-label="Using Wright-Fisher model to understand the mechanisms of evolution">Using Wright-Fisher model to understand the mechanisms of evolution</a></li>
+                <li>
+                    <a href="#experimental-evolution-applied-to-cell-biology" aria-label="Experimental evolution applied to cell biology">Experimental evolution applied to cell biology</a><ul>
+                        
+                <li>
+                    <a href="#ageing-in-cells" aria-label="Ageing in Cells">Ageing in Cells</a></li></ul>
+                </li>
+                <li>
+                    <a href="#community-ecology" aria-label="Community Ecology">Community Ecology</a></li>
+                <li>
+                    <a href="#ecology-and-evolution-in-communities" aria-label="Ecology and Evolution in communities">Ecology and Evolution in communities</a></li>
+                <li>
+                    <a href="#evolution-of-microbial-genomics" aria-label="Evolution of microbial Genomics">Evolution of microbial Genomics</a></li>
+                <li>
+                    <a href="#seminars" aria-label="Seminars">Seminars</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="the-role-of-selection-in-the-genetics-of-populations">The role of selection in the genetics of populations<a hidden class="anchor" aria-hidden="true" href="#the-role-of-selection-in-the-genetics-of-populations">#</a></h1>
+<center>Isabel Gordo</center>
+<ul>
+<li>Describe genetic structure of populations</li>
+<li>Make theories about the evolutionary forces acting on populations.</li>
+<li>Concerned mainly with understandiong vsriation within species</li>
+<li>Typically one focuses on the evolution of one or two loci at a time.</li>
+</ul>
+<h2 id="evolutionary-forces">Evolutionary Forces<a hidden class="anchor" aria-hidden="true" href="#evolutionary-forces">#</a></h2>
+<ul>
+<li>Mutations (mistakes are unavoidable)</li>
+<li>Natural selections (there is extensive variability in fitness within populations)</li>
+<li>Migration (populations are structured)</li>
+<li>Genetic Drift (every population is finite, and subject to stochastic events)</li>
+</ul>
+<p><u>Note</u>: Evolution involves the interplay with all the forces.</p>
+<ul>
+<li>Hardy-Weinberg equilibrium: first milestone in Population Genetics in sexual diploids.</li>
+<li>Mutation rate is around $10^{-9}$ per nucleotide site per generation.</li>
+</ul>
+<h2 id="effects-of-mutations">Effects of mutations<a hidden class="anchor" aria-hidden="true" href="#effects-of-mutations">#</a></h2>
+<ol>
+<li>Neutral (don&rsquo;t affect fitness)</li>
+<li>Effectively neutral (-1 &lt; $N_s$ &lt; 1)</li>
+<li>Beneficial (causes adaptation)</li>
+<li>Deleterious (cause degeneration)</li>
+</ol>
+<h2 id="neutral-theory-of-molecular-evolution">Neutral Theory of Molecular Evolution<a hidden class="anchor" aria-hidden="true" href="#neutral-theory-of-molecular-evolution">#</a></h2>
+<ul>
+<li>
+<p>Kimura&rsquo;s neutral model: Assumes that most variation observed within and across species can be explained by an equilibrium between variation generating mechanisms — mutation  — and a variation erosion mechanism — genetic drift.</p>
+</li>
+<li>
+<p><strong>One such test is pN/pS:</strong> the ratio of observed non-synonymous to synonymous polymorphism, compared to that expected if one assumes uniform mutation rates across the gene.</p>
+<p><strong>pN/pS should be 1 under neutral evolution.</strong></p>
+</li>
+<li>
+<p>Selection as an evolutionary force — constant fitness.</p>
+</li>
+</ul>
+<h2 id="frequency-dependent-selection">Frequency-dependent selection<a hidden class="anchor" aria-hidden="true" href="#frequency-dependent-selection">#</a></h2>
+<ul>
+<li>Here fitness depend on the frequencies of genotypes in the population.</li>
+<li>&ldquo;A rare phenotype may be more popular in terms of sexual preference.&rdquo; — negative frequency dependedent selection.</li>
+<li>There is also positive frequency based selection, which is the more obvious case.</li>
+</ul>
+<h1 id="probability-of-fixation-of-mutations-under-selection">Probability of Fixation of Mutations under Selection<a hidden class="anchor" aria-hidden="true" href="#probability-of-fixation-of-mutations-under-selection">#</a></h1>
+<ul>
+<li>
+<p><strong>Not every good allele is fixed and not every bad one is lost!</strong></p>
+</li>
+<li>
+<p>Time of Fixation of a Benefitial Mutation: A mutation that confers a 1% benefit will take ~200 generations to reach a frequency close to fixation.</p>
+</li>
+<li>
+<p>The decrease in populations , deleterious mutations can depart from their equilibrium frequency, be lost or go to fixation, all by stochastic drift.</p>
+</li>
+<li>
+<p>Clonal interference: adaptations muttations arise faster tahn the time it takes for an individual mutation to get fixed.</p>
+</li>
+<li>
+<p>When can populations avoid clonal interference? By using sexual recombination.</p>
+</li>
+</ul>
+<h1 id="using-wright-fisher-model-to-understand-the-mechanisms-of-evolution">Using Wright-Fisher model to understand the mechanisms of evolution<a hidden class="anchor" aria-hidden="true" href="#using-wright-fisher-model-to-understand-the-mechanisms-of-evolution">#</a></h1>
+<center>Tiago Paixão</center>
+<ol>
+<li>Genetic Drift</li>
+<li>Mutation</li>
+<li>Selection</li>
+</ol>
+<h1 id="experimental-evolution-applied-to-cell-biology">Experimental evolution applied to cell biology<a hidden class="anchor" aria-hidden="true" href="#experimental-evolution-applied-to-cell-biology">#</a></h1>
+<center>Marco Fumasoni</center>
+<ul>
+<li>Cell Perturbations:
+<ul>
+<li>Gene deletion</li>
+<li>Paralog (Express something which doesn&rsquo;t bwlong there)</li>
+<li>Ortholog (Insert a foreign gene)</li>
+<li>Ancestral allele</li>
+<li>Partial loss of function (disturb a gene partially)</li>
+</ul>
+</li>
+<li>The &lsquo;Evolutionary repair&rsquo; approach — as a methodology to study evolution.
+<ul>
+<li>DNA replication stress: specially visible in cancer cells, because they keep on dividing incessantly.</li>
+</ul>
+</li>
+</ul>
+<h2 id="ageing-in-cells">Ageing in Cells<a hidden class="anchor" aria-hidden="true" href="#ageing-in-cells">#</a></h2>
+<ul>
+<li>Three hypothetical reasons:
+<ul>
+<li>Harmful mutations</li>
+<li>Antagonistic Pleiotrophy</li>
+</ul>
+</li>
+</ul>
+<h1 id="community-ecology">Community Ecology<a hidden class="anchor" aria-hidden="true" href="#community-ecology">#</a></h1>
+<ul>
+<li>
+<blockquote>
+<blockquote>
+<p>Read: Modern Coexistance Theory (Chesson 2000)</p>
+</blockquote>
+</blockquote>
+</li>
+<li>
+<p>Metabolism scales predictibly with size (mass)</p>
+</li>
+<li>
+<p>Energy fluxes: intake and expenditure</p>
+</li>
+<li>
+<p>Some concepts not discussed in the lecture:</p>
+<ul>
+<li>Intraspecific trait variation</li>
+<li>Priority effectss (species arrivaal)</li>
+<li>Metacommunities (interacting communities)</li>
+</ul>
+</li>
+<li>
+<p>Are all species equally important? <strong>Foundation Species</strong>.</p>
+</li>
+<li>
+<p>Biodiversity is important because it gives you functional redundancy.</p>
+</li>
+<li></li>
+</ul>
+<h1 id="ecology-and-evolution-in-communities">Ecology and Evolution in communities<a hidden class="anchor" aria-hidden="true" href="#ecology-and-evolution-in-communities">#</a></h1>
+<ul>
+<li>
+<p>Niche differences enables coexistence within different species.</p>
+</li>
+<li>
+<p>Evolution in a stable environment maximizes carrying capacity $K$. [theory]</p>
+</li>
+<li>
+<p>Density-dependence, resource competition, mortality affect life history traits (size, age at reproduction, etc)</p>
+</li>
+<li>
+<p>Bacteria are the most common model organisms for studying ecology.</p>
+</li>
+<li>
+<blockquote>
+<blockquote>
+<p>Malebra &amp; Marshall 2019 Ecol [Danallelia micro-algae paper]</p>
+</blockquote>
+</blockquote>
+</li>
+<li>
+<p>WTF is the <strong>Metabolics theory</strong>?</p>
+<ul>
+<li>TODO</li>
+</ul>
+</li>
+</ul>
+<h1 id="evolution-of-microbial-genomics">Evolution of microbial Genomics<a hidden class="anchor" aria-hidden="true" href="#evolution-of-microbial-genomics">#</a></h1>
+<center> Walden Kwong</center>
+<ul>
+<li>
+<p>What do we measure?</p>
+<ul>
+<li>
+<p>G + C content (the composition of these amino acids)</p>
+</li>
+<li>
+<p>Gernome size</p>
+</li>
+<li>
+<p>Structural arrangements</p>
+</li>
+<li>
+<p>Coding &amp; non-coding content</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Genome Size: Why are some bigger (or smaller) than others?</p>
+<ul>
+<li>
+<p>More genes == bigger genomes</p>
+</li>
+<li>
+<p>Linear relationship in most <strong>bacteria &amp; archaea</strong> ~1 kB, but thus relationship falls apart in prokaryotes.</p>
+</li>
+<li>
+<p>In bacterial genomes: Use it or lose it!</p>
+</li>
+<li>
+<p>How do bacteria lose the genes?</p>
+<ul>
+<li>
+<p>Selective advantage? or</p>
+<ul>
+<li>Lower the $dN/dS$, stronger is the purifying selection.</li>
+<li>Conclusions from the study: Purifying selection (probably) doesn&rsquo;t have a major impact on (bacterial) genome streamlining!</li>
+<li>No relationship between genome size and growth rate or cell size!</li>
+</ul>
+</li>
+<li>
+<p>Neutral Process ?</p>
+<ul>
+<li>
+<p>Neutral process — strong deletion bias, and is well established for baceria as of now.</p>
+<div class="mermaid">graph LR
+	Deletion-Bias --> Small-Genome
+  Positive-Selection --> Big-Genome
+  Purifying-Selection --> ??
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p>Genetic Drift results in fixation of alleles inspite of the fluctuating frequencies fo alleles.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Genome Erosion - reduction to the extreme, which often leads to coupling of the bacteria with a certain host.</p>
+<ul>
+<li>Disadvantages:
+<ul>
+<li>Rapid evolution, extreme drift</li>
+<li>Fixation of deleterious mutations due to drift</li>
+<li>Irreversible loss of genes</li>
+</ul>
+</li>
+<li>Muller&rsquo;s Ratchet: is genetic erosion a one way street to genetic oblivion?
+<ul>
+<li>Becuase in large and unrestricted populations — deleterious mutations are removed through recombination and these dewleterious mutations are less likely to get fixed by genetic drift.</li>
+<li>In small, clonal populations — no way to recombine and more likely to fix and repeat cycle.</li>
+<li>There are some mechanisms that are know, that help these bacterias avoid this trap:
+<ul>
+<li>Compensatory mutations</li>
+<li>Just-enough recombination</li>
+<li>Strong purifying selection</li>
+<li>Symbiont replacement (doom for microbe, but not the host)</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>C - value paradox</p>
+</li>
+<li>
+<p>Population size in eukaryotes: as in bacteria, effective population size (Ne) is postulated to strongly effect genome composition.</p>
+<ul>
+<li>Eukaryotes have smaller populations than prokaryotes.</li>
+<li>General trend upheld but variation depending on taxonomic group.</li>
+</ul>
+</li>
+<li>
+<p>Whole Gene Duplication</p>
+</li>
+<li>
+<p>Horizontal Gene transfer: What. is it? How common?</p>
+<ul>
+<li>Upto 30% of thr genome of a bacteria may be acquired by HGT.</li>
+<li>Pan genome of HGT: a prokaryotic species have no single defined gene set.</li>
+</ul>
+</li>
+<li>
+<p>Euk. genomes have continued to evolve and gain complexity via endosymbiosis.</p>
+</li>
+<li>
+<p>Constructive Neutral Evolution: complex functions can evolve with neutral changes to the network.</p>
+</li>
+</ul>
+<h1 id="seminars">Seminars<a hidden class="anchor" aria-hidden="true" href="#seminars">#</a></h1>
+<ul>
+<li>Horizontal gene transfer is common is prokaryotes (30% of genome can be acquired).</li>
+<li></li>
+</ul>
+<hr>
+
+
+  </div>
+
+  
+   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+   <script>
+       let isDark = document.body.className.includes("dark")
+       let mermaidTheme = (isDark) ? 'dark' : 'forest'
+       let mermaidConfig = {
+           theme: 'neutral',
+           logLevel: 'fatal',
+           securityLevel: 'strict',
+           startOnLoad: true,
+           arrowMarkerAbsolute: false
+       };
+       mermaid.initialize(mermaidConfig);
+   </script>
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://yatharthb97.github.io/tags/classnotes/">classnotes</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://yatharthb97.github.io/">Yatharth Bhasin</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
