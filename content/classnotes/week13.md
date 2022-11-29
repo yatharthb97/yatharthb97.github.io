@@ -183,5 +183,17 @@ flowchart LR
 
 + Rodents have 10X olefactory sensors in comparision to humans.
 + Liquid dilutions and air dilutions are equivalent in terms of animal behaviour olfaction.
+
+
+
+# The evolution of brains and cognitive abilities
+
+<center>Alexander Kotrschal</center>
+
++ Guppies as a model system.
++ Linear trend of Relatver brain size and weight on log-axes.
++ Skull width is a good indicator of brain size in birds.
 + 
+
+
 
