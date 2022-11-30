@@ -193,7 +193,131 @@ flowchart LR
 + Guppies as a model system.
 + Linear trend of Relatver brain size and weight on log-axes.
 + Skull width is a good indicator of brain size in birds.
++ Lefebvre et al correlated Cognitive beneefits and brain sizes and saw a positive correlation.
++ **Expensive Brain hypothesis**: Aiello & Wheeler 1995 Current Anthropology
+  + Tradeoff between Relative Brain Mass and Relative Gut Mass
+  + Tradeoff is between two "expensive" tissues.
++ There is also positive correlation between brain size and (spawning site density and sex ratio)
+  + Reason: TODO
++ Experiment: TODO
+  + 11-15% brain size difference
+  + But similar body sizes
+  + Driven by Angst-1 expression
++ **Angioprotein 1**: Promotes angiogenesis (wikipedia: Angiogenesis is the physiological process through which new blood vessels form from pre-existing vessels, formed in the earlier stage of vasculogenesis.)
++ Important: Fish have life-long neurogenesis.
++ First tests for Cognitive abilities:
+  + Numeric Learning
+    + Large-brained females learns better
+    + Male fishes learn "equally bad".
+    + Large-brained females are better at reversal learning.
+  + Brain size and survival: 
+
+    + "Large Fish Collider Vienna"
+    + Predator Inspection — side swimming motion that they use to scan large field of view. 
+      + Maybe also signals the predator that it has been spotted by the prey and a surprise attack would not work.
+      + Small-brained fishes inspect longer, and across wider distances.
+    + Brain size and conflict resolution:
+      + They are territorial and would recognize a confined space as their territory.
+  + Large-brained femaled prefer more colourful males, and vice-versa.
++ Optomotor Test: Put stripes in the field of view (a cylinder) — move it, and the eye follows it with a reflex action.
+  + This test can be used to figue out the miniumum resolvable resolution, by varying the size of the stripes.
+  + [Opsin](https://en.wikipedia.org/wiki/Opsin) gene expression + Optomotor test can be used to test color sensitvity.
++ Are small-brained guppies 'bad guppies'?
+  + Small-brained fishes:
+    + Similar body condition
+    + Similar swimming abilities
+    + Faster juvenile growth
+    + Similar adult size
+    + Similar digestive efficiency
+    + More offsprings
+    + Better innate immunity
+    + Survive longer
+  + Small-braines individuals live longer **when kept individually.**
+  + Predation vs brain size:
+
+
+
+# Post-doc Project I: Genetics and evolution of social behavior in *Drosophila* and zebrafish
+
+<center>Susana Varela</center>
+
++ Introduced Drosophila to Rui's lab.
++ Learning by watching or passive learning is called social learning. It is not the same as community learning. The learner does not experience the task itself, just observes and perceives it.
+
+
+
+## Environment complexity and the evolution of social behaviour and social cognition
+
++ Addition of same agents to a single food source will increase the cognition compleity of the foraging task — Environmental complexity.
++ What is a non-social interaction? : Non-cooperation is non-social. (lecturer's opinion)
++ Neural and psychological mechanism of information:
+
+```mermaid
+flowchart LR
+	Input --> Encoding --> Storage --> Retreival
+```
+
++ Adequete cognitive abilities are a sum of : **Social and Non-social competence.**
++ The social intellegence and social brain hypothesis posit that group living generates the selective forces that drive the evolution of enhanced cognitive abilities and brain size.
+  + General-purpose cognitive mechanism has **strong selective pressure** on **social behaviour**.
+  + The available evidence supporting these hyposthesis is still scarce.
+  + All evidence for this hypothesis has been based on comparative studies.
++ All fishes prefer circles (control) but Shoal selected lines prefer shoals more than non-seleceted lines.
+
+
+
+# Post-doc Project II: Social modulation of adult neurogenesis in zebrafish
+
+<center>Magda Teles</center>
+
++ The dogma: nerve cells don't regenerate in adults. The dogma died.I
++ Different prolifereation in different organismic species. In fishes, all the brain regions are proliferated. Zebrafishes continue to grow during their lifetime, hence, they need neurogeneration. 16-different proliferated across the brain were recognised. 
+
+## Adult neurogenesis
+
+### Regulation
+
+```mermaid
+flowchart TB
+	subgraph Intrinsic-Factors
+		Growth-Factors
+		Neurotransmitters
+		Hormones
+	end
+	Intrinsic-Factors --> Adult-Neurogenesis
+	subgraph Environment
+		Environmental-Factors
+		Previous-Experiences
+	end
+	Environment --> Adult-Neurogenesis
+	
+	
+```
+
++ There is a tendency for the dominent animals to have more proliferation than the subordinate animals.
++ Cortisol was shown to control this proliferation. The presence of cortisol itself is linked to the position of the animal in its social hierarchy.
++ The effects of the social environment were independent of circulating cortisol levels.
+
+
+
+# Post-doc Project III: Evolutionary conserved role of oxytocin on social fear contagion in zebrafish
+
+<center>Kyriakos Kareklas</center>
+
++ Ekman characterised behaviours by using the domain level of anatomy, social context, mehxnaics, etc
++ Do other animals show expressions in such a way?
++ Social Contagion of Valenced states
+  + Face: Contagion when yawning
++ Mechanisms of contagion
+  + Oxytocin: its activity is conserved across a set of social behaviours.
+
+```mermaid
+flowchart LR
+	AB(Attention-to-Behaviour)
+	AB --> State-Recognition
+	State-Recognition --> Transmission
+	State-Recognition --> Motivation
+	State-Recognition --> Association
+```
+
 + 
-
-
-
