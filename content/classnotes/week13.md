@@ -320,4 +320,26 @@ flowchart LR
 	State-Recognition --> Association
 ```
 
++ Allogrooming is a metric for consolation in animals.
+
+
+
+# Brain development and plasticity
+
+<center>Gil Levkowitz</center>
+
++ The hypothalamus regulates homeostasis by sensing and adjusting physiological states via two primary modes of actions.
++  Secretion of neuropeptides into the vascular of the pituitary/medium reinforces breast feeding in mammals.
++ Chronology of gross morphological changes which occur throughout the formation of the CNS
+  1. A portion of the dorsal ectoderm is specified to form neural-ectoderm (**neural plate** formation)
+  2. formation if neural tube (**Neurulation**) 
+  3. TODO
+
+
+
+## How distinct types of neurons are form?
+
++ Neural progenitors acquire their identity according to their site of origin (embryonic position) in the CNS.
++ Morphogen: TODO
++ Neural specification represents an extrinsic -> intrinsic transitions in which neurons differentiate ans lose their potential to re-enter the cell cycle.
 + 
