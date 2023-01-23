@@ -9,7 +9,7 @@
       <link>https://yatharthb97.github.io/website_tile.svg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Dec 2022 09:22:25 +0000</lastBuildDate><atom:link href="https://yatharthb97.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jan 2023 09:52:47 +0000</lastBuildDate><atom:link href="https://yatharthb97.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transcription Networks - Basic Concepts</title>
       <link>https://yatharthb97.github.io/blog/biophy/urialonc1/</link>
@@ -27,6 +27,33 @@
       <guid>https://yatharthb97.github.io/blog/welcome/</guid>
       <description>Welcome to my website! Here, I post about stuff I like and the things I do. I { read, code, think, analyse, and solve } in all permutations. This website cum blog is an attempt to include writing in this set. Below is a short overview of the website.
 projects: where I post about my scientific and coding projects. publications: lists all the articles I have written and published somewhere. blog: where I will post articles and notes on various themes.</description>
+    </item>
+    
+    <item>
+      <title>Advanced Techniques</title>
+      <link>https://yatharthb97.github.io/classnotes/week17/</link>
+      <pubDate>Mon, 23 Jan 2023 09:52:47 +0000</pubDate>
+      
+      <guid>https://yatharthb97.github.io/classnotes/week17/</guid>
+      <description>IBB Lecture class notes.</description>
+    </item>
+    
+    <item>
+      <title>Biophysics</title>
+      <link>https://yatharthb97.github.io/classnotes/biophysics/</link>
+      <pubDate>Tue, 17 Jan 2023 10:02:20 +0000</pubDate>
+      
+      <guid>https://yatharthb97.github.io/classnotes/biophysics/</guid>
+      <description>IBB Lecture class notes.</description>
+    </item>
+    
+    <item>
+      <title>Cells to Organisms</title>
+      <link>https://yatharthb97.github.io/classnotes/week16/</link>
+      <pubDate>Wed, 04 Jan 2023 10:54:22 +0000</pubDate>
+      
+      <guid>https://yatharthb97.github.io/classnotes/week16/</guid>
+      <description>IBB Lecture class notes.</description>
     </item>
     
     <item>
@@ -189,6 +216,17 @@ projects: where I post about my scientific and coding projects. publications: li
       
       <guid>https://yatharthb97.github.io/projects/kglab/</guid>
       <description>This page summarizes the projects I worked on during my Junior Research Fellow tenure at Tata Institute of Fundamental Research, Hyderabad.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yatharthb97.github.io/blog/alldrafts/book-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yatharthb97.github.io/blog/alldrafts/book-notes/</guid>
+      <description>We now see through a mirror, enigmatically.
+St. Paul
+There is no human being on earth capable of declaring with certitude who he is. No one knows what he has come into this world to do, what his acts correspond to, his sentiments, his ideas, or what his real name is, his enduring Name in the register of Light… History is an immense liturgical text where the iotas and the dots are worth no less than the entire verses or chapters, but the importance of one and the other is indeterminable and profoundly hidden.</description>
     </item>
     
     <item>
