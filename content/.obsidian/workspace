@@ -1,0 +1,133 @@
+{
+  "main": {
+    "id": "22125bfea836df98",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0423674811570d6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "classnotes/week6.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2af15b784aabbc03",
+    "type": "split",
+    "children": [
+      {
+        "id": "8a5583a14bcfc7a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68e5407744512ef6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c45f6f0abb4b1f01",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f4d175fe6605bd9a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a4e15575be3c3042",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8ff5e50714f3caa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b5d73d8a6f7d80d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "classnotes/week6.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4abed714ed14c664",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "classnotes/week6.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d26f4e974aad81c9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b8cb7c7436d6e05e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "classnotes/week6.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b0423674811570d6",
+  "lastOpenFiles": []
+}
