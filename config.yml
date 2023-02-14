@@ -26,13 +26,13 @@ params:
     - publications
     - "Biology🧬 + Physics🔭"
 
-  custom_css : ["css/rel_image.css", "/css/timeline.css"]
+  custom_css : ["css/rel_image.css", "/css/timeline.css", "/css/blink_text.css", "/css/textflips.css"]
 
   # Default Recommended ↓
 
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Yatharth Bhasin
-  description: "Hello 👋! I am Yatharth and I am a scientist. Find out about me and my work by visiting the list."
+  description: "Hello 👋! I am Yatharth and I am a scientist. Find out about me and my work by visiting my website."
   keywords: [Blog, Portfolio, PaperMod, Yatharth, Bhasin]
   author: "Yatharth Bhasin"
   # author: ["Me", "You"] # multiple authors
@@ -75,8 +75,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Yatharth Bhasin
-    subtitle: "Exploring hazzy recurrences in nature at the interface of Physics, Computation,and Biology. Soon starting my PhD journey."
-                                
+    subtitle: "Exploring the<span class=flipY> hazzy recurrence</span> in nature at the interface of<br><span class=pop-outin>Physics</span>, <span class=pop-outin>Computation</span>, and <span class=pop-outin>Biology</span>.<br>On a Ph.D. journey."
     imageUrl: "/images/profile_test.gif"
     imageWidth: 250
     imageHeight: 250

@@ -1,0 +1,30 @@
+.blinktext{
+    animation: blinker 0.01s linear infinite;
+          }
+    @keyframes blinker {
+    50% {
+        opacity: 0;
+        }
+    }
+
+.shinetext{
+    animation: shine 3s infinite linear;
+}
+
+
+
+
+
+.spoiler {
+  color: transparent;
+  background-position: right;
+  background-size: 100% 100%;
+  background-image: linear-gradient(var(--background), var(--background));
+  display: inline;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+}
+.spoiler:hover {
+  color: var(--primary-color);
+  background-size: 0% 100%;
+}

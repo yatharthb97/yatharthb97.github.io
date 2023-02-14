@@ -1,7 +1,8 @@
 ---
 tags: ["About Me"]
 summary: "about me"
---- 
+---
+
 ```goat
  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
                                                                             
@@ -21,12 +22,11 @@ summary: "about me"
   </div>
   <div class="columnx">
     <h1>Yatharth Bhasin</h1>
-    <b>M.Sc. Physics (IIT-Indore)</b><br>
-    Computational Biological Physicist
-    <p><br></p>
     Doctoral Candidate<br>
-    Instituto Gulbenkian de Ciência <b>(IGC) </b><br>
-    Lisbon, Portugal
+    <a href="https://www.sartorilab.org/">Living Physics Laboratory</a><br>
+    <a href="https://gulbenkian.pt/ciencia/">Instituto Gulbenkian de Ciência (IGC)</a><br>
+    Lisbon, Portugal<br><br>
+    M.Sc. Physics (IIT-Indore)<br>
     <p>&nbsp;</p>
   </div>
 </div> 
@@ -41,10 +41,10 @@ summary: "about me"
 📫 You can write to me : yatharth1997+ws (at) gmail.com
 
 🏠 **Home Location**     : Gujarat, India \
-📍 **Current Location** : India
+📍 **Current Location** : Lisbon, Portugal
 
 <span hidden> Links </span>
-📃 Resume/CV : [read here](https://drive.google.com/file/d/1XtsUeojuXNe-d_a9AhDXsk7MJZiTlsvz/view?usp=sharing). \
+📃 Resume/CV : [read here](https://drive.google.com/file/d/1Ya6qChE5MaMEmBB133URAkMNFxRcLmxl/view?usp=share_link). \
 🖼️ Design Portfolio : [see here](https://drive.google.com/file/d/1a0pQmmWagRprBTpElnuLLAm9PI0GC458/view?usp=sharing).\
 👨‍💻 Code Portfolio : [see here](https://github.com/yatharthb97).
 
@@ -59,26 +59,23 @@ summary: "about me"
       • Coarse grain approaches to complex biological systems <br>
       • MC, MD, discrete-event simulatons<br>
       • Agent Based Modelling <br>
+      • Low cost instrument design <br>
   </div>
   <div class="columnx">
     <h2 style="color: #6563D6;"><b>Tools & Machines</b></h2>
     <p>
       • Programming Languages<br>
-      &nbsp;&nbsp;&nbsp;→ <code>C++</code> <br>
-      &nbsp;&nbsp;&nbsp;→ <code>Embedded C++ & Micropython</code> <br>
-      &nbsp;&nbsp;&nbsp;→ <code>python 3</code><br>
-      &nbsp;&nbsp;&nbsp;→ <code>HTML + CSS<br>&nbsp;&nbsp;&nbsp;&nbsp;(just enough to maintain
-                                          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this website).</code><br>
+      &nbsp;&nbsp;&nbsp;→ C++<br>
+      &nbsp;&nbsp;&nbsp;→ Embedded C++ & Micropython<br>
+      &nbsp;&nbsp;&nbsp;→ python 3<br>
+      &nbsp;&nbsp;&nbsp;→ HTML + CSS (just enough to maintain this website :P).<br>
       • GIT (version control) <br>
-      • Arduino & Micropython <br>
+      • Arduino & Micropython for Microcontrollers<br>
+      • Raspberry Pi Plateform
     </p>
   </div>
 </div> 
 <br>
-
-
-
-
 
 
 
@@ -158,16 +155,15 @@ summary: "about me"
         </h3>
         <p>
           <b>🏛️ Institute</b><br>
-          IGC Portugal<br>
-          Living Physics Lab <br>
-          (not yet joined)
+          Instituto Gulbenkian de Ciência (IGC)<br>
+          Living Physics Laboratory<br>
         </p>
          <p>
           <b>📍 Location</b><br>
           Lisbon, Portugal<br>
         </p>
-      </div>
     </div>
+  </div>
 </div></centre>
 
 ---
