@@ -22,7 +22,7 @@ title: "🔭"
    P H Y S I C S           B I O L O G Y       H A R D W A R E       P R O G R A M M I N G
 ```
 
-<marquee width="100%" direction="left" behavior="alternate" height="300">
+<marquee width="100%" direction="left" behavior="alternate">
 
 ```goat
        -+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +-
@@ -37,7 +37,7 @@ title: "🔭"
 ```
 </marquee>
 
-<span style="display:block; margin-top:-170px;"></span>
+<span style="display:block; margin-top:-20px;"></span>
 
 <marquee width="100%" direction="right" behavior="scroll">
       
