@@ -27,7 +27,7 @@ title: "📷"
 
 </marquee>
 
-
+<span style="display:block; margin-top:-150px;"></span>
 <div style="text-align: center;">
 <b>Ⓒ Yatharth Bhasin</b> unless explicitly stated. Scroll down for credits.
 </div>
