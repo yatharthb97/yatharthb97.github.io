@@ -52,8 +52,22 @@ title: "🔭"
 
 
 
+
 <div class=pop-outin align=center ><br>↓</div>
 
+<div class=flipX height=100%%>
+
+<div style="animation: marquee 5s linear infinite;">
+
+```goat
+
+       -+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +-
+       ·|\/|·||\/|·||\/|·||\/|·||\/|·||\/|·||\/|·||\/|·||\/|·||\/|·||\/|·||\/|·||\/|·||\/|·
+       |·/\||·|/\||·|/\||·|/\||·|/\||·|/\||·|/\||·|/\||·|/\||·|/\||·|/\||·|/\||·|/\||·|/\||
+       -+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +--+  +-
+```
+</div>
+</div>
 # Highlights
 
 1. [Correlator](/Correlator/) : `Embedded C++` : DIY Correlator Card built with Teensy 4.1 [INCOMPLETE].
