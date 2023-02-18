@@ -3,6 +3,14 @@ tags: ["About Me"]
 summary: "about me"
 ---
 
+<!--
+
+```goat
+*  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
+```
+<-->
+
+
 ```goat
  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  *  o  
                                                                             
