@@ -1,5 +1,5 @@
 .blinktext{
-    animation: blinker 0.01s linear infinite;
+    animation: blinker 1s linear infinite;
           }
     @keyframes blinker {
     50% {
@@ -8,9 +8,8 @@
     }
 
 .shinetext{
-    animation: shine 3s infinite linear;
+    animation: shine 1s infinite linear;
 }
-
 
 
 
