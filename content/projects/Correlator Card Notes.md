@@ -1,7 +1,7 @@
 ---
 title: "Correlator Card Notes"
 date: 2022-07-11T15:07:14+05:30
-draft: true
+draft: false
 description: "Project description."
 ShowCanonicalLink: false
 canonicalURL: ""
@@ -47,7 +47,7 @@ editPost:
 
 
 
-# Correlator Theory[^version 1]
+# Correlator Theory [version 1]
 
 <div style="text-align: center">by Yatharth Bhasin</div> 
 
@@ -57,7 +57,7 @@ editPost:
 
 This article introduces and explains the implementation of Correlation modules that can read a time series and compute the *autocorrelation function* for the said time series.
 
-The autocorrelation calculation is done for a set of *lag time values*, this set is also referred to as the *Channels* of the Correlator module. Hence $ACF(k) \space or \space G(k)$ refers to the $k^{th}$​ channel.
+The autocorrelation calculation is done for a set of *lag time values*, this set is also referred to as the *Channels* of the Correlator module. Hence $ACF(k) \space or \space G(k)$ refers to the $k^{th}$ channel.
 
 The software module that manages the correlation is treated as a separate object entity. That means, each instance of the module completely describes the *acquisition, calculation, and output* of the data as required for a time series. All the different correlator modules, except the `Logarithmic_Correlator` derive from a base class called the `Linear_Correlator_Base`. This class defines a series of operations (functions) that are implemented by all different linear correlators types. 
 
@@ -90,20 +90,20 @@ This section defines terms that should be used consistently across documentation
 
 {{< figure link="/images/articles/projects/correlator/image-20210807120802430.png" >}} {{< load-photoswipe >}}
 
-The counter module is responsible for counting the pulses with a *gate time  $TTL-gt$​​​​​​*.
+The counter module is responsible for counting the pulses with a *gate time  $TTL-gt$*.
 
-As soon as the sample time $TTL-gt$​ is over, the *PI-t (Periodic Interrupt timer)* signals a transfer of the collected photon counts to the *Data Processing Unit (DPU)*. It should be noted here that during the transfer of data from the counter module to the DPU — the counter is inactive until the transfer is done and the counter is reset for the next counting interval. This **dead time $t_{d}$​​​ ** gives rise to an error.
+As soon as the sample time $TTL-gt$ is over, the *PI-t (Periodic Interrupt timer)* signals a transfer of the collected photon counts to the *Data Processing Unit (DPU)*. It should be noted here that during the transfer of data from the counter module to the DPU — the counter is inactive until the transfer is done and the counter is reset for the next counting interval. This **dead time $t_{d}$ ** gives rise to an error.
 $$
 Error = counting \space dead \space time / sampling \space time * 100\%
 $$
 ==It might be possible to estimate this dead time by analyzing the clock cycles used by the transfer function.==
 
-It is also essential that the time required for the computation of datum passed by the Counter to the DPU is less than the gate time $TTL-gt$​​​. This is because the DPU needs to complete the computation and be ready to receive the next block of datum which arrives after passage of another gate interval $TTL-gt$​​​​​​​ (This point is also emphasized in Magatti & Ferri, 2001).
+It is also essential that the time required for the computation of datum passed by the Counter to the DPU is less than the gate time $TTL-gt$. This is because the DPU needs to complete the (This point is also emphasized in Magatti & Ferri, 2001).
 
 **Hence, any implementation of a Correlator module that models the above schematics, must satisfy the following conditions:**
 
 1. The dead time during transfer $t_{d}$ must be small enough such that the loss is insignificant to the statistics — as photon TTL pulses will be missed during that period.
-2. If the DPU processes data in real time, the time for computation $t_{c} < TTL-gt$​. And practically $t_{c} << TTL-gt$​
+2. If the DPU processes data in real time, the time for computation $t_{c} < TTL-gt$. And practically $t_{c} << TTL-gt$
 
 
 
@@ -115,7 +115,7 @@ It is also essential that the time required for the computation of datum passed 
 
 We can formulate *Intensity $I$* as the number of photons reaching the detector in unit time.
 
-The mean number of detected pulses ($\mu$​) per sample time $\Delta T = TTL-gt$​  is given in terms of the *Intensity $I$​*, *quantum efficiency $p_{det}$​ of the detector*  , which is *(detected photons / arrived photons)* 
+The mean number of detected pulses ($\mu$) per sample time $\Delta T = TTL-gt$  is given in terms of the *Intensity $I$*, *quantum efficiency $p_{det}$ of the detector*  , which is *(detected photons / arrived photons)* 
 $$
 \begin{align}
 \langle n \rangle = \mu &= p I \Delta T\\
@@ -123,7 +123,7 @@ $$
 \end{align}
 $$
 
-The computation of this mean is trivial and is performed in the DPU in the so-called *monitor channels.* **A monitor channel keeps track of the mean number of photons that arrive in a fixed gate time $TTL-gt$​​.** 
+The computation of this mean is trivial and is performed in the DPU in the so-called *monitor channels.* **A monitor channel keeps track of the mean number of photons that arrive in a fixed gate time $TTL-gt$.** 
 
 ### Autocorrelation function
 
@@ -137,13 +137,13 @@ G_{le}(k) = \frac{1}{M}{\sum_{i=1}^{M}{n_{i}n_{i-k}}}
 $$
 Here, $M$ is the total sample size and $n_{i}$ represents photon counts which in turn represents Intensity. Hence $n_{i} \approx I_{i}$. This estimator  estimates the real autocorrelation function ($G_{n}(k)$) which assumes that $M → \infin$,  hence,  $\langle G_{le}(k) \rangle = G_{n}(k)$.
 
-The use of the raw estimator with or without normalization is restricted to cases where the whole set $n_{i}$​ is available such that $n_{i-k}$ is a defined entity. Hence, this scheme is not fit for *real-time acquisition and calculation.*
+The use of the raw estimator with or without normalization is restricted to cases where the whole set $n_{i}$ is available such that $n_{i-k}$ is a defined entity. Hence, this scheme is not fit for *real-time acquisition and calculation.*
 
 
 
 #### Restructuring in terms of real time parameters
 
-We say that for time $m$​, $0 \leq m < M$​, the $m^{th}$​ acquisition is made. Hence, at time $m$​, $n_{m}$​ is available and the *<u>available sample size of photon counts</u>* is also $m$​​.
+We say that for time $m$, $0 \leq m < M$, the $m^{th}$ acquisition is made. Hence, at time $m$, $n_{m}$ is available and the *<u>available sample size of photon counts</u>* is also $m$.
 
 The ACF Channels at any acquisition time $m$ represents the quantity :
 $$
@@ -155,24 +155,24 @@ This scheme yields the ==*fundamental ACF*== equation :
 $$
 G(k) = \frac{\sum_{i=0}^{m-k}{n_{i}n_{i-k}}}{(Norm)}
 $$
-Note the presence of the time dependent parameter $m$. It can be inferred from the above equation that for different values of the lag time $k$, the summation operations differ. For $k = 0$, $m$ sums are performed. And for $k = m - 1$, just one sum is performed. This is an artifact of the real time averaging, which is referred to as **triangular averaging.** Distortions that result from this triangular averaging can be estimated and can be managed. The schematic below illustrates the arrival of photon datum and its subsequent distribution to the different channels. This is due to the fact that complete $n_{i}$ series is not available for the ACF calculation and hence the relation $\langle n_{i}n_{i-k} \rangle = \langle n_{i}n_{i+k} \rangle$ cannot be used.​
+Note the presence of the time dependent parameter $m$. It can be inferred from the above equation that for different values of the lag time $k$, the summation operations differ. For $k = 0$, $m$ sums are performed. And for $k = m - 1$, just one sum is performed. This is an artifact of the real time averaging, which is referred to as **triangular averaging.** Distortions that result from this triangular averaging can be estimated and can be managed. The schematic below illustrates the arrival of photon datum and its subsequent distribution to the different channels. This is due to the fact that complete $n_{i}$ series is not available for the ACF calculation and hence the relation $\langle n_{i}n_{i-k} \rangle = \langle n_{i}n_{i+k} \rangle$ cannot be used.
 
 ![image-20210807124050295](C:/Users/Yatharth_Nitro/AppData/Roaming/Typora/typora-user-images/image-20210807124050295.png)
 
-For all lags $k$​, the contribution to the ACF is not equal. hence, the normalization depends on the lag value $k$​. The normalization can also include the mean square photon count. Before completion of the acquisition phase, i.e.  $m < M$​, the mean must also be estimated based on the available acquisitions. <u>Note: $m$​​ represents the available samples.</u>
+For all lags $k$, the contribution to the ACF is not equal. hence, the normalization depends on the lag value $k$. The normalization can also include the mean square photon count. Before completion of the acquisition phase, i.e.  $m < M$, the mean must also be estimated based on the available acquisitions. <u>Note: $m$ represents the available samples.</u>
 $$
 Norm = (m-k) \langle n \rangle_{m}^{2}
 $$
-==All ACF values obtained in this way i.e. for $m < M$​ are *<u>estimates of the estimator</u> $G_{le}(k)$​​* itself.==
+==All ACF values obtained in this way i.e. for $m < M$ are *<u>estimates of the estimator</u> $G_{le}(k)$* itself.==
 
-After completing the acquisition, i.e. for $m = M$​, the above equations become:
+After completing the acquisition, i.e. for $m = M$, the above equations become:
 $$
 \begin{align}
 Ch(k) &= {\sum_{i=0}^{M-k}{n_{i}n_{i-k}}}\\
 Norm &= (M-k)\langle n \rangle^{2} 
 \end{align}
 $$
-Note: for $m = M$​, $\langle n \rangle_{m} → \langle n \rangle$​ . The estimated mean becomes the true sample mean.
+Note: for $m = M$, $\langle n \rangle_{m} → \langle n \rangle$ . The estimated mean becomes the true sample mean.
 
 Another form of ACF is possible, that characterizes the <u>fluctuations from the mean value of the intensity.</u>  This is achieved by baseline subtraction of the estimated mean at time $m$, from the acquired intensity — $\langle n \rangle_{m}^{2} $.
 $$
@@ -182,19 +182,19 @@ This function is difficult to implement for real-time applications as for each a
 
 ## Estimation of mean $\langle n \rangle_{m}$
 
-→ The previous section mentioned the use of "monitor-channels" for estimation of mean, this section will further illustrate that concept. If the calculation of the ACF is done in real time, it is obvious that the mean count rate $\langle n \rangle$​ is also an estimated quantity. There are two approaches for the estimation of this quantity:
+→ The previous section mentioned the use of "monitor-channels" for estimation of mean, this section will further illustrate that concept. If the calculation of the ACF is done in real time, it is obvious that the mean count rate $\langle n \rangle$ is also an estimated quantity. There are two approaches for the estimation of this quantity:
 
 1. Using ***"far point channels"*** → which uses far away ACF channels  —  $\langle n_{j} n_{j-k} \rangle$ for very large $k$.
 
-   For large values of $k$​, the values $n_{j}$​ and $n_{j-k}$​ are statistically independent <u>(autocorrelation decays over large time interval)</u>. Hence,
+   For large values of $k$, the values $n_{j}$ and $n_{j-k}$ are statistically independent <u>(autocorrelation decays over large time interval)</u>. Hence,
 
 $$
 \langle n_{j} n_{j-k} \rangle \approx \langle n_{j} \rangle \langle n_{j-k} \rangle =  \langle n_{j} \rangle^2 \quad; k >> 0
 $$
 
-​   The $\langle n_{j} \rangle^2$ is the asymptotic value of the autocorrelation function which is equivalent to $ACF(\infin)$. 
+   The $\langle n_{j} \rangle^2$ is the asymptotic value of the autocorrelation function which is equivalent to $ACF(\infin)$. 
 
-2. Using "***monitor channels***" → which uses special counters that measure the average count rate of photon detection for a fixed sample duration $\Delta T = TTL-gt$​ — $n$​. $M$​ is the number of samples received by the  DPU from the counter.
+2. Using "***monitor channels***" → which uses special counters that measure the average count rate of photon detection for a fixed sample duration $\Delta T = TTL-gt$ — $n$. $M$ is the number of samples received by the  DPU from the counter.
 
 $$
 n_{e} = \frac{1}{m}\sum_{j=1}^{m}{n_{j}}
@@ -216,7 +216,7 @@ $$
 
 
 
-With collection of $M$​​ samples — each sample collected over time interval $TTL-gt$​​, a linear estimator of the correlation function is possible (discussed in previous setions):
+With collection of $M$ samples — each sample collected over time interval $TTL-gt$, a linear estimator of the correlation function is possible (discussed in previous setions):
 $$
 G_{le}(k) = \frac{1}{M} \sum_{j=1}^{M}{n_{j}n_{j-k}}
 $$
@@ -254,7 +254,7 @@ sequenceDiagram
 
 + Functions: For given state of `Sample_array`, compute the autocovariance and autocorrelation for a given lag value, compute the sample mean and sample variance, update the whole `Channel_array` for a given state of `Sample_array`.
 
-+ For a time $m$​, the maximum populated `Sample_index` is $m$​ and also, the maximum populated `Channel_index` is also $m$​. This tracking of the available indices must be done in order to compute the various quantities. 
++ For a time $m$, the maximum populated `Sample_index` is $m$ and also, the maximum populated `Channel_index` is also $m$. This tracking of the available indices must be done in order to compute the various quantities. 
 
 + Auxiliary functions to output the channels to different streams with appropriate normalization.
 
@@ -274,7 +274,7 @@ Logarithmic correlator uses a lag times that are logarithmically scaled. This me
 
 However, this scheme leads to correlation channels with very small sampling time and some channels with very large sample times (the extreme channels at both ends). This leads to distortion of the ACF which is an extreme triangular distortion.
 
-This distortion can be kept under check by using lag times considerably larger than the  total sample time: $k_{max} \Delta T_{k} << \sum{M \Delta T} $​.$\ref{(Schatzel1988)}$​[^Citation Pending]
+This distortion can be kept under check by using lag times considerably larger than the  total sample time: $k_{max} \Delta T_{k} << \sum{M \Delta T} $.$\ref{(Schatzel1988)}$[^Citation Pending]
 
 The scaling of the lag time is given by:
 
@@ -288,7 +288,7 @@ Multi-tau correlators utilize a group $S$ of linear correlators.
 
 ![image-20210713125711991](/images/articles/projects/correlator/image-20210713125711991.png "Source: Magatti & Ferri 2001")
 
-Hence, a multi-tau correlator object can be thought of as a block of $S$ linear correlators with a wrapper that contains functions that simultaneously update every one of the $S$​​ Linear Correlators in its scope. This wrapper can be implemented as a C++ style template.  
+Hence, a multi-tau correlator object can be thought of as a block of $S$ linear correlators with a wrapper that contains functions that simultaneously update every one of the $S$ Linear Correlators in its scope. This wrapper can be implemented as a C++ style template.  
 
 ```c++
 template <Lin_CorrA_Base lin_corr_type, unsigned int S>
@@ -434,9 +434,9 @@ The counting module consists:
 
 1. A *TTL counter* (TTL-t) that receives the  TTL pulses and counts them. This counter must be capable of storing counts that is comparable to the usual count rate in the experiment. Apart from that the counter must have a capture mechanism and a fast reset mechanism. The choice of this counter depends on the latency of these functions.
 
-   The range of an n-bit counter is given by: $2^{n} - 1 $​. Hence a 16-bit counter has a range of 0-65,535 ($10^{4}$​) and a 32-bit counter has a range of  0 - 4,294,967,295 ($~ 10^9$​). Any 32-bit timer would have enough range to accommodate for any physically possible count rates. The range of a 16-bit timers (if forced to used - because of economy) can be doubled by checking the *overflow flag*. Timers set an overflow flag when they exceed their maximum value during counting, reset to zero and start counting again. Use of this method requires an additional operation of resetting the overflow flag during the next cycle of operation. This mechanism is already demonstrated in the lower half of the schematics.
+   The range of an n-bit counter is given by: $2^{n} - 1 $. Hence a 16-bit counter has a range of 0-65,535 ($10^{4}$) and a 32-bit counter has a range of  0 - 4,294,967,295 ($~ 10^9$). Any 32-bit timer would have enough range to accommodate for any physically possible count rates. The range of a 16-bit timers (if forced to used - because of economy) can be doubled by checking the *overflow flag*. Timers set an overflow flag when they exceed their maximum value during counting, reset to zero and start counting again. Use of this method requires an additional operation of resetting the overflow flag during the next cycle of operation. This mechanism is already demonstrated in the lower half of the schematics.
 
-   Taking into account the average count rates encountered during a typical single-molecule experiments (say $10^{4}-10^{6}$​ cps for FCS), we can further evaluate the problem of overflows. The typical gating time is assumed to be 100 $\mu s$​. Hence, the maximum count value during a single gate interval is $\approx 1-10^{2}$​. It is clear that 16-bit timers are also well equipped in terms of the range. Hence, the selection would entirely depend on speed of operations and access and not on the size of the counters, however, 32-bit timers would be preffered. 
+   Taking into account the average count rates encountered during a typical single-molecule experiments (say $10^{4}-10^{6}$ cps for FCS), we can further evaluate the problem of overflows. The typical gating time is assumed to be 100 $\mu s$. Hence, the maximum count value during a single gate interval is $\approx 1-10^{2}$. It is clear that 16-bit timers are also well equipped in terms of the range. Hence, the selection would entirely depend on speed of operations and access and not on the size of the counters, however, 32-bit timers would be preffered. 
 
    The *Service Time* of an ISR is the time taken to complete the ISR prescribed for a timer. Since, in our case, the ISR will interact with the TTL-t, the performance will also depend heavily on the Service Time of the ISR.
 
