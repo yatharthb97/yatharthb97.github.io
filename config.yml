@@ -26,7 +26,13 @@ params:
     - publications
     - "Biology🧬 + Physics🔭"
 
-  custom_css : ["css/rel_image.css", "/css/timeline.css", "/css/blink_text.css", "/css/textflips.css", "/css/marquee.css", "/css/boxmarquee.css"]
+  custom_css : 
+    - "css/rel_image.css"
+    - "/css/timeline.css"
+    - "/css/blink_text.css"
+    - "/css/textflips.css"
+    - "/css/marquee.css"
+  #  - "/css/boxmarquee.css"
 
   # Default Recommended ↓
 
