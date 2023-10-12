@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Jul 2022 15:07:14 +0530</lastBuildDate><atom:link href="https://yatharthb97.github.io/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Oct 2023 23:56:06 +0100</lastBuildDate><atom:link href="https://yatharthb97.github.io/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trappy Scopes</title>
+      <link>https://yatharthb97.github.io/projects/trappyscopes/</link>
+      <pubDate>Thu, 12 Oct 2023 23:56:06 +0100</pubDate>
+      
+      <guid>https://yatharthb97.github.io/projects/trappyscopes/</guid>
+      <description>Project description.</description>
+    </item>
+    
     <item>
       <title>Correlator Card Notes</title>
       <link>https://yatharthb97.github.io/projects/correlator-card-notes/</link>
