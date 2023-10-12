@@ -42,4 +42,4 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=assets%2FSTL%2FMicroscope%20Assembly1%20v5.stl&local" style="border:0;margin:0;width:100%;height:700px;"></iframe>
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=STL%2FMicroscope%20Assembly1%20v5.stl&local" style="border:0;margin:0;width:100%;height:700px;"></iframe>
