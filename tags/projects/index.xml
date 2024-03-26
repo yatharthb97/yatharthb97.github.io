@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>projects on Yatharth Bhasin</title>
+    <title>Projects on Yatharth Bhasin</title>
     <link>https://yatharthb97.github.io/tags/projects/</link>
-    <description>Recent content in projects on Yatharth Bhasin</description>
+    <description>Recent content in Projects on Yatharth Bhasin</description>
     <image>
       <url>https://yatharthb97.github.io/website_tile.svg</url>
       <link>https://yatharthb97.github.io/website_tile.svg</link>
@@ -44,7 +44,7 @@
       <pubDate>Tue, 28 Jun 2022 13:56:04 +0530</pubDate>
       
       <guid>https://yatharthb97.github.io/projects/kglab/</guid>
-      <description>This page summarizes the projects I worked on during my Junior Research Fellow tenure at Tata Institute of Fundamental Research, Hyderabad.</description>
+      <description>This page summarizes the projects I worked on during my Junior Research Fellowship at Tata Institute of Fundamental Research, Hyderabad.</description>
     </item>
     
   </channel>
