@@ -2,7 +2,7 @@
 title: "KG Lab Project Work"
 date: 2022-06-28T13:56:04+05:30
 draft: false
-description: "This page summarizes the projects I worked on during my Junior Research Fellow tenure at Tata Institute of Fundamental Research, Hyderabad."
+description: "This page summarizes the projects I worked on during my Junior Research Fellowship at Tata Institute of Fundamental Research, Hyderabad."
 ShowCanonicalLink: true
 canonicalURL: "https://github.com/yatharthb97/yatharthb97/blob/main/kglab.md"
 searchHidden: false
