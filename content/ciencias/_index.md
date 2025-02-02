@@ -42,6 +42,8 @@ title : "Ciências 🧛"
         </h3>
         <p>
           <ol>
+            <li><a href="https://events.hifis.net/event/1604/">PHYMOT: Motile Active Matter 2024, Bonn, Germany</a><br>Dates: 18th - 21st November 2024<br> Presented a poster.</li>
+            <li> <a href="https://x.com/phd_igc/status/1802787243188527150">Optical Biology Student Symposium 2024, Lisbon, Portuagl. Co-organised by IGC Oerias, CCU Lisbon, UCL London)</a><br>Dates: 17th-18th June 2024<br> Organiser and presented a poster.</li>
             <li> <a href="https://gulbenkian.pt/ciencia/agenda/biology-across-scales-symposium/Biology">Across Scales Symposium, IGC, Portugal</a><br>Dates: 20th to 22nd March 2024<br> Organiser and presented a poster.</li>
             <li><a>Dynamic Cell Culture with Microfluidics - from unicellular to complex systems, IGC, Portugal</a><br>Dates: 15th-16th February 2024<br>Participant.</li>
             <li> <a>AMeeGuS Annual PhD Retreat, IGC, Portugal</a><br>Dates: 15th to 18th of February<br>Presented a poster.</li>
