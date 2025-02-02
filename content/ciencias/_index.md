@@ -38,6 +38,19 @@ title : "Ciências 🧛"
     <div class="card">
       <div class="info">
         <h3 class="title">
+          Year 2025
+        </h3>
+        <p>
+          <ol>
+            <li><a href="https://igc.idloom.events/circle-meeting-2025">Physical Biology Circle Meeting 2025, GIMM, Oeiras, Portugal</a><br>Dates: 27-30 January 2025<br> Presented an oral talk</li>
+          </ol>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="info">
+        <h3 class="title">
           Year 2024
         </h3>
         <p>
