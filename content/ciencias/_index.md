@@ -47,7 +47,6 @@ title : "Ciências 🧛"
         </p>
       </div>
     </div>
-
     <div class="card">
       <div class="info">
         <h3 class="title">
