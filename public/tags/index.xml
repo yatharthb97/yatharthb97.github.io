@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags 🏷️ on Yatharth Bhasin</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags 🏷️ on Yatharth Bhasin</description>
+    <image>
+      <title>Yatharth Bhasin</title>
+      <url>http://localhost:1313/website_tile.svg</url>
+      <link>http://localhost:1313/website_tile.svg</link>
+    </image>
+    <generator>Hugo -- 0.143.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Oct 2023 23:56:06 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/tags/projects/</link>
+      <pubDate>Thu, 12 Oct 2023 23:56:06 +0100</pubDate>
+      <guid>http://localhost:1313/tags/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Classnotes</title>
+      <link>http://localhost:1313/tags/classnotes/</link>
+      <pubDate>Mon, 23 Jan 2023 09:52:47 +0000</pubDate>
+      <guid>http://localhost:1313/tags/classnotes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blog</title>
+      <link>http://localhost:1313/tags/blog/</link>
+      <pubDate>Fri, 08 Jul 2022 22:08:07 +0530</pubDate>
+      <guid>http://localhost:1313/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gists</title>
+      <link>http://localhost:1313/tags/gists/</link>
+      <pubDate>Tue, 28 Jun 2022 18:15:16 +0530</pubDate>
+      <guid>http://localhost:1313/tags/gists/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Library</title>
+      <link>http://localhost:1313/tags/library/</link>
+      <pubDate>Tue, 28 Jun 2022 18:15:16 +0530</pubDate>
+      <guid>http://localhost:1313/tags/library/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Tue, 28 Jun 2022 18:15:16 +0530</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BeetleBox</title>
+      <link>http://localhost:1313/tags/beetlebox/</link>
+      <pubDate>Tue, 28 Jun 2022 17:44:04 +0530</pubDate>
+      <guid>http://localhost:1313/tags/beetlebox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/tags/publications/</link>
+      <pubDate>Tue, 28 Jun 2022 17:44:04 +0530</pubDate>
+      <guid>http://localhost:1313/tags/publications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Popular Science</title>
+      <link>http://localhost:1313/tags/popular-science/</link>
+      <pubDate>Tue, 28 Jun 2022 17:10:31 +0530</pubDate>
+      <guid>http://localhost:1313/tags/popular-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tweets</title>
+      <link>http://localhost:1313/tags/tweets/</link>
+      <pubDate>Tue, 28 Jun 2022 17:10:31 +0530</pubDate>
+      <guid>http://localhost:1313/tags/tweets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gallery</title>
+      <link>http://localhost:1313/tags/gallery/</link>
+      <pubDate>Tue, 28 Jun 2022 15:55:14 +0530</pubDate>
+      <guid>http://localhost:1313/tags/gallery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Images</title>
+      <link>http://localhost:1313/tags/images/</link>
+      <pubDate>Tue, 28 Jun 2022 15:55:14 +0530</pubDate>
+      <guid>http://localhost:1313/tags/images/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Photos</title>
+      <link>http://localhost:1313/tags/photos/</link>
+      <pubDate>Tue, 28 Jun 2022 15:55:14 +0530</pubDate>
+      <guid>http://localhost:1313/tags/photos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spherosim</title>
+      <link>http://localhost:1313/tags/spherosim/</link>
+      <pubDate>Tue, 28 Jun 2022 15:55:14 +0530</pubDate>
+      <guid>http://localhost:1313/tags/spherosim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VMD</title>
+      <link>http://localhost:1313/tags/vmd/</link>
+      <pubDate>Tue, 28 Jun 2022 15:55:14 +0530</pubDate>
+      <guid>http://localhost:1313/tags/vmd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kanchan Garai</title>
+      <link>http://localhost:1313/tags/kanchan-garai/</link>
+      <pubDate>Tue, 28 Jun 2022 13:56:04 +0530</pubDate>
+      <guid>http://localhost:1313/tags/kanchan-garai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kglab</title>
+      <link>http://localhost:1313/tags/kglab/</link>
+      <pubDate>Tue, 28 Jun 2022 13:56:04 +0530</pubDate>
+      <guid>http://localhost:1313/tags/kglab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TIFR Hyderabad</title>
+      <link>http://localhost:1313/tags/tifr-hyderabad/</link>
+      <pubDate>Tue, 28 Jun 2022 13:56:04 +0530</pubDate>
+      <guid>http://localhost:1313/tags/tifr-hyderabad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/tags/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/about-me/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

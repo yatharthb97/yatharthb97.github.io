@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Yatharth Bhasin</title>
+    <link>http://localhost:1313/blog/alldrafts/</link>
+    <description>Recent content on Yatharth Bhasin</description>
+    <image>
+      <title>Yatharth Bhasin</title>
+      <url>http://localhost:1313/website_tile.svg</url>
+      <link>http://localhost:1313/website_tile.svg</link>
+    </image>
+    <generator>Hugo -- 0.143.0</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/blog/alldrafts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/alldrafts/book-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/alldrafts/book-notes/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;We now see through a mirror, enigmatically&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;St. Paul&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is no human being on earth capable of declaring with certitude who he is. No one knows what he has come into this world to do, what his acts correspond to, his sentiments, his ideas, or what his real name is, his enduring Name in the register of Light… History is an immense liturgical text where the iotas and the dots are worth no less than the entire verses or chapters, but the importance of one and the other is indeterminable and profoundly hidden.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

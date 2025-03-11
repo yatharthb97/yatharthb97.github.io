@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>🔭 on Yatharth Bhasin</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in 🔭 on Yatharth Bhasin</description>
+    <image>
+      <title>Yatharth Bhasin</title>
+      <url>http://localhost:1313/website_tile.svg</url>
+      <link>http://localhost:1313/website_tile.svg</link>
+    </image>
+    <generator>Hugo -- 0.143.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Oct 2023 23:56:06 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trappy Scopes</title>
+      <link>http://localhost:1313/projects/trappyscopes/</link>
+      <pubDate>Thu, 12 Oct 2023 23:56:06 +0100</pubDate>
+      <guid>http://localhost:1313/projects/trappyscopes/</guid>
+      <description>Project description.</description>
+    </item>
+    <item>
+      <title>Correlator Card Notes</title>
+      <link>http://localhost:1313/projects/correlator-card-notes/</link>
+      <pubDate>Mon, 11 Jul 2022 15:07:14 +0530</pubDate>
+      <guid>http://localhost:1313/projects/correlator-card-notes/</guid>
+      <description>Project description.</description>
+    </item>
+    <item>
+      <title>Python Time Literals</title>
+      <link>http://localhost:1313/projects/python-time-literals/</link>
+      <pubDate>Tue, 28 Jun 2022 18:15:16 +0530</pubDate>
+      <guid>http://localhost:1313/projects/python-time-literals/</guid>
+      <description>A python library that can be used to parse time literals.</description>
+    </item>
+    <item>
+      <title>KG Lab Project Work</title>
+      <link>http://localhost:1313/projects/kglab/</link>
+      <pubDate>Tue, 28 Jun 2022 13:56:04 +0530</pubDate>
+      <guid>http://localhost:1313/projects/kglab/</guid>
+      <description>This page summarizes the projects I worked on during my Junior Research Fellowship at Tata Institute of Fundamental Research, Hyderabad.</description>
+    </item>
+  </channel>
+</rss>
