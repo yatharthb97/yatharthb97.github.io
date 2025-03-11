@@ -5,56 +5,48 @@
     <link>https://yatharthb97.github.io/categories/</link>
     <description>Recent content in Categories 📂 on Yatharth Bhasin</description>
     <image>
+      <title>Yatharth Bhasin</title>
       <url>https://yatharthb97.github.io/website_tile.svg</url>
       <link>https://yatharthb97.github.io/website_tile.svg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jun 2022 17:10:31 +0530</lastBuildDate><atom:link href="https://yatharthb97.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jun 2022 17:10:31 +0530</lastBuildDate>
+    <atom:link href="https://yatharthb97.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publications</title>
       <link>https://yatharthb97.github.io/categories/publications/</link>
       <pubDate>Tue, 28 Jun 2022 17:10:31 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/categories/publications/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Twitter</title>
       <link>https://yatharthb97.github.io/categories/twitter/</link>
       <pubDate>Tue, 28 Jun 2022 17:10:31 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/categories/twitter/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Gallery</title>
       <link>https://yatharthb97.github.io/categories/gallery/</link>
       <pubDate>Tue, 28 Jun 2022 15:55:14 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/categories/gallery/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Photos</title>
       <link>https://yatharthb97.github.io/categories/photos/</link>
       <pubDate>Tue, 28 Jun 2022 15:55:14 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/categories/photos/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Projects</title>
       <link>https://yatharthb97.github.io/categories/projects/</link>
       <pubDate>Tue, 28 Jun 2022 13:56:04 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/categories/projects/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

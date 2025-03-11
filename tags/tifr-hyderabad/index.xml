@@ -5,20 +5,20 @@
     <link>https://yatharthb97.github.io/tags/tifr-hyderabad/</link>
     <description>Recent content in TIFR Hyderabad on Yatharth Bhasin</description>
     <image>
+      <title>Yatharth Bhasin</title>
       <url>https://yatharthb97.github.io/website_tile.svg</url>
       <link>https://yatharthb97.github.io/website_tile.svg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jun 2022 13:56:04 +0530</lastBuildDate><atom:link href="https://yatharthb97.github.io/tags/tifr-hyderabad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jun 2022 13:56:04 +0530</lastBuildDate>
+    <atom:link href="https://yatharthb97.github.io/tags/tifr-hyderabad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KG Lab Project Work</title>
       <link>https://yatharthb97.github.io/projects/kglab/</link>
       <pubDate>Tue, 28 Jun 2022 13:56:04 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/projects/kglab/</guid>
       <description>This page summarizes the projects I worked on during my Junior Research Fellowship at Tata Institute of Fundamental Research, Hyderabad.</description>
     </item>
-    
   </channel>
 </rss>

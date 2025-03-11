@@ -5,10 +5,12 @@
     <link>https://yatharthb97.github.io/collaborate/</link>
     <description>Recent content in ☭ on Yatharth Bhasin</description>
     <image>
+      <title>Yatharth Bhasin</title>
       <url>https://yatharthb97.github.io/website_tile.svg</url>
       <link>https://yatharthb97.github.io/website_tile.svg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://yatharthb97.github.io/collaborate/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <atom:link href="https://yatharthb97.github.io/collaborate/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

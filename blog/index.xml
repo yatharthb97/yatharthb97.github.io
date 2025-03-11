@@ -5,21 +5,29 @@
     <link>https://yatharthb97.github.io/blog/</link>
     <description>Recent content in  ✒️  on Yatharth Bhasin</description>
     <image>
+      <title>Yatharth Bhasin</title>
       <url>https://yatharthb97.github.io/website_tile.svg</url>
       <link>https://yatharthb97.github.io/website_tile.svg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Oct 2023 23:50:49 +0100</lastBuildDate><atom:link href="https://yatharthb97.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 16:37:38 +0530</lastBuildDate>
+    <atom:link href="https://yatharthb97.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome!</title>
       <link>https://yatharthb97.github.io/blog/welcome/</link>
       <pubDate>Wed, 29 Jun 2022 16:37:38 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/blog/welcome/</guid>
-      <description>Welcome to my website! Here, I post about stuff I like and the things I do. I { read, code, think, analyse, and solve } in all permutations. This website cum blog is an attempt to include writing in this set. Below is a short overview of the website.
-projects: where I post about my scientific and coding projects. publications: lists all the articles I have written and published somewhere. blog: where I will post articles and notes on various themes.</description>
+      <description>&lt;p&gt;Welcome to my website! Here, I post about stuff I like and the things I do. I &lt;strong&gt;{&lt;/strong&gt; read, code, think, analyse, and solve &lt;strong&gt;}&lt;/strong&gt; in all permutations. This website cum blog is an attempt to include writing in this set. Below is a short overview of the website.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/projects/&#34;&gt;projects&lt;/a&gt;: where I post about my scientific and coding projects.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/publications/&#34;&gt;publications&lt;/a&gt;: lists all the articles I have written and published somewhere.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/blog/&#34;&gt;blog&lt;/a&gt;: where I will post articles and notes on various themes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/gallery/&#34;&gt;gallery&lt;/a&gt;: has some cool pictures of me and my work.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/aboutme/&#34;&gt;about me&lt;/a&gt;: an overview of my interests &amp;amp; qualifications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/collaborate/&#34;&gt;collaborate&lt;/a&gt;: has a list of projects for which collaborators are required.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This website is still being actively developed and is broken at a few places.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -5,260 +5,227 @@
     <link>https://yatharthb97.github.io/</link>
     <description>Recent content on Yatharth Bhasin</description>
     <image>
+      <title>Yatharth Bhasin</title>
       <url>https://yatharthb97.github.io/website_tile.svg</url>
       <link>https://yatharthb97.github.io/website_tile.svg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Oct 2023 23:56:06 +0100</lastBuildDate><atom:link href="https://yatharthb97.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Oct 2023 23:56:06 +0100</lastBuildDate>
+    <atom:link href="https://yatharthb97.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transcription Networks - Basic Concepts</title>
       <link>https://yatharthb97.github.io/blog/biophy/urialonc1/</link>
       <pubDate>Fri, 08 Jul 2022 22:08:07 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/blog/biophy/urialonc1/</guid>
       <description>Notes from Uri Alon&amp;#39;s Systems Biology Textbook.</description>
     </item>
-    
     <item>
       <title>Welcome!</title>
       <link>https://yatharthb97.github.io/blog/welcome/</link>
       <pubDate>Wed, 29 Jun 2022 16:37:38 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/blog/welcome/</guid>
-      <description>Welcome to my website! Here, I post about stuff I like and the things I do. I { read, code, think, analyse, and solve } in all permutations. This website cum blog is an attempt to include writing in this set. Below is a short overview of the website.
-projects: where I post about my scientific and coding projects. publications: lists all the articles I have written and published somewhere. blog: where I will post articles and notes on various themes.</description>
+      <description>&lt;p&gt;Welcome to my website! Here, I post about stuff I like and the things I do. I &lt;strong&gt;{&lt;/strong&gt; read, code, think, analyse, and solve &lt;strong&gt;}&lt;/strong&gt; in all permutations. This website cum blog is an attempt to include writing in this set. Below is a short overview of the website.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/projects/&#34;&gt;projects&lt;/a&gt;: where I post about my scientific and coding projects.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/publications/&#34;&gt;publications&lt;/a&gt;: lists all the articles I have written and published somewhere.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/blog/&#34;&gt;blog&lt;/a&gt;: where I will post articles and notes on various themes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/gallery/&#34;&gt;gallery&lt;/a&gt;: has some cool pictures of me and my work.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/aboutme/&#34;&gt;about me&lt;/a&gt;: an overview of my interests &amp;amp; qualifications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/collaborate/&#34;&gt;collaborate&lt;/a&gt;: has a list of projects for which collaborators are required.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This website is still being actively developed and is broken at a few places.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Trappy Scopes</title>
       <link>https://yatharthb97.github.io/projects/trappyscopes/</link>
       <pubDate>Thu, 12 Oct 2023 23:56:06 +0100</pubDate>
-      
       <guid>https://yatharthb97.github.io/projects/trappyscopes/</guid>
       <description>Project description.</description>
     </item>
-    
     <item>
       <title>Advanced Techniques</title>
       <link>https://yatharthb97.github.io/classnotes/week17/</link>
       <pubDate>Mon, 23 Jan 2023 09:52:47 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week17/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Biophysics</title>
       <link>https://yatharthb97.github.io/classnotes/biophysics/</link>
       <pubDate>Tue, 17 Jan 2023 10:02:20 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/biophysics/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Cells to Organisms</title>
       <link>https://yatharthb97.github.io/classnotes/week16/</link>
       <pubDate>Wed, 04 Jan 2023 10:54:22 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week16/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Ecology</title>
       <link>https://yatharthb97.github.io/classnotes/week15/</link>
       <pubDate>Mon, 12 Dec 2022 09:22:25 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week15/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Week14</title>
       <link>https://yatharthb97.github.io/classnotes/week14/</link>
       <pubDate>Tue, 06 Dec 2022 10:33:04 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week14/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Neurobiology</title>
       <link>https://yatharthb97.github.io/classnotes/week13/</link>
       <pubDate>Mon, 28 Nov 2022 09:41:17 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week13/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Plant Biology</title>
       <link>https://yatharthb97.github.io/classnotes/week12/</link>
       <pubDate>Mon, 21 Nov 2022 09:33:56 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week12/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Week9</title>
       <link>https://yatharthb97.github.io/classnotes/week9/</link>
       <pubDate>Mon, 31 Oct 2022 14:02:00 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week9/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Eco-Devo-Eco</title>
       <link>https://yatharthb97.github.io/classnotes/week8/</link>
       <pubDate>Mon, 24 Oct 2022 10:35:40 +0100</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week8/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Systems Biology</title>
       <link>https://yatharthb97.github.io/classnotes/week7/</link>
       <pubDate>Mon, 17 Oct 2022 10:14:30 +0100</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week7/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Cellular and Developmental Biology</title>
       <link>https://yatharthb97.github.io/classnotes/week6/</link>
       <pubDate>Mon, 10 Oct 2022 10:00:53 +0100</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week6/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Inside the Cell</title>
       <link>https://yatharthb97.github.io/classnotes/week5/</link>
       <pubDate>Mon, 03 Oct 2022 09:36:53 +0100</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week5/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>Structural and Molecular Biology</title>
       <link>https://yatharthb97.github.io/classnotes/week4/</link>
       <pubDate>Mon, 26 Sep 2022 09:48:53 +0100</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week4/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>STATISTICS AND QUANTITATIVE BIOLOGY | IBB Lecture</title>
       <link>https://yatharthb97.github.io/classnotes/week2/</link>
       <pubDate>Mon, 12 Sep 2022 09:30:00 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/week2/</guid>
       <description>IBB Lecture class notes.</description>
     </item>
-    
     <item>
       <title>An Introduction to the Luria-Delbruck Experiment</title>
       <link>https://yatharthb97.github.io/classnotes/an-introduction-to-the-luria-delbruck-experiment/</link>
       <pubDate>Mon, 05 Sep 2022 12:53:13 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/an-introduction-to-the-luria-delbruck-experiment/</guid>
       <description>Class notes relating to the Luria-Delbruck Experiments (Lectures and Experimentation).</description>
     </item>
-    
     <item>
       <title>History of Biological Concepts: lectures</title>
       <link>https://yatharthb97.github.io/classnotes/how-natural-selection-took-over-immunology/</link>
       <pubDate>Mon, 05 Sep 2022 12:53:13 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/how-natural-selection-took-over-immunology/</guid>
       <description>Class notes relating to the week 1 lectures (IBB).</description>
     </item>
-    
     <item>
       <title>Correlator Card Notes</title>
       <link>https://yatharthb97.github.io/projects/correlator-card-notes/</link>
       <pubDate>Mon, 11 Jul 2022 15:07:14 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/projects/correlator-card-notes/</guid>
       <description>Project description.</description>
     </item>
-    
     <item>
       <title>Python Time Literals</title>
       <link>https://yatharthb97.github.io/projects/python-time-literals/</link>
       <pubDate>Tue, 28 Jun 2022 18:15:16 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/projects/python-time-literals/</guid>
       <description>A python library that can be used to parse time literals.</description>
     </item>
-    
     <item>
       <title>BeetleBox</title>
       <link>https://yatharthb97.github.io/publications/beetlebox/</link>
       <pubDate>Tue, 28 Jun 2022 17:44:04 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/publications/beetlebox/</guid>
       <description>Blog maintained by the Socratic Quizmasters.</description>
     </item>
-    
     <item>
       <title>Science Through Visuals TIFRH</title>
       <link>https://yatharthb97.github.io/publications/sciencethroughvisuals_tifrh/</link>
       <pubDate>Tue, 28 Jun 2022 17:10:31 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/publications/sciencethroughvisuals_tifrh/</guid>
       <description>Science through Visuals - popular science writing.</description>
     </item>
-    
     <item>
       <title>Patchy Particles</title>
       <link>https://yatharthb97.github.io/gallery/patchyparticles/</link>
       <pubDate>Tue, 28 Jun 2022 15:55:14 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/gallery/patchyparticles/</guid>
       <description>Images created with custom renderer written for VMD in C&#43;&#43;. Images created for MSc project.</description>
     </item>
-    
     <item>
       <title>KG Lab Project Work</title>
       <link>https://yatharthb97.github.io/projects/kglab/</link>
       <pubDate>Tue, 28 Jun 2022 13:56:04 +0530</pubDate>
-      
       <guid>https://yatharthb97.github.io/projects/kglab/</guid>
       <description>This page summarizes the projects I worked on during my Junior Research Fellowship at Tata Institute of Fundamental Research, Hyderabad.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://yatharthb97.github.io/blog/alldrafts/book-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/blog/alldrafts/book-notes/</guid>
-      <description>We now see through a mirror, enigmatically.
-St. Paul
-There is no human being on earth capable of declaring with certitude who he is. No one knows what he has come into this world to do, what his acts correspond to, his sentiments, his ideas, or what his real name is, his enduring Name in the register of Light… History is an immense liturgical text where the iotas and the dots are worth no less than the entire verses or chapters, but the importance of one and the other is indeterminable and profoundly hidden.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;We now see through a mirror, enigmatically&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;St. Paul&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is no human being on earth capable of declaring with certitude who he is. No one knows what he has come into this world to do, what his acts correspond to, his sentiments, his ideas, or what his real name is, his enduring Name in the register of Light… History is an immense liturgical text where the iotas and the dots are worth no less than the entire verses or chapters, but the importance of one and the other is indeterminable and profoundly hidden.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://yatharthb97.github.io/classnotes/r-and-general-discussion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://yatharthb97.github.io/classnotes/r-and-general-discussion/</guid>
-      <description>Introduction 1 September 2022
-Poluploid: $m*n$ chromosomes. Some organisms have body parts that are polydiploid. In plants the $n$ also correlates with size of the species. Excercises on SQB. Learning R Plotting is done in some application/GUI called Quartz. Arrows can change direction semantically but systematically with attributes and pointers. Read about Mendel´s laws. &amp;ldquo;Penatrance&amp;rdquo;. </description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;u&gt;&lt;em&gt;1 September 2022&lt;/em&gt;&lt;/u&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Poluploid: $m*n$ chromosomes. Some organisms have body parts that are polydiploid. In plants the $n$ also correlates with size of the species.&lt;/li&gt;
+&lt;li&gt;Excercises on SQB.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;learning-r&#34;&gt;Learning R&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Plotting is done in some application/GUI called &lt;strong&gt;Quartz.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Arrows can change direction semantically but systematically with attributes and pointers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read about Mendel´s laws.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Penatrance&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
-    
-    
-    
   </channel>
 </rss>
