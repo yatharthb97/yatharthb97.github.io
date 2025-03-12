@@ -181,6 +181,8 @@
   </url><url>
     <loc>http://localhost:1313/classnotes/r-and-general-discussion/</loc>
   </url><url>
+    <loc>http://localhost:1313/ciencias/</loc>
+  </url><url>
     <loc>http://localhost:1313/collaborate/</loc>
   </url><url>
     <loc>http://localhost:1313/maze/</loc>
@@ -188,8 +190,6 @@
     <loc>http://localhost:1313/tags/about-me/</loc>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ciencias/</loc>
   </url><url>
     <loc>http://localhost:1313/scratch/</loc>
   </url><url>
