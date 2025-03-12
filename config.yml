@@ -89,24 +89,26 @@ params:
     linkFullImages: true
     imageTitle: YB
     buttons:
+      - name: Trappy-Scopes 🔬
       - name: About Me 👋
+        url: /projects/trappyscopes/
         url: /aboutme/
       - name: Collaborate! ☭
         url: /collaborate/
-      - name: Blog 📝
-        url: blog
-      - name : Projects 🔭
-        url: /projects/
-      - name : "Resume 🎓"
-        url: https://drive.google.com/file/d/1XtsUeojuXNe-d_a9AhDXsk7MJZiTlsvz/view?usp=sharing
+#      - name: Blog 📝
+#        url: blog
+#      - name : Projects 🔭
+#        url: /projects/
+#      - name : "Resume 🎓"
+#        url: https://drive.google.com/file/d/1XtsUeojuXNe-d_a9AhDXsk7MJZiTlsvz/view?usp=sharing
       - name : Code 👨‍💻
         url: https://github.com/yatharthb97
-      - name : Archive ⌛
+      - name : Web Archive ⌛
         url: /archives/
       - name : Tags 🏷️
         url: /tags/
-      - name : Categories 📂
-        url : /categories/
+#      - name : Categories 📂
+#        url : /categories/
 
 
   # home-info mode
