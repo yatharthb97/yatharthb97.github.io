@@ -111,6 +111,8 @@ params:
         url: /tags/
 #      - name : Categories 📂
 #        url : /categories/
+      - name: IBB 2023 Classnotes 📚
+        url: /classnotes/
 
 
   # home-info mode
