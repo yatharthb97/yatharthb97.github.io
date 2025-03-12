@@ -90,8 +90,8 @@ params:
     imageTitle: YB
     buttons:
       - name: Trappy-Scopes 🔬
-      - name: About Me 👋
         url: /projects/trappyscopes/
+      - name: About Me 👋
         url: /aboutme/
       - name: Collaborate! ☭
         url: /collaborate/
