@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.143.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Oct 2023 23:56:06 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jan 2023 09:52:47 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transcription Networks - Basic Concepts</title>
@@ -35,13 +35,6 @@
 &lt;li&gt;&lt;a href=&#34;http://localhost:1313/collaborate/&#34;&gt;collaborate&lt;/a&gt;: has a list of projects for which collaborators are required.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This website is still being actively developed and is broken at a few places.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Trappy Scopes</title>
-      <link>http://localhost:1313/projects/trappyscopes/</link>
-      <pubDate>Thu, 12 Oct 2023 23:56:06 +0100</pubDate>
-      <guid>http://localhost:1313/projects/trappyscopes/</guid>
-      <description>Project description.</description>
     </item>
     <item>
       <title>Advanced Techniques</title>

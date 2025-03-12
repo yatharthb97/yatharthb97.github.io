@@ -11,15 +11,8 @@
     </image>
     <generator>Hugo -- 0.143.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Oct 2023 23:56:06 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jul 2022 15:07:14 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Trappy Scopes</title>
-      <link>http://localhost:1313/projects/trappyscopes/</link>
-      <pubDate>Thu, 12 Oct 2023 23:56:06 +0100</pubDate>
-      <guid>http://localhost:1313/projects/trappyscopes/</guid>
-      <description>Project description.</description>
-    </item>
     <item>
       <title>Correlator Card Notes</title>
       <link>http://localhost:1313/projects/correlator-card-notes/</link>
