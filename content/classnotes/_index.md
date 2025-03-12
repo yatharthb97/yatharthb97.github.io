@@ -1,5 +1,5 @@
 ---
-title: "Class Notes 📚"
+title: "IBB 2023 Classnotes 📚"
 ---
 
 ```goat
