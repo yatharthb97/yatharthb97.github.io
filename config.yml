@@ -82,8 +82,8 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Yatharth Bhasin
-    subtitle: "Exploring the<span class=flipY> hazzy recurrence</span> in nature at the interface of<br><span class=pop-outin>Physics</span>, <span class=pop-outin>Computation</span>, and <span class=pop-outin>Biology</span>.<br>On a Ph.D. journey."
-    imageUrl: "/images/profile_test.gif"
+    subtitle: "PhD student mixing Physics, Biology, and Computers in a test tube.<br>I build microscopes to study how cells swim."
+    imageUrl: "/images/life_of_a_cell.gif"
     imageWidth: 250
     imageHeight: 250
     linkFullImages: true
@@ -117,8 +117,8 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/yatharthb97"
-    - name: twitter
-      url: "https://twitter.com/yatharth1997"
+    - name: bluesky
+      url: "https://bsky.app/profile/yatharth1997.bsky.social"
     - name: instagram
       url: "https://www.instagram.com/anar_chy_problem/"
     - name : linkedin
