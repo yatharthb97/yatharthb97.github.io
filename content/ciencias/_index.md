@@ -1,5 +1,5 @@
 ---
-title : "Ciências 🧛"
+title : \"Ciências\" (Conferences and Workshops) 🧛
 ---
 
 

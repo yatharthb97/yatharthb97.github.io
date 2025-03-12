@@ -95,6 +95,8 @@ params:
         url: /aboutme/
       - name: Collaborate! ☭
         url: /collaborate/
+      - name: Conferences 📣
+        url: /ciencias/
 #      - name: Blog 📝
 #        url: blog
 #      - name : Projects 🔭
