@@ -1,8 +1,8 @@
 ---
-title: "UrialonC2"
+title: "Uri Alon Chapter 2"
 date: 2022-07-24T00:57:02+05:30
-draft: true
-description: "Blog Post"
+draft: false
+description: "Notes from Uri Alon's book."
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false

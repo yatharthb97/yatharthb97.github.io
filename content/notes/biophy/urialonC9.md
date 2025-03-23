@@ -2,7 +2,7 @@
 title: "Robustness in Bacterial Chemotaxis"
 date: 2023-08-29T16:10:25+01:00
 draft: true
-description: "Blog Post"
+description: "Notes from Uri Alon's book (Chapter 9)"
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
