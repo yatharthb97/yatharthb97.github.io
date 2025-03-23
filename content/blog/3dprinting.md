@@ -1,7 +1,7 @@
 ---
 title: "3dprinting"
 date: 2023-10-12T23:50:49+01:00
-draft: true
+draft: false
 description: "Blog Post"
 ShowCanonicalLink: false
 canonicalURL: ""
