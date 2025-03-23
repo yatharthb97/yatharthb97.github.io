@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Yatharth Bhasin</title>
-    <link>https://yatharthb97.github.io/blog/alldrafts/</link>
+    <link>http://localhost:1313/blog/alldrafts/</link>
     <description>Recent content on Yatharth Bhasin</description>
     <image>
       <title>Yatharth Bhasin</title>
-      <url>https://yatharthb97.github.io/website_tile.svg</url>
-      <link>https://yatharthb97.github.io/website_tile.svg</link>
+      <url>http://localhost:1313/website_tile.svg</url>
+      <link>http://localhost:1313/website_tile.svg</link>
     </image>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.143.0</generator>
     <language>en</language>
-    <atom:link href="https://yatharthb97.github.io/blog/alldrafts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/alldrafts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://yatharthb97.github.io/blog/alldrafts/book-notes/</link>
+      <link>http://localhost:1313/blog/alldrafts/book-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yatharthb97.github.io/blog/alldrafts/book-notes/</guid>
+      <guid>http://localhost:1313/blog/alldrafts/book-notes/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;We now see through a mirror, enigmatically&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;St. Paul&lt;/p&gt;&lt;/blockquote&gt;
