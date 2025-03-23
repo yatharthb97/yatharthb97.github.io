@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Oct 2023 23:50:49 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jan 2023 09:52:47 +0000</lastBuildDate>
     <atom:link href="https://yatharthb97.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transcription Networks - Basic Concepts</title>
@@ -35,13 +35,6 @@
 &lt;li&gt;&lt;a href=&#34;https://yatharthb97.github.io/collaborate/&#34;&gt;collaborate&lt;/a&gt;: has a list of projects for which collaborators are required.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This website is still being actively developed and is broken at a few places.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3dprinting</title>
-      <link>https://yatharthb97.github.io/notes/3dprinting/</link>
-      <pubDate>Thu, 12 Oct 2023 23:50:49 +0100</pubDate>
-      <guid>https://yatharthb97.github.io/notes/3dprinting/</guid>
-      <description>Blog Post</description>
     </item>
     <item>
       <title>Advanced Techniques</title>
@@ -154,6 +147,13 @@
       <pubDate>Mon, 05 Sep 2022 12:53:13 +0530</pubDate>
       <guid>https://yatharthb97.github.io/classnotes/how-natural-selection-took-over-immunology/</guid>
       <description>Class notes relating to the week 1 lectures (IBB).</description>
+    </item>
+    <item>
+      <title>Uri Alon Chapter 2</title>
+      <link>https://yatharthb97.github.io/notes/biophy/urialonc2/</link>
+      <pubDate>Sun, 24 Jul 2022 00:57:02 +0530</pubDate>
+      <guid>https://yatharthb97.github.io/notes/biophy/urialonc2/</guid>
+      <description>Notes from Uri Alon&amp;#39;s book.</description>
     </item>
     <item>
       <title>Correlator Card Notes</title>

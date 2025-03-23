@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Oct 2023 23:50:49 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jul 2022 00:57:02 +0530</lastBuildDate>
     <atom:link href="https://yatharthb97.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transcription Networks - Basic Concepts</title>
@@ -37,11 +37,11 @@
 &lt;p&gt;This website is still being actively developed and is broken at a few places.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>3dprinting</title>
-      <link>https://yatharthb97.github.io/notes/3dprinting/</link>
-      <pubDate>Thu, 12 Oct 2023 23:50:49 +0100</pubDate>
-      <guid>https://yatharthb97.github.io/notes/3dprinting/</guid>
-      <description>Blog Post</description>
+      <title>Uri Alon Chapter 2</title>
+      <link>https://yatharthb97.github.io/notes/biophy/urialonc2/</link>
+      <pubDate>Sun, 24 Jul 2022 00:57:02 +0530</pubDate>
+      <guid>https://yatharthb97.github.io/notes/biophy/urialonc2/</guid>
+      <description>Notes from Uri Alon&amp;#39;s book.</description>
     </item>
   </channel>
 </rss>
