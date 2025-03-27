@@ -2,14 +2,14 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-description: "Blog Post"
+description: "Notes."
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
 math: false
 # weight: 1
 aliases: []
-tags: ["blog"]
+tags: ["blog", "notes"]
 author: "Yatharth Bhasin"
 categories: []
 # author: ["Me", "You"] # multiple authors

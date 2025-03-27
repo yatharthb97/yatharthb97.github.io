@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title> ✒️  on Yatharth Bhasin</title>
+    <link>http://localhost:1313/notes/</link>
+    <description>Recent content in  ✒️  on Yatharth Bhasin</description>
+    <image>
+      <title>Yatharth Bhasin</title>
+      <url>http://localhost:1313/website_tile.svg</url>
+      <link>http://localhost:1313/website_tile.svg</link>
+    </image>
+    <generator>Hugo -- 0.143.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Jun 2022 16:37:38 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome!</title>
+      <link>http://localhost:1313/notes/welcome/</link>
+      <pubDate>Wed, 29 Jun 2022 16:37:38 +0530</pubDate>
+      <guid>http://localhost:1313/notes/welcome/</guid>
+      <description>&lt;p&gt;Welcome to my website! Here, I post about stuff I like and the things I do. I &lt;strong&gt;{&lt;/strong&gt; read, code, think, analyse, and solve &lt;strong&gt;}&lt;/strong&gt; in all permutations. This website cum blog is an attempt to include writing in this set. Below is a short overview of the website.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/projects/&#34;&gt;projects&lt;/a&gt;: where I post about my scientific and coding projects.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/publications/&#34;&gt;publications&lt;/a&gt;: lists all the articles I have written and published somewhere.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/&#34;&gt;blog&lt;/a&gt;: where I will post articles and notes on various themes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/gallery/&#34;&gt;gallery&lt;/a&gt;: has some cool pictures of me and my work.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/aboutme/&#34;&gt;about me&lt;/a&gt;: an overview of my interests &amp;amp; qualifications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/collaborate/&#34;&gt;collaborate&lt;/a&gt;: has a list of projects for which collaborators are required.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This website is still being actively developed and is broken at a few places.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Biology🧬 &#43; Physics🔭 on Yatharth Bhasin</title>
+    <link>http://localhost:1313/notes/biophy/</link>
+    <description>Recent content in Biology🧬 &#43; Physics🔭 on Yatharth Bhasin</description>
+    <image>
+      <title>Yatharth Bhasin</title>
+      <url>http://localhost:1313/website_tile.svg</url>
+      <link>http://localhost:1313/website_tile.svg</link>
+    </image>
+    <generator>Hugo -- 0.143.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Aug 2023 16:10:25 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/biophy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transcription Networks - Basic Concepts</title>
+      <link>http://localhost:1313/notes/biophy/urialonc1/</link>
+      <pubDate>Fri, 08 Jul 2022 22:08:07 +0530</pubDate>
+      <guid>http://localhost:1313/notes/biophy/urialonc1/</guid>
+      <description>Notes from Uri Alon&amp;#39;s Systems Biology Textbook.</description>
+    </item>
+    <item>
+      <title>Robustness in Bacterial Chemotaxis</title>
+      <link>http://localhost:1313/notes/biophy/urialonc9/</link>
+      <pubDate>Tue, 29 Aug 2023 16:10:25 +0100</pubDate>
+      <guid>http://localhost:1313/notes/biophy/urialonc9/</guid>
+      <description>Notes from Uri Alon&amp;#39;s book (Chapter 9)</description>
+    </item>
+    <item>
+      <title>Langevin Model</title>
+      <link>http://localhost:1313/notes/biophy/langevin-model/</link>
+      <pubDate>Mon, 11 Jul 2022 15:03:01 +0530</pubDate>
+      <guid>http://localhost:1313/notes/biophy/langevin-model/</guid>
+      <description>Blog Post</description>
+    </item>
+  </channel>
+</rss>

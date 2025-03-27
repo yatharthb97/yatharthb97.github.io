@@ -132,8 +132,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blog/" title="blog">
-                    <span>blog</span>
+                <a href="http://localhost:1313/notes/" title="notes">
+                    <span>notes</span>
                 </a>
             </li>
             <li>
@@ -180,7 +180,7 @@ To represent environmental states, cells use special proteins called transcripti
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2022-07-08 22:08:07 +0530 +0530'>July 8, 2022</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;1207 words&nbsp;·&nbsp;Yatharth Bhasin</footer>
-  <a class="entry-link" aria-label="post link to Transcription Networks - Basic Concepts" href="http://localhost:1313/blog/biophy/urialonc1/"></a>
+  <a class="entry-link" aria-label="post link to Transcription Networks - Basic Concepts" href="http://localhost:1313/notes/biophy/urialonc1/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -194,7 +194,63 @@ projects: where I post about my scientific and coding projects. publications: li
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2022-06-29 16:37:38 +0530 +0530'>June 29, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;213 words&nbsp;·&nbsp;Yatharth Bhasin</footer>
-  <a class="entry-link" aria-label="post link to Welcome!" href="http://localhost:1313/blog/welcome/"></a>
+  <a class="entry-link" aria-label="post link to Welcome!" href="http://localhost:1313/notes/welcome/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Multiprocessing
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Namespaces don’t work: ## Both the functions would fail to pickle, instead just have a blank function in a module. class Namespace: @staticmethod def test_static(): return &#34;Finished&#34; def test(): return &#34;Finished&#34; Imports need to happen inside the function, also PATH list of each function is independent and needs to be redefined: def process_func(): import sys sys.path.appen(&#34;path-to-your-module&#34;) ## Calculations return ## Won&#39;t work import time def process_func(): time.sleep(2) return &#34;Finished&#34; ## Works def process_func(): import time time.sleep(2) return &#34;Finished&#34; cell1.client.get_versions(check=True)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-25 20:02:52 +0000 UTC'>March 25, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;86 words&nbsp;·&nbsp;Yatharth Bhasin</footer>
+  <a class="entry-link" aria-label="post link to Multiprocessing" href="http://localhost:1313/notes/distributedcomputing/multiprocessing/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cluster
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction We will set-up a cluster using a job-scheduler (SLURM) and use dask-distributed to manage jobs. One does not normally choose the job-scheduler, it is given to us (like your institute or HPC service would use a specific one). It is for this reason that dask comes in handy. It implements a trivial-parallelisation model on top of most common job-schedulers (SLURM, PBS, etc) to name a few. The interface it provides resembles python’s multiprocessing module.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-25 17:37:01 +0000 UTC'>March 25, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;733 words&nbsp;·&nbsp;Yatharth Bhasin</footer>
+  <a class="entry-link" aria-label="post link to Cluster" href="http://localhost:1313/notes/distributedcomputing/cluster/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Robustness in Bacterial Chemotaxis
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Bacterial chemotaxis signal response: allows bacteria to navigate. Chemicals are either attractants or repellants.
+Common attractants: sugars and amino acids serene and aspartate, and repellents such as certain metal ions and amino acid leucine.
+bacteria can detect concentration gradients as small as a change of one molecule per cell volume across the cell length. They detect such gradients over background concentrations spanning five orders of magnitude. (no reference)
+Biased random walk: walk straight for 1sec and then tumbes in about 0.1 sec. Ecoli keeps track of the gradient and then adjusts the tumbling frequency accordingly.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-29 16:10:25 +0100 WEST'>August 29, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;267 words&nbsp;·&nbsp;Yatharth Bhasin</footer>
+  <a class="entry-link" aria-label="post link to Robustness in Bacterial Chemotaxis" href="http://localhost:1313/notes/biophy/urialonc9/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Langevin Model
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Langevin Model: Theory and Units by Yatharth Bhasin (version 2) This article explains the basic set of equations governing the Langevin model simulation of an FCS process. Further, it includes a thorough discussion on the units conversions needed for the simulation. Implementation is also briefly discussed. The last section details a conversion case study.
+Langevin Equation The Langevin equation simulates Brownian motion of particles. The equation can be solved to simulate non-equilibrium systems.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-11 15:03:01 +0530 +0530'>July 11, 2022</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;2486 words&nbsp;·&nbsp;Yatharth Bhasin</footer>
+  <a class="entry-link" aria-label="post link to Langevin Model" href="http://localhost:1313/notes/biophy/langevin-model/"></a>
 </article>
     </main>
     

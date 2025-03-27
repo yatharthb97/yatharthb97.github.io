@@ -2,20 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/biophy/</loc>
+    <loc>http://localhost:1313/notes/distributedcomputing/</loc>
+    <lastmod>2025-03-25T20:02:52+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/biophy/</loc>
     <lastmod>2023-09-14T16:44:54+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/biophy/urialonc1/</loc>
+    <loc>http://localhost:1313/notes/biophy/urialonc1/</loc>
     <lastmod>2022-07-08T22:08:07+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/welcome/</loc>
+    <loc>http://localhost:1313/notes/welcome/</loc>
     <lastmod>2022-06-29T16:37:38+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-09-16T23:30:13+01:00</lastmod>
+    <loc>http://localhost:1313/notes/</loc>
+    <lastmod>2025-03-25T20:02:52+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/blog/</loc>
+    <lastmod>2025-03-25T20:02:52+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/distributedcomputing/multiprocessing/</loc>
+    <lastmod>2025-03-25T20:02:52+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/notes/</loc>
+    <lastmod>2025-03-25T20:02:52+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-03-25T20:02:52+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-09-16T23:30:13+01:00</lastmod>
+    <lastmod>2025-03-25T20:02:52+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/distributedcomputing/cluster/</loc>
+    <lastmod>2025-03-25T17:37:01+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maze/</loc>
+    <lastmod>2025-03-23T15:03:01+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maze/expexplorer/</loc>
+    <lastmod>2025-03-23T15:03:01+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maze/python/</loc>
+    <lastmod>2025-03-23T15:03:01+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2025-03-23T15:03:01+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2023-10-12T23:56:06+01:00</lastmod>
@@ -23,19 +53,19 @@
     <loc>http://localhost:1313/tags/projects/</loc>
     <lastmod>2023-10-12T23:56:06+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2023-10-12T23:56:06+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/projects/trappyscopes/</loc>
     <lastmod>2023-10-12T23:56:06+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/biophy/urialonc9/</loc>
+    <lastmod>2023-08-29T16:10:25+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/classnotes/week17/</loc>
     <lastmod>2023-01-23T09:52:47+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/classnotes/</loc>
+    <loc>http://localhost:1313/tags/classnotes/</loc>
     <lastmod>2023-01-23T09:52:47+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/classnotes/</loc>
+    <loc>http://localhost:1313/classnotes/</loc>
     <lastmod>2023-01-23T09:52:47+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/classnotes/biophysics/</loc>
@@ -86,16 +116,13 @@
     <loc>http://localhost:1313/projects/correlator-card-notes/</loc>
     <lastmod>2022-07-11T15:07:14+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blog/</loc>
-    <lastmod>2022-07-08T22:08:07+05:30</lastmod>
+    <loc>http://localhost:1313/notes/biophy/langevin-model/</loc>
+    <lastmod>2022-07-11T15:03:01+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/gists/</loc>
     <lastmod>2022-06-28T18:15:16+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/library/</loc>
-    <lastmod>2022-06-28T18:15:16+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2022-06-28T18:15:16+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/python-time-literals/</loc>
@@ -175,21 +202,15 @@
   </url><url>
     <loc>http://localhost:1313/aboutme/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/alldrafts/</loc>
-  </url><url>
-    <loc>http://localhost:1313/blog/alldrafts/book-notes/</loc>
-  </url><url>
     <loc>http://localhost:1313/classnotes/r-and-general-discussion/</loc>
   </url><url>
-    <loc>http://localhost:1313/ciencias/</loc>
-  </url><url>
     <loc>http://localhost:1313/collaborate/</loc>
-  </url><url>
-    <loc>http://localhost:1313/maze/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/about-me/</loc>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ciencias/</loc>
   </url><url>
     <loc>http://localhost:1313/scratch/</loc>
   </url><url>

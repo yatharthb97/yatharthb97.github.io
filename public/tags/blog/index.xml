@@ -11,20 +11,20 @@
     </image>
     <generator>Hugo -- 0.143.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 08 Jul 2022 22:08:07 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 25 Mar 2025 20:02:52 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transcription Networks - Basic Concepts</title>
-      <link>http://localhost:1313/blog/biophy/urialonc1/</link>
+      <link>http://localhost:1313/notes/biophy/urialonc1/</link>
       <pubDate>Fri, 08 Jul 2022 22:08:07 +0530</pubDate>
-      <guid>http://localhost:1313/blog/biophy/urialonc1/</guid>
+      <guid>http://localhost:1313/notes/biophy/urialonc1/</guid>
       <description>Notes from Uri Alon&amp;#39;s Systems Biology Textbook.</description>
     </item>
     <item>
       <title>Welcome!</title>
-      <link>http://localhost:1313/blog/welcome/</link>
+      <link>http://localhost:1313/notes/welcome/</link>
       <pubDate>Wed, 29 Jun 2022 16:37:38 +0530</pubDate>
-      <guid>http://localhost:1313/blog/welcome/</guid>
+      <guid>http://localhost:1313/notes/welcome/</guid>
       <description>&lt;p&gt;Welcome to my website! Here, I post about stuff I like and the things I do. I &lt;strong&gt;{&lt;/strong&gt; read, code, think, analyse, and solve &lt;strong&gt;}&lt;/strong&gt; in all permutations. This website cum blog is an attempt to include writing in this set. Below is a short overview of the website.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://localhost:1313/projects/&#34;&gt;projects&lt;/a&gt;: where I post about my scientific and coding projects.&lt;/li&gt;
@@ -35,6 +35,34 @@
 &lt;li&gt;&lt;a href=&#34;http://localhost:1313/collaborate/&#34;&gt;collaborate&lt;/a&gt;: has a list of projects for which collaborators are required.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This website is still being actively developed and is broken at a few places.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multiprocessing</title>
+      <link>http://localhost:1313/notes/distributedcomputing/multiprocessing/</link>
+      <pubDate>Tue, 25 Mar 2025 20:02:52 +0000</pubDate>
+      <guid>http://localhost:1313/notes/distributedcomputing/multiprocessing/</guid>
+      <description>Notes.</description>
+    </item>
+    <item>
+      <title>Cluster</title>
+      <link>http://localhost:1313/notes/distributedcomputing/cluster/</link>
+      <pubDate>Tue, 25 Mar 2025 17:37:01 +0000</pubDate>
+      <guid>http://localhost:1313/notes/distributedcomputing/cluster/</guid>
+      <description>Notes on how to set up a cluster.</description>
+    </item>
+    <item>
+      <title>Robustness in Bacterial Chemotaxis</title>
+      <link>http://localhost:1313/notes/biophy/urialonc9/</link>
+      <pubDate>Tue, 29 Aug 2023 16:10:25 +0100</pubDate>
+      <guid>http://localhost:1313/notes/biophy/urialonc9/</guid>
+      <description>Notes from Uri Alon&amp;#39;s book (Chapter 9)</description>
+    </item>
+    <item>
+      <title>Langevin Model</title>
+      <link>http://localhost:1313/notes/biophy/langevin-model/</link>
+      <pubDate>Mon, 11 Jul 2022 15:03:01 +0530</pubDate>
+      <guid>http://localhost:1313/notes/biophy/langevin-model/</guid>
+      <description>Blog Post</description>
     </item>
   </channel>
 </rss>
