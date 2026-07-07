@@ -43,154 +43,6 @@ editPost:
 
 
 
-<!-- Add this to your Hugo content file or template -->
-<div id="drop-zone" style="border: 2px dashed #ccc; padding: 20px; text-align: center;">
-  Drag and drop files here
-</div>
-<div id="debug-console" style="font-family: monospace; margin-top: 20px;"></div>
-
-<script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
-
-<script>
-// Debugging utility
-function debugLog(message, type = 'info') {
-  const colors = {
-    info: 'black',
-    success: 'green',
-    error: 'red',
-    warning: 'orange'
-  };
-  const div = document.createElement('div');
-  div.style.color = colors[type];
-  div.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
-  document.getElementById('debug-console').appendChild(div);
-}
-
-// Pyodide initialization
-let pyodideReady = false;
-async function initializePyodide() {
-  try {
-    window.pyodide = await loadPyodide({
-      indexURL: "https://cdn.jsdelivr.net/pyodide/v0.25.0/full/",
-    });
-    pyodideReady = true;
-    debugLog('Pyodide initialized successfully', 'success');
-  } catch (error) {
-    debugLog(`Pyodide init failed: ${error.message}`, 'error');
-  }
-}
-
-// Drag-and-drop handlers
-function initDragAndDrop() {
-  const dropZone = document.getElementById('drop-zone');
-  
-  // Event handlers
-  const preventDefault = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-  };
-
-  // Highlight drop zone
-  const highlight = () => {
-    dropZone.style.backgroundColor = '#f0f0f0';
-    debugLog('Drag active');
-  };
-
-  const unhighlight = () => {
-    dropZone.style.backgroundColor = '';
-    debugLog('Drag ended');
-  };
-
-  // Handle file drop
-  const handleDrop = async (e) => {
-    preventDefault(e);
-    unhighlight();
-    
-    if (!pyodideReady) {
-      debugLog('Error: Pyodide not initialized', 'error');
-      return;
-    }
-
-    const items = e.dataTransfer.items;
-    debugLog(`Received ${items.length} items`);
-
-    for (const item of items) {
-      if (item.kind !== 'file') {
-        debugLog('Skipping non-file item', 'warning');
-        continue;
-      }
-
-      const file = item.getAsFile();
-      debugLog(`Processing file: ${file.name} (${file.type}, ${file.size} bytes)`);
-
-      try {
-        const buffer = await file.arrayBuffer();
-        const data = new Uint8Array(buffer);
-        
-        pyodide.FS.writeFile(`/home/pyodide/${file.name}`, data);
-        debugLog(`File written to Pyodide FS: ${file.name}`, 'success');
-        
-        // Verify write
-        const exists = pyodide.FS.analyzePath(`/home/pyodide/${file.name}`).exists;
-        debugLog(`File verification: ${exists ? 'Exists' : 'Missing'}`, 
-                exists ? 'success' : 'error');
-                
-      } catch (error) {
-        debugLog(`File processing failed: ${error.message}`, 'error');
-      }
-    }
-  };
-
-  // Attach event listeners
-  ['dragenter', 'dragover'].forEach(event => {
-    dropZone.addEventListener(event, (e) => {
-      preventDefault(e);
-      highlight();
-    });
-  });
-
-  ['dragleave', 'drop'].forEach(event => {
-    dropZone.addEventListener(event, (e) => {
-      preventDefault(e);
-      unhighlight();
-    });
-  });
-
-  dropZone.addEventListener('drop', handleDrop);
-  
-  debugLog('Drag-and-drop initialized');
-}
-
-// Initialize everything
-window.addEventListener('load', async () => {
-  await initializePyodide();
-  initDragAndDrop();
-});
-</script>
-
-<style>
-#drop-zone {
-  transition: all 0.3s ease;
-  min-height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#drop-zone.dragover {
-  border-color: #2196F3;
-  background-color: #e3f2fd !important;
-}
-
-#debug-console {
-  border: 1px solid #ddd;
-  padding: 10px;
-  max-height: 200px;
-  overflow-y: auto;
-}
-</style>
-
-
 
 
 
@@ -210,9 +62,6 @@ window.addEventListener('load', async () => {
     </div>
   </div>
 </div>
-
-
-
 
 <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
 
@@ -332,7 +181,7 @@ document.getElementById('input').addEventListener('keydown', async (e) => {
       const current = input.textContent;
       const matches = await pyodide.runPythonAsync(`
         dir(__import__('builtins')) + 
-        dir(__import__('pyodide'))
+        dir(__import__('x'))
       `);
       const suggestions = matches.filter(m => m.startsWith(current));
       if(suggestions.length > 0) {
@@ -374,5 +223,128 @@ window.addEventListener('load', initializePyodide);
 #terminal::-webkit-scrollbar-thumb {
   background: #44475a;
   border-radius: 4px;
+}
+</style>
+
+
+<!-- Upload button and status display -->
+<div id="pyodide-upload" style="text-align: center; margin: 20px 0;">
+  <label style="display: inline-block; padding: 10px 20px; background: #2196F3; 
+         color: white; border-radius: 4px; cursor: pointer; transition: background 0.3s;">
+    📁 Upload File
+    <input type="file" id="file-input" hidden multiple>
+  </label>
+  <div id="selected-files" style="margin-top: 10px;"></div>
+  <div id="upload-status" style="font-family: monospace; margin-top: 10px;"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+
+<script>
+let pyodide;
+let pyodideReady = false;
+
+// Initialize Pyodide
+async function initPyodide() {
+  try {
+    pyodide = await loadPyodide({
+      indexURL: "https://cdn.jsdelivr.net/pyodide/v0.25.0/full/"
+    });
+    pyodideReady = true;
+    updateStatus('Pyodide initialized!', 'success');
+  } catch (error) {
+    updateStatus(`Pyodide error: ${error.message}`, 'error');
+  }
+}
+
+// Handle file selection
+document.getElementById('file-input').addEventListener('change', async function(e) {
+  if (!pyodideReady) {
+    updateStatus('Error: Pyodide not loaded yet', 'error');
+    return;
+  }
+
+  const files = e.target.files;
+  if (files.length === 0) return;
+
+  // Clear previous selection
+  document.getElementById('selected-files').innerHTML = '';
+
+  for (const file of files) {
+    try {
+      // Show selected file
+      document.getElementById('selected-files').innerHTML += `
+        <div>📄 ${file.name} (${formatBytes(file.size)})</div>
+      `;
+
+      // Read file
+      const buffer = await file.arrayBuffer();
+      const data = new Uint8Array(buffer);
+
+      // Write to Pyodide filesystem
+      const path = `/home/pyodide/${file.name}`;
+      pyodide.FS.writeFile(path, data);
+
+      // Verify write
+      const exists = pyodide.FS.analyzePath(path).exists;
+      if (exists) {
+        updateStatus(`Successfully uploaded: ${file.name}`, 'success');
+      } else {
+        updateStatus(`Failed to write: ${file.name}`, 'error');
+      }
+    } catch (error) {
+      updateStatus(`Error with ${file.name}: ${error.message}`, 'error');
+    }
+  }
+});
+
+// Status updates
+function updateStatus(message, type = 'info') {
+  const statusDiv = document.getElementById('upload-status');
+  const color = {
+    info: 'black',
+    success: '#2e7d32',
+    error: '#c62828'
+  }[type];
+  
+  statusDiv.innerHTML += `
+    <div style="color: ${color}; margin: 5px 0;">
+      [${new Date().toLocaleTimeString()}] ${message}
+    </div>
+  `;
+  statusDiv.scrollTop = statusDiv.scrollHeight;
+}
+
+// File size formatter
+function formatBytes(bytes) {
+  const units = ['B', 'KB', 'MB', 'GB'];
+  let l = 0;
+  while (bytes >= 1024 && ++l) bytes /= 1024;
+  return `${bytes.toFixed(l ? 1 : 0)} ${units[l]}`;
+}
+
+// Initialize on page load
+window.addEventListener('load', initPyodide);
+</script>
+
+<style>
+/* Hover effects */
+label:hover {
+  background: #1976D2 !important;
+}
+
+#selected-files div {
+  margin: 5px 0;
+  padding: 2px 5px;
+  background: #f5f5f5;
+  border-radius: 3px;
+}
+
+#upload-status {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
 }
 </style>

@@ -31,10 +31,27 @@ title : Conferences and Workshops 🧛
    ██████░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░▒▒░░░▒▒░░░░░░░                   ██████
 ```
 
-
 <centre>
+
 <div class="timeline">
   <div class="outer">
+    <div class="card">
+      <div class="info">
+        <h3 class="title">
+          Year 2026
+        </h3>
+        <p>
+          <ol>
+            <li><a href="https://www.microscalemeeting.org/">Microscale Ocean Biophysics 8.0, Cargèse, France (Corsica)</a><br>Dates: 27 May 2026 – 5 June 2026<br> Attended workshop and conference where I presented a poster</li>
+        </p>
+        <p>
+            <li><a href="https://meetings.embo.org/event/26-microscope">EMBO Practical Course – Hack your microscope, ITQB, Oeiras, Portugal</a><br>Dates: 20 – 25 April 2026<br> Attended workshop</li>
+        </p>
+        <p>
+            <li><a href="https://www.medicina.ulisboa.pt/en/node/10606">CAML & GIMM PhD Meeting, GIMM, Lisbon, Portugal</a><br>Dates: 26-30 January 2026<br> Presented an oral talk</li>
+        </p>
+      </div>
+    </div>
     <div class="card">
       <div class="info">
         <h3 class="title">
@@ -100,5 +117,6 @@ title : Conferences and Workshops 🧛
     </div>
   </div>
 </div></centre>
+
 
 ---
