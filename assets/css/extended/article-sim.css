@@ -1,0 +1,50 @@
+.sim-box {
+  margin: 24px 0 8px;
+}
+
+.sim-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: var(--secondary);
+  flex-wrap: wrap;
+}
+
+.sim-controls label {
+  white-space: nowrap;
+}
+
+.sim-controls input[type="range"] {
+  flex: 1;
+  min-width: 80px;
+  accent-color: #6563D6;
+}
+
+.sim-controls .sim-readout {
+  font-weight: 600;
+  color: var(--primary);
+  min-width: 2.5em;
+  text-align: right;
+}
+
+.sim-canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--entry);
+}
+
+.sim-order {
+  font-size: 13px;
+  color: var(--secondary);
+  margin-top: 8px;
+}
+
+.sim-order .sim-readout {
+  font-weight: 600;
+  color: var(--primary);
+}
