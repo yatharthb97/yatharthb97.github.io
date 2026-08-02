@@ -31,8 +31,8 @@ summary: "about me"
   <div class="columnx">
     <h1>Yatharth Bhasin</h1>
     Doctoral Candidate<br>
-    <a href="https://www.sartorilab.org/">Living Physics Laboratory</a><br>
-    <a href="https://gulbenkian.pt/ciencia/">Instituto Gulbenkian de Ciência (IGC)</a><br>
+    <a href="https://www.sartorilab.org/">Living Physics Laboratory (Sartori Lab)</a><br>
+    <a href="https://gimm.pt/">Gulbenkian Institute for Molecular Medicine (GIMM, formerly IGC)</a><br>
     Lisbon, Portugal<br><br>
     M.Sc. Physics (IIT-Indore)<br>
     <p>&nbsp;</p>
@@ -42,9 +42,8 @@ summary: "about me"
 
 👋 I am a computational physicist interested in **Biological Physics & Biophysics**. \
 🧬 + 🔭 That means I look at Biology🧬 from the lens of a Physicist🔭. \
-🛠️ I am building an inter-disciplinary academic life. \
-👨‍💻 I do a lot of programming and I have a few published open-source libraries on GitHub. \
-🎛️ I am also interested in making micro-controller based instruments and hardware programming. \
+🦠 Right now that means active matter and microswimmers — I study how *Chlamydomonas reinhardtii* swims over long timescales. \
+🔭 Under the alias **[Trappy-Scopes](https://github.com/Trappy-Scopes)**, I design and build the parallel microscopy hardware that makes this possible: 3D-printed frames, embedded firmware, tracking pipelines, all the way down. \
 🤝 I’m looking to collaborate on all things unknown. \
 📫 You can write to me : yatharth1997+ws (at) gmail.com
 
@@ -59,28 +58,12 @@ summary: "about me"
 <br>
 <div class="rowx">
   <div class="columnx">
-    <h2 style="color: #6563D6;"><b>Research Interests</b></h2>
-    <p>
-      • Biophysics and Biological Physics <br>
-      • Self-assembly of Biological Matter<br> 
-      • Active Matter <br>
-      • Coarse grain approaches to complex biological systems <br>
-      • MC, MD, discrete-event simulatons<br>
-      • Agent Based Modelling <br>
-      • Low cost instrument design <br>
+    <h2 style="color: #6563D6;"><b>Interests</b></h2>
+    <p>Active matter · Microswimmers · Self-assembly · Instrument design</p>
   </div>
   <div class="columnx">
-    <h2 style="color: #6563D6;"><b>Tools & Machines</b></h2>
-    <p>
-      • Programming Languages<br>
-      &nbsp;&nbsp;&nbsp;→ C++<br>
-      &nbsp;&nbsp;&nbsp;→ Embedded C++ & Micropython<br>
-      &nbsp;&nbsp;&nbsp;→ python 3<br>
-      &nbsp;&nbsp;&nbsp;→ HTML + CSS (just enough to maintain this website :P).<br>
-      • GIT (version control) <br>
-      • Arduino & Micropython for Microcontrollers<br>
-      • Raspberry Pi Plateform
-    </p>
+    <h2 style="color: #6563D6;"><b>Tools</b></h2>
+    <p>Python · C++ · Embedded firmware · 3D printing</p>
   </div>
 </div> 
 <br>
@@ -144,7 +127,7 @@ summary: "about me"
         </h3>
         <p><b>🏛️ Institute</b><br>
               Tata Institute of Fundamental Research, Hyderabad<br>
-              TIFR Centre of Interdisciplinary Sciences (TIFR-Hyd)<br><em>Kancahn Garai Biophysics Lab</em>
+              TIFR Centre of Interdisciplinary Sciences (TIFR-Hyd)<br><em>Kanchan Garai Biophysics Lab</em>
         </p>
         <p>
           <b>📍 Location</b><br>Hyderabad, Telangana, India<br>
@@ -163,8 +146,8 @@ summary: "about me"
         </h3>
         <p>
           <b>🏛️ Institute</b><br>
-          Instituto Gulbenkian de Ciência (IGC)<br>
-          Living Physics Laboratory<br>
+          Gulbenkian Institute for Molecular Medicine (GIMM, formerly IGC)<br>
+          Living Physics Laboratory (Sartori Lab)<br>
         </p>
          <p>
           <b>📍 Location</b><br>
