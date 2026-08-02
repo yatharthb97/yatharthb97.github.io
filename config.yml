@@ -189,6 +189,9 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+  goldmark:
+    renderer:
+      unsafe: true
 
 
 # Search
@@ -197,12 +200,6 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for necessary
-
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
 
 
 imaging:
