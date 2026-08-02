@@ -45,11 +45,10 @@ summary: "about me"
 👋 I am a computational physicist interested in **Biological Physics & Biophysics**. \
 🧬 + 🔭 That means I look at Biology🧬 from the lens of a Physicist🔭. \
 🦠 Right now that means active matter and microswimmers — I study how *Chlamydomonas reinhardtii* swims over long timescales. \
-🔭 Under the alias **[Trappy-Scopes](https://github.com/Trappy-Scopes)**, I design and build the parallel microscopy hardware that makes this possible: 3D-printed frames, embedded firmware, tracking pipelines, all the way down. \
+🔬 Under the alias **[Trappy-Scopes](https://github.com/Trappy-Scopes)**, I design and build the parallel microscopy hardware that makes this possible: 3D-printed frames, embedded firmware, tracking pipelines, all the way down. \
 🤝 I’m looking to collaborate on all things unknown. \
 📫 You can write to me : yatharth1997+ws (at) gmail.com
 
-🏠 **Home Location**     : Gujarat, India \
 📍 **Current Location** : Lisbon, Portugal
 
 <span hidden> Links </span>
