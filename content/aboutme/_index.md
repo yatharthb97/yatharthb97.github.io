@@ -34,7 +34,9 @@ summary: "about me"
     <a href="https://www.sartorilab.org/">Living Physics Laboratory (Sartori Lab)</a><br>
     <a href="https://gimm.pt/">Gulbenkian Institute for Molecular Medicine (GIMM, formerly IGC)</a><br>
     Lisbon, Portugal<br><br>
-    M.Sc. Physics (IIT-Indore)<br>
+    Masters in Physics<br>
+    Getting a PhD in Biology<br>
+    Self-Taught Savant in Computers<br>
     <p>&nbsp;</p>
   </div>
 </div> 
