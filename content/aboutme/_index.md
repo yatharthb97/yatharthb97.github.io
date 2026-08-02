@@ -42,8 +42,8 @@ summary: "about me"
 </div> 
 <br>
 
-👋 I am a computational physicist interested in **Biological Physics & Biophysics**. \
-🧬 + 🔭 That means I look at Biology🧬 from the lens of a Physicist🔭. \
+👋 I am an experimental biophysicist — doing science the DIY way. \
+🧬 + 🔭 I look at Biology🧬 through the lens of a Physicist🔭, building whatever instruments that lens requires. \
 🦠 Right now that means active matter and microswimmers — I study how *Chlamydomonas reinhardtii* swims over long timescales. \
 🔬 Under the alias **[Trappy-Scopes](https://github.com/Trappy-Scopes)**, I design and build the parallel microscopy hardware that makes this possible: 3D-printed frames, embedded firmware, tracking pipelines, all the way down. \
 🤝 I’m looking to collaborate on all things unknown. \
