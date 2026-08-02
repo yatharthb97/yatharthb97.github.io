@@ -39,5 +39,6 @@ title: "📷"
 <div class=pop-outin align=center ><br>↓</div>
 
 ## Hello!
-{{< gallery dir="/images/gallery/index/" />}} {{< load-photoswipe >}}
+
+More to come here soon.
 
