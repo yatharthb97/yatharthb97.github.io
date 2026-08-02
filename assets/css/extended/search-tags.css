@@ -61,10 +61,10 @@
 }
 
 .walker-canvas {
-  display: block;
+  position: fixed;
+  inset: 0;
   width: 100%;
-  aspect-ratio: 2 / 1;
-  touch-action: none;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
 }
