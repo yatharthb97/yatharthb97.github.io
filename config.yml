@@ -149,12 +149,21 @@ params:
     isCaseSensitive: false
     #useExtendedSearch: true
     includeScore: true
+    includeMatches: true
     shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content", "tags", "author", "date", "description"]
+    ignoreLocation: true
+    threshold: 0.3
+    minMatchCharLength: 2
+    limit: 20
+    keys:
+      - name: "title"
+        weight: 0.5
+      - name: "tags"
+        weight: 0.3
+      - name: "summary"
+        weight: 0.15
+      - name: "content"
+        weight: 0.05
 
 menu:
   main:
