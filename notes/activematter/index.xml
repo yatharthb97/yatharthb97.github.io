@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Active Matter 🐟 on Yatharth Bhasin</title>
+    <link>https://yatharthb97.github.io/notes/activematter/</link>
+    <description>Recent content in Active Matter 🐟 on Yatharth Bhasin</description>
+    <image>
+      <title>Yatharth Bhasin</title>
+      <url>https://yatharthb97.github.io/website_tile.svg</url>
+      <link>https://yatharthb97.github.io/website_tile.svg</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Aug 2026 10:45:00 +0100</lastBuildDate>
+    <atom:link href="https://yatharthb97.github.io/notes/activematter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple Random Walks</title>
+      <link>https://yatharthb97.github.io/notes/activematter/simple-random-walks/</link>
+      <pubDate>Sun, 02 Aug 2026 10:00:00 +0100</pubDate>
+      <guid>https://yatharthb97.github.io/notes/activematter/simple-random-walks/</guid>
+      <description>The null model everything else in this series gets compared against.</description>
+    </item>
+    <item>
+      <title>Run-and-Tumble Particles</title>
+      <link>https://yatharthb97.github.io/notes/activematter/run-and-tumble/</link>
+      <pubDate>Sun, 02 Aug 2026 10:15:00 +0100</pubDate>
+      <guid>https://yatharthb97.github.io/notes/activematter/run-and-tumble/</guid>
+      <description>How E. coli turns a biased coin flip into a search strategy.</description>
+    </item>
+    <item>
+      <title>Active Brownian Particles</title>
+      <link>https://yatharthb97.github.io/notes/activematter/active-brownian-particles/</link>
+      <pubDate>Sun, 02 Aug 2026 10:30:00 +0100</pubDate>
+      <guid>https://yatharthb97.github.io/notes/activematter/active-brownian-particles/</guid>
+      <description>The workhorse model behind synthetic microswimmers, and the physics behind the random-walker on the search page.</description>
+    </item>
+    <item>
+      <title>The Vicsek Model</title>
+      <link>https://yatharthb97.github.io/notes/activematter/vicsek-model/</link>
+      <pubDate>Sun, 02 Aug 2026 10:45:00 +0100</pubDate>
+      <guid>https://yatharthb97.github.io/notes/activematter/vicsek-model/</guid>
+      <description>Where flocking comes from: the model that turned collective motion into a phase transition.</description>
+    </item>
+  </channel>
+</rss>
