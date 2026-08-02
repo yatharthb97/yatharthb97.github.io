@@ -1,8 +1,6 @@
 ---
 title: " ✒️ "
-draft: true
-cascade:
-  draft: true
+draft: false
 ---
 
 ```goat

@@ -1,7 +1,7 @@
 ---
 title: "Cluster"
 date: 2025-03-25T17:37:01Z
-draft: false
+draft: true
 description: "Notes on how to set up a cluster."
 ShowCanonicalLink: false
 canonicalURL: ""

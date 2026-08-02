@@ -172,6 +172,11 @@ menu:
       url: /projects/
       weight: 1
 
+    - identifier: notes
+      name: notes
+      url: /notes/
+      weight: 2
+
     - identifier : search
       name : search
       url: /search/

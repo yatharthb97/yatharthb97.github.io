@@ -1,7 +1,7 @@
 ---
 title: "Multiprocessing"
 date: 2025-03-25T20:02:52Z
-draft: false
+draft: true
 description: "Notes."
 ShowCanonicalLink: false
 canonicalURL: ""
