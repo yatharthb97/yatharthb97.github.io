@@ -74,6 +74,7 @@ The order parameter $v_a$ from the equation above is computed live below every t
   <canvas id="vsCanvas" class="sim-canvas"></canvas>
   <div class="sim-order">order parameter v<sub>a</sub> = <span id="vsOrderOut" class="sim-readout">0.00</span></div>
 </div>
+
 <script>
 (function(){
   var canvas = document.getElementById('vsCanvas');

@@ -75,6 +75,7 @@ Every walker below picks a brand-new random direction on every tick, with no mem
   </div>
   <canvas id="rwCanvas" class="sim-canvas"></canvas>
 </div>
+
 <script>
 (function(){
   var canvas = document.getElementById('rwCanvas');

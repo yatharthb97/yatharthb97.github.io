@@ -73,6 +73,7 @@ This is the same equation set driving the particle sim on this site's search pag
   </div>
   <canvas id="abpCanvas" class="sim-canvas"></canvas>
 </div>
+
 <script>
 (function(){
   var canvas = document.getElementById('abpCanvas');

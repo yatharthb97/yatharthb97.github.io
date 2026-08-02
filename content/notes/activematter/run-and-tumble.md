@@ -73,6 +73,7 @@ Drag the tumbling rate down and the runs get long and ballistic; push it up and 
   </div>
   <canvas id="rtCanvas" class="sim-canvas"></canvas>
 </div>
+
 <script>
 (function(){
   var canvas = document.getElementById('rtCanvas');
