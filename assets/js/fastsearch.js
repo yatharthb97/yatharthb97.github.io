@@ -4,65 +4,119 @@ let fuse; // holds our search engine
 let resList = document.getElementById('searchResults');
 let sInput = document.getElementById('searchInput');
 let filterBox = document.getElementById('searchFilters');
-let idleEl = document.getElementById('searchIdle');
 let first, last, current_elem = null
 let resultsAvailable = false;
 let activeSection = null;
 let allSections = [];
 
-// Twinkling ASCII starfield shown while the search box is empty, so the
-// page isn't just dead air before you type anything.
-const IDLE_ROWS = 8;
-const IDLE_COLS = 56;
-const IDLE_CHARS = ['·', '.', '*', '✦', '✧'];
-let idleGrid = [];
-let idleTimer = null;
+// Random-walk particle sim shown while the search box is empty, so the
+// page isn't just dead air before you type anything. Reflecting boundaries,
+// adjustable particle count, and a short fading trail per particle.
+let walkerEl = document.getElementById('searchWalker');
+let walkerCanvas = document.getElementById('walkerCanvas');
+let walkerSlider = document.getElementById('walkerCount');
+let walkerOut = document.getElementById('walkerCountOut');
+let walkerCtx = walkerCanvas ? walkerCanvas.getContext('2d') : null;
+let walkerTimer = null;
+let walkerW = 0, walkerH = 0;
+let walkerParticles = [];
+const WALKER_ACC = 0.4, WALKER_MAXV = 3, WALKER_MINV = 0.6, WALKER_TRAIL_LEN = 100;
 
-function pickStar() {
-    return IDLE_CHARS[Math.floor(Math.random() * IDLE_CHARS.length)];
+function walkerRand(a, b) {
+    return a + Math.random() * (b - a);
 }
 
-function initIdleGrid() {
-    idleGrid = [];
-    for (let r = 0; r < IDLE_ROWS; r++) {
-        let row = [];
-        for (let c = 0; c < IDLE_COLS; c++) {
-            row.push(Math.random() < 0.05 ? pickStar() : ' ');
+function resizeWalker() {
+    if (!walkerCanvas) return;
+    let rect = walkerCanvas.getBoundingClientRect();
+    let dpr = window.devicePixelRatio || 1;
+    if (rect.width === 0 || rect.height === 0) return; // hidden, skip
+    walkerW = rect.width;
+    walkerH = rect.height;
+    walkerCanvas.width = Math.max(1, Math.round(walkerW * dpr));
+    walkerCanvas.height = Math.max(1, Math.round(walkerH * dpr));
+    walkerCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    walkerParticles.forEach(function (p) {
+        p.x = Math.min(p.x, walkerW);
+        p.y = Math.min(p.y, walkerH);
+    });
+}
+
+function newWalkerParticle() {
+    let angle = walkerRand(0, Math.PI * 2);
+    let speed = walkerRand(WALKER_MINV, WALKER_MAXV);
+    return {
+        x: walkerW ? walkerRand(walkerW * 0.3, walkerW * 0.7) : 0,
+        y: walkerH ? walkerRand(walkerH * 0.3, walkerH * 0.7) : 0,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        trail: []
+    };
+}
+
+function setWalkerCount(n) {
+    while (walkerParticles.length < n) walkerParticles.push(newWalkerParticle());
+    while (walkerParticles.length > n) walkerParticles.pop();
+}
+
+function stepWalker() {
+    if (!walkerCtx || !walkerW || !walkerH) return;
+    walkerCtx.clearRect(0, 0, walkerW, walkerH);
+    walkerParticles.forEach(function (p) {
+        let nx = p.x + p.vx, ny = p.y + p.vy;
+        if (nx < 0) { nx = -nx; p.vx = -p.vx; }
+        if (nx > walkerW) { nx = 2 * walkerW - nx; p.vx = -p.vx; }
+        if (ny < 0) { ny = -ny; p.vy = -p.vy; }
+        if (ny > walkerH) { ny = 2 * walkerH - ny; p.vy = -p.vy; }
+        p.x = nx; p.y = ny;
+        p.trail.push({ x: p.x, y: p.y });
+        if (p.trail.length > WALKER_TRAIL_LEN) p.trail.shift();
+        p.vx += walkerRand(-WALKER_ACC, WALKER_ACC);
+        p.vy += walkerRand(-WALKER_ACC, WALKER_ACC);
+        let speed = Math.hypot(p.vx, p.vy);
+        if (speed > WALKER_MAXV) { p.vx *= WALKER_MAXV / speed; p.vy *= WALKER_MAXV / speed; }
+        if (speed < WALKER_MINV) { p.vx *= WALKER_MINV / speed; p.vy *= WALKER_MINV / speed; }
+    });
+    walkerParticles.forEach(function (p) {
+        let n = p.trail.length;
+        for (let i = 0; i < n; i++) {
+            let pt = p.trail[i];
+            let a = ((i + 1) / n) * 0.15;
+            walkerCtx.fillStyle = 'rgba(101,99,214,' + a.toFixed(3) + ')';
+            walkerCtx.beginPath();
+            walkerCtx.arc(pt.x, pt.y, 2, 0, Math.PI * 2);
+            walkerCtx.fill();
         }
-        idleGrid.push(row);
-    }
-    // a small telescope drifting across the middle row
-    idleGrid[Math.floor(IDLE_ROWS / 2)][Math.floor(IDLE_COLS / 2)] = '🔭';
-}
-
-function renderIdleGrid() {
-    if (!idleEl) return;
-    idleEl.textContent = idleGrid.map(function (row) { return row.join(''); }).join('\n');
-}
-
-function tickIdle() {
-    for (let i = 0; i < 5; i++) {
-        let r = Math.floor(Math.random() * IDLE_ROWS);
-        let c = Math.floor(Math.random() * IDLE_COLS);
-        idleGrid[r][c] = Math.random() < 0.5 ? pickStar() : ' ';
-    }
-    renderIdleGrid();
+        walkerCtx.fillStyle = '#6563D6';
+        walkerCtx.beginPath();
+        walkerCtx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+        walkerCtx.fill();
+    });
 }
 
 function showIdle() {
-    if (!idleEl) return;
-    idleEl.style.display = '';
-    if (!idleTimer) {
-        initIdleGrid();
-        renderIdleGrid();
-        idleTimer = setInterval(tickIdle, 350);
+    if (!walkerEl) return;
+    walkerEl.style.display = '';
+    resizeWalker();
+    if (!walkerParticles.length) {
+        setWalkerCount(parseInt((walkerSlider && walkerSlider.value) || 6, 10));
     }
+    if (!walkerTimer) walkerTimer = setInterval(stepWalker, 30);
 }
 
 function hideIdle() {
-    if (idleEl) idleEl.style.display = 'none';
-    if (idleTimer) { clearInterval(idleTimer); idleTimer = null; }
+    if (walkerEl) walkerEl.style.display = 'none';
+    if (walkerTimer) { clearInterval(walkerTimer); walkerTimer = null; }
 }
+
+if (walkerSlider) {
+    walkerSlider.addEventListener('input', function () {
+        if (walkerOut) walkerOut.textContent = walkerSlider.value;
+        setWalkerCount(parseInt(walkerSlider.value, 10));
+    });
+}
+window.addEventListener('resize', resizeWalker);
+window.addEventListener('orientationchange', resizeWalker);
 
 // A few terms that changed identity over time (institute rename, lab
 // nicknames, etc). Searching either side should still find everything.

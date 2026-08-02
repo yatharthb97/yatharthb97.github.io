@@ -43,14 +43,28 @@
   padding: 0 2px;
 }
 
-.search-idle {
-  margin: 40px 0;
-  text-align: center;
-  line-height: 1.6;
+.search-walker {
+  margin: 10px 0 20px;
+}
+
+.walker-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
   font-size: 13px;
-  letter-spacing: 2px;
-  color: var(--tertiary);
-  white-space: pre;
-  overflow-x: auto;
-  user-select: none;
+  color: var(--secondary);
+}
+
+.walker-controls input[type="range"] {
+  flex: 1;
+}
+
+.walker-canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  touch-action: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }

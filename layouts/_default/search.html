@@ -24,7 +24,14 @@
     <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
         aria-label="search" type="search" autocomplete="off" maxlength="64">
     <div id="searchFilters" class="search-filters"></div>
-    <pre id="searchIdle" class="search-idle" aria-hidden="true"></pre>
+    <div id="searchWalker" class="search-walker" aria-hidden="true">
+        <div class="walker-controls">
+            <label for="walkerCount">particles</label>
+            <input type="range" id="walkerCount" min="1" max="30" value="6" step="1">
+            <span id="walkerCountOut">6</span>
+        </div>
+        <canvas id="walkerCanvas" class="walker-canvas"></canvas>
+    </div>
     <ul id="searchResults" aria-label="search results"></ul>
 </div>
 
