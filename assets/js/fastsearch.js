@@ -20,6 +20,53 @@ function snippetFor(item) {
     return escapeHtml(text);
 }
 
+// Find the best content/summary match from a Fuse result and turn it into a
+// short literal phrase we can deep-link to with a browser Text Fragment
+// (#:~:text=...). Falls back to no fragment if there's nothing to point at.
+function textFragmentFor(result) {
+    if (!result.matches) return '';
+    let candidates = result.matches.filter(function (m) {
+        return m.key === 'content' || m.key === 'summary';
+    });
+    if (!candidates.length) return '';
+
+    let best = null, bestLen = -1;
+    candidates.forEach(function (m) {
+        (m.indices || []).forEach(function (range) {
+            let len = range[1] - range[0];
+            if (len > bestLen) { bestLen = len; best = { value: m.value, start: range[0], end: range[1] }; }
+        });
+    });
+    if (!best) return '';
+
+    let text = best.value;
+    let start = best.start, end = best.end + 1;
+    // expand to whole words
+    while (start > 0 && /\S/.test(text[start - 1])) start--;
+    while (end < text.length && /\S/.test(text[end])) end++;
+    // pad a couple of words either side so the phrase is distinctive enough
+    // for the browser to locate reliably
+    for (let i = 0; i < 3 && start > 0; i++) {
+        start--;
+        while (start > 0 && text[start] !== ' ') start--;
+    }
+    for (let i = 0; i < 3 && end < text.length; i++) {
+        end++;
+        while (end < text.length && text[end] !== ' ') end++;
+    }
+    let snippet = text.slice(start, end).replace(/\s+/g, ' ').trim();
+    if (snippet.length > 120) snippet = snippet.slice(0, 120).trim();
+    return snippet;
+}
+
+function linkFor(entry, result) {
+    let fragment = textFragmentFor(result);
+    if (fragment) {
+        return entry.permalink + '#:~:text=' + encodeURIComponent(fragment);
+    }
+    return entry.permalink;
+}
+
 // load our search index
 window.onload = function () {
     let xhr = new XMLHttpRequest();
@@ -103,11 +150,12 @@ sInput.onkeyup = function (e) {
                 let tagsLine = (entry.tags && entry.tags.length)
                     ? `<div class="search-tags">${entry.tags.map(escapeHtml).join(' · ')}</div>`
                     : '';
+                let href = linkFor(entry, results[item]);
                 resultSet += `<li class="post-entry">` +
                     `<header class="entry-header">${escapeHtml(entry.title)}&nbsp;»</header>` +
                     `<div class="entry-content"><p>${snippetFor(entry)}</p></div>` +
                     tagsLine +
-                    `<a href="${entry.permalink}" aria-label="${escapeHtml(entry.title)}"></a></li>`
+                    `<a href="${href}" aria-label="${escapeHtml(entry.title)}"></a></li>`
             }
 
             resList.innerHTML = resultSet;
