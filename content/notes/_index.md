@@ -1,5 +1,8 @@
 ---
 title: " ✒️ "
+draft: true
+cascade:
+  draft: true
 ---
 
 ```goat
@@ -18,5 +21,5 @@ title: " ✒️ "
 
 * **Publications** are [here](/publications/).
 * Posts about my **Projects** are [here](/projects/).
-* Biology🧬 + Physics🔭 Notes are [here](/blog/biophy/).
+* Biology🧬 + Physics🔭 Notes are [here](/notes/biophy/).
 

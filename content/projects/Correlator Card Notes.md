@@ -157,7 +157,7 @@ G(k) = \frac{\sum_{i=0}^{m-k}{n_{i}n_{i-k}}}{(Norm)}
 $$
 Note the presence of the time dependent parameter $m$. It can be inferred from the above equation that for different values of the lag time $k$, the summation operations differ. For $k = 0$, $m$ sums are performed. And for $k = m - 1$, just one sum is performed. This is an artifact of the real time averaging, which is referred to as **triangular averaging.** Distortions that result from this triangular averaging can be estimated and can be managed. The schematic below illustrates the arrival of photon datum and its subsequent distribution to the different channels. This is due to the fact that complete $n_{i}$ series is not available for the ACF calculation and hence the relation $\langle n_{i}n_{i-k} \rangle = \langle n_{i}n_{i+k} \rangle$ cannot be used.
 
-![image-20210807124050295](C:/Users/Yatharth_Nitro/AppData/Roaming/Typora/typora-user-images/image-20210807124050295.png)
+![image-20210807124050295](/images/articles/projects/correlator/image-20210807124050295.png)
 
 For all lags $k$, the contribution to the ACF is not equal. hence, the normalization depends on the lag value $k$. The normalization can also include the mean square photon count. Before completion of the acquisition phase, i.e.  $m < M$, the mean must also be estimated based on the available acquisitions. <u>Note: $m$ represents the available samples.</u>
 $$
@@ -278,7 +278,7 @@ This distortion can be kept under check by using lag times considerably larger t
 
 The scaling of the lag time is given by:
 
-![image-20210713125340590](C:/Users/Yatharth_Nitro/AppData/Roaming/Typora/typora-user-images/image-20210713125340590.png "Source: Yi Lug 1996")
+![image-20210713125340590](/images/articles/projects/correlator/image-20210713125340590.png "Source: Yi Lug 1996")
 
 ==The implementation of this schematics is pending.==
 

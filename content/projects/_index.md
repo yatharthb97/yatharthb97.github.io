@@ -25,7 +25,7 @@ title: "🔭"
 
 # Highlights
 
-1. [Correlator](/Correlator/) : `Embedded C++` : DIY Correlator Card built with Teensy 4.1 [INCOMPLETE].
+1. [Correlator](/projects/correlator-card-notes/) : `Embedded C++` : DIY Correlator Card built with Teensy 4.1 [INCOMPLETE].
 2. [PITController](https://gist.github.com/yatharthb97/5dfd744b3d4870195b685b8c2d701075) : `Embedded C++` : Describes a class to control the `Periodic Interrupt Timer (PIT)` of a **PJRC Teensy 4.1** microcontroller.
 3. [PyQTGraphStack](https://gist.github.com/yatharthb97/f3748ef894627748bacccf092648aa59) : `python3` : PyQTGraphStack is a wrapper around the pyqtgraph API for rapid prototyping, focused around creation of multiple plots with multiple curves and intended towards fast real-time data display.
 4. [metadata.py](https://gist.github.com/yatharthb97/1110a1924d8d70ef8ad444f12a952de6) : `python3` : Object that is specialized to collect, store, and export metadata for any generic application.

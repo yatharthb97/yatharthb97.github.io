@@ -329,7 +329,7 @@ editPost:
   
 + Data is not knowledge.
 
-  ##### ![Data to Wisdom](/Users/byatharth/code/yatharthb97.github.io/static/images/classnotes/the_model-thinker_scott_page_extract.png)
+  ##### ![Data to Wisdom](/images/classnotes/the_model-thinker_scott_page_extract.png)
 
 + Indirect evidene often proves direct evedence.
 

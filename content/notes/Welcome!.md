@@ -46,7 +46,7 @@ Welcome to my website! Here, I post about stuff I like and the things I do. I **
 
 * [projects](/projects/): where I post about my scientific and coding projects.
 * [publications](/publications/): lists all the articles I have written and published somewhere. 
-* [blog](/blog/): where I will post articles and notes on various themes.
+* [notes](/notes/): where I will post articles and notes on various themes.
 * [gallery](/gallery/): has some cool pictures of me and my work.
 * [about me](/aboutme/): an overview of my interests & qualifications.
 * [collaborate](/collaborate/): has a list of projects for which collaborators are required. 
@@ -54,7 +54,7 @@ Welcome to my website! Here, I post about stuff I like and the things I do. I **
 
 This website is still being actively developed and is broken at a few places.
 
-Please let me know what you think about this website and how I can improve it. You can connect through the various social media links on the [home page](/home/).
+Please let me know what you think about this website and how I can improve it. You can connect through the various social media links on the [home page](/).
 
 For credits and source code, you can visit [here](https://github.com/yatharthb97/yatharthb97.github.io).
 
