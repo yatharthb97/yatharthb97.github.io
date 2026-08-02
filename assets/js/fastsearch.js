@@ -4,10 +4,65 @@ let fuse; // holds our search engine
 let resList = document.getElementById('searchResults');
 let sInput = document.getElementById('searchInput');
 let filterBox = document.getElementById('searchFilters');
+let idleEl = document.getElementById('searchIdle');
 let first, last, current_elem = null
 let resultsAvailable = false;
 let activeSection = null;
 let allSections = [];
+
+// Twinkling ASCII starfield shown while the search box is empty, so the
+// page isn't just dead air before you type anything.
+const IDLE_ROWS = 8;
+const IDLE_COLS = 56;
+const IDLE_CHARS = ['·', '.', '*', '✦', '✧'];
+let idleGrid = [];
+let idleTimer = null;
+
+function pickStar() {
+    return IDLE_CHARS[Math.floor(Math.random() * IDLE_CHARS.length)];
+}
+
+function initIdleGrid() {
+    idleGrid = [];
+    for (let r = 0; r < IDLE_ROWS; r++) {
+        let row = [];
+        for (let c = 0; c < IDLE_COLS; c++) {
+            row.push(Math.random() < 0.05 ? pickStar() : ' ');
+        }
+        idleGrid.push(row);
+    }
+    // a small telescope drifting across the middle row
+    idleGrid[Math.floor(IDLE_ROWS / 2)][Math.floor(IDLE_COLS / 2)] = '🔭';
+}
+
+function renderIdleGrid() {
+    if (!idleEl) return;
+    idleEl.textContent = idleGrid.map(function (row) { return row.join(''); }).join('\n');
+}
+
+function tickIdle() {
+    for (let i = 0; i < 5; i++) {
+        let r = Math.floor(Math.random() * IDLE_ROWS);
+        let c = Math.floor(Math.random() * IDLE_COLS);
+        idleGrid[r][c] = Math.random() < 0.5 ? pickStar() : ' ';
+    }
+    renderIdleGrid();
+}
+
+function showIdle() {
+    if (!idleEl) return;
+    idleEl.style.display = '';
+    if (!idleTimer) {
+        initIdleGrid();
+        renderIdleGrid();
+        idleTimer = setInterval(tickIdle, 350);
+    }
+}
+
+function hideIdle() {
+    if (idleEl) idleEl.style.display = 'none';
+    if (idleTimer) { clearInterval(idleTimer); idleTimer = null; }
+}
 
 // A few terms that changed identity over time (institute rename, lab
 // nicknames, etc). Searching either side should still find everything.
@@ -197,8 +252,10 @@ function runSearch() {
     if (!fuse || !query.trim()) {
         resultsAvailable = false;
         resList.innerHTML = '';
+        showIdle();
         return;
     }
+    hideIdle();
     let limit = (params.fuseOpts && params.fuseOpts.limit) || 20;
     let results = searchAll(query, limit);
     if (activeSection) {
@@ -209,6 +266,7 @@ function runSearch() {
 
 // load our search index
 window.onload = function () {
+    showIdle(); // the starfield doesn't need the index, so start it immediately
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
@@ -254,6 +312,8 @@ window.onload = function () {
                     if (qParam) {
                         sInput.value = qParam;
                         runSearch();
+                    } else {
+                        showIdle();
                     }
                 }
             } else {
@@ -283,6 +343,7 @@ function reset() {
     resultsAvailable = false;
     resList.innerHTML = sInput.value = ''; // clear inputbox and searchResults
     sInput.focus(); // shift focus to input box
+    showIdle();
     let p = new URLSearchParams(window.location.search);
     p.delete('q');
     history.replaceState(null, '', window.location.pathname + (p.toString() ? '?' + p.toString() : ''));

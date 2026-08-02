@@ -38,7 +38,3 @@ title: "📷"
 
 <div class=pop-outin align=center ><br>↓</div>
 
-## Hello!
-
-More to come here soon.
-
