@@ -40,39 +40,13 @@ editPost:
     appendFilePath: true
 ---
 
-Active Brownian Particles (ABPs) are the model you reach for when you want the *simplest possible* description of a self-propelled particle, without committing to any particular biological or chemical mechanism. Instead of alternating between discrete runs and tumbles, an ABP moves continuously at a fixed speed along a body orientation that itself performs an ordinary random walk — not in space, but in angle. Picture a swimmer that never fully changes direction in one sharp event; it just slowly, continuously forgets which way it was pointing, the way a compass needle would if it were being nudged by random noise instead of a magnetic field. This is a reasonably good caricature of synthetic active colloids (Janus particles powered by a chemical reaction on one face) and is close enough to real microswimmer behavior that it shows up constantly in the active matter literature, including work adjacent to the kind of *Chlamydomonas* tracking this site's about-me page mentions.
-
-The reason ABPs are worth knowing on their own, and not just as a variant of run-and-tumble, is the shape of the trajectories they produce: smooth, continuously curving paths rather than piecewise-straight ones. If that description sounds familiar, it should — it's essentially the same correlated random walk used for the particle simulation sitting on this site's search page, just without the reflecting speed clamp added there for visual effect. At short times the motion looks ballistic (the particle hasn't had time to forget its heading), and at long times, once the orientation has randomized many times over, it crosses over to an effective diffusive regime exactly like the run-and-tumble case — except now the "memory time" comes from continuous rotational diffusion rather than a discrete tumbling rate. At high densities, this same simple rule is also what drives one of the more surprising results in active matter physics: motility-induced phase separation, where purely repulsive, otherwise unremarkable particles spontaneously clump into dense and dilute regions just because self-propulsion makes it hard for them to get out of each other's way.
-
-## Basic equations
-
-Position evolves via self-propulsion along orientation $\hat{n}(\theta) = (\cos\theta, \sin\theta)$, plus ordinary translational noise:
-$$
-\frac{d\vec{r}}{dt} = v_0\, \hat{n}(\theta(t)) + \sqrt{2D_t}\, \vec{\xi}(t)
-$$
-
-The orientation itself performs a free rotational random walk, driven by rotational diffusion $D_r$:
-$$
-\frac{d\theta}{dt} = \sqrt{2D_r}\, \eta(t), \qquad \langle \eta(t)\eta(t') \rangle = \delta(t - t')
-$$
-
-The orientation correlation decays exponentially with a persistence time $\tau_r = 1/D_r$, giving a persistence length $\ell_p = v_0 \tau_r$, and at long times the effective diffusion coefficient in 2D is:
-$$
-D_{\text{eff}} = D_t + \frac{v_0^2}{2 D_r}
-$$
-
-## Interactive simulation
-
-This is the same equation set driving the particle sim on this site's search page. Turn rotational diffusion down and the paths straighten into long, smooth arcs; turn it up and the particles forget their heading almost immediately, collapsing toward the jittery, memoryless look of the plain random walk.
-
-<div class="sim-box">
-  <div class="sim-controls">
-    <label for="abpDr">rotational diffusion D<sub>r</sub></label>
-    <input type="range" id="abpDr" min="0.001" max="0.05" value="0.01" step="0.001">
-    <span id="abpDrOut" class="sim-readout">0.010</span>
-  </div>
-  <canvas id="abpCanvas" class="sim-canvas"></canvas>
+<div class="sim-controls">
+  <label for="abpDr">rotational diffusion D<sub>r</sub></label>
+  <input type="range" id="abpDr" min="0.001" max="0.05" value="0.01" step="0.001">
+  <span id="abpDrOut" class="sim-readout">0.010</span>
 </div>
+
+<canvas id="abpCanvas" class="sim-canvas"></canvas>
 
 <script>
 (function(){
@@ -159,7 +133,36 @@ This is the same equation set driving the particle sim on this site's search pag
 })();
 </script>
 
+Active Brownian Particles (ABPs) are the model you reach for when you want the *simplest possible* description of a self-propelled particle, without committing to any particular biological or chemical mechanism. Instead of alternating between discrete runs and tumbles, an ABP moves continuously at a fixed speed along a body orientation that itself performs an ordinary random walk — not in space, but in angle. Picture a swimmer that never fully changes direction in one sharp event; it just slowly, continuously forgets which way it was pointing, the way a compass needle would if it were being nudged by random noise instead of a magnetic field. This is a reasonably good caricature of synthetic active colloids (Janus particles powered by a chemical reaction on one face) and is close enough to real microswimmer behavior that it shows up constantly in the active matter literature, including work adjacent to the kind of *Chlamydomonas* tracking this site's about-me page mentions.
+
+The reason ABPs are worth knowing on their own, and not just as a variant of run-and-tumble, is the shape of the trajectories they produce: smooth, continuously curving paths rather than piecewise-straight ones. If that description sounds familiar, it should — it's essentially the same correlated random walk used for the particle simulation sitting on this site's search page, just without the reflecting speed clamp added there for visual effect. At short times the motion looks ballistic (the particle hasn't had time to forget its heading), and at long times, once the orientation has randomized many times over, it crosses over to an effective diffusive regime exactly like the run-and-tumble case — except now the "memory time" comes from continuous rotational diffusion rather than a discrete tumbling rate. At high densities, this same simple rule is also what drives one of the more surprising results in active matter physics: motility-induced phase separation, where purely repulsive, otherwise unremarkable particles spontaneously clump into dense and dilute regions just because self-propulsion makes it hard for them to get out of each other's way.
+
+## Basic equations
+
+Position evolves via self-propulsion along orientation $\hat{n}(\theta) = (\cos\theta, \sin\theta)$, plus ordinary translational noise:
+$$
+\frac{d\vec{r}}{dt} = v_0\, \hat{n}(\theta(t)) + \sqrt{2D_t}\, \vec{\xi}(t)
+$$
+
+The orientation itself performs a free rotational random walk, driven by rotational diffusion $D_r$:
+$$
+\frac{d\theta}{dt} = \sqrt{2D_r}\, \eta(t), \qquad \langle \eta(t)\eta(t') \rangle = \delta(t - t')
+$$
+
+The orientation correlation decays exponentially with a persistence time $\tau_r = 1/D_r$, giving a persistence length $\ell_p = v_0 \tau_r$, and at long times the effective diffusion coefficient in 2D is:
+$$
+D_{\text{eff}} = D_t + \frac{v_0^2}{2 D_r}
+$$
+
 ## Reference code
+
+<div class="code-tabs">
+<div class="code-tab-buttons">
+<button type="button" class="code-tab-btn active" data-tab="js">JavaScript</button>
+<button type="button" class="code-tab-btn" data-tab="py">Python</button>
+</div>
+
+<div class="code-tab-panel active" data-panel="js">
 
 ```javascript
 (function(){
@@ -249,6 +252,10 @@ This is the same equation set driving the particle sim on this site's search pag
 })();
 ```
 
+</div>
+
+<div class="code-tab-panel" data-panel="py">
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -298,3 +305,6 @@ if __name__ == "__main__":
     plt.tight_layout()
     plt.savefig("abp_msd.png", dpi=150)
 ```
+
+</div>
+</div>

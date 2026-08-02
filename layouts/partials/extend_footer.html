@@ -4,3 +4,20 @@
     mermaid.initialize({ startOnLoad: true });
   </script>
 {{ end }}
+
+<script>
+document.querySelectorAll('.code-tabs').forEach(function (group) {
+    var buttons = group.querySelectorAll('.code-tab-btn');
+    var panels = group.querySelectorAll('.code-tab-panel');
+    buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var target = btn.getAttribute('data-tab');
+            buttons.forEach(function (b) { b.classList.remove('active'); });
+            panels.forEach(function (p) { p.classList.remove('active'); });
+            btn.classList.add('active');
+            var panel = group.querySelector('.code-tab-panel[data-panel="' + target + '"]');
+            if (panel) panel.classList.add('active');
+        });
+    });
+});
+</script>

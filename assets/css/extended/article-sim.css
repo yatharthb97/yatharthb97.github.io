@@ -1,12 +1,8 @@
-.sim-box {
-  margin: 24px 0 8px;
-}
-
 .sim-controls {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin: 8px 0 28px;
   font-size: 13px;
   color: var(--secondary);
   flex-wrap: wrap;
@@ -29,22 +25,61 @@
   text-align: right;
 }
 
-.sim-canvas {
-  display: block;
-  width: 100%;
-  aspect-ratio: 2 / 1;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--entry);
-}
-
 .sim-order {
   font-size: 13px;
   color: var(--secondary);
-  margin-top: 8px;
+  margin: -18px 0 28px;
 }
 
 .sim-order .sim-readout {
   font-weight: 600;
   color: var(--primary);
+}
+
+.sim-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.code-tabs {
+  margin: 16px 0;
+}
+
+.code-tab-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.code-tab-btn {
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--entry);
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.code-tab-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.code-tab-btn.active {
+  background: #6563D6;
+  border-color: #6563D6;
+  color: #fff;
+}
+
+.code-tab-panel {
+  display: none;
+}
+
+.code-tab-panel.active {
+  display: block;
 }

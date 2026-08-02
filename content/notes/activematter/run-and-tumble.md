@@ -40,39 +40,13 @@ editPost:
     appendFilePath: true
 ---
 
-Run-and-tumble motion is the first model in this series that is trying to describe something a real organism actually does, rather than an idealized particle. It's the motility strategy of *E. coli* and many other flagellated bacteria: swim in a roughly straight line ("run") for about a second, then abruptly reorient in a random direction ("tumble") over a much shorter timescale, and repeat. Unlike the plain random walk, a run-and-tumble particle has a well-defined instantaneous velocity and moves ballistically over short times — it's only once you zoom out past several run lengths that the path starts looking diffusive again. The trick that makes this more than "a random walk with extra steps" is what the bacterium does with the tumbling itself: by biasing how long it runs (not which direction it tumbles into) based on whether the local chemical concentration is improving or worsening, it converts a directionless reorientation process into directed drift up a nutrient gradient, without ever computing a gradient outright.
-
-This is also, not coincidentally, the mechanism behind the bacterial chemotaxis notes elsewhere in this section — the "biased random walk" described there is exactly the process formalized here. What's elegant about the model is how cleanly it separates two very different timescales and two very different kinds of randomness: the ballistic, deterministic-looking run, and the memoryless, Poisson-distributed tumble event. That separation is also precisely why the long-time behavior recovers something diffusion-like: on timescales much longer than the mean run duration, the direction the particle is currently pointing becomes irrelevant, and the details of individual runs wash out into an effective diffusion coefficient — just one that now depends on how fast the particle swims and how often it reorients, rather than being a bare material constant.
-
-## Basic equations
-
-Between tumbles, the particle moves ballistically at fixed speed $v_0$ along its current orientation $\hat{n}(t)$:
-$$
-\frac{d\vec{r}}{dt} = v_0\, \hat{n}(t)
-$$
-
-Tumbles are a Poisson process with rate $\lambda$ (mean run time $\tau = 1/\lambda$); at each tumble, $\hat{n}$ is redrawn, either fully randomly or with some angular bias:
-$$
-P(\text{no tumble in } [t, t+dt]) = 1 - \lambda\, dt, \qquad \langle \hat{n}(t) \cdot \hat{n}(t') \rangle = e^{-\lambda |t - t'|}
-$$
-
-At times long compared to $\tau$, the mean squared displacement crosses over from ballistic ($\langle r^2 \rangle \sim v_0^2 t^2$) to diffusive, with an effective diffusion coefficient set by the persistence time:
-$$
-D_{\text{eff}} = \frac{v_0^2 \tau}{d} = \frac{v_0^2}{d\,\lambda} \qquad \text{(d spatial dimensions)}
-$$
-
-## Interactive simulation
-
-Drag the tumbling rate down and the runs get long and ballistic; push it up and the particles start randomizing direction almost every tick, looking closer to the plain random walk above.
-
-<div class="sim-box">
-  <div class="sim-controls">
-    <label for="rtTumble">tumbling rate &lambda;</label>
-    <input type="range" id="rtTumble" min="0.01" max="0.3" value="0.05" step="0.01">
-    <span id="rtTumbleOut" class="sim-readout">0.05</span>
-  </div>
-  <canvas id="rtCanvas" class="sim-canvas"></canvas>
+<div class="sim-controls">
+  <label for="rtTumble">tumbling rate &lambda;</label>
+  <input type="range" id="rtTumble" min="0.01" max="0.3" value="0.05" step="0.01">
+  <span id="rtTumbleOut" class="sim-readout">0.05</span>
 </div>
+
+<canvas id="rtCanvas" class="sim-canvas"></canvas>
 
 <script>
 (function(){
@@ -159,7 +133,36 @@ Drag the tumbling rate down and the runs get long and ballistic; push it up and 
 })();
 </script>
 
+Run-and-tumble motion is the first model in this series that is trying to describe something a real organism actually does, rather than an idealized particle. It's the motility strategy of *E. coli* and many other flagellated bacteria: swim in a roughly straight line ("run") for about a second, then abruptly reorient in a random direction ("tumble") over a much shorter timescale, and repeat. Unlike the plain random walk, a run-and-tumble particle has a well-defined instantaneous velocity and moves ballistically over short times — it's only once you zoom out past several run lengths that the path starts looking diffusive again. The trick that makes this more than "a random walk with extra steps" is what the bacterium does with the tumbling itself: by biasing how long it runs (not which direction it tumbles into) based on whether the local chemical concentration is improving or worsening, it converts a directionless reorientation process into directed drift up a nutrient gradient, without ever computing a gradient outright.
+
+This is also, not coincidentally, the mechanism behind the bacterial chemotaxis notes elsewhere in this section — the "biased random walk" described there is exactly the process formalized here. What's elegant about the model is how cleanly it separates two very different timescales and two very different kinds of randomness: the ballistic, deterministic-looking run, and the memoryless, Poisson-distributed tumble event. That separation is also precisely why the long-time behavior recovers something diffusion-like: on timescales much longer than the mean run duration, the direction the particle is currently pointing becomes irrelevant, and the details of individual runs wash out into an effective diffusion coefficient — just one that now depends on how fast the particle swims and how often it reorients, rather than being a bare material constant.
+
+## Basic equations
+
+Between tumbles, the particle moves ballistically at fixed speed $v_0$ along its current orientation $\hat{n}(t)$:
+$$
+\frac{d\vec{r}}{dt} = v_0\, \hat{n}(t)
+$$
+
+Tumbles are a Poisson process with rate $\lambda$ (mean run time $\tau = 1/\lambda$); at each tumble, $\hat{n}$ is redrawn, either fully randomly or with some angular bias:
+$$
+P(\text{no tumble in } [t, t+dt]) = 1 - \lambda\, dt, \qquad \langle \hat{n}(t) \cdot \hat{n}(t') \rangle = e^{-\lambda |t - t'|}
+$$
+
+At times long compared to $\tau$, the mean squared displacement crosses over from ballistic ($\langle r^2 \rangle \sim v_0^2 t^2$) to diffusive, with an effective diffusion coefficient set by the persistence time:
+$$
+D_{\text{eff}} = \frac{v_0^2 \tau}{d} = \frac{v_0^2}{d\,\lambda} \qquad \text{(d spatial dimensions)}
+$$
+
 ## Reference code
+
+<div class="code-tabs">
+<div class="code-tab-buttons">
+<button type="button" class="code-tab-btn active" data-tab="js">JavaScript</button>
+<button type="button" class="code-tab-btn" data-tab="py">Python</button>
+</div>
+
+<div class="code-tab-panel active" data-panel="js">
 
 ```javascript
 (function(){
@@ -247,6 +250,10 @@ Drag the tumbling rate down and the runs get long and ballistic; push it up and 
 })();
 ```
 
+</div>
+
+<div class="code-tab-panel" data-panel="py">
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -295,3 +302,6 @@ if __name__ == "__main__":
     plt.tight_layout()
     plt.savefig("run_and_tumble_msd.png", dpi=150)
 ```
+
+</div>
+</div>
