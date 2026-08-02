@@ -306,10 +306,8 @@ function runSearch() {
     if (!fuse || !query.trim()) {
         resultsAvailable = false;
         resList.innerHTML = '';
-        showIdle();
         return;
     }
-    hideIdle();
     let limit = (params.fuseOpts && params.fuseOpts.limit) || 20;
     let results = searchAll(query, limit);
     if (activeSection) {
