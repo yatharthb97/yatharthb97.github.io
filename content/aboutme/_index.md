@@ -126,8 +126,8 @@ summary: "about me"
           <small>2021 <small><small style="color: #42418a;">to</small></small> 2022</small>
         </h3>
         <p><b>🏛️ Institute</b><br>
-              Tata Institute of Fundamental Research, Hyderabad<br>
-              TIFR Centre of Interdisciplinary Sciences (TIFR-Hyd)<br><em>Kanchan Garai Biophysics Lab</em>
+              <a href="https://www.tifrh.res.in/">Tata Institute of Fundamental Research, Hyderabad</a><br>
+              TIFR Centre of Interdisciplinary Sciences (TIFR-Hyd)<br><em><a href="https://www.tifrh.res.in/~kanchan">Kanchan Garai Biophysics Lab</a></em>
         </p>
         <p>
           <b>📍 Location</b><br>Hyderabad, Telangana, India<br>
@@ -146,8 +146,8 @@ summary: "about me"
         </h3>
         <p>
           <b>🏛️ Institute</b><br>
-          Gulbenkian Institute for Molecular Medicine (GIMM, formerly IGC)<br>
-          Living Physics Laboratory (Sartori Lab)<br>
+          <a href="https://gimm.pt/">Gulbenkian Institute for Molecular Medicine (GIMM, formerly IGC)</a><br>
+          <a href="https://www.sartorilab.org/">Living Physics Laboratory (Sartori Lab)</a><br>
         </p>
          <p>
           <b>📍 Location</b><br>
