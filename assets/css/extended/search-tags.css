@@ -3,3 +3,42 @@
   color: var(--secondary);
   margin-top: 4px;
 }
+
+.search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 6px;
+}
+
+.search-pill {
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--entry);
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.search-pill:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.search-pill.active {
+  background: #6563D6;
+  border-color: #6563D6;
+  color: #fff;
+}
+
+.search-empty {
+  color: var(--secondary);
+}
+
+#searchResults mark {
+  background: rgba(101, 99, 214, 0.35);
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 2px;
+}
