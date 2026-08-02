@@ -58,6 +58,7 @@
 
 .walker-controls input[type="range"] {
   flex: 1;
+  accent-color: #6563D6;
 }
 
 .walker-canvas {
