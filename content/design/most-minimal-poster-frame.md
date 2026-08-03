@@ -1,7 +1,7 @@
 ---
 title: "Most Minimal Poster Frame"
 date: 2026-08-02T18:00:00+01:00
-draft: true
+draft: false
 description: ""
 ShowCanonicalLink: false
 canonicalURL: ""
