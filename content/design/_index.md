@@ -1,4 +1,4 @@
 ---
-title: " 🖼️ "
+title: " 🖍️ "
 draft: false
 ---
