@@ -25,6 +25,7 @@ params:
     - gallery
     - projects
     - publications
+    - design
 
   # Default Recommended ↓
 
@@ -176,6 +177,11 @@ menu:
       name: notes
       url: /notes/
       weight: 2
+
+    - identifier: design
+      name: design
+      url: /design/
+      weight: 3
 
     - identifier : search
       name : search

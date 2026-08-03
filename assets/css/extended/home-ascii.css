@@ -1,0 +1,11 @@
+.ascii-frame {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  opacity: 0.85;
+}
+
+.ascii-frame svg {
+  max-width: 100%;
+  height: auto;
+}
