@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" width="700" height="560" role="img" aria-labelledby="mfdTitle mfdDesc">
+  <title id="mfdTitle">Minimal poster frame — corner detail</title>
+  <desc id="mfdDesc">Left: the poster's top corner folded forward, revealing the magnet stuck to its back with the string knotted under it. Right: a cross-section showing the layer order — front magnet, poster sheet, string, back magnet.</desc>
+
+  <defs>
+    <filter id="r2" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.1" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="r2s" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.1" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 1 L9 5 L0 9 z" fill="#6563D6"/>
+    </marker>
+  </defs>
+
+  <style>
+    .ink   { fill: none; stroke: var(--primary, #1f1f1f); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .thin  { fill: none; stroke: var(--secondary, #6b6b6b); stroke-width: 1.3; stroke-linecap: round; }
+    .back  { fill: var(--code-bg, #f1f1f1); stroke: var(--primary, #1f1f1f); stroke-width: 2; stroke-linejoin: round; }
+    .fold  { fill: none; stroke: var(--primary, #1f1f1f); stroke-width: 1.4; stroke-dasharray: 7 4; }
+    .mag   { fill: var(--primary, #1f1f1f); stroke: var(--primary, #1f1f1f); stroke-width: 1.4; }
+    .paper { fill: none; stroke: var(--primary, #1f1f1f); stroke-width: 1.7; }
+    .lbl   { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; fill: var(--primary, #1f1f1f); }
+    .lblS  { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; fill: var(--secondary, #6b6b6b); }
+    .lead  { fill: none; stroke: var(--secondary, #6b6b6b); stroke-width: 1; stroke-dasharray: 3 3; }
+    .str   { fill: none; stroke: #6563D6; stroke-width: 2.2; stroke-linecap: round; }
+    .force { fill: none; stroke: #6563D6; stroke-width: 1.3; stroke-dasharray: 4 3; }
+  </style>
+
+  <!-- ============ divider ============ -->
+  <g filter="url(#r2s)"><path class="thin" d="M355 44 V400" opacity="0.5"/></g>
+
+  <!-- ============ A: peeled corner ============ -->
+  <text class="lblS" x="40" y="36">A &#183; CORNER, FOLDED FORWARD</text>
+
+  <!-- poster, with top-left corner area exposed -->
+  <g filter="url(#r2)">
+    <path class="ink" d="M60 150 H300 V420 H60 Z"/>
+  </g>
+
+  <!-- string emerging from behind the sheet, heading to the nail -->
+  <g filter="url(#r2)">
+    <path class="str" d="M103 196 Q128 168 150 150 L286 66"/>
+  </g>
+  <text class="lblS" x="248" y="58">to nail</text>
+
+  <!-- folded-forward corner triangle (reverse side of the sheet) -->
+  <g filter="url(#r2)">
+    <path class="back" d="M150 150 L141.6 239.6 L60 232 Z"/>
+    <path class="fold" d="M150 150 L60 232"/>
+  </g>
+
+  <!-- back magnet, sitting on the exposed reverse side, over the string -->
+  <g filter="url(#r2s)">
+    <rect class="mag" x="88" y="188" width="30" height="10" rx="2" transform="rotate(-42 103 193)"/>
+  </g>
+
+  <path class="lead" d="M150 300 L112 214"/>
+  <text class="lbl" x="118" y="318">back magnet</text>
+  <text class="lblS" x="118" y="335">knotted string runs under it</text>
+
+  <path class="lead" d="M96 262 L120 246"/>
+  <text class="lblS" x="64" y="372">reverse side of</text>
+  <text class="lblS" x="64" y="388">the folded corner</text>
+
+  <!-- ============ B: cross-section ============ -->
+  <text class="lblS" x="392" y="36">B &#183; CROSS-SECTION</text>
+
+  <!-- poster sheet edge-on -->
+  <g filter="url(#r2s)">
+    <path class="paper" d="M396 250 H648"/>
+    <path class="paper" d="M396 256 H648"/>
+  </g>
+  <path class="lead" d="M596 240 L622 249"/>
+  <text class="lblS" x="540" y="236">poster, edge-on</text>
+
+  <!-- front magnet, above the sheet -->
+  <g filter="url(#r2s)">
+    <rect class="mag" x="470" y="228" width="56" height="16" rx="2"/>
+  </g>
+  <text class="lbl" x="462" y="212">front magnet</text>
+
+  <!-- string, pinched just under the sheet -->
+  <g filter="url(#r2)">
+    <path class="str" d="M400 261 H480"/>
+    <path class="str" d="M516 261 H612"/>
+    <circle cx="490" cy="261" r="4.2" fill="#6563D6"/>
+    <circle cx="506" cy="261" r="4.2" fill="#6563D6"/>
+  </g>
+  <path class="lead" d="M430 292 L484 265"/>
+  <text class="lblS" x="396" y="308">string</text>
+
+  <!-- back magnet, below -->
+  <g filter="url(#r2s)">
+    <rect class="mag" x="470" y="268" width="56" height="16" rx="2"/>
+  </g>
+  <text class="lbl" x="462" y="336">back magnet</text>
+
+  <!-- clamp force arrows -->
+  <g filter="url(#r2s)">
+    <path class="force" d="M448 206 V240" marker-end="url(#ah)"/>
+    <path class="force" d="M552 206 V240" marker-end="url(#ah)"/>
+    <path class="force" d="M448 306 V272" marker-end="url(#ah)"/>
+    <path class="force" d="M552 306 V272" marker-end="url(#ah)"/>
+  </g>
+  <text class="lblS" x="566" y="204">they pull</text>
+  <text class="lblS" x="566" y="316">toward each other</text>
+
+  <!-- stack order -->
+  <text class="lbl" x="392" y="372">magnet &#183; paper &#183; string &#183; magnet</text>
+
+  <!-- ============ shared footnote ============ -->
+  <g filter="url(#r2s)"><path class="thin" d="M40 428 H660"/></g>
+  <text class="lblS" x="40" y="456">The pair pinches straight through the sheet — friction on the string does the rest.</text>
+  <text class="lblS" x="40" y="474">No hole, no tape, no fixing of any kind in the poster itself.</text>
+  <text class="lblS" x="40" y="500">Bottom corners are the same pinch with no string threaded through: the pair is</text>
+  <text class="lblS" x="40" y="518">just mass, keeping the sheet flat. Skip it on stiff or small posters.</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600" width="700" height="600" role="img" aria-labelledby="mfaTitle mfaDesc">
+  <title id="mfaTitle">Minimal poster frame — whole assembly</title>
+  <desc id="mfaDesc">A poster hangs from a single nail by one knotted jute string. At each top corner a pair of rectangular magnets pinches the string through the sheet. An optional pair at each bottom corner acts as a counterweight.</desc>
+
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.026" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="roughS" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.042" numOctaves="2" seed="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.15" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <style>
+    .ink   { fill: none; stroke: var(--primary, #1f1f1f); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .thin  { fill: none; stroke: var(--secondary, #6b6b6b); stroke-width: 1.3; stroke-linecap: round; }
+    .mag   { fill: var(--primary, #1f1f1f); stroke: var(--primary, #1f1f1f); stroke-width: 1.4; }
+    .magO  { fill: none; stroke: var(--secondary, #6b6b6b); stroke-width: 1.6; stroke-dasharray: 5 4; }
+    .hatch { fill: none; stroke: var(--secondary, #6b6b6b); stroke-width: 0.9; opacity: 0.5; }
+    .lbl   { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; fill: var(--primary, #1f1f1f); }
+    .lblS  { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; fill: var(--secondary, #6b6b6b); }
+    .lead  { fill: none; stroke: var(--secondary, #6b6b6b); stroke-width: 1; stroke-dasharray: 3 3; }
+    .str   { fill: none; stroke: #6563D6; stroke-width: 2.2; stroke-linecap: round; }
+  </style>
+
+  <!-- wall -->
+  <g filter="url(#roughS)">
+    <path class="thin" d="M40 100 H660"/>
+    <path class="hatch" d="M52 100 l-11 -12 M86 100 l-11 -12 M120 100 l-11 -12 M154 100 l-11 -12 M188 100 l-11 -12 M222 100 l-11 -12 M256 100 l-11 -12 M290 100 l-11 -12 M324 100 l-11 -12 M358 100 l-11 -12 M392 100 l-11 -12 M426 100 l-11 -12 M460 100 l-11 -12 M494 100 l-11 -12 M528 100 l-11 -12 M562 100 l-11 -12 M596 100 l-11 -12 M630 100 l-11 -12 M656 100 l-11 -12"/>
+  </g>
+  <text class="lblS" x="40" y="88">WALL</text>
+
+  <!-- nail -->
+  <g filter="url(#roughS)">
+    <path class="ink" d="M350 106 v-14"/>
+    <circle class="mag" cx="350" cy="106" r="4.5"/>
+  </g>
+  <path class="lead" d="M388 92 L358 102"/>
+  <text class="lbl" x="392" y="88">one nail</text>
+
+  <!-- string -->
+  <g filter="url(#rough)">
+    <path class="str" d="M350 108 L227 246"/>
+    <path class="str" d="M350 108 L473 246"/>
+  </g>
+  <path class="lead" d="M152 176 L262 192"/>
+  <text class="lbl" x="44" y="168">jute string</text>
+  <text class="lblS" x="44" y="185">one knotted length</text>
+
+  <!-- poster -->
+  <g filter="url(#rough)">
+    <path class="ink" d="M215 240 H485 V480 H215 Z"/>
+  </g>
+  <text class="lblS" x="232" y="272">POSTER</text>
+
+  <!-- top magnet pairs -->
+  <g filter="url(#roughS)">
+    <rect class="mag" x="221" y="235" width="34" height="11" rx="2"/>
+    <rect class="mag" x="431" y="235" width="34" height="11" rx="2"/>
+  </g>
+  <path class="lead" d="M496 244 L467 241"/>
+  <text class="lbl" x="500" y="238">magnet pair ×2</text>
+  <text class="lblS" x="500" y="255">front bar + hidden bar</text>
+  <text class="lblS" x="500" y="271">pinch the string</text>
+
+  <!-- bottom magnet pairs, optional -->
+  <g filter="url(#roughS)">
+    <rect class="magO" x="221" y="464" width="34" height="11" rx="2"/>
+    <rect class="magO" x="431" y="464" width="34" height="11" rx="2"/>
+  </g>
+  <path class="lead" d="M496 472 L467 470"/>
+  <text class="lblS" x="500" y="468">optional pair ×2</text>
+  <text class="lblS" x="500" y="484">no string, just mass</text>
+
+  <!-- footnote -->
+  <g filter="url(#roughS)"><path class="thin" d="M40 528 H660"/></g>
+  <text class="lbl" x="44" y="554">4 magnets &#183; 1 string &#183; 1 nail</text>
+  <text class="lblS" x="44" y="574">the only thing on the front is two small bars</text>
+</svg>

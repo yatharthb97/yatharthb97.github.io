@@ -45,16 +45,25 @@ So: neodymium magnets at the top two corners, string down the sides, done. No fr
 
 The magnets are hidden behind the poster. The strings vanish against the wall. What's left is pure content — maximum impact, zero distraction.
 
+## The system
+
+![Frame detail 1](/frame_photo_0.png)
+![Frame detail 2](/frame_photo_1.png)
+![Frame in use](/frame_photo_2.png)
+![Angle view](/frame_photo_3.png)
+![Full installation](/frame_photo_4.png)
+![Close magnet](/frame_photo_5.png)
+![String attachment](/frame_photo_6.png)
+
 ## Materials
 
-Neodymium disc magnets (I'll specify the exact spec here).
-String or thin cable that matches your wall color.
-That's it.
+Neodymium disc magnets (N52, approximately 12mm diameter, 3-5mm thick). Two for the wall, two for the poster back.
+String or thin wire that matches your wall color. Cotton, linen, or nearly-invisible nylon fishing line all work.
 
 ## How it works
 
-Mount two magnets on the wall, positioned at poster width. Attach matching magnets to the back of the poster at the top corners. String runs down the back from poster edge to anchor point (wall, baseboard, or a small weight at the floor). Optionally one string per side for stability.
+Two magnets mount on the wall, positioned at the top corners of your poster width. Matching magnets attach to the back of the poster at those same corners—friction holds them flush against the wall. String runs down each side from the poster's back edge to an anchor point: a small hook, weight, or the baseboard. The string prevents rotation and sway. That's the whole system.
 
-Clean. Convenient. The poster stays. You can change it in seconds.
+Mount. Slide. Done. Change posters in 30 seconds. No tools, no damage, no visible support.
 
-More details, images, and specs coming soon.
+The frame disappears so the poster doesn't have to.
