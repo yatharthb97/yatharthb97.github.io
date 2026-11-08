@@ -15,6 +15,8 @@ ShowBreadCrumbs: false
 disableShare: true
 ---
 
+<p class="fc-credit">Each visit shows 50 random cards from the list. Refresh the page to get a new set.</p>
+
 {{< flashcards data="portuguese_words" count="50" >}}
 
 <p class="fc-credit">Words from Wikipedia's <a href="https://en.wikipedia.org/wiki/Wikipedia:Language_learning_centre/Portuguese_word_list">Portuguese word list</a> (CC BY-SA 4.0). Card numbers match that list.</p>
