@@ -2,7 +2,7 @@
 title: "Most Minimal Poster Frame"
 date: 2026-08-02T18:00:00+01:00
 draft: false
-description: "A frame that disappears. Magnets, string, and nothing else."
+description: "A frame that disappears. Four magnets, one string, nothing else."
 ShowCanonicalLink: false
 canonicalURL: ""
 searchHidden: false
@@ -39,31 +39,46 @@ editPost:
     appendFilePath: true
 ---
 
-The poster should do all the talking. Everything else gets in the way.
+I wanted something that holds a poster with the fewest possible parts, so the thing on the wall gets all the impact and the hardware gets none. It is also just more convenient. The simplest answer I could think of was a couple of magnets and a string, so that is what I built.
 
-So: neodymium magnets at the top two corners, string down the sides, done. No frame, no box, no visible support. Just the image, held by almost nothing, floating on the wall.
+No frame, no glass, no mount. Nothing is glued, taped or punched through the sheet. The poster comes down in seconds and goes back up just as fast.
 
-The magnets are hidden behind the poster. The strings vanish against the wall. What's left is pure content — maximum impact, zero distraction.
+{{< figure src="/img/design/minimal-frame-assembly.svg" alt="Blueprint sketch of the whole assembly: a poster hanging from one nail by a jute string, with magnet pairs at the top corners and optional counterweights at the bottom." class="blueprint" >}}
 
-## The system
+## Parts
 
-![Frame detail 1](/frame_photo_0.png)
-![Frame detail 2](/frame_photo_1.png)
-![Frame in use](/frame_photo_2.png)
-![Angle view](/frame_photo_3.png)
-![Full installation](/frame_photo_4.png)
-![Close magnet](/frame_photo_5.png)
-![String attachment](/frame_photo_6.png)
+Four rectangular neodymium bar magnets. Two make the working pair at the top corners; two more make the optional pair at the bottom.
 
-## Materials
+One length of jute string, knotted into a loop long enough to hang in a shallow triangle.
 
-Neodymium disc magnets (N52, approximately 12mm diameter, 3-5mm thick). Two for the wall, two for the poster back.
-String or thin wire that matches your wall color. Cotton, linen, or nearly-invisible nylon fishing line all work.
+One nail.
 
-## How it works
+## Assembly
 
-Two magnets mount on the wall, positioned at the top corners of your poster width. Matching magnets attach to the back of the poster at those same corners—friction holds them flush against the wall. String runs down each side from the poster's back edge to an anchor point: a small hook, weight, or the baseboard. The string prevents rotation and sway. That's the whole system.
+1. Knot the jute string into a single loop. Keep it short — a shallow triangle sits closer to the wall and stays flatter than a deep one.
+2. Lay the poster face down. Run the string across the back, near the top edge, with a loose end reaching past each top corner.
+3. Put one magnet on the back at a top corner, directly over the string.
+4. Put the second magnet on the front, over the first. The pair snaps through the paper and pinches the string between magnet and sheet. Friction alone holds it.
+5. Repeat at the other top corner. The string is now captive at both corners and nothing pierces the poster.
+6. Hang the loop on a single nail.
+7. *Optional:* add the remaining pair at each bottom corner — same pinch, no string threaded through. They are only there as weight, to keep the sheet flat.
 
-Mount. Slide. Done. Change posters in 30 seconds. No tools, no damage, no visible support.
+Step 7 is genuinely optional. Stiff or small posters hang flat without it; thin paper and large formats want it.
 
-The frame disappears so the poster doesn't have to.
+{{< figure src="/img/design/minimal-frame-detail.svg" alt="Blueprint sketch showing a poster corner folded forward to reveal the back magnet sitting on the string, plus a cross-section of the layer order: front magnet, paper, string, back magnet." class="blueprint" >}}
+
+The whole trick is in that stack. The magnets do not grip the poster and they do not grip the wall — they grip *each other*, straight through the sheet, and the string just happens to be in the way.
+
+## Built
+
+{{< figure src="/frame_photo_5.png" alt="A poster corner lifted to show the magnet pair clamping the jute string against the back of the sheet." >}}
+
+{{< figure src="/frame_photo_6.png" alt="Close view of the front magnet holding the string at the poster's top corner." >}}
+
+{{< figure src="/frame_photo_2.png" alt="The string running up to a single nail, with the magnet bar visible at the poster's top corner." >}}
+
+{{< figure src="/frame_photo_0.png" alt="A completed jigsaw hanging by the magnet-and-string frame." >}}
+
+{{< figure src="/frame_photo_4.png" alt="A paper poster hung the same way, with jute string and two magnet bars along the top edge." >}}
+
+It works on anything flat. The jigsaw above is heavier than any poster and holds fine.
