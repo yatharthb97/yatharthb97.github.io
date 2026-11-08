@@ -4,7 +4,7 @@ date: 2026-11-08T12:09:12Z
 draft: false
 url: "/maze/ouvyDk7tQBZ6jeIdda1Y3cbLKEkFp5gy/demo-locked/"
 description: ""
-math: false
+math: true
 showToc: false
 TocOpen: false
 hidemeta: true
