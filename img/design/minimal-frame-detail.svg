@@ -74,8 +74,8 @@
     <path class="paper" d="M396 250 H648"/>
     <path class="paper" d="M396 256 H648"/>
   </g>
-  <path class="lead" d="M596 240 L622 249"/>
-  <text class="lblS" x="540" y="236">poster, edge-on</text>
+  <path class="lead" d="M420 184 L442 246"/>
+  <text class="lblS" x="392" y="176">poster, edge-on</text>
 
   <!-- front magnet, above the sheet -->
   <g filter="url(#r2s)">
@@ -106,8 +106,8 @@
     <path class="force" d="M448 306 V272" marker-end="url(#ah)"/>
     <path class="force" d="M552 306 V272" marker-end="url(#ah)"/>
   </g>
-  <text class="lblS" x="566" y="204">they pull</text>
-  <text class="lblS" x="566" y="316">toward each other</text>
+  <text class="lblS" x="566" y="200">magnets pull</text>
+  <text class="lblS" x="566" y="217">toward each other</text>
 
   <!-- stack order -->
   <text class="lbl" x="392" y="372">magnet &#183; paper &#183; string &#183; magnet</text>
