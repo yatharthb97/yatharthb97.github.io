@@ -1,0 +1,145 @@
+{{- /*
+  Flashcards for maze pages.
+  Usage: {{< flashcards data="portuguese_words" count="50" >}}
+  Reads data/maze/<data>.json: [{"n": 1, "pt": "...", "en": "..."}, ...]
+  Each page load samples <count> random cards, shown in ascending index order.
+*/ -}}
+{{- $name := .Get "data" -}}
+{{- $count := int (.Get "count" | default 50) -}}
+{{- $words := index site.Data.maze $name -}}
+{{- if not $words }}{{ errorf "flashcards: data/maze/%s.json not found or empty" $name }}{{ end -}}
+{{- $id := printf "fc-%d" .Ordinal -}}
+<div class="fc" id="{{ $id }}">
+  <p class="fc-progress" aria-live="polite"></p>
+  <div class="fc-card" role="button" tabindex="0" aria-label="Show translation">
+    <div class="fc-inner">
+      <div class="fc-face fc-front">
+        <span class="fc-num"></span>
+        <span class="fc-text"></span>
+      </div>
+      <div class="fc-face fc-back">
+        <span class="fc-num"></span>
+        <span class="fc-text"></span>
+        <span class="fc-sub"></span>
+      </div>
+    </div>
+  </div>
+  <div class="fc-nav">
+    <button type="button" class="fc-btn fc-prev">← Previous</button>
+    <button type="button" class="fc-btn fc-next fc-primary">Next →</button>
+  </div>
+  <p class="fc-hint">Click the card or press Space to flip · ← → to move</p>
+  <noscript><p class="fc-hint">The flashcards need JavaScript.</p></noscript>
+</div>
+
+<style>
+  .fc { max-width: 520px; margin: 8px auto 24px; }
+  .fc p { margin: 0; }
+  .fc-progress { text-align: center; color: var(--secondary); font-size: 14px; margin-bottom: 12px !important; font-variant-numeric: tabular-nums; }
+  .fc-card { perspective: 1200px; cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent; }
+  .fc-inner { position: relative; aspect-ratio: 3 / 2; transform-style: preserve-3d; transition: transform .45s ease; }
+  .fc-card.is-flipped .fc-inner { transform: rotateY(180deg); }
+  .fc-card.no-anim .fc-inner { transition: none; }
+  .fc-face {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+    padding: 28px 20px; text-align: center; overflow-wrap: anywhere;
+    background: var(--entry); border: 1px solid var(--border); border-radius: var(--radius);
+    backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  }
+  .fc-back { transform: rotateY(180deg); }
+  .fc-card:focus-visible .fc-face { outline: 2px solid var(--secondary); outline-offset: 2px; }
+  .fc-num { position: absolute; top: 10px; left: 14px; font-size: 13px; color: var(--secondary); font-variant-numeric: tabular-nums; }
+  .fc-text { font-size: clamp(22px, 5vw, 32px); font-weight: 600; line-height: 1.25; color: var(--primary); }
+  .fc-text.is-missing { font-size: 16px; font-weight: 400; font-style: italic; color: var(--secondary); }
+  .fc-sub { font-size: 15px; color: var(--secondary); }
+  .fc-nav { display: flex; gap: 12px; margin-top: 16px; }
+  .fc-btn {
+    flex: 1; padding: 10px 16px; font: inherit; cursor: pointer;
+    color: var(--primary); background: transparent;
+    border: 1px solid var(--border); border-radius: var(--radius);
+  }
+  .fc-btn.fc-primary { color: var(--theme); background: var(--primary); border-color: var(--primary); }
+  .fc-btn:disabled { opacity: .4; cursor: default; }
+  .fc-hint { text-align: center; font-size: 13px; color: var(--secondary); margin-top: 12px !important; }
+  .fc-credit { font-size: 13px; color: var(--secondary); text-align: center; }
+  @media (prefers-reduced-motion: reduce) { .fc-inner { transition: none; } }
+</style>
+
+<script>
+(function () {
+  const WORDS = {{ $words | jsonify | safeJS }};
+  const COUNT = {{ $count }};
+  const root = document.getElementById("{{ $id }}");
+  if (!root) return;
+
+  // Pick COUNT distinct random cards, then order them by their index.
+  function sample(arr, k) {
+    const a = arr.slice();
+    k = Math.min(k, a.length);
+    for (let i = 0; i < k; i++) {
+      const j = i + Math.floor(Math.random() * (a.length - i));
+      const t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a.slice(0, k).sort((x, y) => x.n - y.n);
+  }
+
+  const deck = sample(WORDS, COUNT);
+  let idx = 0;
+
+  const card = root.querySelector(".fc-card");
+  const front = root.querySelector(".fc-front");
+  const back = root.querySelector(".fc-back");
+  const progress = root.querySelector(".fc-progress");
+  const prev = root.querySelector(".fc-prev");
+  const next = root.querySelector(".fc-next");
+
+  function render() {
+    const c = deck[idx];
+    front.querySelector(".fc-num").textContent = "#" + c.n;
+    front.querySelector(".fc-text").textContent = c.pt;
+    back.querySelector(".fc-num").textContent = "#" + c.n;
+    const bt = back.querySelector(".fc-text");
+    bt.textContent = c.en || "(no translation in the source list)";
+    bt.classList.toggle("is-missing", !c.en);
+    back.querySelector(".fc-sub").textContent = c.pt;
+    progress.textContent = "Card " + (idx + 1) + " of " + deck.length;
+    prev.disabled = idx === 0;
+    next.disabled = idx === deck.length - 1;
+    card.setAttribute("aria-label", "Show translation");
+  }
+
+  function flip() {
+    const on = card.classList.toggle("is-flipped");
+    card.setAttribute("aria-label", on ? "Show Portuguese" : "Show translation");
+  }
+
+  function go(i) {
+    if (i < 0 || i >= deck.length || i === idx) return;
+    card.classList.add("no-anim");          // reset to the front without animating,
+    card.classList.remove("is-flipped");    // so the next card's answer never flashes
+    idx = i;
+    render();
+    void card.offsetWidth;
+    card.classList.remove("no-anim");
+  }
+
+  card.addEventListener("click", flip);
+  prev.addEventListener("click", () => go(idx - 1));
+  next.addEventListener("click", () => go(idx + 1));
+
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    const t = e.target;
+    if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+    if (e.key === "ArrowRight") { e.preventDefault(); go(idx + 1); }
+    else if (e.key === "ArrowLeft") { e.preventDefault(); go(idx - 1); }
+    else if ((e.key === " " || e.key === "Enter") &&
+             (document.activeElement === card || document.activeElement === document.body)) {
+      e.preventDefault(); flip();
+    }
+  });
+
+  render();
+})();
+</script>
