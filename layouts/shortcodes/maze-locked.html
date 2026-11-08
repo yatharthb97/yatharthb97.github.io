@@ -1,0 +1,98 @@
+{{- /*
+  Password-locked content for maze pages. Written by `python maze.py encrypt`.
+  Inner text is a base64 JSON payload: PBKDF2-SHA256 -> AES-256-GCM over markdown.
+  Decryption happens only in the browser; the repo and the site hold ciphertext.
+*/ -}}
+{{- $payload := trim .Inner " \n\t\r" -}}
+{{- $id := printf "maze-lock-%d" .Ordinal -}}
+<div class="maze-lock" id="{{ $id }}" data-payload="{{ $payload }}">
+  {{- if $payload }}
+  <form class="maze-lock-form" autocomplete="off">
+    <div class="maze-lock-icon" aria-hidden="true">🔒</div>
+    <p class="maze-lock-hint">This page is locked.</p>
+    <div class="maze-lock-row">
+      <input type="password" class="maze-lock-input" placeholder="Password" aria-label="Password" autofocus>
+      <button type="submit" class="maze-lock-btn">Unlock</button>
+    </div>
+    <p class="maze-lock-error" role="alert" hidden>Wrong password.</p>
+  </form>
+  <div class="maze-lock-content post-content" hidden></div>
+  {{- else }}
+  <p class="maze-lock-hint">🔒 Nothing here yet. Write in <code>.maze-src/</code>, then run <code>python maze.py encrypt</code>.</p>
+  {{- end }}
+</div>
+
+{{- /* Assets are emitted per shortcode (Page.Store is not reset by `hugo server`);
+       the script guards itself so it only runs once per page. */}}
+<style>
+  .post-single .post-header { display: none; } /* public title is just "🔒"; the real one is inside */
+  .maze-lock-form { max-width: 420px; margin: 12vh auto; text-align: center; }
+  .maze-lock-icon { font-size: 40px; margin-bottom: 8px; }
+  .maze-lock-hint { color: var(--secondary); margin-bottom: 16px; }
+  .maze-lock-row { display: flex; gap: 8px; }
+  .maze-lock-input {
+    flex: 1; min-width: 0; padding: 10px 12px; font: inherit;
+    color: var(--primary); background: var(--entry);
+    border: 1px solid var(--border); border-radius: var(--radius);
+  }
+  .maze-lock-input:focus { outline: 2px solid var(--secondary); outline-offset: 1px; }
+  .maze-lock-btn {
+    padding: 10px 16px; font: inherit; cursor: pointer;
+    color: var(--theme); background: var(--primary);
+    border: 0; border-radius: var(--radius);
+  }
+  .maze-lock-btn:disabled { opacity: .6; cursor: wait; }
+  .maze-lock-error { color: #d33; margin-top: 12px; }
+  .maze-lock.shake .maze-lock-row { animation: maze-shake .3s; }
+  @keyframes maze-shake { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script>
+(function () {
+  if (window.__mazeLock) return; window.__mazeLock = true;
+  const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+
+  async function decrypt(payload, password) {
+    const p = JSON.parse(new TextDecoder().decode(b64(payload)));
+    const baseKey = await crypto.subtle.importKey(
+      "raw", new TextEncoder().encode(password), "PBKDF2", false, ["deriveKey"]);
+    const key = await crypto.subtle.deriveKey(
+      { name: "PBKDF2", hash: "SHA-256", salt: b64(p.salt), iterations: p.iter },
+      baseKey, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+    const plain = await crypto.subtle.decrypt(
+      { name: "AES-GCM", iv: b64(p.iv) }, key, b64(p.ct));
+    return new TextDecoder().decode(plain);
+  }
+
+  function setup(box) {
+    const form = box.querySelector(".maze-lock-form");
+    if (!form) return;
+    const input = form.querySelector(".maze-lock-input");
+    const btn = form.querySelector(".maze-lock-btn");
+    const err = form.querySelector(".maze-lock-error");
+    const out = box.querySelector(".maze-lock-content");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      btn.disabled = true; err.hidden = true;
+      try {
+        const md = await decrypt(box.dataset.payload, input.value);
+        out.innerHTML = window.marked ? marked.parse(md) : md.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+        form.remove(); out.hidden = false;
+        if (window.renderMathInElement) {
+          renderMathInElement(out, { delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false } ], throwOnError: false });
+        }
+      } catch (_) {
+        err.hidden = false; input.select();
+        box.classList.remove("shake"); void box.offsetWidth; box.classList.add("shake");
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  }
+
+  document.querySelectorAll(".maze-lock").forEach(setup);
+})();
+</script>

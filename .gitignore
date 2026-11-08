@@ -2,3 +2,6 @@ public/
 .DS_Store
 .hugo_build.lock
 resources/_gen/
+
+# Plaintext sources of encrypted maze pages (never commit)
+.maze-src/

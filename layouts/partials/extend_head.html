@@ -1,4 +1,8 @@
-
+{{- /* The maze: PaperMod emits noindex via robotsNoIndex (set in content/maze/_index.md).
+       Also stop the secret URL leaking to other sites through the Referer header. */ -}}
+{{- if or .Params.mazeHidden (eq .Section "maze") }}
+<meta name="referrer" content="no-referrer">
+{{- end }}
 
 {{ if .Page.Store.Get "hasMermaid" }}
 <!-- MermaidJS support -->

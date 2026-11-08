@@ -1,5 +1,27 @@
 ---
 title: "❓"
+# The maze: hidden pages. Nothing in here is listed anywhere on the site.
+# Pages are rendered at their URL but kept out of every page collection
+# (sitemap, RSS, search index, tags, archives, prev/next links, this list).
+outputs: [HTML]
+build:
+  list: never
+sitemap:
+  disable: true
+cascade:
+  - build:
+      list: never
+      render: always
+    sitemap:
+      disable: true
+    searchHidden: true
+    ShowPostNavLinks: false
+    editPost:
+      disabled: true
+    mazeHidden: true
+    robotsNoIndex: true
+mazeHidden: true
+robotsNoIndex: true
 ---
 
 ```goat
